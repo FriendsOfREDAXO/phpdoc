@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: run composer
+      run: composer install
+    - name: Download Redaxo
+      run: curl -sLo redaxo_master.zip https://github.com/redaxo/redaxo/archive/master.zip
+    - name: Extract Readxo
+      run: unzip redaxo_master.zip -d redaxo_master
+    - name: Generate phpdoc
+      run: vendor/bin/phpdoc project:run -t output -d redaxo_master -i '*/tests/*,*/vendor/*' --force --visibility=public,protected --sourcecode --parseprivate --template=clean
