@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: install graphviz
+      run: sudo apt-get install graphviz
     - uses: actions/checkout@v1
     - name: run composer
       run: composer install
