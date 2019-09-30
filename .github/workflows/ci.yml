@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: install graphviz
+      run: sudo apt-get install graphviz
+    - uses: actions/checkout@v1
+    - name: run composer
+      run: composer install
+    - name: Download Redaxo
+      run: curl -sLo redaxo_master.zip https://github.com/redaxo/redaxo/archive/master.zip
+    - name: Extract Readxo
+      run: unzip redaxo_master.zip -d redaxo_master
+    - name: Generate phpdoc
+      run: vendor/bin/phpdoc project:run -t output -d redaxo_master -i '*/tests/*,*/vendor/*' --force --visibility=public,protected --sourcecode --parseprivate --template=clean
+    - name: Deploy to Github Pages
+      uses: peaceiris/actions-gh-pages@v1.1.0
+      if: success() # && github.ref == 'master'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./output
+    - name: Trigger page build
+      run: "curl 'https://api.github.com/repos/FriendsOfREDAXO/phpdoc/pages/builds' -X POST -H 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' -H 'Accept: application/vnd.github.mister-fantastic-preview'"
+
