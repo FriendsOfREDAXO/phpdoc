@@ -33,5 +33,6 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: ./output
     - name: Trigger page build
+      if: success() && github.ref == 'master'
       run: "curl 'https://api.github.com/repos/FriendsOfREDAXO/phpdoc/pages/builds' -X POST -H 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' -H 'Accept: application/vnd.github.mister-fantastic-preview'"
 
