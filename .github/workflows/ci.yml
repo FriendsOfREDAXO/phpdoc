@@ -27,7 +27,7 @@ jobs:
       run: vendor/bin/phpdoc project:run --target output --directory redaxo_master --ignore '*/tests/*,*/vendor/*' --force --visibility=public,protected --sourcecode --parseprivate --template=clean
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v1.1.0
-      if: success() # && github.ref == 'master'
+      if: success() && github.ref == 'master'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
