@@ -34,3 +34,4 @@ jobs:
         PUBLISH_DIR: ./output
     - name: Trigger page build
       run: "curl 'https://api.github.com/repos/FriendsOfREDAXO/phpdoc/pages/builds' -X POST -H 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' -H 'Accept: application/vnd.github.mister-fantastic-preview'"
+
