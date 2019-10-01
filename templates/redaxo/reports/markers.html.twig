@@ -5,24 +5,24 @@
 {% endblock %}
 
 {% block content %}
-    <section class="row-fluid">
-        <div class="span2 sidebar">
+    <div class="row">
+        <div class="span4">
             <ul class="side-nav nav nav-list">
                 <li class="nav-header">Navigation</li>
                 {% set markerCount = 0 %}
                 {% for file in project.files %}
-                    {% if file.markers.count > 0 %}
+                    {% if file.markers|length > 0 %}
                     <li><a href="#{{ file.path }}"><i class="icon-file"></i> {{ file.path }}</a></li>
                     {% endif %}
-                    {% set markerCount = markerCount + file.markers.count %}
+                    {% set markerCount = markerCount + file.markers|length %}
                 {% endfor %}
             </ul>
         </div>
 
-        <div class="span10 offset2">
+        <div class="span8">
 
             <ul class="breadcrumb">
-                <li><a href="{{ path('/') }}"><i class="icon-map-marker"></i></a><span class="divider">\</span></li>
+                <li><a href="{% if path('/') == '' %}?{% else %}{{ path('/') }}{% endif %}"><i class="icon-map-marker"></i></a><span class="divider">\</span></li>
                 <li>Markers</li>
             </ul>
 
@@ -32,13 +32,13 @@
 
             <div id="marker-accordion">
                 {% for file in project.files %}
-                    {% if file.markers.count > 0 %}
+                    {% if file.markers|length > 0 %}
                         <div class="package-contents">
                             <a name="{{ file.path }}" id="{{ file.path }}"></a>
                             <h3>
                             <i class="icon-file"></i>
                                 {{ file.path }}
-                                <small style="float: right;padding-right: 10px;">{{ file.markers.count }}</small>
+                                <span class="pull-right badge badge-info">{{ file.markers|length }}</span>
                             </h3>
                             <div>
                                 <table class="table markers table-bordered">
@@ -61,5 +61,5 @@
                 {% endfor %}
             </div>
         </div>
-    </section>
+    </div>
 {% endblock %}

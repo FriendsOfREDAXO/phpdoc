@@ -5,9 +5,9 @@
 {% endblock %}
 
 {% block content %}
-    <div class="row-fluid">
+    <div class="row">
 
-        <div class="span2 sidebar">
+        <div class="span4">
             <ul class="side-nav nav nav-list">
                 <li class="nav-header">Navigation</li>
                 {% for element in project.indexes.elements if element.deprecated %}
@@ -19,46 +19,38 @@
             </ul>
         </div>
 
-        <div class="span10 offset2">
+        <div class="span8">
             <ul class="breadcrumb">
-                <li><a href="{{ path('/') }}"><i class="icon-remove-sign"></i></a><span class="divider">\</span></li>
+                <li><a href="{% if path('/') == '' %}?{% else %}{{ path('/') }}{% endif %}"><i class="icon-stop"></i></a><span class="divider">\</span></li>
                 <li>Deprecated elements</li>
             </ul>
 
             <div id="marker-accordion">
                 {% for element in project.indexes.elements if element.deprecated %}
-                    {% if element.file.path != previousPath %}
-                    {% if previousPath %}
-                        </table>
-                    </div>
-                    {% endif %}
                     <a name="{{ element.file.path }}" id="{{ element.file.path }}"></a>
                     <h3>
-                        <i class="icon-file"></i>
-                        {{ element.file.path }}
-                        <small style="float: right;padding-right: 10px;">{{ element.tags.deprecated.count }}</small>
+                        <i class="icon-file"></i> {{ element.file.path }}
+                        <span class="pull-right badge badge-info">{{ element.tags.deprecated.count }}</span>
                     </h3>
                     <div>
                         <table class="table markers table-bordered">
                             <tr>
-                                <th>Element</th>
+                                <th>Type</th>
                                 <th>Line</th>
                                 <th>Description</th>
                             </tr>
-                    {% endif %}
                             {% for tag in element.tags.deprecated %}
                                 <tr>
-                                    <td>{{ element.fullyQualifiedStructuralElementName }}</td>
+                                    <td>{{ element.name }}</td>
                                     <td>{{ element.line }}</td>
-                                    <td>{{ tag.description }}</td>
+                                    <td>{{ element.description }}</td>
                                 </tr>
                             {% endfor %}
-                    {% set previousPath = element.file.path %}
+                        </table>
+                    </div>
                 {% else %}
                     <div class="alert alert-info">No deprecated elements have been found in this project.</div>
                 {% endfor %}
-                    </table>
-                </div>
             </div>
         </div>
     </div>
