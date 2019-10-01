@@ -1,3 +1,6 @@
 .idea
 vendor
 composer.lock
+/output/
+/redaxo_*/
+/redaxo_*.zip
