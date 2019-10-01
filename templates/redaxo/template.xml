@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template>
+  <author>Marcel Kuhmann</author>
+  <email>marcel.kuhmann@redaxo.org</email>
+  <version>1.0.0</version>
+  <copyright>FriendsOfRedaxo 2019</copyright>
+  <description>
+    This Template is created only for CMS REDAXO
+  </description>
+  <transformations>
+    <transformation query="copy" writer="FileIo" source="templates/redaxo/htaccess.dist" artifact=".htaccess"/>
+    <transformation query="copy" writer="FileIo" source="templates/redaxo/images" artifact="images"/>
+    <transformation query="copy" writer="FileIo" source="templates/redaxo/css" artifact="css"/>
+    <transformation query="copy" writer="FileIo" source="templates/redaxo/js" artifact="js"/>
+    <transformation query="copy" writer="FileIo" source="templates/redaxo/font" artifact="font"/>
+    <transformation writer="twig" query="namespace" source="templates/redaxo/namespace.html.twig" artifact="index.html"/>
+    <transformation writer="twig" query="indexes.namespaces" source="templates/redaxo/namespace.html.twig" />
+    <transformation writer="twig" query="indexes.classes" source="templates/redaxo/class.html.twig" />
+    <transformation writer="twig" query="indexes.interfaces" source="templates/redaxo/interface.html.twig" />
+    <transformation writer="twig" query="indexes.traits" source="templates/redaxo/class.html.twig" />
+    <transformation writer="twig" query="files" source="templates/redaxo/file.html.twig" />
+    <transformation writer="twig" query="files" source="templates/redaxo/file.source.txt.twig" artifact="files/{{path}}.txt"/>
+<!--    <transformation writer="twig" source="templates/redaxo/reports/markers.html.twig" artifact="reports/markers.html"/>-->
+<!--    <transformation writer="twig" source="templates/redaxo/reports/errors.html.twig" artifact="reports/errors.html"/>-->
+<!--    <transformation writer="twig" source="templates/redaxo/reports/deprecated.html.twig" artifact="reports/deprecated.html"/>-->
+<!--    <transformation writer="twig" source="templates/redaxo/graphs/class.html.twig" artifact="graphs/class.html"/>-->
+<!--    <transformation writer="Graph" source="Class" artifact="graphs/classes.svg" />-->
+  </transformations>
+</template>
