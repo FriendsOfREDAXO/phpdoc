@@ -1,115 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>{% block title %}{{ project.name }}{% endblock %}</title>
-    <meta name="author" content="{{ author }}"/>
-    <meta name="description" content=""/>
+    <meta name="author" content="Friends Of REDAXO">
 
-    {% block stylesheets %}
-        <link href="{{ path('css/template.css') }}" rel="stylesheet" media="all"/>
-    {% endblock %}
-
-    {% block javascripts %}
-        <!--[if lt IE 9]>
-        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-        <![endif]-->
-        <script src="{{ path('js/jquery-1.7.1.min.js') }}" type="text/javascript"></script>
-        <script src="{{ path('js/jquery-ui-1.8.2.custom.min.js') }}" type="text/javascript"></script>
-        <script src="{{ path('js/jquery.mousewheel.min.js') }}" type="text/javascript"></script>
-        <script src="{{ path('js/bootstrap.js') }}" type="text/javascript"></script>
-        <script src="{{ path('js/template.js') }}" type="text/javascript"></script>
-        <script src="{{ path('js/prettify/prettify.min.js') }}" type="text/javascript"></script>
-    {% endblock %}
-
-    {% block icons %}
-        <link rel="shortcut icon" href="{{ path('img/favicon.ico') }}"/>
-        <link rel="apple-touch-icon" href="{{ path('img/apple-touch-icon.png') }}"/>
-        <link rel="apple-touch-icon" sizes="72x72" href="{{ path('img/apple-touch-icon-72x72.png') }}"/>
-        <link rel="apple-touch-icon" sizes="114x114" href="{{ path('img/apple-touch-icon-114x114.png') }}"/>
-    {% endblock %}
+    <!-- styles -->
+    <link rel="stylesheet" href="{{ path('assets/css/style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600">
 </head>
+
 <body>
 
-    {% block header %}
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span> <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> </a>
-                <a class="brand" href="{{ path('index.html') }}">{{ project.name }}</a>
-
-                <div class="nav-collapse">
-                    <ul class="nav">
-                        <li class="dropdown">
-                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
-                                API Documentation <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                {% if (project.namespace.children|length > 0) %}
-                                    <li><a>Namespaces</a></li>
-                                    {% for namespace in project.namespace.children %}
-                                    <li><a href="{{ path(namespace) }}">{{ namespace.name }}</a></li>
-                                    {% endfor %}
-                                {% endif %}
-                                {% if (project.index.packages|length > 0) %}
-                                    <li><a>Packages</a></li>
-                                {% endif %}
-                            </ul>
-                        </li>
-                        <li class="dropdown" id="reports-menu">
-                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
-                                Reports <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="{{ path('errors.html') }}">
-                                        <i class="icon-list-alt"></i>&#160;Errors
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ path('markers.html') }}">
-                                        <i class="icon-list-alt"></i>&#160;Markers
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ path('deprecated.html') }}">
-                                        <i class="icon-list-alt"></i>&#160;Deprecated
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="go_to_top">
-            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
-        </div>
-    </div>
-    {% endblock header %}
-
-    <div id="___" class="container">
-        <noscript>
-            <div class="alert alert-warning">
-                Javascript is disabled; several features are only available if Javascript is enabled.
-            </div>
-        </noscript>
-
-        {% block heroUnit %}{% endblock %}
-
-        {% block content %}{% endblock %}
+<header class="header" role="banner">
+    <div class="header__menubutton">
+        <button class="navigation-button">
+            <i class="navigation-button__open">{{ source('assets/svg/bars.svg') }}</i>
+            <i class="navigation-button__close">{{ source('assets/svg/times.svg') }}</i>
+            <span class="navigation-button__title">Navigation</span>
+        </button>
     </div>
 
-    {% block footer %}
-    <footer class="span12">
-            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
-            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
-            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor {{ version }}</a> and<br/>
-            generated on {{ now|date("r") }}.<br/>
+    <div class="header__brand">
+        <a href="{{ path('index.html') }}" title="Startseite">
+            {{ source('assets/svg/r.svg') }}
+            <span>phpDoc</span>
+        </a>
+    </div>
+
+    <div class="header__search">
+        <div class="searchfield">
+            <input class="searchfield__input" type="text" name="q" placeholder="phpDoc durchsuchen">
+            <i class="searchfield__icon">{{ source('assets/svg/search.svg') }}</i>
+        </div>
+    </div>
+
+    <div class="header__options">
+        <a class="header__link header__link--github" href="https://github.com/FriendsOfREDAXO/phpdoc">{{ source('assets/svg/github.svg') }}</a>
+    </div>
+</header>
+
+<div class="sidebar">
+
+    <div class="sidebar__header">
+        <button class="fold-navigation">
+            <i class="fold-navigation__expand">{{ source('assets/svg/expand.svg') }}</i>
+            <i class="fold-navigation__compress">{{ source('assets/svg/compress.svg') }}</i>
+            <span class="fold-navigation__title">Navigation klappen</span>
+        </button>
+    </div>
+
+    <div class="sidebar__body">
+        <nav class="navigation">
+            <h6>Packages</h6>
+
+            {% macro buildTree(root) %}
+                {% for child in root.children|sort_asc %}
+                <li class="navigation__item {% if child.children|length > 0  %}navigation__item--has-children{% endif %}">
+                    {% if child.children|length > 0 %}
+                        <a class="navigation__toggle">{{ child.name }}</a>
+                        <div class="navigation__sub">
+                            <ul class="navigation__list">
+                                {{ _self.buildTree(child) }}
+                            </ul>
+                        </div>
+                    {% else %}
+                        <a class="navigation__link" href="{{ path(child) }}">{{ child.name }}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            {% endmacro %}
+
+            <ul class="navigation__list">
+                {{ _self.buildTree(project.indexes.packages|first) }}
+            </ul>
+
+            <h6>Classes</h6>
+            <ul class="navigation__list">
+                {% for class in project.indexes.classes|sort_asc %}
+                    <li class="navigation__item {% if class.children|length > 0  %}navigation__item--has-children{% endif %}">
+                        <a class="navigation__link" href="{{ path(class) }}">{{ class.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <h6>Interfaces</h6>
+            <ul class="navigation__list">
+                {% for class in project.indexes.interfaces|sort_asc %}
+                    <li class="navigation__item {% if class.children|length > 0  %}navigation__item--has-children{% endif %}">
+                        <a class="navigation__link" href="{{ path(class) }}">{{ class.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <h6>Traits</h6>
+            <ul class="navigation__list">
+                {% for class in project.indexes.traits|sort_asc %}
+                    <li class="navigation__item {% if class.children|length > 0  %}navigation__item--has-children{% endif %}">
+                        <a class="navigation__link" href="{{ path(class) }}">{{ class.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <h6>Functions</h6>
+            <ul class="navigation__list">
+                {% for class in project.indexes.functions|sort_asc %}
+                    <li class="navigation__item {% if class.children|length > 0  %}navigation__item--has-children{% endif %}">
+                        <a class="navigation__link" href="{{ path(class) }}">{{ class.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <h6>Constants</h6>
+            <ul class="navigation__list">
+                {% for class in project.indexes.constants|sort_asc %}
+                    <li class="navigation__item {% if class.children|length > 0  %}navigation__item--has-children{% endif %}">
+                        <a class="navigation__link" href="{{ path(class) }}">{{ class.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+
+</div>
+
+<div class="body">
+
+    <main class="content" aria-label="Content">
+        <div class="content__section">
+            {% block content %}Content{% endblock %}
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__section">
+            <small class="timestamp">Stand: {{ "now"|date("d.m.Y H:i:s") }} Uhr</small>
+        </div>
     </footer>
-    {% endblock %}
+
+</div>
+
+<div class="cover"></div>
+
+<!-- scripts -->
+<script src="{{ path('assets/vendor/pjax.js/pjax.min.js') }}"></script>
+<script src="{{ path('assets/vendor/prism.js/prism.js') }}"></script>
+<script src="{{ path('assets/js/script.js') }}"></script>
+
 </body>
+
 </html>

@@ -9,18 +9,16 @@
     Simple Template for CMS Redaxo
   </description>
   <transformations>
-    <transformation query="copy" writer="FileIo" source="templates/responsive/img" artifact="img"/>
-    <transformation query="copy" writer="FileIo" source="templates/responsive/css" artifact="css"/>
-    <transformation query="copy" writer="FileIo" source="templates/responsive/js" artifact="js"/>
+    <transformation query="copy" writer="FileIo" source="templates/redaxo/assets" artifact="assets"/>
     <transformation writer="twig" source="templates/redaxo/index.html.twig" artifact="index.html"/>
-    <transformation query="indexes.namespaces" writer="twig" source="templates/redaxo/namespace.html.twig" />
-    <transformation query="indexes.packages" writer="twig" source="templates/redaxo/package.html.twig" />
-    <transformation query="indexes.classes" writer="twig" source="templates/redaxo/class.html.twig" />
-    <transformation query="indexes.interfaces" writer="twig" source="templates/redaxo/class.html.twig" />
-    <transformation query="indexes.traits" writer="twig" source="templates/redaxo/class.html.twig" />
-    <transformation writer="twig" source="templates/redaxo/reports/markers.html.twig" artifact="markers.html"/>
-    <transformation writer="twig" source="templates/redaxo/reports/errors.html.twig" artifact="errors.html"/>
-    <transformation writer="twig" source="templates/redaxo/reports/deprecated.html.twig" artifact="deprecated.html"/>
+<!--    <transformation query="indexes.namespaces" writer="twig" source="templates/redaxo/namespace.html.twig" />-->
+<!--    <transformation query="indexes.packages" writer="twig" source="templates/redaxo/package.html.twig" />-->
+<!--    <transformation query="indexes.classes" writer="twig" source="templates/redaxo/class.html.twig" />-->
+<!--    <transformation query="indexes.interfaces" writer="twig" source="templates/redaxo/class.html.twig" />-->
+<!--    <transformation query="indexes.traits" writer="twig" source="templates/redaxo/class.html.twig" />-->
+<!--    <transformation writer="twig" source="templates/redaxo/reports/markers.html.twig" artifact="markers.html"/>-->
+<!--    <transformation writer="twig" source="templates/redaxo/reports/errors.html.twig" artifact="errors.html"/>-->
+<!--    <transformation writer="twig" source="templates/redaxo/reports/deprecated.html.twig" artifact="deprecated.html"/>-->
 <!--    <transformation writer="twig" source="templates/redaxo/graphs/class.html.twig" artifact="graph_class.html"/>-->
 <!--    <transformation writer="Graph" source="Class" artifact="classes.svg" />-->
   </transformations>
