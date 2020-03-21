@@ -28,7 +28,7 @@ jobs:
     - name: Extract REDAXO
       run: unzip redaxo_master.zip -d .
 
-    - name: phpdoc ache
+    - name: phpdoc cache
       uses: actions/cache@v1
       with:
         path: .phpdoc
