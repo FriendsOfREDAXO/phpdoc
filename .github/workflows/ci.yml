@@ -32,6 +32,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: .phpdoc
+        key: branch-${{ github.ref }}
 
     - name: Generate phpdoc
       run: vendor/bin/phpdoc project:run --target output --directory redaxo-master --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=clean
