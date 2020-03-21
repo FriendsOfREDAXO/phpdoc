@@ -16,15 +16,15 @@ jobs:
     steps:
     - name: install graphviz
       run: sudo apt-get install graphviz
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: run composer
       run: composer install
     - name: Download REDAXO
       run: curl -sLo redaxo_master.zip https://github.com/redaxo/redaxo/archive/master.zip
     - name: Extract REDAXO
-      run: unzip redaxo_master.zip -d redaxo_master
+      run: unzip redaxo_master.zip -d .
     - name: Generate phpdoc
-      run: vendor/bin/phpdoc project:run --target output --directory redaxo_master --ignore '*/tests/*,*/vendor/*' --force --visibility=public,protected --sourcecode --parseprivate --template=clean
+      run: vendor/bin/phpdoc project:run --target output --directory redaxo-master --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=clean
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v1.1.0
       if: success() && github.ref == 'master'

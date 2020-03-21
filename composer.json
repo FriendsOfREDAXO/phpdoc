@@ -1,5 +1,6 @@
 {
     "require": {
         "phpdocumentor/phpdocumentor": "dev-master"
-    }
+    },
+    "minimum-stability": "dev"
 }
