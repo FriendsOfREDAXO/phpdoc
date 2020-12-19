@@ -3,7 +3,7 @@
         "platform": {
             "php": "7.4.13"
         }
-    }
+    },
     "require": {
         "phpdocumentor/phpdocumentor": "dev-master"
     },
