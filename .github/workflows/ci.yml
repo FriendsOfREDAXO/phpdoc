@@ -13,9 +13,15 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     
     steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: 7.4
+        coverage: none # disable xdebug, pcov
+
     - name: install graphviz
       run: sudo apt-get install graphviz
 
