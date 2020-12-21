@@ -21,8 +21,9 @@ jobs:
 
     - uses: actions/checkout@v2
 
-    - name: run composer
-      run: composer install
+    - uses: "ramsey/composer-install@v1"
+      with:
+        composer-options: "--ansi --prefer-dist"
 
     - name: Download REDAXO
       run: curl -sLo redaxo_master.zip https://github.com/redaxo/redaxo/archive/master.zip
@@ -37,10 +38,10 @@ jobs:
         key: branch-${{ github.ref }}
 
     - name: Generate phpdoc - clean template
-      run: vendor/bin/phpdoc project:run --target output --directory redaxo-master --ignore '**/.github' --ignore '**/.idea' --ignore '**/.tools' --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=clean
+      run: vendor/bin/phpdoc project:run --target output --directory redaxo-master --ignore '.github' --ignore '.idea' --ignore '.tools' --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=clean
 
     - name: Generate phpdoc - default template
-      run: vendor/bin/phpdoc project:run --target output/default --directory redaxo-master --ignore '**/.github' --ignore '**/.idea' --ignore '**/.tools' --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=default
+      run: vendor/bin/phpdoc project:run --target output/default --directory redaxo-master --ignore .github' --ignore .idea' --ignore .tools' --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=default
 
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v1.1.0
