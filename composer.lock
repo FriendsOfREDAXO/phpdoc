@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ded240de78eeb61a41a55dd2e4cf19c3",
+    "content-hash": "8e2edcaf3166d243222b1e589605d1b1",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1300,16 +1300,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.10.3",
+            "version": "v4.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "dbe56d23de8fcb157bbc0cfb3ad7c7de0cfb0984"
+                "reference": "c6d052fc58cb876152f89f532b95a8d7907e7f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/dbe56d23de8fcb157bbc0cfb3ad7c7de0cfb0984",
-                "reference": "dbe56d23de8fcb157bbc0cfb3ad7c7de0cfb0984",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/c6d052fc58cb876152f89f532b95a8d7907e7f0e",
+                "reference": "c6d052fc58cb876152f89f532b95a8d7907e7f0e",
                 "shasum": ""
             },
             "require": {
@@ -1350,9 +1350,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.10.3"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.10.4"
             },
-            "time": "2020-12-03T17:45:45+00:00"
+            "time": "2020-12-20T10:01:03+00:00"
         },
         {
             "name": "ocramius/proxy-manager",
@@ -1360,12 +1360,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ocramius/ProxyManager.git",
-                "reference": "f65ae0f9dcbdd9d6ad3abb721a9e09c3d7d868a4"
+                "reference": "cb2f2cebb0fc243f26cc197c6aeb5ed3a924d7cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ocramius/ProxyManager/zipball/f65ae0f9dcbdd9d6ad3abb721a9e09c3d7d868a4",
-                "reference": "f65ae0f9dcbdd9d6ad3abb721a9e09c3d7d868a4",
+                "url": "https://api.github.com/repos/Ocramius/ProxyManager/zipball/cb2f2cebb0fc243f26cc197c6aeb5ed3a924d7cf",
+                "reference": "cb2f2cebb0fc243f26cc197c6aeb5ed3a924d7cf",
                 "shasum": ""
             },
             "require": {
@@ -1431,7 +1431,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Ocramius/ProxyManager/issues",
-                "source": "https://github.com/Ocramius/ProxyManager/tree/2.10.0"
+                "source": "https://github.com/Ocramius/ProxyManager/tree/2.11.x"
             },
             "funding": [
                 {
@@ -1443,7 +1443,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-12T17:04:46+00:00"
+            "time": "2020-12-20T17:44:51+00:00"
         },
         {
             "name": "phpdocumentor/flyfinder",
@@ -2159,12 +2159,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scrivo/highlight.php.git",
-                "reference": "fa75a865928a4a5d49e5e77faca6bd2f2410baaf"
+                "reference": "f9c63cfc5a211b1a9071d2566f381d9941b6752f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/fa75a865928a4a5d49e5e77faca6bd2f2410baaf",
-                "reference": "fa75a865928a4a5d49e5e77faca6bd2f2410baaf",
+                "url": "https://api.github.com/repos/scrivo/highlight.php/zipball/f9c63cfc5a211b1a9071d2566f381d9941b6752f",
+                "reference": "f9c63cfc5a211b1a9071d2566f381d9941b6752f",
                 "shasum": ""
             },
             "require": {
@@ -2230,7 +2230,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-22T06:07:40+00:00"
+            "time": "2020-12-20T08:51:44+00:00"
         },
         {
             "name": "symfony/cache",
@@ -2507,27 +2507,26 @@
         },
         {
             "name": "symfony/contracts",
-            "version": "dev-main",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/contracts.git",
-                "reference": "07af60a8b4957dc8131716622207968d403e5a6e"
+                "reference": "b3b9b70bfacfd204d352e7e7350e02c02c0fff78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/contracts/zipball/07af60a8b4957dc8131716622207968d403e5a6e",
-                "reference": "07af60a8b4957dc8131716622207968d403e5a6e",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/b3b9b70bfacfd204d352e7e7350e02c02c0fff78",
+                "reference": "b3b9b70bfacfd204d352e7e7350e02c02c0fff78",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.5",
+                "php": "^7.2.5",
                 "psr/cache": "^1.0",
                 "psr/container": "^1.0",
                 "psr/event-dispatcher": "^1.0"
             },
             "replace": {
                 "symfony/cache-contracts": "self.version",
-                "symfony/deprecation-contracts": "self.version",
                 "symfony/event-dispatcher-contracts": "self.version",
                 "symfony/http-client-contracts": "self.version",
                 "symfony/service-contracts": "self.version",
@@ -2543,21 +2542,16 @@
                 "symfony/service-implementation": "",
                 "symfony/translation-implementation": ""
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
-                "branch-version": "2.3",
                 "branch-alias": {
-                    "dev-main": "2.3-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Contracts\\": ""
                 },
-                "files": [
-                    "Deprecation/function.php"
-                ],
                 "exclude-from-classmap": [
                     "**/Tests/"
                 ]
@@ -2587,23 +2581,9 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/contracts/tree/main"
+                "source": "https://github.com/symfony/contracts/tree/master"
             },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-12-08T17:04:48+00:00"
+            "time": "2019-11-26T23:25:11+00:00"
         },
         {
             "name": "symfony/dependency-injection",
@@ -2692,6 +2672,75 @@
                 }
             ],
             "time": "2020-12-18T08:03:24+00:00"
+        },
+        {
+            "name": "symfony/deprecation-contracts",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "be5a36670fd7ccb6f6e03d9c9bd7345e2a9a8515"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/be5a36670fd7ccb6f6e03d9c9bd7345e2a9a8515",
+                "reference": "be5a36670fd7ccb6f6e03d9c9bd7345e2a9a8515",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-version": "2.3",
+                "branch-alias": {
+                    "dev-main": "2.3-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A generic function and convention to trigger deprecation notices",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/deprecation-contracts/tree/main"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-14T17:08:19+00:00"
         },
         {
             "name": "symfony/dom-crawler",
@@ -5047,9 +5096,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "phpdocumentor/phpdocumentor": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
