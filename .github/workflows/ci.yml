@@ -37,10 +37,10 @@ jobs:
         key: branch-${{ github.ref }}
 
     - name: Generate phpdoc - clean template
-      run: vendor/bin/phpdoc project:run --target output --directory redaxo-master --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=clean
+      run: vendor/bin/phpdoc project:run --target output --directory redaxo-master --ignore '**/.github' --ignore '**/.idea' --ignore '**/.tools' --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=clean
 
     - name: Generate phpdoc - default template
-      run: vendor/bin/phpdoc project:run --target output/default --directory redaxo-master --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=default
+      run: vendor/bin/phpdoc project:run --target output/default --directory redaxo-master --ignore '**/.github' --ignore '**/.idea' --ignore '**/.tools' --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=default
 
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v1.1.0
