@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+        
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/redaxo.html"><abbr title="\redaxo">redaxo</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/redaxo-backup.html"><abbr title="\redaxo\backup">backup</abbr></a></li>
+                                    <li><a href="packages/redaxo-be.html"><abbr title="\redaxo\be">be</abbr></a></li>
+                                    <li><a href="packages/redaxo-cronjob.html"><abbr title="\redaxo\cronjob">cronjob</abbr></a></li>
+                                    <li><a href="packages/redaxo-install.html"><abbr title="\redaxo\install">install</abbr></a></li>
+                                    <li><a href="packages/redaxo-media.html"><abbr title="\redaxo\media">media</abbr></a></li>
+                                    <li><a href="packages/redaxo-mediapool.html"><abbr title="\redaxo\mediapool">mediapool</abbr></a></li>
+                                    <li><a href="packages/redaxo-metainfo.html"><abbr title="\redaxo\metainfo">metainfo</abbr></a></li>
+                                    <li><a href="packages/redaxo-phpmailer.html"><abbr title="\redaxo\phpmailer">phpmailer</abbr></a></li>
+                                    <li><a href="packages/redaxo-structure.html"><abbr title="\redaxo\structure">structure</abbr></a></li>
+                                    <li><a href="packages/redaxo-users.html"><abbr title="\redaxo\users">users</abbr></a></li>
+                                    <li><a href="packages/redaxo-core.html"><abbr title="\redaxo\core">core</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/redaxo5.html"><abbr title="\redaxo5">redaxo5</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-core.html">core</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    rex
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-core.html">core</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">10</span>
+</aside>
+
+            <p class="phpdocumentor-summary">REX base class for core properties etc.</p>
+
+    <section class="phpdocumentor-description"></section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>gharlan</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/rex.html#constant_CONFIG_NAMESPACE">CONFIG_NAMESPACE</a>
+    <span>
+        &nbsp;= &#039;core&#039;                    </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/rex.html#property_properties">$properties</a>
+    <span>
+                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+</dt>
+<dd>Array of properties.</dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getAccesskey">getAccesskey()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Returns the title tag and if the property &quot;use_accesskeys&quot; is true, the accesskey tag.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getConfig">getConfig()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getConsole">getConsole()</a>
+    <span>
+                        &nbsp;: null|<a href="classes/rex-console-application.html"><abbr title="\rex_console_application">rex_console_application</abbr></a>    </span>
+</dt>
+<dd>Returns the console application.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getDbConfig">getDbConfig()</a>
+    <span>
+                        &nbsp;: <a href="classes/rex-config-db.html"><abbr title="\rex_config_db">rex_config_db</abbr></a>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getDebugFlags">getDebugFlags()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Returns the debug flags.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getDirPerm">getDirPerm()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns the dir perm.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getEnvironment">getEnvironment()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Returns the environment.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getErrorEmail">getErrorEmail()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Returns the error email.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getFilePerm">getFilePerm()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns the file perm.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getImpersonator">getImpersonator()</a>
+    <span>
+                        &nbsp;: null|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>    </span>
+</dt>
+<dd>Returns the current impersonator user.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getPackageConfig">getPackageConfig()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getPackageOrder">getPackageOrder()</a>
+    <span>
+                        &nbsp;: <abbr title="\list">list</abbr>&lt;string|int, string&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getProperty">getProperty()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Returns a property.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getRequest">getRequest()</a>
+    <span>
+                        &nbsp;: <abbr title="\Symfony\Component\HttpFoundation\Request">Request</abbr>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getServer">getServer()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Returns the server URL.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getServerName">getServerName()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Returns the server name.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getTable">getTable()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Adds the table prefix to the table name.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getTablePrefix">getTablePrefix()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Returns the table prefix.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getTempPrefix">getTempPrefix()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Returns the temp prefix.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getUser">getUser()</a>
+    <span>
+                        &nbsp;: null|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>    </span>
+</dt>
+<dd>Returns the current user.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getVersion">getVersion()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Returns the redaxo version.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_getVersionHash">getVersionHash()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_hasConfig">hasConfig()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_hasProperty">hasProperty()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Returns if a property is set.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_isBackend">isBackend()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Returns if the environment is the backend.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_isDebugMode">isDebugMode()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Returns if the debug mode is active.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_isFrontend">isFrontend()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Returns if the environment is the frontend.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_isSafeMode">isSafeMode()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Returns if the safe mode is active.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_isSetup">isSetup()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Returns if the setup is active.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_removeConfig">removeConfig()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_removeProperty">removeProperty()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Removes a property.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_setConfig">setConfig()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex.html#method_setProperty">setProperty()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Sets a property. Changes will not be persisted accross http request boundaries.</dd>
+
+        </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/rex.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CONFIG_NAMESPACE">
+        CONFIG_NAMESPACE
+        <a href="classes/rex.html#constant_CONFIG_NAMESPACE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">12</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CONFIG_NAMESPACE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;core&#039;</span>
+</code>
+
+
+    
+    
+
+</article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/rex.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+            -static                                            "
+>
+    <h4 class="phpdocumentor-element__name" id="property_properties">
+        $properties
+        <a href="classes/rex.html#property_properties" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Array of properties.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__name">$properties</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-var</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>array&lt;string, mixed&gt;</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/rex.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getAccesskey">
+        getAccesskey()
+        <a href="classes/rex.html#method_getAccesskey" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">447</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the title tag and if the property &quot;use_accesskeys&quot; is true, the accesskey tag.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getAccesskey</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$title</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Title</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Key for the accesskey</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getConfig">
+        getConfig()
+        <a href="classes/rex.html#method_getConfig" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">42</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getConfig</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$default</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/rex-config.html#method_get"><abbr title="\rex_config::get()">rex_config::get()</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">template</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>T as ?string</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">phpstan-template</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>T</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-param</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>T $key</p>
+</section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-return</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>(T is string ? mixed|null : array&lt;string, mixed&gt;)</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>the value for $key or $default if $key cannot be found in the given $namespace</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getConsole">
+        getConsole()
+        <a href="classes/rex.html#method_getConsole" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">321</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the console application.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getConsole</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<a href="classes/rex-console-application.html"><abbr title="\rex_console_application">rex_console_application</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">null|<a href="classes/rex-console-application.html"><abbr title="\rex_console_application">rex_console_application</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDbConfig">
+        getDbConfig()
+        <a href="classes/rex.html#method_getDbConfig" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">342</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getDbConfig</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$db</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/rex-config-db.html"><abbr title="\rex_config_db">rex_config_db</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$db</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">1</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/rex-exception.html"><abbr title="\rex_exception">rex_exception</abbr></a></span>
+                                                            
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><a href="classes/rex-config-db.html"><abbr title="\rex_config_db">rex_config_db</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDebugFlags">
+        getDebugFlags()
+        <a href="classes/rex.html#method_getDebugFlags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">242</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the debug flags.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getDebugFlags</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-return</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>array{enabled: bool, throw_always_exception: bool|int}</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDirPerm">
+        getDirPerm()
+        <a href="classes/rex.html#method_getDirPerm" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">474</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the dir perm.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getDirPerm</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getEnvironment">
+        getEnvironment()
+        <a href="classes/rex.html#method_getEnvironment" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">215</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the environment.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getEnvironment</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getErrorEmail">
+        getErrorEmail()
+        <a href="classes/rex.html#method_getErrorEmail" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">386</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the error email.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getErrorEmail</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getFilePerm">
+        getFilePerm()
+        <a href="classes/rex.html#method_getFilePerm" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">464</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the file perm.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getFilePerm</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getImpersonator">
+        getImpersonator()
+        <a href="classes/rex.html#method_getImpersonator" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">309</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the current impersonator user.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getImpersonator</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">null|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPackageConfig">
+        getPackageConfig()
+        <a href="classes/rex.html#method_getPackageConfig" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">420</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getPackageConfig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPackageOrder">
+        getPackageOrder()
+        <a href="classes/rex.html#method_getPackageOrder" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">431</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getPackageOrder</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\list">list</abbr>&lt;string|int, string&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\list">list</abbr>&lt;string|int, string&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getProperty">
+        getProperty()
+        <a href="classes/rex.html#method_getProperty" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">135</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns a property.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getProperty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Key of the property</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$default</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Default value, will be returned if the property isn't set</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>on invalid parameters</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The value for $key or $default if $key cannot be found</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRequest">
+        getRequest()
+        <a href="classes/rex.html#method_getRequest" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">326</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getRequest</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Request">Request</abbr></span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Symfony\Component\HttpFoundation\Request">Request</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getServer">
+        getServer()
+        <a href="classes/rex.html#method_getServer" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">362</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the server URL.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getServer</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$protocol</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$protocol</span>
+                : <span class="phpdocumentor-signature__argument__return-type">null|string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getServerName">
+        getServerName()
+        <a href="classes/rex.html#method_getServerName" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">376</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the server name.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getServerName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTable">
+        getTable()
+        <a href="classes/rex.html#method_getTable" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">279</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Adds the table prefix to the table name.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getTable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$table</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$table</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Table name</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTablePrefix">
+        getTablePrefix()
+        <a href="classes/rex.html#method_getTablePrefix" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">267</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the table prefix.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getTablePrefix</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTempPrefix">
+        getTempPrefix()
+        <a href="classes/rex.html#method_getTempPrefix" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">289</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the temp prefix.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getTempPrefix</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getUser">
+        getUser()
+        <a href="classes/rex.html#method_getUser" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">299</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the current user.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getUser</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">null|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a></span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getVersion">
+        getVersion()
+        <a href="classes/rex.html#method_getVersion" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">398</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the redaxo version.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getVersion</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$format</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>See <a href="rex_formatter::version()"></a></p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+            -deprecated                        -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getVersionHash">
+        getVersionHash()
+        <a href="classes/rex.html#method_getVersionHash" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">411</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getVersionHash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$repo</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$path</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$repo</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>since 5.10, use <code class="prettyprint">rex_version::gitHash</code> instead</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasConfig">
+        hasConfig()
+        <a href="classes/rex.html#method_hasConfig" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">hasConfig</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/rex-config.html#method_has"><abbr title="\rex_config::has()">rex_config::has()</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>TRUE if the key is set, otherwise FALSE</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasProperty">
+        hasProperty()
+        <a href="classes/rex.html#method_hasProperty" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">153</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns if a property is set.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">hasProperty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Key of the property</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>TRUE if the key is set, otherwise FALSE</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isBackend">
+        isBackend()
+        <a href="classes/rex.html#method_isBackend" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">192</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns if the environment is the backend.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">isBackend</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isDebugMode">
+        isDebugMode()
+        <a href="classes/rex.html#method_isDebugMode" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">229</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns if the debug mode is active.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">isDebugMode</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isFrontend">
+        isFrontend()
+        <a href="classes/rex.html#method_isFrontend" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">202</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns if the environment is the frontend.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">isFrontend</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isSafeMode">
+        isSafeMode()
+        <a href="classes/rex.html#method_isSafeMode" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">257</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns if the safe mode is active.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">isSafeMode</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isSetup">
+        isSetup()
+        <a href="classes/rex.html#method_isSetup" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">182</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns if the setup is active.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">isSetup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_removeConfig">
+        removeConfig()
+        <a href="classes/rex.html#method_removeConfig" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">62</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">removeConfig</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/rex-config.html#method_remove"><abbr title="\rex_config::remove()">rex_config::remove()</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>TRUE if the value was found and removed, otherwise FALSE</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_removeProperty">
+        removeProperty()
+        <a href="classes/rex.html#method_removeProperty" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">167</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Removes a property.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">removeProperty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Key of the property</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>on invalid parameters</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>TRUE if the value was found and removed, otherwise FALSE</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setConfig">
+        setConfig()
+        <a href="classes/rex.html#method_setConfig" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">setConfig</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/rex-config.html#method_set"><abbr title="\rex_config::set()">rex_config::set()</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>TRUE when an existing value was overridden, otherwise FALSE</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setProperty">
+        setProperty()
+        <a href="classes/rex.html#method_setProperty" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/rex.php"><a href="files/redaxo-master-redaxo-src-core-lib-rex.html"><abbr title="redaxo-master/redaxo/src/core/lib/rex.php">rex.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">77</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Sets a property. Changes will not be persisted accross http request boundaries.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">setProperty</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Key of the property</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Value for the property</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">throws</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
+                                                            
+                                                 <section class="phpdocumentor-description"><p>on invalid parameters</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>TRUE when an existing value was overridden, otherwise FALSE</p>
+</section>
+
+    
+</article>
+            </section>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+            </div>
+        </div>
+        <a href="classes/rex.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+</body>
+</html>

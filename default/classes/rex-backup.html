@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+        
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/redaxo.html"><abbr title="\redaxo">redaxo</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/redaxo-backup.html"><abbr title="\redaxo\backup">backup</abbr></a></li>
+                                    <li><a href="packages/redaxo-be.html"><abbr title="\redaxo\be">be</abbr></a></li>
+                                    <li><a href="packages/redaxo-cronjob.html"><abbr title="\redaxo\cronjob">cronjob</abbr></a></li>
+                                    <li><a href="packages/redaxo-install.html"><abbr title="\redaxo\install">install</abbr></a></li>
+                                    <li><a href="packages/redaxo-media.html"><abbr title="\redaxo\media">media</abbr></a></li>
+                                    <li><a href="packages/redaxo-mediapool.html"><abbr title="\redaxo\mediapool">mediapool</abbr></a></li>
+                                    <li><a href="packages/redaxo-metainfo.html"><abbr title="\redaxo\metainfo">metainfo</abbr></a></li>
+                                    <li><a href="packages/redaxo-phpmailer.html"><abbr title="\redaxo\phpmailer">phpmailer</abbr></a></li>
+                                    <li><a href="packages/redaxo-structure.html"><abbr title="\redaxo\structure">structure</abbr></a></li>
+                                    <li><a href="packages/redaxo-users.html"><abbr title="\redaxo\users">users</abbr></a></li>
+                                    <li><a href="packages/redaxo-core.html"><abbr title="\redaxo\core">core</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/redaxo5.html"><abbr title="\redaxo5">redaxo5</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-backup.html">backup</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    rex_backup
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-backup.html">backup</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">6</span>
+</aside>
+
+        
+    <section class="phpdocumentor-description"></section>
+
+
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/rex-backup.html#constant_IMPORT_ARCHIVE">IMPORT_ARCHIVE</a>
+    <span>
+        &nbsp;= 1                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/rex-backup.html#constant_IMPORT_DB">IMPORT_DB</a>
+    <span>
+        &nbsp;= 2                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/rex-backup.html#constant_IMPORT_EVENT_POST">IMPORT_EVENT_POST</a>
+    <span>
+        &nbsp;= 4                    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/rex-backup.html#constant_IMPORT_EVENT_PRE">IMPORT_EVENT_PRE</a>
+    <span>
+        &nbsp;= 3                    </span>
+</dt>
+<dd></dd>
+
+                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-backup.html#method_exportDb">exportDb()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Erstellt einen SQL Dump, der die aktuellen Datebankstruktur darstellt.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-backup.html#method_exportFiles">exportFiles()</a>
+    <span>
+                        &nbsp;: string|null    </span>
+</dt>
+<dd>Exportiert alle Ordner $folders aus dem Verzeichnis /files.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-backup.html#method_getBackupFiles">getBackupFiles()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, string&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-backup.html#method_getDir">getDir()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-backup.html#method_getTables">getTables()</a>
+    <span>
+                        &nbsp;: <abbr title="\list">list</abbr>&lt;string|int, string&gt;    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-backup.html#method_importDb">importDb()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Importiert den SQL Dump $filename in die Datenbank.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-backup.html#method_importFiles">importFiles()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Importiert das Tar-Archiv $filename in den Ordner /files.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-backup.html#method_isFilenameValid">isFilenameValid()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd></dd>
+
+        </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/rex-backup.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_IMPORT_ARCHIVE">
+        IMPORT_ARCHIVE
+        <a href="classes/rex-backup.html#constant_IMPORT_ARCHIVE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">8</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">IMPORT_ARCHIVE</span>
+    = <span class="phpdocumentor-signature__default-value">1</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_IMPORT_DB">
+        IMPORT_DB
+        <a href="classes/rex-backup.html#constant_IMPORT_DB" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">9</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">IMPORT_DB</span>
+    = <span class="phpdocumentor-signature__default-value">2</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_IMPORT_EVENT_POST">
+        IMPORT_EVENT_POST
+        <a href="classes/rex-backup.html#constant_IMPORT_EVENT_POST" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">11</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">IMPORT_EVENT_POST</span>
+    = <span class="phpdocumentor-signature__default-value">4</span>
+</code>
+
+
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_IMPORT_EVENT_PRE">
+        IMPORT_EVENT_PRE
+        <a href="classes/rex-backup.html#constant_IMPORT_EVENT_PRE" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">10</span>
+</aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">IMPORT_EVENT_PRE</span>
+    = <span class="phpdocumentor-signature__default-value">3</span>
+</code>
+
+
+    
+    
+
+</article>
+            </section>
+
+        
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/rex-backup.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_exportDb">
+        exportDb()
+        <a href="classes/rex-backup.html#method_exportDb" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">273</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Erstellt einen SQL Dump, der die aktuellen Datebankstruktur darstellt.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">exportDb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tables</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"><p>Dieser wird in der Datei $filename gespeichert.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$filename</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$tables</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>TRUE wenn ein Dump erstellt wurde, sonst FALSE</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_exportFiles">
+        exportFiles()
+        <a href="classes/rex-backup.html#method_exportFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">387</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Exportiert alle Ordner $folders aus dem Verzeichnis /files.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">exportFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$folders</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$archivePath</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
+
+        <section class="phpdocumentor-description"><p>Wenn $archivePath übergeben wird, wird das Achive mittels Streaming gebaut, sodass sehr große Exporte möglich sind.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$folders</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Array von Ordnernamen, die exportiert werden sollen</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$archivePath</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Pfad, wo das archiv angelegt werden soll</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string|null</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Inhalt des Tar-Archives als string, wenn $archivePath nicht uebergeben wurde - sonst null</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getBackupFiles">
+        getBackupFiles()
+        <a href="classes/rex-backup.html#method_getBackupFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getBackupFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fileType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$fileType</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDir">
+        getDir()
+        <a href="classes/rex-backup.html#method_getDir" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">16</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getDir</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTables">
+        getTables()
+        <a href="classes/rex-backup.html#method_getTables" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">469</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getTables</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\list">list</abbr>&lt;string|int, string&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\list">list</abbr>&lt;string|int, string&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_importDb">
+        importDb()
+        <a href="classes/rex-backup.html#method_importDb" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">84</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Importiert den SQL Dump $filename in die Datenbank.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">importDb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$filename</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Pfad + Dateinamen zur SQL-Datei</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-return</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>array{state: bool, message: string}</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Gibt ein Assoc. Array zurück.
+'state' =&gt; boolean (Status ob fehler aufgetreten sind)
+'message' =&gt; Evtl. Status/Fehlermeldung</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_importFiles">
+        importFiles()
+        <a href="classes/rex-backup.html#method_importFiles" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">222</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Importiert das Tar-Archiv $filename in den Ordner /files.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">importFiles</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$filename</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Pfad + Dateinamen zum Tar-Archiv</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-return</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>array{state: bool, message: string}</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Gibt ein Assoc. Array zurück.
+'state' =&gt; boolean (Status ob fehler aufgetreten sind)
+'message' =&gt; Evtl. Status/Fehlermeldung</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isFilenameValid">
+        isFilenameValid()
+        <a href="classes/rex-backup.html#method_isFilenameValid" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/addons/backup/lib/backup.php"><a href="files/redaxo-master-redaxo-src-addons-backup-lib-backup.html"><abbr title="redaxo-master/redaxo/src/addons/backup/lib/backup.php">backup.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">isFilenameValid</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$importType</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$importType</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$filename</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+            </section>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+            </div>
+        </div>
+        <a href="classes/rex-backup.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+</body>
+</html>

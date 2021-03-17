@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+        
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+            </section>
+
+        <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/redaxo.html"><abbr title="\redaxo">redaxo</abbr></a></h3>
+                        <ul class="phpdocumentor-list">
+                                    <li><a href="packages/redaxo-backup.html"><abbr title="\redaxo\backup">backup</abbr></a></li>
+                                    <li><a href="packages/redaxo-be.html"><abbr title="\redaxo\be">be</abbr></a></li>
+                                    <li><a href="packages/redaxo-cronjob.html"><abbr title="\redaxo\cronjob">cronjob</abbr></a></li>
+                                    <li><a href="packages/redaxo-install.html"><abbr title="\redaxo\install">install</abbr></a></li>
+                                    <li><a href="packages/redaxo-media.html"><abbr title="\redaxo\media">media</abbr></a></li>
+                                    <li><a href="packages/redaxo-mediapool.html"><abbr title="\redaxo\mediapool">mediapool</abbr></a></li>
+                                    <li><a href="packages/redaxo-metainfo.html"><abbr title="\redaxo\metainfo">metainfo</abbr></a></li>
+                                    <li><a href="packages/redaxo-phpmailer.html"><abbr title="\redaxo\phpmailer">phpmailer</abbr></a></li>
+                                    <li><a href="packages/redaxo-structure.html"><abbr title="\redaxo\structure">structure</abbr></a></li>
+                                    <li><a href="packages/redaxo-users.html"><abbr title="\redaxo\users">users</abbr></a></li>
+                                    <li><a href="packages/redaxo-core.html"><abbr title="\redaxo\core">core</abbr></a></li>
+                            </ul>
+                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/redaxo5.html"><abbr title="\redaxo5">redaxo5</abbr></a></h3>
+                        </section>
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-core.html">core</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    rex_pager
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-core.html">core</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">11</span>
+</aside>
+
+            <p class="phpdocumentor-summary">The rex_pager-class implements all the logic
+which is necessary to implement some sort of pagination.</p>
+
+    <section class="phpdocumentor-description"></section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">author</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>staabm</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Constructs a rex_pager.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_getCurrentPage">getCurrentPage()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns the number of the current page.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_getCursor">getCursor()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns the current pagination position.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_getCursorName">getCursorName()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Returns the name of the parameter which is used for pagination.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_getFirstPage">getFirstPage()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns the first page for pagination.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_getLastPage">getLastPage()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Return the page number of the last page.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_getNextPage">getNextPage()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns the number of the next page in respect to the current page.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_getPageCount">getPageCount()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns the number of pages
+which result from the given number of rows and the rows per page.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_getPrevPage">getPrevPage()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns the previous page in respect to the current page.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_getRowCount">getRowCount()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns the number of rows for pagination.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_getRowsPerPage">getRowsPerPage()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns the number of rows which will be displayed on a page.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_isActivePage">isActivePage()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Checks wheter the given page number is the active/current page.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_setRowCount">setRowCount()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Sets the row count.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-pager.html#method_validateCursor">validateCursor()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Validates the cursor.</dd>
+
+        </dl>
+
+
+
+        
+
+        
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/rex-pager.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/rex-pager.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">32</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Constructs a rex_pager.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowsPerPage</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">30</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursorName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;start&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$rowsPerPage</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">30</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The number of rows which should be displayed on one page</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$cursorName</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;start&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>The name of the parameter used for pagination</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCurrentPage">
+        getCurrentPage()
+        <a href="classes/rex-pager.html#method_getCurrentPage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">156</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the number of the current page.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getCurrentPage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The current page number</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCursor">
+        getCursor()
+        <a href="classes/rex-pager.html#method_getCursor" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">89</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the current pagination position.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getCursor</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageNo</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"><p>When the parameter pageNo is given, the cursor for the given page is returned.
+When no parameter is given, the cursor for active page is returned.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pageNo</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCursorName">
+        getCursorName()
+        <a href="classes/rex-pager.html#method_getCursorName" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">122</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the name of the parameter which is used for pagination.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getCursorName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The name of the cursor</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getFirstPage">
+        getFirstPage()
+        <a href="classes/rex-pager.html#method_getFirstPage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">132</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the first page for pagination.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getFirstPage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The first page number</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getLastPage">
+        getLastPage()
+        <a href="classes/rex-pager.html#method_getLastPage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">186</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Return the page number of the last page.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getLastPage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>the last page number</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getNextPage">
+        getNextPage()
+        <a href="classes/rex-pager.html#method_getNextPage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">172</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the number of the next page in respect to the current page.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getNextPage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The next page number</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPageCount">
+        getPageCount()
+        <a href="classes/rex-pager.html#method_getPageCount" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the number of pages
+which result from the given number of rows and the rows per page.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getPageCount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The number of pages</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getPrevPage">
+        getPrevPage()
+        <a href="classes/rex-pager.html#method_getPrevPage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">142</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the previous page in respect to the current page.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getPrevPage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The previous page number</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRowCount">
+        getRowCount()
+        <a href="classes/rex-pager.html#method_getRowCount" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">53</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the number of rows for pagination.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRowCount</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The number of rows</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRowsPerPage">
+        getRowsPerPage()
+        <a href="classes/rex-pager.html#method_getRowsPerPage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns the number of rows which will be displayed on a page.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">getRowsPerPage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>The rows displayed on a page</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isActivePage">
+        isActivePage()
+        <a href="classes/rex-pager.html#method_isActivePage" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">198</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Checks wheter the given page number is the active/current page.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">isActivePage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pageNo</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pageNo</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>True when the given pageNo is the current page, otherwise False</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setRowCount">
+        setRowCount()
+        <a href="classes/rex-pager.html#method_setRowCount" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Sets the row count.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setRowCount</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rowCount</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$rowCount</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_validateCursor">
+        validateCursor()
+        <a href="classes/rex-pager.html#method_validateCursor" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-master/redaxo/src/core/lib/util/pager.php"><a href="files/redaxo-master-redaxo-src-core-lib-util-pager.html"><abbr title="redaxo-master/redaxo/src/core/lib/util/pager.php">pager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">105</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Validates the cursor.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">validateCursor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cursor</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$cursor</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+            </section>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+            </div>
+        </div>
+        <a href="classes/rex-pager.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+</body>
+</html>
