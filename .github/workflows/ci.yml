@@ -26,10 +26,10 @@ jobs:
         composer-options: "--ansi --prefer-dist"
 
     - name: Download REDAXO
-      run: curl -sLo redaxo_master.zip https://github.com/redaxo/redaxo/archive/master.zip
+      run: curl -sLo redaxo_main.zip https://github.com/redaxo/redaxo/archive/main.zip
 
     - name: Extract REDAXO
-      run: unzip redaxo_master.zip -d .
+      run: unzip redaxo_main.zip -d .
 
     - name: phpdoc cache
       uses: actions/cache@v1
@@ -38,13 +38,13 @@ jobs:
         key: branch-${{ github.ref }}
 
     - name: Cleanup dev files
-      run: rm -rf redaxo-master/.{github,idea,tools}
+      run: rm -rf redaxo-main/.{github,idea,tools}
 
     - name: Generate phpdoc - clean template
-      run: vendor/bin/phpdoc project:run --target output --directory redaxo-master --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=clean
+      run: vendor/bin/phpdoc project:run --target output --directory redaxo-main --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=clean
 
     - name: Generate phpdoc - default template
-      run: vendor/bin/phpdoc project:run --target output/default --directory redaxo-master --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=default
+      run: vendor/bin/phpdoc project:run --target output/default --directory redaxo-main --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=default
 
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v1.1.0
