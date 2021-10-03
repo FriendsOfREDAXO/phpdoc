@@ -1,11 +1,10 @@
 {
     "config": {
         "platform": {
-            "php": "7.4.13"
+            "php": "7.4"
         }
     },
     "require": {
-        "phpdocumentor/phpdocumentor": "^v3.0.0"
-    },
-    "minimum-stability": "dev"
+        "phpdocumentor/shim": "^3"
+    }
 }
