@@ -66,4 +66,3 @@ function rex_ini_get($varname)
 
     return $val;
 }
-

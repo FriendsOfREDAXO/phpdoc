@@ -272,4 +272,3 @@ class rex_media_category
         return $this->getParentId() == $mediaCat->getId();
     }
 }
-

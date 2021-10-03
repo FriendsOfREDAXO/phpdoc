@@ -121,4 +121,3 @@ class rex_structure_context
         return $this->params[$key] ?? $default;
     }
 }
-

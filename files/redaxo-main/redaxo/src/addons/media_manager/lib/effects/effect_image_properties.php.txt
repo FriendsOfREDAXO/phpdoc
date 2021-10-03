@@ -90,4 +90,3 @@ class rex_effect_image_properties extends rex_effect_abstract
         ];
     }
 }
-

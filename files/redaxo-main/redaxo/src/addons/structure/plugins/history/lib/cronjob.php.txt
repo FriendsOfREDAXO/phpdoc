@@ -47,4 +47,3 @@ class rex_cronjob_structure_history extends rex_cronjob
         return $fields;
     }
 }
-

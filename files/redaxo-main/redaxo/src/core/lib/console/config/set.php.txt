@@ -88,4 +88,3 @@ class rex_command_config_set extends rex_console_command
         return 1;
     }
 }
-

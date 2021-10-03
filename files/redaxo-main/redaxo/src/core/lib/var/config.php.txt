@@ -26,4 +26,3 @@ class rex_var_config extends rex_var
         return 'htmlspecialchars(rex_config::get(' . $namespace . ', ' . $key . '))';
     }
 }
-

@@ -579,4 +579,3 @@ class rex_backup
         } while ($count >= $max);
     }
 }
-

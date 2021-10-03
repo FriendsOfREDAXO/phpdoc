@@ -54,4 +54,3 @@ class rex_effect_flip extends rex_effect_abstract
         ];
     }
 }
-

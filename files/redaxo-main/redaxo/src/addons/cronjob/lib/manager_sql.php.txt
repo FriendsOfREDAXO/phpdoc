@@ -376,4 +376,3 @@ class rex_cronjob_manager_sql
         return $date->getTimestamp();
     }
 }
-

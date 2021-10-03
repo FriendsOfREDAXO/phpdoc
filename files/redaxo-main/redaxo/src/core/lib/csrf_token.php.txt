@@ -153,4 +153,3 @@ class rex_csrf_token
         return rtrim(strtr(base64_encode($bytes), '+/', '-_'), '=');
     }
 }
-

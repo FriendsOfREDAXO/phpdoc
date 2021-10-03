@@ -59,4 +59,3 @@ if ('add_file' == $mediaMethod) {
 }
 
 echo rex_mediapool_Uploadform($rexFileCategory);
-

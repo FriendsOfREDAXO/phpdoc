@@ -26,4 +26,3 @@ if (0 == $sql->getRows()) {
 }
 
 $plugin->setProperty('install', true);
-

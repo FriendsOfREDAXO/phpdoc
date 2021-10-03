@@ -24,4 +24,3 @@ $fragment->setVar('heading', rex_i18n::msg('setup_702'), false);
 $fragment->setVar('body', $content, false);
 $fragment->setVar('buttons', $buttons, false);
 echo $fragment->parse('core/page/section.php');
-

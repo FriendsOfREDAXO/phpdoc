@@ -83,4 +83,3 @@ class rex_command_db_set_connection extends rex_console_command implements rex_c
         return 1;
     }
 }
-

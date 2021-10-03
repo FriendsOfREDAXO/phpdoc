@@ -208,4 +208,3 @@ class rex_sql_schema_dumper
         return '['.implode(', ', $parts).']';
     }
 }
-

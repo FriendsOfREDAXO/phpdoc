@@ -30,4 +30,3 @@ if ('login' !== rex_be_controller::getCurrentPage()) {
 $bottomfragment = new rex_fragment();
 echo $bottomfragment->parse('core/bottom.php');
 unset($bottomfragment);
-

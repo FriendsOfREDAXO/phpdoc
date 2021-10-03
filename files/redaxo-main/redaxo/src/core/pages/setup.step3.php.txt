@@ -75,4 +75,3 @@ $fragment->setVar('body', $content, false);
 $fragment->setVar('buttons', $buttons, false);
 echo '<div class="rex-js-setup-section">' . $fragment->parse('core/page/section.php') . '</div>';
 echo $security;
-

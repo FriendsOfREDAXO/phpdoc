@@ -25,4 +25,3 @@ class rex_command_cache_clear extends rex_console_command
         return 0;
     }
 }
-

@@ -89,4 +89,3 @@ class rex_input_datetime extends rex_input
         return '<span class="rex-form-group-nowrap">' . $this->dateInput->getHtml() . '</span> <span class="rex-form-select-separator">-</span> <span class="rex-form-group-nowrap">' . $this->timeInput->getHTML() . '</span>';
     }
 }
-

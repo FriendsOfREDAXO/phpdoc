@@ -80,4 +80,3 @@ class rex_command_install_download extends rex_console_command
         return 0;
     }
 }
-

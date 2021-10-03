@@ -66,4 +66,3 @@ function rex_metainfo_cleanup($epOrParams)
     $sql = rex_sql::factory();
     $sql->setQuery('DELETE FROM ' . rex::getTablePrefix() . 'metainfo_field');
 }
-

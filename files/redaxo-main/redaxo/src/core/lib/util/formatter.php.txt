@@ -408,4 +408,3 @@ abstract class rex_formatter
         throw new InvalidArgumentException(sprintf('"%s" is not a valid datetime string.', $value));
     }
 }
-

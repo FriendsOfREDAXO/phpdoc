@@ -38,4 +38,3 @@ if (0 != $nexttime && time() >= $nexttime) {
         }
     });
 }
-

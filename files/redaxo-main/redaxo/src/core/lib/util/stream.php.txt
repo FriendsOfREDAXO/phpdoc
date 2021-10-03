@@ -175,4 +175,3 @@ class rex_stream
         return null;
     }
 }
-

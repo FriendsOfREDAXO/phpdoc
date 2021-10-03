@@ -370,4 +370,3 @@ function rex_mediapool_getMediaTypeBlacklist()
 {
     return rex_mediapool::getBlockedExtensions();
 }
-

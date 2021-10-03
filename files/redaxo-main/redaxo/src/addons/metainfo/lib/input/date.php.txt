@@ -113,4 +113,3 @@ class rex_input_date extends rex_input
         return $this->daySelect->get() . $this->monthSelect->get() . $yearSelect->get();
     }
 }
-

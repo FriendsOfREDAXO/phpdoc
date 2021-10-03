@@ -268,4 +268,3 @@ class rex_user
         static::baseClearInstance('login_'.$user->getLogin());
     }
 }
-

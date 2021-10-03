@@ -37,4 +37,3 @@ $application->add($command);
 $application->setDefaultCommand($command->getName());
 
 $application->run();
-

@@ -30,4 +30,3 @@ switch ($subpage) {
 $metaTable = rex_metainfo_meta_table($prefix);
 
 require __DIR__ . '/field.php';
-

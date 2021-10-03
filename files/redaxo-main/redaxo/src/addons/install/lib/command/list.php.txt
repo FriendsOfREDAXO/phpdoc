@@ -62,4 +62,3 @@ class rex_command_install_list extends rex_console_command
         return 0;
     }
 }
-

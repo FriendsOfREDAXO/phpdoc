@@ -24,4 +24,3 @@ if (rex_addon::get('users')->isInstalled() && rex_string::versionCompare($addon-
 }
 
 $addon->includeFile(__DIR__ . '/install.php');
-

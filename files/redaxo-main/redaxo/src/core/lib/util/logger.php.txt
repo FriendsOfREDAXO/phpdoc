@@ -178,4 +178,3 @@ class rex_logger extends AbstractLogger
         return new $class();
     }
 }
-

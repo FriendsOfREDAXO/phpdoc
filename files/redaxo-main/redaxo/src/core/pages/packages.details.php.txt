@@ -43,4 +43,3 @@ if ($package instanceof rex_plugin_interface) {
 echo rex_view::title($headLine, $subtitle);
 
 require __DIR__.'/packages.'.$subPage.'.php';
-

@@ -48,4 +48,3 @@ $group = isset($this->group) && $this->group;
 <?php if (!$toolbar && !$group): ?>
 </div>
 <?php endif;
-

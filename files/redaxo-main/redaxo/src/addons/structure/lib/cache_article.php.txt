@@ -215,4 +215,3 @@ class rex_article_cache
         return true;
     }
 }
-

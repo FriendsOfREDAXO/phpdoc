@@ -191,4 +191,3 @@ final class rex_mediapool
         return rex_addon::get('mediapool')->getProperty('blocked_extensions');
     }
 }
-

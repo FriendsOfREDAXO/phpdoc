@@ -230,4 +230,3 @@ function rex_metainfo_extensions_handler(rex_extension_point $ep)
         require_once __DIR__ . '/../extensions/extension_cleanup.php';
     }
 }
-

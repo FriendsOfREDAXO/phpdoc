@@ -371,4 +371,3 @@ class rex_setup
         return rex_get('setup_token', 'string', null);
     }
 }
-

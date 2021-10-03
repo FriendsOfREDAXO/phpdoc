@@ -1280,4 +1280,3 @@ abstract class rex_form_base
         echo $this->get();
     }
 }
-

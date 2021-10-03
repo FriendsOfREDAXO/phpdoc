@@ -31,4 +31,3 @@ rex_timer::measure('packages_boot', static function () use ($packageOrder) {
 
 // ----- all addons configs included
 rex_extension::registerPoint(new rex_extension_point('PACKAGES_INCLUDED'));
-

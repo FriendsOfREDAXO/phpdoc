@@ -69,4 +69,3 @@
                 <div class="rex-pagination-count"><?= $this->i18n('list_rows_found', $pager->getRowCount()) ?></div>
             </nav>
         <?php endif;
-

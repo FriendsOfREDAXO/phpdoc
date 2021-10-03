@@ -387,4 +387,3 @@ class rex_api_result
 class rex_api_exception extends rex_exception
 {
 }
-

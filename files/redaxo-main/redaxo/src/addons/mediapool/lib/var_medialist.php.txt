@@ -108,4 +108,3 @@ class rex_var_medialist extends rex_var
         return $media;
     }
 }
-

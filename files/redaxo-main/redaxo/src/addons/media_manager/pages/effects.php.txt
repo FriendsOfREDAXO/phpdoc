@@ -286,4 +286,3 @@ if ('' == $func) {
 
     echo $content;
 }
-

@@ -483,4 +483,3 @@ class rex_be_controller
         });
     }
 }
-

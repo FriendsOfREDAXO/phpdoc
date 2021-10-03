@@ -750,4 +750,3 @@ class rex_article_content_base
         echo $articleContent;
     }
 }
-

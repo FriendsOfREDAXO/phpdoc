@@ -136,4 +136,3 @@ $fragment = new rex_fragment();
 $content .= $fragment->parse('core/login_background.php');
 
 echo $content;
-

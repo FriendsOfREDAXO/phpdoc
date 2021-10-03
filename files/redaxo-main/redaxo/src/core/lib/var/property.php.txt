@@ -27,4 +27,3 @@ class rex_var_property extends rex_var
         return 'htmlspecialchars(' . $base . 'getProperty(' . $key . '))';
     }
 }
-

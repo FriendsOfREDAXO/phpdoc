@@ -85,4 +85,3 @@ abstract class rex_var_dumper
         self::$dumper->dump(self::$cloner->cloneVar($var));
     }
 }
-

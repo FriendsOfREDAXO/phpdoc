@@ -36,4 +36,3 @@ foreach ($this->buttons as $button) {
     }
     echo '<' .$tag . $href . rex_string::buildAttributes($button['attributes']) . '>' . $icon . $button['label'] . '</' . $tag . '>';
 }
-

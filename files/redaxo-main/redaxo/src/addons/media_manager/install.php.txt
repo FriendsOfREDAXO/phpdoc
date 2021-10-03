@@ -72,4 +72,3 @@ foreach ($data as $row) {
 }
 
 $sql->insertOrUpdate();
-

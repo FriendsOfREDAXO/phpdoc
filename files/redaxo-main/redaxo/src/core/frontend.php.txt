@@ -28,4 +28,3 @@ if (rex_extension::isRegistered('FE_OUTPUT')) {
     // ----- inhalt ausgeben
     rex_response::sendPage($CONTENT);
 }
-

@@ -421,4 +421,3 @@ abstract class rex_error_handler
         return $markdown;
     }
 }
-

@@ -76,4 +76,3 @@ rex_sql_table::get(rex::getTable('article_slice_history'))
     ->setPrimaryKey('id')
     ->ensureIndex(new rex_sql_index('snapshot', ['article_id', 'clang_id', 'revision', 'history_date']))
     ->ensure();
-

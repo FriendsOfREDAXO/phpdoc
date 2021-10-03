@@ -327,4 +327,3 @@ final class rex_media_service
         return $items;
     }
 }
-

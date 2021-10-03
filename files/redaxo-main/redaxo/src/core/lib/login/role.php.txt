@@ -35,4 +35,3 @@ interface rex_user_role_interface
      */
     public static function get($id);
 }
-

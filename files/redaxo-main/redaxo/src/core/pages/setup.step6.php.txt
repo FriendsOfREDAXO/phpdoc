@@ -103,4 +103,3 @@ $fragment->setVar('buttons', $buttons, false);
 $content = $fragment->parse('core/page/section.php');
 
 echo '<form class="rex-js-createadminform" action="' . $context->getUrl(['step' => 7]) . '" method="post" autocomplete="off">' . $content . '</form>';
-

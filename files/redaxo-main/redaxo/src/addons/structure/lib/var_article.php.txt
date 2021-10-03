@@ -70,4 +70,3 @@ class rex_var_article extends rex_var
         return $article->getArticle($ctype);
     }
 }
-

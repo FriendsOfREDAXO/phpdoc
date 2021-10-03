@@ -11,4 +11,3 @@ if ('' == $subpage) {
 } else {
     require __DIR__ .'/packages.details.php';
 }
-

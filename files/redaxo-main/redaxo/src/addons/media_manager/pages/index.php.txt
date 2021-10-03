@@ -20,4 +20,3 @@ if ('clear_cache' == $func) {
 }
 
 rex_be_controller::includeCurrentPageSubPath();
-

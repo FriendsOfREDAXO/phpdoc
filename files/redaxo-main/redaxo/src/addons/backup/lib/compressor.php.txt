@@ -68,4 +68,3 @@ class rex_backup_file_compressor
         return $str;
     }
 }
-

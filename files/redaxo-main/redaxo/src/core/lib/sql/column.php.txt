@@ -202,4 +202,3 @@ class rex_sql_column
             $this->comment === $column->comment;
     }
 }
-

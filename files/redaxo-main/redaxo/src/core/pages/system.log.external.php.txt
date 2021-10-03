@@ -64,4 +64,3 @@ $fragment->setVar('buttons', $buttons, false);
 $content = $fragment->parse('core/page/section.php');
 
 echo $content;
-

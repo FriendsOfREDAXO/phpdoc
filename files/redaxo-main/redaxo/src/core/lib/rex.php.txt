@@ -492,4 +492,3 @@ class rex
         return (int) self::getProperty('dirperm', 0775);
     }
 }
-

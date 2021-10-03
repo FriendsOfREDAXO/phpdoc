@@ -97,4 +97,3 @@ abstract class rex_install_package_download
         return is_dir("phar://$file/" . $this->addonkey);
     }
 }
-

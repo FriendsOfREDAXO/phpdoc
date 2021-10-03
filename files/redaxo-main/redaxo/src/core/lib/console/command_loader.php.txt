@@ -94,4 +94,3 @@ class rex_console_command_loader implements CommandLoaderInterface
         return array_keys($this->commands);
     }
 }
-

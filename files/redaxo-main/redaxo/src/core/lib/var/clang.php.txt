@@ -29,4 +29,3 @@ class rex_var_clang extends rex_var
         return 'htmlspecialchars(rex_clang::' . $getMethod . '->getValue(' . $field . '))';
     }
 }
-

@@ -73,4 +73,3 @@ class rex_module
         return $mapping = rex_file::getCache($file);
     }
 }
-

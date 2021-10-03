@@ -110,4 +110,3 @@ elseif ('edit' == $func || 'add' == $func) {
 }
 
 echo $content;
-

@@ -363,4 +363,3 @@ $fragment->setVar('content', $panel, false);
 $content = $fragment->parse('core/page/section.php');
 
 echo $content;
-

@@ -50,4 +50,3 @@ class rex_cronjob_phpcode extends rex_cronjob
         ];
     }
 }
-

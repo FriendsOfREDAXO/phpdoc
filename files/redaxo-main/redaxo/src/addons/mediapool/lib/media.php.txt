@@ -380,4 +380,3 @@ class rex_media
         return (bool) rex_extension::registerPoint(new rex_extension_point('MEDIA_IS_PERMITTED', true, ['element' => $this]));
     }
 }
-

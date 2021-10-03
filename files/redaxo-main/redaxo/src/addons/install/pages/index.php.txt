@@ -33,4 +33,3 @@ $markdown = static function (string $content): string {
 };
 
 rex_be_controller::includeCurrentPageSubPath(['markdown' => $markdown]);
-

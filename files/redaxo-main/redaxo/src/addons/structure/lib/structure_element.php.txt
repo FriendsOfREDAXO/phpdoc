@@ -584,4 +584,3 @@ abstract class rex_structure_element
         return $this->id == rex_article::getNotfoundArticleId();
     }
 }
-

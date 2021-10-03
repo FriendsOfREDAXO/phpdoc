@@ -128,4 +128,3 @@ class rex_article_slice_history
         $historyTable->alter();
     }
 }
-

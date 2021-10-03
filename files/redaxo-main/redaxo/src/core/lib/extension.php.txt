@@ -114,4 +114,3 @@ abstract class rex_extension
         return !empty(self::$extensions[$extensionPoint]);
     }
 }
-

@@ -15,4 +15,3 @@ class rex_event_select extends rex_select
         $this->setSize(count($options));
     }
 }
-

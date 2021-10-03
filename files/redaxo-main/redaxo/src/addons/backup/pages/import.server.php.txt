@@ -204,4 +204,3 @@ $fragment->setVar('content', $content, false);
 $content = $fragment->parse('core/page/section.php');
 
 echo $content;
-

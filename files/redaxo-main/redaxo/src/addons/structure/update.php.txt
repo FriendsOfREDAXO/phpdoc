@@ -50,4 +50,3 @@ foreach ($addon->getInstalledPlugins() as $plugin) {
         $plugin->includeFile($file);
     }
 }
-

@@ -104,4 +104,3 @@ if (!rex_request::isXmlHttpRequest()) {
 
 // -------------- Include Page
 rex_be_controller::includeCurrentPageSubPath(compact('openerInputField', 'openerLink', 'argUrl', 'args', 'argFields', 'rexFileCategory', 'rexFileCategoryName', 'PERMALL', 'fileId', 'error', 'success'));
-

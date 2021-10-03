@@ -96,4 +96,3 @@ class rex_command_cronjob_run extends rex_console_command
         return 1;
     }
 }
-

@@ -32,4 +32,3 @@ class rex_cronjob_optimize_tables extends rex_cronjob
         return rex_i18n::msg('cronjob_optimize_tables');
     }
 }
-

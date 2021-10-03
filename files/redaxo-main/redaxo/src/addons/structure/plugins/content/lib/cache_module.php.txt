@@ -30,4 +30,3 @@ class rex_module_cache
         return rex_path::addonCache('structure', 'module_key_mapping.cache');
     }
 }
-

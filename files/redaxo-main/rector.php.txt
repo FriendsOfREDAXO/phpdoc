@@ -83,4 +83,3 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(UnderscoreToCamelCaseVariableNameRector::class);
     $services->set(UnnecessaryTernaryExpressionRector::class);
 };
-

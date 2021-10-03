@@ -93,4 +93,3 @@ class rex_command_user_create extends rex_console_command
         return 0;
     }
 }
-

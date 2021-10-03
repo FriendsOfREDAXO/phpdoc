@@ -35,4 +35,3 @@ rex_sql_table::get(rex::getTable('media_category'))
     ->ensureColumn(new rex_sql_column('revision', 'int(10) unsigned'))
     ->ensureIndex(new rex_sql_index('parent_id', ['parent_id']))
     ->ensure();
-

@@ -63,4 +63,3 @@ class rex_cronjob_phpcallback extends rex_cronjob
         ];
     }
 }
-

@@ -49,4 +49,3 @@ class rex_input_medialistbutton extends rex_input
         return $field;
     }
 }
-

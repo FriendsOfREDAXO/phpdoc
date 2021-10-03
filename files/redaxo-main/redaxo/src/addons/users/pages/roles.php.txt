@@ -168,4 +168,3 @@ if ('' == $func) {
 
 echo $message;
 echo $content;
-

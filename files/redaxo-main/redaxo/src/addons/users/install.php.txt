@@ -8,4 +8,3 @@ rex_sql_table::get(rex::getTable('user_role'))
     ->ensureGlobalColumns()
     ->ensureColumn(new rex_sql_column('revision', 'int(10) unsigned'))
     ->ensure();
-

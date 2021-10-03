@@ -1066,4 +1066,3 @@ class rex_sql_table
         self::$explicitCharset = $utf8mb4 ? 'utf8mb4' : 'utf8';
     }
 }
-

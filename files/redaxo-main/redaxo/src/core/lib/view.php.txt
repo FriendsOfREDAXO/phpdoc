@@ -444,4 +444,3 @@ class rex_view
         return $fragment->parse('core/dropdowns/dropdown.php');
     }
 }
-

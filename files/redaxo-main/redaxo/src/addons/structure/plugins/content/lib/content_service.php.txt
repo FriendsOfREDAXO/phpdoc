@@ -370,4 +370,3 @@ class rex_content_service
         return rex::getEnvironment();
     }
 }
-

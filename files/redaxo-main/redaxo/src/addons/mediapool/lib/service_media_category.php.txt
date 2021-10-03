@@ -122,4 +122,3 @@ class rex_media_category_service
         return rex_i18n::msg('pool_kat_updated', $catName);
     }
 }
-

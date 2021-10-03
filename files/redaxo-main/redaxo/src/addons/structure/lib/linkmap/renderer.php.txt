@@ -159,4 +159,3 @@ abstract class rex_linkmap_article_list_renderer
 
     abstract protected function listItem(rex_article $article, $categoryId);
 }
-

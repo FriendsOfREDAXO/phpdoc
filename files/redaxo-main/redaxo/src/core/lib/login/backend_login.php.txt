@@ -234,4 +234,3 @@ class rex_backend_login extends rex_login
         return rex::getProperty('instname'). '_backend';
     }
 }
-

@@ -31,4 +31,3 @@ class rex_plugin_manager extends rex_package_manager
         return $this->i18n('wrong_dir_name', $pluginName);
     }
 }
-

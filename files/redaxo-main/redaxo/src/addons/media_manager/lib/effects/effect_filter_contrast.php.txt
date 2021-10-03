@@ -42,4 +42,3 @@ class rex_effect_filter_contrast extends rex_effect_abstract
         ];
     }
 }
-

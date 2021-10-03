@@ -406,4 +406,3 @@ class rex_autoload
         return $classes;
     }
 }
-

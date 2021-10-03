@@ -482,4 +482,3 @@ class rex_article_slice
         return 1 == $this->status;
     }
 }
-

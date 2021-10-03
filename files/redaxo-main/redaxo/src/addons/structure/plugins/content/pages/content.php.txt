@@ -465,4 +465,3 @@ if (!rex::getUser()->getComplexPerm('structure')->hasCategoryPerm($categoryId)) 
 
     echo $fragment->parse('core/page/main_content.php');
 }
-

@@ -88,4 +88,3 @@ $sectionAttributes['class'][] = 'rex-page-section';
         <?= $this->after ?>
     <?php endif ?>
 </section>
-

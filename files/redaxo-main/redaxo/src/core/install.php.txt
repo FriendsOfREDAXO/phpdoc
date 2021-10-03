@@ -58,4 +58,3 @@ if (!$hasPasswordChanged) {
         ->setRawValue('password_changed', 'updatedate')
         ->update();
 }
-

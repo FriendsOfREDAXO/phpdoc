@@ -125,4 +125,3 @@ class rex_editor
         return $path ? rtrim($path, '\\/').DIRECTORY_SEPARATOR : null;
     }
 }
-

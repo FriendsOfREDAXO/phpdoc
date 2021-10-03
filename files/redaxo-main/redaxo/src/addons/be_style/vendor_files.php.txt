@@ -35,4 +35,3 @@ return [
     'vendor/font-awesome/fonts/fontawesome-webfont.woff2' => 'fonts/fontawesome-webfont.woff2',
     'vendor/font-awesome/fonts/FontAwesome.otf' => 'fonts/FontAwesome.otf',
 ];
-

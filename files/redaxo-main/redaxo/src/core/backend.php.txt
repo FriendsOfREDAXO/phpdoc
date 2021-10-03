@@ -239,4 +239,3 @@ $CONTENT = ob_get_clean();
 
 // ----- inhalt ausgeben
 rex_response::sendPage($CONTENT);
-

@@ -102,4 +102,3 @@ class rex_cronjob_article_status extends rex_cronjob
         return $fields;
     }
 }
-

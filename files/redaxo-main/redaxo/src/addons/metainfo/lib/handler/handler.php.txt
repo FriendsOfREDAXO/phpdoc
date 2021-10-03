@@ -723,4 +723,3 @@ abstract class rex_metainfo_handler
      */
     abstract protected function handleSave(array $params, rex_sql $sqlFields);
 }
-

@@ -122,4 +122,3 @@ $fragment = new rex_fragment();
 $fragment->setVar('content', $content, false);
 $fragment->setVar('classes', ['col-sm-6', 'col-sm-6'], false);
 echo $fragment->parse('core/page/grid.php');
-

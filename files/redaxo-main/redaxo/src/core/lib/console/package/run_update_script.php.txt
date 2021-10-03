@@ -54,4 +54,3 @@ class rex_command_package_run_update_script extends rex_console_command
         return 0;
     }
 }
-

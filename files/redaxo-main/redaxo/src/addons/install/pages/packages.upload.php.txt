@@ -263,4 +263,3 @@ if ($addonkey && isset($addons[$addonkey])) {
 
     echo $content;
 }
-

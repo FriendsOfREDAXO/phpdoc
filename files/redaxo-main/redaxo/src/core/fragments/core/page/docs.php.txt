@@ -15,4 +15,3 @@
     <?php endif ?>
     <article class="rex-docs-content"><?= $this->getVar('content') ?></article>
 </div>
-

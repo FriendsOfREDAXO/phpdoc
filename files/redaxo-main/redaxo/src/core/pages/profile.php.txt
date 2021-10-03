@@ -294,4 +294,3 @@ $content = '
     </form>';
 
 echo $content;
-

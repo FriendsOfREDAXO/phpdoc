@@ -53,4 +53,3 @@ class rex_template_cache
         return rex_path::addonCache('templates', 'template_key_mapping.cache');
     }
 }
-

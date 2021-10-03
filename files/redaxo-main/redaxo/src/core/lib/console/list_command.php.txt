@@ -28,4 +28,3 @@ class rex_command_list extends ListCommand
         return $exitCode;
     }
 }
-

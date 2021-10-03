@@ -110,4 +110,3 @@ trait rex_instance_list_pool_trait
         return implode('###', (array) $key);
     }
 }
-

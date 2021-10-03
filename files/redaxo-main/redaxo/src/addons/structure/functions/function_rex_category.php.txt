@@ -50,4 +50,3 @@ echo $fragment->parse('core/navigations/breadcrumb.php');
 
 unset($fragment);
 unset($navigation);
-

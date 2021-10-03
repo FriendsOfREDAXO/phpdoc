@@ -541,4 +541,3 @@ class rex_login
         return rex_request::getSessionNamespace();
     }
 }
-

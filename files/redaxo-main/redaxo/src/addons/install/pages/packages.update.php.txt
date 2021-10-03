@@ -234,4 +234,3 @@ if ($core && !empty($coreVersions)) {
 
 echo $message;
 echo $content;
-

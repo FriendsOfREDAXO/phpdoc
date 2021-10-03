@@ -40,4 +40,3 @@ if (rex_version::compare(rex_plugin::get('structure', 'content')->getVersion(), 
         return $content.$subject;
     });
 }
-

@@ -453,4 +453,3 @@ class rex_socket
 class rex_socket_exception extends rex_exception
 {
 }
-

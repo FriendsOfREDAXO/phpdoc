@@ -58,4 +58,3 @@ class rex_command_package_install extends rex_console_command
         return 1;
     }
 }
-

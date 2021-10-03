@@ -10,4 +10,3 @@ class rex_article_not_found_exception extends rex_exception
         parent::__construct($message ?? 'Article not found.', $previous);
     }
 }
-

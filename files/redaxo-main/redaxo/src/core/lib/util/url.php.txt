@@ -182,4 +182,3 @@ class rex_url
         return self::$pathprovider->pluginAssets($addon, $plugin, $file);
     }
 }
-

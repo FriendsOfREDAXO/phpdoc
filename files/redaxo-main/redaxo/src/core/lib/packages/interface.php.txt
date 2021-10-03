@@ -202,4 +202,3 @@ interface rex_package_interface
      */
     public function i18n($key, ...$replacements);
 }
-

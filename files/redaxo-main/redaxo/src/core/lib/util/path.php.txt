@@ -405,4 +405,3 @@ class rex_path
         return basename($path);
     }
 }
-

@@ -155,4 +155,3 @@ class rex_extension_point
         return $this->readonly;
     }
 }
-

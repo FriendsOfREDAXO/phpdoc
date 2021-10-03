@@ -59,4 +59,3 @@ abstract class rex_system_setting
         return self::$settings;
     }
 }
-

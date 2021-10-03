@@ -35,4 +35,3 @@
         <li<?= $itemAttr ?>><a href="<?= $item['href']; ?>"<?= $linkAttr; ?>><?= $icon . $item['title']; ?></a></li>
         <?php endforeach; ?>
     </ul>
-

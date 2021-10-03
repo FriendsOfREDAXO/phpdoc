@@ -180,4 +180,3 @@ class rex_article_action
         return $this->sql->getValue('linklist' . $id);
     }
 }
-

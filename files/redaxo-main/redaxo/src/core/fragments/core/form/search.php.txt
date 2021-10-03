@@ -23,4 +23,3 @@ echo '<div class="'. $class . '"' . $id . '>
       <input class="form-control" type="text"' . $autofocus . $placeholder . '>
       <span title="' . $clear . '" class="form-control-clear rex-icon rex-icon-clear form-control-feedback hidden"></span>
 </div>';
-

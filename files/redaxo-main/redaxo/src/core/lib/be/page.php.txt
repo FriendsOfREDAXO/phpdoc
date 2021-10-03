@@ -717,4 +717,3 @@ class rex_be_page
         return true;
     }
 }
-

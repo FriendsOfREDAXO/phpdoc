@@ -347,4 +347,3 @@ class rex_path_default_provider
         return $this->addon($addon, 'plugins/' . $plugin . '/' . $file);
     }
 }
-

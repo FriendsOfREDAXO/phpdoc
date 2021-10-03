@@ -17,4 +17,3 @@ echo '<div class="btn-toolbar">';
 echo $out;
 echo '</div>';
 echo '</div>';
-

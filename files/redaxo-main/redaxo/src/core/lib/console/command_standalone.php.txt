@@ -10,4 +10,3 @@
 interface rex_command_standalone
 {
 }
-

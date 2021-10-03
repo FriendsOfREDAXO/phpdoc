@@ -189,4 +189,3 @@ if ($PERMALL) {
 
     echo $content;
 }
-

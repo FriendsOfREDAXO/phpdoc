@@ -166,4 +166,3 @@ class rex_context implements rex_context_provider_interface
         return $inputString;
     }
 }
-

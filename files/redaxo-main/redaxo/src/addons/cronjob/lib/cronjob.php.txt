@@ -136,4 +136,3 @@ abstract class rex_cronjob
         return [];
     }
 }
-

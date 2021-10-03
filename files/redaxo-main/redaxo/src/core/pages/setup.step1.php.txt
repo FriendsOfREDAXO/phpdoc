@@ -18,4 +18,3 @@ $fragment = new rex_fragment();
 $fragment->setVar('heading', rex_i18n::msg('setup_101'), false);
 $fragment->setVar('content', $content, false);
 echo $fragment->parse('core/page/section.php');
-

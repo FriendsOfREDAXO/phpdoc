@@ -157,4 +157,3 @@ $fragment->setVar('buttons', $buttons, false);
 $content = $fragment->parse('core/page/section.php');
 
 echo '<form action="' . $context->getUrl(['step' => 5]) . '" method="post">' . $content . '</form>';
-

@@ -47,4 +47,3 @@ class rex_command_package_delete extends rex_console_command
         return 1;
     }
 }
-

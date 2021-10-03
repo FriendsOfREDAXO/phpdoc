@@ -150,4 +150,3 @@ if (rex::getConsole()) {
         $clockwork->resolveRequest()->storeRequest();
     });
 }
-

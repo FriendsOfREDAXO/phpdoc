@@ -105,4 +105,3 @@ class rex_install_archive
         }
     }
 }
-

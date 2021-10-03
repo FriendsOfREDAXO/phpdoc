@@ -29,4 +29,3 @@ class rex_api_article2startarticle extends rex_api_function
         return true;
     }
 }
-

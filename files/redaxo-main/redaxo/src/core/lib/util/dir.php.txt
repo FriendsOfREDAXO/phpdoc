@@ -139,4 +139,3 @@ class rex_dir
         return $state;
     }
 }
-

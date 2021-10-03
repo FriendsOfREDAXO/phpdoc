@@ -17,4 +17,3 @@ class rex_logger_debug extends rex_logger
         parent::log($level, $message, $context, $file, $line);
     }
 }
-

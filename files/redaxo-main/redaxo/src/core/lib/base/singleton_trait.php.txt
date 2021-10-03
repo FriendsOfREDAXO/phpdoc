@@ -40,4 +40,3 @@ trait rex_singleton_trait
         throw new BadMethodCallException('Cloning "' . static::class . '" is not allowed!');
     }
 }
-

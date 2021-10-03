@@ -14,4 +14,3 @@
 <p>
 Dieses Plugin stellt einen Cronjob-Typ zur Verfuegung, der alle rex_* Tabellen in der DB optimiert.
 </p>
-

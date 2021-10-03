@@ -107,4 +107,3 @@ class rex_template_select extends rex_select
         return $this->templates;
     }
 }
-

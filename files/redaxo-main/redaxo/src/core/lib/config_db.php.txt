@@ -54,4 +54,3 @@ final class rex_config_db
         $this->sslCa = $dbConfig['ssl_ca'] ?? null;
     }
 }
-

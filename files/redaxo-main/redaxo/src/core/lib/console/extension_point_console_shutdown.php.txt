@@ -47,4 +47,3 @@ class rex_extension_point_console_shutdown extends rex_extension_point
         return $this->exitCode;
     }
 }
-

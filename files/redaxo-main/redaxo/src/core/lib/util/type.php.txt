@@ -137,4 +137,3 @@ class rex_type
         return $var;
     }
 }
-

@@ -457,4 +457,3 @@ class rex_navigation
         return '<a'.rex_string::buildAttributes($attributes).'>'.$content.'</a>';
     }
 }
-

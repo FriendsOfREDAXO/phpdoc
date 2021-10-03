@@ -139,4 +139,3 @@ if (!$sql->getRows()) {
         ->setRawValue('updatedate', 'NOW()')
         ->insert();
 }
-

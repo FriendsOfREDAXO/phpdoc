@@ -305,4 +305,3 @@ if ($addonkey && isset($addons[$addonkey]) && !rex_addon::exists($addonkey)) {
 
     echo $content;
 }
-

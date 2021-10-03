@@ -268,4 +268,3 @@ class rex_finder implements IteratorAggregate, Countable
         return iterator_count($this->getIterator());
     }
 }
-

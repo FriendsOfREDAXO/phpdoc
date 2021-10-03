@@ -42,4 +42,3 @@ foreach ($this->elements as $element) {
 }
 
 echo $out;
-

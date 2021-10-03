@@ -20,4 +20,3 @@ foreach ($files as $source => $destination) {
     // ignore errors, because this file is included very early in setup, before the regular file permissions check
     rex_file::copy(__DIR__.'/'.$source, $addon->getAssetsPath($destination));
 }
-

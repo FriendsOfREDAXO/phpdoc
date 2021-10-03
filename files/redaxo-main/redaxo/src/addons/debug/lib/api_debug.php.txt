@@ -32,4 +32,3 @@ class rex_api_debug extends rex_api_function
         ];
     }
 }
-

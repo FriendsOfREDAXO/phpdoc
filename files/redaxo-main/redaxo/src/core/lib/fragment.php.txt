@@ -263,4 +263,3 @@ class rex_fragment
         array_unshift(self::$fragmentDirs, $dir);
     }
 }
-

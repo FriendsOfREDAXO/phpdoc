@@ -206,4 +206,3 @@ class rex_be_navigation
         return $this->prios[$block] ?? null;
     }
 }
-

@@ -238,4 +238,3 @@ class rex_install_package_update extends rex_install_package_download
         rex_dir::delete(rex_path::addon('.new.' . $this->addonkey));
     }
 }
-

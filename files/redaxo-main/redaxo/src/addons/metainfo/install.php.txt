@@ -95,4 +95,3 @@ for ($i = 0; $i < $sql->getRows(); ++$i) {
     unset($columns[$table][$column]);
     $sql->next();
 }
-

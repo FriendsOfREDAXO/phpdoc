@@ -282,4 +282,3 @@ class rex_validator
         return $callback($value);
     }
 }
-

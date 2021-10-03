@@ -136,4 +136,3 @@ abstract class rex_complex_perm
         rex_extension::registerPoint(new rex_extension_point('COMPLEX_PERM_REPLACE_ITEM', '', ['key' => $key, 'item' => $item, 'new' => $new], true));
     }
 }
-

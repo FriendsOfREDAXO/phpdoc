@@ -655,4 +655,3 @@ if ($SHOW) {
     echo $message;
     echo $content;
 }
-

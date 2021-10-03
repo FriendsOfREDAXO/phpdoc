@@ -272,4 +272,3 @@ class rex_log_entry
         return date(self::DATE_FORMAT, $this->timestamp) . ' | ' . $data;
     }
 }
-

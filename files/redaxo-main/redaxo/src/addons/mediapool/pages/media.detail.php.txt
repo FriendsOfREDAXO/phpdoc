@@ -346,4 +346,3 @@ if ($TPERM) {
 
     echo $content;
 }
-

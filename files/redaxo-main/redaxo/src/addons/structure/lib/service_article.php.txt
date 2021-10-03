@@ -918,4 +918,3 @@ class rex_article_service
         return rex::getEnvironment();
     }
 }
-

@@ -78,4 +78,3 @@ class rex_command_setup_check extends rex_console_command
         return $exitCode;
     }
 }
-

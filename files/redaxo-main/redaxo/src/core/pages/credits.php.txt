@@ -129,4 +129,3 @@ $fragment = new rex_fragment();
 $fragment->setVar('title', rex_i18n::msg('credits_caption'), false);
 $fragment->setVar('content', $content, false);
 echo $fragment->parse('core/page/section.php');
-

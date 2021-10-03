@@ -21,4 +21,3 @@ rex_sql_table::get(rex::getTable('article'))
     ->ensureIndex(new rex_sql_index('clang_id', ['clang_id']))
     ->ensureIndex(new rex_sql_index('parent_id', ['parent_id']))
     ->ensure();
-

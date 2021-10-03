@@ -55,4 +55,3 @@ rex_addon::get('mediapool')->setProperty('allowed_mime_types', [
     'mpg'   => ['video/mpeg'],
 ]);
 */
-

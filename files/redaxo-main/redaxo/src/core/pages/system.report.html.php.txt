@@ -48,4 +48,3 @@ foreach ($report as $title => $group) {
 }
 
 echo '</div></div>';
-

@@ -63,4 +63,3 @@ if (rex::isBackend()) {
         $ep->setSubject($icons . $ep->getSubject());
     });
 }
-

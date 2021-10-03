@@ -13,4 +13,3 @@ echo '
         ' . $pluginContent . '
     </div>
 </div>';
-

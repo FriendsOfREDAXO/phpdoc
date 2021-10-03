@@ -206,4 +206,3 @@ function rex_request_method()
 {
     return rex_request::requestMethod();
 }
-

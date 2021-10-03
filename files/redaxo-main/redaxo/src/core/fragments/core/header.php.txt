@@ -22,4 +22,3 @@
                 <?= $this->meta_navigation ?>
             </div>
         </nav>
-

@@ -35,4 +35,3 @@ $CONT->setFunction($function);
 $content = $CONT->getArticle($ctype);
 
 return '' != $content ? '<ul class="rex-slices">' . $content . '</ul>' : '';
-

@@ -192,4 +192,3 @@ class rex_system_report
         return $browser;
     }
 }
-

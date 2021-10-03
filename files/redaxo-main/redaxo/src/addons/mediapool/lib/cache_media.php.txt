@@ -213,4 +213,3 @@ class rex_media_cache
         return rex_file::putCache($listFile, $cacheArray);
     }
 }
-

@@ -140,4 +140,3 @@ class rex_command_assets_sync extends rex_console_command
         return [$created, $updated, $errored];
     }
 }
-

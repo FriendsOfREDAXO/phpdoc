@@ -499,4 +499,3 @@ class rex_managed_media
         rex_file::put($sourceCachePath, $src);
     }
 }
-

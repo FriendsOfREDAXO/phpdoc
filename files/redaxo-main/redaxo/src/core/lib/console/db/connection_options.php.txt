@@ -56,4 +56,3 @@ class rex_command_db_connection_options extends rex_console_command
         return 0;
     }
 }
-

@@ -90,4 +90,3 @@ if (rex_string::versionCompare(rex::getVersion(), '2.6.0-beta1', '<')) {
     @rename($addon->getDataPath('cronjob.log.2'), rex_path::data('log/cronjob.log.2'));
     @rmdir($addon->getDataPath());
 }
-

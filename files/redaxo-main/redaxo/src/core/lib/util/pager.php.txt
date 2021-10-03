@@ -214,4 +214,3 @@ class rex_pager
         return $pageNo == $this->getCurrentPage();
     }
 }
-

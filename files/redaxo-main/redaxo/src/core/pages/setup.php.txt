@@ -346,4 +346,3 @@ if (6 === $step) {
 if (7 === $step) {
     require rex_path::core('pages/setup.step7.php');
 }
-

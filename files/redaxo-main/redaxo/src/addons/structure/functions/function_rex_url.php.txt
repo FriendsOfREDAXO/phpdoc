@@ -72,4 +72,3 @@ function rex_redirect($articleId, $clang = null, array $params = [])
 
     rex_response::sendRedirect(rex_getUrl($articleId, $clang, $params, '&'));
 }
-

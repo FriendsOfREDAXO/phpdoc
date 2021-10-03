@@ -74,4 +74,3 @@ $content = '
     </form>';
 echo $message;
 echo $content;
-

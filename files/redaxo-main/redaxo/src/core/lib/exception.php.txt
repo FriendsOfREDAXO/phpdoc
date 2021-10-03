@@ -109,4 +109,3 @@ class rex_http_exception extends rex_exception
 class rex_yaml_parse_exception extends rex_exception
 {
 }
-

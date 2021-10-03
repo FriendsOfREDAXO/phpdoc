@@ -36,4 +36,3 @@ class rex_system_setting_phpmailer_errormail extends rex_system_setting
         return true;
     }
 }
-

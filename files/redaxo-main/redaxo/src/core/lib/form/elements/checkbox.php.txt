@@ -67,4 +67,3 @@ class rex_form_checkbox_element extends rex_form_options_element
         return $fragment->parse('core/form/checkbox.php');
     }
 }
-

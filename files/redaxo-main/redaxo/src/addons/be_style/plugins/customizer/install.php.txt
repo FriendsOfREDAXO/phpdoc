@@ -25,4 +25,3 @@ try {
  if ('' != $message) {
      throw new rex_functional_exception($message);
  }
-

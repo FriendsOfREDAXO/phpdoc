@@ -72,4 +72,3 @@ class rex_debug_clockwork
         return rex_addon::get('debug')->getCachePath('clockwork.db');
     }
 }
-

@@ -180,4 +180,3 @@ class rex_sql_foreign_key
             $this->onDelete === $index->onDelete;
     }
 }
-

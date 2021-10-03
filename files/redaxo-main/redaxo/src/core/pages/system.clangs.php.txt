@@ -198,4 +198,3 @@ if ('addclang' == $func || 'editclang' == $func) {
 }
 
 echo $content;
-

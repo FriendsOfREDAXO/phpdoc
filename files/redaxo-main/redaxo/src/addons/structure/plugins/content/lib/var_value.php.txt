@@ -39,4 +39,3 @@ class rex_var_value extends rex_var
         return self::quote($value);
     }
 }
-

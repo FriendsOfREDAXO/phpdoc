@@ -174,4 +174,3 @@ rex_extension::register('STRUCTURE_CONTENT_BEFORE_SLICES', static function (rex_
 
     return $return;
 });
-
