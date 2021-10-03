@@ -41,10 +41,7 @@ jobs:
       run: rm -rf redaxo-main/.{github,idea,tools}
 
     - name: Generate phpdoc - clean template
-      run: vendor/bin/phpdoc project:run --target output --directory redaxo-main --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=clean
-
-    - name: Generate phpdoc - default template
-      run: vendor/bin/phpdoc project:run --target output/default --directory redaxo-main --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode --template=default
+      run: vendor/bin/phpdoc project:run --target output --directory redaxo-main --ignore "**/tests" --ignore "**/vendor" --force --visibility=public,protected --sourcecode
 
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v3
