@@ -6786,6 +6786,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-list.html#method_show"
         },                {
+            "fqsen": "\\rex_list\u003A\u003ADISABLE_PAGINATION",
+            "name": "DISABLE_PAGINATION",
+            "summary": "",
+            "url": "classes/rex-list.html#constant_DISABLE_PAGINATION"
+        },                {
             "fqsen": "\\rex_backend_login",
             "name": "rex_backend_login",
             "summary": "",
