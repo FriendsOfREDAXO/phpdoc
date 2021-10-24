@@ -203,6 +203,27 @@
 <dd>Formats a string by the given format type.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-formatter.html#method_intlDate">intlDate()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Formats a date by `IntlDateFormmater`.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-formatter.html#method_intlDateTime">intlDateTime()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Formats a datetime by `IntlDateFormmater`.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-formatter.html#method_intlTime">intlTime()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Formats a time by `IntlDateFormmater`.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-formatter.html#method_nl2br">nl2br()</a>
     <span>
                         &nbsp;: string    </span>
@@ -284,9 +305,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">139</span>
+    <span class="phpdocumentor-element-found-in__line">257</span>
 
-            <a href="classes/rex-formatter.html#source-view.139"  class="phpdocumentor-element-found-in__source" data-line="139" data-modal="source-view"></a>
+            <a href="classes/rex-formatter.html#source-view.257"  class="phpdocumentor-element-found-in__source" data-line="257" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Formats a string as bytes.</p>
@@ -339,9 +360,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">351</span>
+    <span class="phpdocumentor-element-found-in__line">469</span>
 
-            <a href="classes/rex-formatter.html#source-view.351"  class="phpdocumentor-element-found-in__source" data-line="351" data-modal="source-view"></a>
+            <a href="classes/rex-formatter.html#source-view.469"  class="phpdocumentor-element-found-in__source" data-line="469" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Formats a string by a custom callable.</p>
@@ -486,9 +507,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">318</span>
+    <span class="phpdocumentor-element-found-in__line">436</span>
 
-            <a href="classes/rex-formatter.html#source-view.318"  class="phpdocumentor-element-found-in__source" data-line="318" data-modal="source-view"></a>
+            <a href="classes/rex-formatter.html#source-view.436"  class="phpdocumentor-element-found-in__source" data-line="436" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Formats a string as email link.</p>
@@ -614,6 +635,210 @@
             -public
                                     -static                    "
 >
+    <h4 class="phpdocumentor-element__name" id="method_intlDate">
+        intlDate()
+        <a href="classes/rex-formatter.html#method_intlDate" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">188</span>
+
+            <a href="classes/rex-formatter.html#source-view.188"  class="phpdocumentor-element-found-in__source" data-line="188" data-modal="source-view"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Formats a date by `IntlDateFormmater`.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">intlDate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|int|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|int|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Unix timestamp, date string for <code class="prettyprint">strtotime</code> or DateTimeInterface object</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$format</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://www.php.net/manual/en/class.intldateformatter.php"><abbr title="https://www.php.net/manual/en/class.intldateformatter.php">https://www.php.net/manual/en/class.intldateformatter.php</abbr></a></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_intlDateTime">
+        intlDateTime()
+        <a href="classes/rex-formatter.html#method_intlDateTime" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">113</span>
+
+            <a href="classes/rex-formatter.html#source-view.113"  class="phpdocumentor-element-found-in__source" data-line="113" data-modal="source-view"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Formats a datetime by `IntlDateFormmater`.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">intlDateTime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|int|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|int|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Unix timestamp, datetime string for <code class="prettyprint">strtotime</code> or DateTimeInterface object</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$format</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://www.php.net/manual/en/class.intldateformatter.php"><abbr title="https://www.php.net/manual/en/class.intldateformatter.php">https://www.php.net/manual/en/class.intldateformatter.php</abbr></a></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_intlTime">
+        intlTime()
+        <a href="classes/rex-formatter.html#method_intlTime" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">209</span>
+
+            <a href="classes/rex-formatter.html#source-view.209"  class="phpdocumentor-element-found-in__source" data-line="209" data-modal="source-view"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Formats a time by `IntlDateFormmater`.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">intlTime</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|int|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">IntlDateFormatter::SHORT</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$value</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|int|<abbr title="\DateTimeInterface">DateTimeInterface</abbr>|null</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Unix timestamp, time string for <code class="prettyprint">strtotime</code> or DateTimeInterface object</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$format</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">IntlDateFormatter::SHORT</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://www.php.net/manual/en/class.intldateformatter.php"><abbr title="https://www.php.net/manual/en/class.intldateformatter.php">https://www.php.net/manual/en/class.intldateformatter.php</abbr></a></span>
+                                        
+                                             
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
     <h4 class="phpdocumentor-element__name" id="method_nl2br">
         nl2br()
         <a href="classes/rex-formatter.html#method_nl2br" class="headerlink"><i class="fas fa-link"></i></a>
@@ -621,9 +846,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">193</span>
+    <span class="phpdocumentor-element-found-in__line">311</span>
 
-            <a href="classes/rex-formatter.html#source-view.193"  class="phpdocumentor-element-found-in__source" data-line="193" data-modal="source-view"></a>
+            <a href="classes/rex-formatter.html#source-view.311"  class="phpdocumentor-element-found-in__source" data-line="311" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Formats a string by `nl2br`.</p>
@@ -681,9 +906,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">110</span>
+    <span class="phpdocumentor-element-found-in__line">228</span>
 
-            <a href="classes/rex-formatter.html#source-view.110"  class="phpdocumentor-element-found-in__source" data-line="110" data-modal="source-view"></a>
+            <a href="classes/rex-formatter.html#source-view.228"  class="phpdocumentor-element-found-in__source" data-line="228" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Formats a string by `number_format()`.</p>
@@ -750,9 +975,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">294</span>
 
-            <a href="classes/rex-formatter.html#source-view.176"  class="phpdocumentor-element-found-in__source" data-line="176" data-modal="source-view"></a>
+            <a href="classes/rex-formatter.html#source-view.294"  class="phpdocumentor-element-found-in__source" data-line="294" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Formats a string by `sprintf()`.</p>
@@ -886,9 +1111,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">324</span>
 
-            <a href="classes/rex-formatter.html#source-view.206"  class="phpdocumentor-element-found-in__source" data-line="206" data-modal="source-view"></a>
+            <a href="classes/rex-formatter.html#source-view.324"  class="phpdocumentor-element-found-in__source" data-line="324" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Truncates a string.</p>
@@ -940,9 +1165,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">280</span>
+    <span class="phpdocumentor-element-found-in__line">398</span>
 
-            <a href="classes/rex-formatter.html#source-view.280"  class="phpdocumentor-element-found-in__source" data-line="280" data-modal="source-view"></a>
+            <a href="classes/rex-formatter.html#source-view.398"  class="phpdocumentor-element-found-in__source" data-line="398" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Formats a string as link.</p>
@@ -997,9 +1222,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">267</span>
+    <span class="phpdocumentor-element-found-in__line">385</span>
 
-            <a href="classes/rex-formatter.html#source-view.267"  class="phpdocumentor-element-found-in__source" data-line="267" data-modal="source-view"></a>
+            <a href="classes/rex-formatter.html#source-view.385"  class="phpdocumentor-element-found-in__source" data-line="385" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Formats a version string by `sprintf()`.</p>
@@ -1066,9 +1291,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/formatter.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-formatter.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/formatter.php">formatter.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">364</span>
 
-            <a href="classes/rex-formatter.html#source-view.246"  class="phpdocumentor-element-found-in__source" data-line="246" data-modal="source-view"></a>
+            <a href="classes/rex-formatter.html#source-view.364"  class="phpdocumentor-element-found-in__source" data-line="364" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Avoid widows in a string.</p>

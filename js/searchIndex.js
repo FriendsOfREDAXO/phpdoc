@@ -9701,6 +9701,21 @@ Search.appendIndex(
             "summary": "Formats\u0020a\u0020string\u0020by\u0020\u0060strftime\u0028\u0029\u0060.",
             "url": "classes/rex-formatter.html#method_strftime"
         },                {
+            "fqsen": "\\rex_formatter\u003A\u003AintlDateTime\u0028\u0029",
+            "name": "intlDateTime",
+            "summary": "Formats\u0020a\u0020datetime\u0020by\u0020\u0060IntlDateFormmater\u0060.",
+            "url": "classes/rex-formatter.html#method_intlDateTime"
+        },                {
+            "fqsen": "\\rex_formatter\u003A\u003AintlDate\u0028\u0029",
+            "name": "intlDate",
+            "summary": "Formats\u0020a\u0020date\u0020by\u0020\u0060IntlDateFormmater\u0060.",
+            "url": "classes/rex-formatter.html#method_intlDate"
+        },                {
+            "fqsen": "\\rex_formatter\u003A\u003AintlTime\u0028\u0029",
+            "name": "intlTime",
+            "summary": "Formats\u0020a\u0020time\u0020by\u0020\u0060IntlDateFormmater\u0060.",
+            "url": "classes/rex-formatter.html#method_intlTime"
+        },                {
             "fqsen": "\\rex_formatter\u003A\u003Anumber\u0028\u0029",
             "name": "number",
             "summary": "Formats\u0020a\u0020string\u0020by\u0020\u0060number_format\u0028\u0029\u0060.",
