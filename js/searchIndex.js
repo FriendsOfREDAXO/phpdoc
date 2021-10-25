@@ -3373,7 +3373,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_article_slice\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-article-slice.html#method___construct"
         },                {
             "fqsen": "\\rex_article_slice\u003A\u003AgetArticleSliceById\u0028\u0029",
@@ -6670,6 +6670,16 @@ Search.appendIndex(
             "name": "hasColumnParams",
             "summary": "Gibt\u0020zur\u00FCck,\u0020ob\u0020Parameter\u0020f\u00FCr\u0020eine\u0020Spalte\u0020existieren.",
             "url": "classes/rex-list.html#method_hasColumnParams"
+        },                {
+            "fqsen": "\\rex_list\u003A\u003AsetColumnPosition\u0028\u0029",
+            "name": "setColumnPosition",
+            "summary": "Verschiebt\u0020eine\u0020Spalte\u0020an\u0020eine\u0020andere\u0020Position\u0020in\u0020der\u0020Spaltenliste.",
+            "url": "classes/rex-list.html#method_setColumnPosition"
+        },                {
+            "fqsen": "\\rex_list\u003A\u003AgetColumnPosition\u0028\u0029",
+            "name": "getColumnPosition",
+            "summary": "Gibt\u0020die\u0020Position\u0020einer\u0020Spalte\u0020zur\u00FCck.",
+            "url": "classes/rex-list.html#method_getColumnPosition"
         },                {
             "fqsen": "\\rex_list\u003A\u003AaddTableColumnGroup\u0028\u0029",
             "name": "addTableColumnGroup",
