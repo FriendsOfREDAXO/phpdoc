@@ -3471,6 +3471,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-article-slice.html#method_getValue"
         },                {
+            "fqsen": "\\rex_article_slice\u003A\u003AgetValueArray\u0028\u0029",
+            "name": "getValueArray",
+            "summary": "",
+            "url": "classes/rex-article-slice.html#method_getValueArray"
+        },                {
             "fqsen": "\\rex_article_slice\u003A\u003AgetLink\u0028\u0029",
             "name": "getLink",
             "summary": "",
@@ -3486,6 +3491,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-article-slice.html#method_getLinkList"
         },                {
+            "fqsen": "\\rex_article_slice\u003A\u003AgetLinkListArray\u0028\u0029",
+            "name": "getLinkListArray",
+            "summary": "",
+            "url": "classes/rex-article-slice.html#method_getLinkListArray"
+        },                {
             "fqsen": "\\rex_article_slice\u003A\u003AgetMedia\u0028\u0029",
             "name": "getMedia",
             "summary": "",
@@ -3500,6 +3510,11 @@ Search.appendIndex(
             "name": "getMediaList",
             "summary": "",
             "url": "classes/rex-article-slice.html#method_getMediaList"
+        },                {
+            "fqsen": "\\rex_article_slice\u003A\u003AgetMediaListArray\u0028\u0029",
+            "name": "getMediaListArray",
+            "summary": "",
+            "url": "classes/rex-article-slice.html#method_getMediaListArray"
         },                {
             "fqsen": "\\rex_article_slice\u003A\u003AgetPriority\u0028\u0029",
             "name": "getPriority",
