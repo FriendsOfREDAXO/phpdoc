@@ -3096,6 +3096,11 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020content\u0020of\u0020the\u0020article\u0020of\u0020the\u0020given\u0020ctype.\u0020If\u0020no\u0020ctype\u0020is\u0020given,\u0020content\u0020of\u0020all\u0020ctypes\u0020is\u0020returned.",
             "url": "classes/rex-article-content.html#method_getArticle"
         },                {
+            "fqsen": "\\rex_article_content\u003A\u003AgetCurrentSlice\u0028\u0029",
+            "name": "getCurrentSlice",
+            "summary": "",
+            "url": "classes/rex-article-content.html#method_getCurrentSlice"
+        },                {
             "fqsen": "\\rex_article_content_base",
             "name": "rex_article_content_base",
             "summary": "Klasse\u0020regelt\u0020den\u0020Zugriff\u0020auf\u0020Artikelinhalte.",
@@ -3195,6 +3200,11 @@ Search.appendIndex(
             "name": "outputSlice",
             "summary": "Outputs\u0020a\u0020slice.",
             "url": "classes/rex-article-content-base.html#method_outputSlice"
+        },                {
+            "fqsen": "\\rex_article_content_base\u003A\u003AgetCurrentSlice\u0028\u0029",
+            "name": "getCurrentSlice",
+            "summary": "",
+            "url": "classes/rex-article-content-base.html#method_getCurrentSlice"
         },                {
             "fqsen": "\\rex_article_content_base\u003A\u003A\u0024getSlice",
             "name": "getSlice",
