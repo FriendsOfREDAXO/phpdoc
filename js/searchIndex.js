@@ -8781,6 +8781,11 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020dir\u0020perm.",
             "url": "classes/rex.html#method_getDirPerm"
         },                {
+            "fqsen": "\\rex\u003A\u003AgetTheme\u0028\u0029",
+            "name": "getTheme",
+            "summary": "Returns\u0020the\u0020current\u0020backend\u0020theme.",
+            "url": "classes/rex.html#method_getTheme"
+        },                {
             "fqsen": "\\rex\u003A\u003ACONFIG_NAMESPACE",
             "name": "CONFIG_NAMESPACE",
             "summary": "",
