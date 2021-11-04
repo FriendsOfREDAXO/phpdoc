@@ -1721,11 +1721,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-media-service.html#method_getList"
         },                {
-            "fqsen": "\\rex_media_service\u003A\u003AORDERBY",
-            "name": "ORDERBY",
-            "summary": "",
-            "url": "classes/rex-media-service.html#constant_ORDERBY"
-        },                {
             "fqsen": "\\rex_media_category_service",
             "name": "rex_media_category_service",
             "summary": "",
@@ -10025,6 +10020,16 @@ Search.appendIndex(
             "name": "parseWithToc",
             "summary": "Parses\u0020markdown\u0020code\u0020and\u0020extracts\u0020a\u0020table\u002Dof\u002Dcontent.",
             "url": "classes/rex-markdown.html#method_parseWithToc"
+        },                {
+            "fqsen": "\\rex_markdown\u003A\u003ASOFT_LINE_BREAKS",
+            "name": "SOFT_LINE_BREAKS",
+            "summary": "",
+            "url": "classes/rex-markdown.html#constant_SOFT_LINE_BREAKS"
+        },                {
+            "fqsen": "\\rex_markdown\u003A\u003AHIGHLIGHT_PHP",
+            "name": "HIGHLIGHT_PHP",
+            "summary": "",
+            "url": "classes/rex-markdown.html#constant_HIGHLIGHT_PHP"
         },                {
             "fqsen": "\\rex_pager",
             "name": "rex_pager",

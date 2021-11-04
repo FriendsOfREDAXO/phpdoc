@@ -158,7 +158,7 @@
                 </tr>
                                                             <tr>
                     <td class="phpdocumentor-cell"><a href="reports/errors.html#redaxo-main/redaxo/src/addons/mediapool/lib/service_media.php">redaxo-main/redaxo/src/addons/mediapool/lib/service_media.php</a></td>
-                    <td class="phpdocumentor-cell">2</td>
+                    <td class="phpdocumentor-cell">4</td>
                 </tr>
                                                             <tr>
                     <td class="phpdocumentor-cell"><a href="reports/errors.html#redaxo-main/redaxo/src/addons/structure/lib/structure_element.php">redaxo-main/redaxo/src/addons/structure/lib/structure_element.php</a></td>
@@ -231,6 +231,10 @@
                                                             <tr>
                     <td class="phpdocumentor-cell"><a href="reports/errors.html#redaxo-main/redaxo/src/core/lib/util/formatter.php">redaxo-main/redaxo/src/core/lib/util/formatter.php</a></td>
                     <td class="phpdocumentor-cell">4</td>
+                </tr>
+                                                            <tr>
+                    <td class="phpdocumentor-cell"><a href="reports/errors.html#redaxo-main/redaxo/src/core/lib/util/markdown.php">redaxo-main/redaxo/src/core/lib/util/markdown.php</a></td>
+                    <td class="phpdocumentor-cell">2</td>
                 </tr>
                                                             <tr>
                     <td class="phpdocumentor-cell"><a href="reports/errors.html#redaxo-main/redaxo/src/core/lib/util/string.php">redaxo-main/redaxo/src/core/lib/util/string.php</a></td>
@@ -385,12 +389,22 @@
                             <tr>
                     <td class="phpdocumentor-cell">ERROR</td>
                     <td class="phpdocumentor-cell">0</td>
-                    <td class="phpdocumentor-cell">Tag &quot;param&quot; with body &quot;@param list&lt;array{type: &#039;category_id&#039;|&#039;category_id_path&#039;|&#039;types&#039;|&#039;term&#039;, value: int|string|list&lt;string&gt;}&gt; $searchItems&quot; has error &quot;\array{type: &#039;category_id&#039;&quot; is not a valid Fqsen.</td>
+                    <td class="phpdocumentor-cell">Tag &quot;param&quot; with body &quot;@param array{category_id: int, title: string, file: array{name: string, path: string, tmp_name?: string}} $data&quot; has error &quot;\array{category_id: int&quot; is not a valid Fqsen.</td>
                 </tr>
                             <tr>
                     <td class="phpdocumentor-cell">ERROR</td>
                     <td class="phpdocumentor-cell">0</td>
-                    <td class="phpdocumentor-cell">Tag &quot;param&quot; with body &quot;@param list&lt;array{string, &#039;ASC&#039;|&#039;DESC&#039;}&gt; $orderbyItems&quot; has error &quot;\array{string&quot; is not a valid Fqsen.</td>
+                    <td class="phpdocumentor-cell">Tag &quot;param&quot; with body &quot;@param array{category_id: int, title: string, file?: array{name: string, path: string}} $data&quot; has error &quot;\array{category_id: int&quot; is not a valid Fqsen.</td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell">ERROR</td>
+                    <td class="phpdocumentor-cell">0</td>
+                    <td class="phpdocumentor-cell">Tag &quot;param&quot; with body &quot;@param array{category_id?: int, category_id_path?: int, types?: string[], term?: string} $filter&quot; has error &quot;\array{category_id&quot; is not a valid Fqsen.</td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell">ERROR</td>
+                    <td class="phpdocumentor-cell">0</td>
+                    <td class="phpdocumentor-cell">Tag &quot;param&quot; with body &quot;@param list&lt;array{string, &#039;ASC&#039;|&#039;DESC&#039;}&gt; $orderBy&quot; has error &quot;\array{string&quot; is not a valid Fqsen.</td>
                 </tr>
                         </tbody>
         </table>
@@ -915,6 +929,29 @@
                     <td class="phpdocumentor-cell">ERROR</td>
                     <td class="phpdocumentor-cell">0</td>
                     <td class="phpdocumentor-cell">Tag &quot;param&quot; with body &quot;@param array{length?: int, etc?: string, break_words?: bool} $format Default format is `[&#039;length&#039; =&gt; 80, &#039;etc&#039; =&gt; &#039;...&#039;, &#039;break_words&#039; =&gt; false]`&quot; has error &quot;\array{length&quot; is not a valid Fqsen.</td>
+                </tr>
+                        </tbody>
+        </table>
+            <a id="redaxo-main/redaxo/src/core/lib/util/markdown.php"></a>
+        <h3><abbr title="redaxo-main/redaxo/src/core/lib/util/markdown.php">markdown.php</abbr></h3>
+        <table>
+            <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                            <tr>
+                    <td class="phpdocumentor-cell">ERROR</td>
+                    <td class="phpdocumentor-cell">0</td>
+                    <td class="phpdocumentor-cell">Tag &quot;param&quot; with body &quot;@param array&lt;self::*, bool&gt;|bool $options&quot; has error &quot;\self::*&quot; is not a valid Fqsen.</td>
+                </tr>
+                            <tr>
+                    <td class="phpdocumentor-cell">ERROR</td>
+                    <td class="phpdocumentor-cell">0</td>
+                    <td class="phpdocumentor-cell">Tag &quot;param&quot; with body &quot;@param array&lt;self::*, bool&gt;|bool $options&quot; has error &quot;\self::*&quot; is not a valid Fqsen.</td>
                 </tr>
                         </tbody>
         </table>
