@@ -1753,7 +1753,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_media\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "Returns\u0020the\u0020output.",
+            "summary": "",
             "url": "classes/rex-var-media.html#method_getOutput"
         },                {
             "fqsen": "\\rex_var_media\u003A\u003AgetWidget\u0028\u0029",
@@ -1768,7 +1768,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_medialist\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "Returns\u0020the\u0020output.",
+            "summary": "",
             "url": "classes/rex-var-medialist.html#method_getOutput"
         },                {
             "fqsen": "\\rex_var_medialist\u003A\u003AgetWidget\u0028\u0029",
@@ -2213,7 +2213,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_link\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "Returns\u0020the\u0020output.",
+            "summary": "",
             "url": "classes/rex-var-link.html#method_getOutput"
         },                {
             "fqsen": "\\rex_var_link\u003A\u003AgetWidget\u0028\u0029",
@@ -2228,7 +2228,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_linklist\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "Returns\u0020the\u0020output.",
+            "summary": "",
             "url": "classes/rex-var-linklist.html#method_getOutput"
         },                {
             "fqsen": "\\rex_var_linklist\u003A\u003AgetWidget\u0028\u0029",
@@ -3828,7 +3828,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_template\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "Returns\u0020the\u0020output.",
+            "summary": "",
             "url": "classes/rex-var-template.html#method_getOutput"
         },                {
             "fqsen": "\\rex_var_value",
@@ -3838,7 +3838,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_value\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "Returns\u0020the\u0020output.",
+            "summary": "",
             "url": "classes/rex-var-value.html#method_getOutput"
         },                {
             "fqsen": "\\rex_article_slice_history",
@@ -11073,7 +11073,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_clang\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "Returns\u0020the\u0020output.",
+            "summary": "\u007B\u0040inheritdoc\u007D",
             "url": "classes/rex-var-clang.html#method_getOutput"
         },                {
             "fqsen": "\\rex_var_config",
@@ -11083,7 +11083,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_config\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "Returns\u0020the\u0020output.",
+            "summary": "\u007B\u0040inheritdoc\u007D",
             "url": "classes/rex-var-config.html#method_getOutput"
         },                {
             "fqsen": "\\rex_var_property",
@@ -11093,88 +11093,8 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_property\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "Returns\u0020the\u0020output.",
+            "summary": "\u007B\u0040inheritdoc\u007D",
             "url": "classes/rex-var-property.html#method_getOutput"
-        },                {
-            "fqsen": "\\rex_var",
-            "name": "rex_var",
-            "summary": "Abstract\u0020baseclass\u0020for\u0020REX_VARS.",
-            "url": "classes/rex-var.html"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003Aparse\u0028\u0029",
-            "name": "parse",
-            "summary": "Parses\u0020all\u0020REX_VARs\u0020in\u0020the\u0020given\u0020content.",
-            "url": "classes/rex-var.html#method_parse"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AhasArg\u0028\u0029",
-            "name": "hasArg",
-            "summary": "Checks\u0020whether\u0020the\u0020given\u0020arguments\u0020exists.",
-            "url": "classes/rex-var.html#method_hasArg"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AgetArg\u0028\u0029",
-            "name": "getArg",
-            "summary": "Returns\u0020the\u0020argument.",
-            "url": "classes/rex-var.html#method_getArg"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AgetParsedArg\u0028\u0029",
-            "name": "getParsedArg",
-            "summary": "Returns\u0020the\u0020\u0028recursive\u0029\u0020parsed\u0020argument.",
-            "url": "classes/rex-var.html#method_getParsedArg"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AenvironmentIs\u0028\u0029",
-            "name": "environmentIs",
-            "summary": "Checks\u0020whether\u0020the\u0020given\u0020envirenment\u0020is\u0020active.",
-            "url": "classes/rex-var.html#method_environmentIs"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AgetContext\u0028\u0029",
-            "name": "getContext",
-            "summary": "Returns\u0020the\u0020context.",
-            "url": "classes/rex-var.html#method_getContext"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AgetContextData\u0028\u0029",
-            "name": "getContextData",
-            "summary": "Returns\u0020the\u0020context\u0020data.",
-            "url": "classes/rex-var.html#method_getContextData"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AgetOutput\u0028\u0029",
-            "name": "getOutput",
-            "summary": "Returns\u0020the\u0020output.",
-            "url": "classes/rex-var.html#method_getOutput"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003Aquote\u0028\u0029",
-            "name": "quote",
-            "summary": "Quotes\u0020the\u0020string\u0020for\u0020php\u0020context.",
-            "url": "classes/rex-var.html#method_quote"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AtoArray\u0028\u0029",
-            "name": "toArray",
-            "summary": "Converts\u0020a\u0020REX_VAR\u0020content\u0020to\u0020a\u0020PHP\u0020array.",
-            "url": "classes/rex-var.html#method_toArray"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003Anothing\u0028\u0029",
-            "name": "nothing",
-            "summary": "Returns\u0020empty\u0020string.",
-            "url": "classes/rex-var.html#method_nothing"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AENV_FRONTEND",
-            "name": "ENV_FRONTEND",
-            "summary": "",
-            "url": "classes/rex-var.html#constant_ENV_FRONTEND"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AENV_BACKEND",
-            "name": "ENV_BACKEND",
-            "summary": "",
-            "url": "classes/rex-var.html#constant_ENV_BACKEND"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AENV_INPUT",
-            "name": "ENV_INPUT",
-            "summary": "",
-            "url": "classes/rex-var.html#constant_ENV_INPUT"
-        },                {
-            "fqsen": "\\rex_var\u003A\u003AENV_OUTPUT",
-            "name": "ENV_OUTPUT",
-            "summary": "",
-            "url": "classes/rex-var.html#constant_ENV_OUTPUT"
         },                {
             "fqsen": "\\rex_var_dumper",
             "name": "rex_var_dumper",
