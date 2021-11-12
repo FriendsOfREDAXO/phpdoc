@@ -146,9 +146,9 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
-            <a href="classes/rex-socket.html#source-view.24"  class="phpdocumentor-element-found-in__source" data-line="24" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.30"  class="phpdocumentor-element-found-in__source" data-line="30" data-modal="source-view"></a>
     </aside>
 
             <p class="phpdocumentor-summary">Class for sockets.</p>
@@ -158,6 +158,12 @@
 try {
 $socket = rex_socket::factory('www.example.com');
 $socket-&gt;setPath('/url/to/my/resource?param=1');
+$socket-&gt;setOptions([
+'ssl' =&gt; [
+'verify_peer' =&gt; false,
+'verify_peer_name' =&gt; false
+]
+]);
 $response = $socket-&gt;doGet();
 if($response-&gt;isOk()) {
 $body = $response-&gt;getBody();
@@ -214,6 +220,13 @@ $body = $response-&gt;getBody();
     <a href="classes/rex-socket.html#property_host">$host</a>
     <span>
                 &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/rex-socket.html#property_options">$options</a>
+    <span>
+                &nbsp;: mixed            </span>
 </dt>
 <dd></dd>
 
@@ -316,6 +329,13 @@ $body = $response-&gt;getBody();
 <dd>Sets number of redirects that should be followed automatically.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-socket.html#method_setOptions">setOptions()</a>
+    <span>
+                        &nbsp;: $this    </span>
+</dt>
+<dd>Sets the socket context options.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-socket.html#method_setPath">setPath()</a>
     <span>
                         &nbsp;: $this    </span>
@@ -385,9 +405,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
-            <a href="classes/rex-socket.html#source-view.37"  class="phpdocumentor-element-found-in__source" data-line="37" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.43"  class="phpdocumentor-element-found-in__source" data-line="43" data-modal="source-view"></a>
     </aside>
 
     
@@ -418,9 +438,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">45</span>
 
-            <a href="classes/rex-socket.html#source-view.39"  class="phpdocumentor-element-found-in__source" data-line="39" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.45"  class="phpdocumentor-element-found-in__source" data-line="45" data-modal="source-view"></a>
     </aside>
 
     
@@ -451,9 +471,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
-            <a href="classes/rex-socket.html#source-view.27"  class="phpdocumentor-element-found-in__source" data-line="27" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.33"  class="phpdocumentor-element-found-in__source" data-line="33" data-modal="source-view"></a>
     </aside>
 
     
@@ -475,6 +495,41 @@ $body = $response-&gt;getBody();
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property_options">
+        $options
+        <a href="classes/rex-socket.html#property_options" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+            <a href="classes/rex-socket.html#source-view.49"  class="phpdocumentor-element-found-in__source" data-line="49" data-modal="source-view"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$options</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+        <section class="phpdocumentor-description"><p>array&lt;array-key, mixed&gt;</p>
+</section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property_path">
         $path
         <a href="classes/rex-socket.html#property_path" class="headerlink"><i class="fas fa-link"></i></a>
@@ -484,9 +539,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
-            <a href="classes/rex-socket.html#source-view.33"  class="phpdocumentor-element-found-in__source" data-line="33" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.39"  class="phpdocumentor-element-found-in__source" data-line="39" data-modal="source-view"></a>
     </aside>
 
     
@@ -517,9 +572,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">29</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
-            <a href="classes/rex-socket.html#source-view.29"  class="phpdocumentor-element-found-in__source" data-line="29" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.35"  class="phpdocumentor-element-found-in__source" data-line="35" data-modal="source-view"></a>
     </aside>
 
     
@@ -550,9 +605,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
-            <a href="classes/rex-socket.html#source-view.31"  class="phpdocumentor-element-found-in__source" data-line="31" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.37"  class="phpdocumentor-element-found-in__source" data-line="37" data-modal="source-view"></a>
     </aside>
 
     
@@ -583,9 +638,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
-            <a href="classes/rex-socket.html#source-view.41"  class="phpdocumentor-element-found-in__source" data-line="41" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.47"  class="phpdocumentor-element-found-in__source" data-line="47" data-modal="source-view"></a>
     </aside>
 
     
@@ -632,9 +687,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
-            <a href="classes/rex-socket.html#source-view.35"  class="phpdocumentor-element-found-in__source" data-line="35" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.41"  class="phpdocumentor-element-found-in__source" data-line="41" data-modal="source-view"></a>
     </aside>
 
     
@@ -669,9 +724,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">136</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
-            <a href="classes/rex-socket.html#source-view.136"  class="phpdocumentor-element-found-in__source" data-line="136" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.158"  class="phpdocumentor-element-found-in__source" data-line="158" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Adds the basic authorization header to the current request.</p>
@@ -722,9 +777,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">143</span>
 
-            <a href="classes/rex-socket.html#source-view.121"  class="phpdocumentor-element-found-in__source" data-line="121" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.143"  class="phpdocumentor-element-found-in__source" data-line="143" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Adds a header to the current request.</p>
@@ -775,9 +830,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">257</span>
+    <span class="phpdocumentor-element-found-in__line">279</span>
 
-            <a href="classes/rex-socket.html#source-view.257"  class="phpdocumentor-element-found-in__source" data-line="257" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.279"  class="phpdocumentor-element-found-in__source" data-line="279" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Makes a DELETE request.</p>
@@ -825,9 +880,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">184</span>
+    <span class="phpdocumentor-element-found-in__line">206</span>
 
-            <a href="classes/rex-socket.html#source-view.184"  class="phpdocumentor-element-found-in__source" data-line="184" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.206"  class="phpdocumentor-element-found-in__source" data-line="206" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Makes a GET request.</p>
@@ -875,9 +930,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
-            <a href="classes/rex-socket.html#source-view.202"  class="phpdocumentor-element-found-in__source" data-line="202" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.224"  class="phpdocumentor-element-found-in__source" data-line="224" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Makes a POST request.</p>
@@ -964,9 +1019,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">273</span>
+    <span class="phpdocumentor-element-found-in__line">295</span>
 
-            <a href="classes/rex-socket.html#source-view.273"  class="phpdocumentor-element-found-in__source" data-line="273" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.295"  class="phpdocumentor-element-found-in__source" data-line="295" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Makes a request.</p>
@@ -1044,9 +1099,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
-            <a href="classes/rex-socket.html#source-view.72"  class="phpdocumentor-element-found-in__source" data-line="72" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.80"  class="phpdocumentor-element-found-in__source" data-line="80" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Factory method.</p>
@@ -1124,9 +1179,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
-            <a href="classes/rex-socket.html#source-view.92"  class="phpdocumentor-element-found-in__source" data-line="92" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.100"  class="phpdocumentor-element-found-in__source" data-line="100" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Creates a socket by a full URL.</p>
@@ -1194,9 +1249,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">166</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
-            <a href="classes/rex-socket.html#source-view.166"  class="phpdocumentor-element-found-in__source" data-line="166" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.188"  class="phpdocumentor-element-found-in__source" data-line="188" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Sets number of redirects that should be followed automatically.</p>
@@ -1237,6 +1292,55 @@ $body = $response-&gt;getBody();
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_setOptions">
+        setOptions()
+        <a href="classes/rex-socket.html#method_setOptions" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">128</span>
+
+            <a href="classes/rex-socket.html#source-view.128"  class="phpdocumentor-element-found-in__source" data-line="128" data-modal="source-view"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Sets the socket context options.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">setOptions</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+        <section class="phpdocumentor-description"><p>Available options can be found on https://www.php.net/manual/en/context.php</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$options</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">$this</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Current socket</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_setPath">
         setPath()
         <a href="classes/rex-socket.html#method_setPath" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1244,9 +1348,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">106</span>
+    <span class="phpdocumentor-element-found-in__line">114</span>
 
-            <a href="classes/rex-socket.html#source-view.106"  class="phpdocumentor-element-found-in__source" data-line="106" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.114"  class="phpdocumentor-element-found-in__source" data-line="114" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Sets the path.</p>
@@ -1290,9 +1394,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
-            <a href="classes/rex-socket.html#source-view.150"  class="phpdocumentor-element-found-in__source" data-line="150" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.172"  class="phpdocumentor-element-found-in__source" data-line="172" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Sets the timeout for the connection.</p>
@@ -1338,9 +1442,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
-            <a href="classes/rex-socket.html#source-view.50"  class="phpdocumentor-element-found-in__source" data-line="50" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.58"  class="phpdocumentor-element-found-in__source" data-line="58" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Constructor.</p>
@@ -1402,9 +1506,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">347</span>
 
-            <a href="classes/rex-socket.html#source-view.325"  class="phpdocumentor-element-found-in__source" data-line="325" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.347"  class="phpdocumentor-element-found-in__source" data-line="347" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Opens the socket connection.</p>
@@ -1450,9 +1554,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">409</span>
+    <span class="phpdocumentor-element-found-in__line">432</span>
 
-            <a href="classes/rex-socket.html#source-view.409"  class="phpdocumentor-element-found-in__source" data-line="409" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.432"  class="phpdocumentor-element-found-in__source" data-line="432" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Parses a full URL and returns an array with the keys &quot;host&quot;, &quot;port&quot;, &quot;ssl&quot; and &quot;path&quot;.</p>
@@ -1512,9 +1616,9 @@ $body = $response-&gt;getBody();
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket.php">socket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">374</span>
+    <span class="phpdocumentor-element-found-in__line">397</span>
 
-            <a href="classes/rex-socket.html#source-view.374"  class="phpdocumentor-element-found-in__source" data-line="374" data-modal="source-view"></a>
+            <a href="classes/rex-socket.html#source-view.397"  class="phpdocumentor-element-found-in__source" data-line="397" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Writes a request to the opened connection.</p>

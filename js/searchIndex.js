@@ -10426,6 +10426,11 @@ Search.appendIndex(
             "summary": "Sets\u0020the\u0020path.",
             "url": "classes/rex-socket.html#method_setPath"
         },                {
+            "fqsen": "\\rex_socket\u003A\u003AsetOptions\u0028\u0029",
+            "name": "setOptions",
+            "summary": "Sets\u0020the\u0020socket\u0020context\u0020options.",
+            "url": "classes/rex-socket.html#method_setOptions"
+        },                {
             "fqsen": "\\rex_socket\u003A\u003AaddHeader\u0028\u0029",
             "name": "addHeader",
             "summary": "Adds\u0020a\u0020header\u0020to\u0020the\u0020current\u0020request.",
@@ -10515,6 +10520,11 @@ Search.appendIndex(
             "name": "stream",
             "summary": "",
             "url": "classes/rex-socket.html#property_stream"
+        },                {
+            "fqsen": "\\rex_socket\u003A\u003A\u0024options",
+            "name": "options",
+            "summary": "",
+            "url": "classes/rex-socket.html#property_options"
         },                {
             "fqsen": "\\rex_socket_exception",
             "name": "rex_socket_exception",
