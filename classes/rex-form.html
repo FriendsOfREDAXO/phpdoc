@@ -211,14 +211,14 @@ Dies geschieht Mittels der add*Field(...) Methoden.</p>
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-form-base.html#property_elements">$elements</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string, <abbr title="\list">list</abbr>&lt;string|int, <a href="classes/rex-form-element.html"><abbr title="\rex_form_element">rex_form_element</abbr></a>&gt;&gt;            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-form-base.html#property_errorMessages">$errorMessages</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;int, string&gt;            </span>
 </dt>
 <dd></dd>
 
@@ -274,7 +274,7 @@ Dies geschieht Mittels der add*Field(...) Methoden.</p>
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-form-base.html#property_params">$params</a>
     <span>
-                &nbsp;: array&lt;string|int, mixed&gt;            </span>
+                &nbsp;: array&lt;string, string|int|bool&gt;            </span>
 </dt>
 <dd></dd>
 
@@ -295,7 +295,7 @@ Dies geschieht Mittels der add*Field(...) Methoden.</p>
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-form-base.html#property_warning">$warning</a>
     <span>
-                &nbsp;: string            </span>
+                &nbsp;: null|string            </span>
 </dt>
 <dd></dd>
 
@@ -505,7 +505,7 @@ Dies geschieht Mittels der add*Field(...) Methoden.</p>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-form-base.html#method_getInputClassName">getInputClassName()</a>
     <span>
-                        &nbsp;: string    </span>
+                        &nbsp;: class-string<\rex_form_element>    </span>
 </dt>
 <dd></dd>
 
@@ -541,7 +541,7 @@ oder $default kein Parameter mit dem Namen exisitiert.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-form-base.html#method_getParams">getParams()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string, string|int|bool&gt;    </span>
 </dt>
 <dd>Gibt alle Parameter des Fomulars zurueck.</dd>
 
@@ -688,7 +688,7 @@ oder $default kein Parameter mit dem Namen exisitiert.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/rex-form-base.html#method_getFieldsetElements">getFieldsetElements()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string, <abbr title="\list">list</abbr>&lt;string|int, <a href="classes/rex-form-element.html"><abbr title="\rex_form_element">rex_form_element</abbr></a>&gt;&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -730,7 +730,7 @@ oder $default kein Parameter mit dem Namen exisitiert.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/rex-form-base.html#method_getSaveElements">getSaveElements()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                        &nbsp;: array&lt;string, <abbr title="\list">list</abbr>&lt;string|int, <a href="classes/rex-form-element.html"><abbr title="\rex_form_element">rex_form_element</abbr></a>&gt;&gt;    </span>
 </dt>
 <dd></dd>
 
@@ -884,9 +884,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
-            <a href="classes/rex-form.html#source-view.33"  class="phpdocumentor-element-found-in__source" data-line="33" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.27"  class="phpdocumentor-element-found-in__source" data-line="27" data-modal="source-view"></a>
     </aside>
 
     
@@ -965,9 +965,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 
-            <a href="classes/rex-form.html#source-view.30"  class="phpdocumentor-element-found-in__source" data-line="30" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.24"  class="phpdocumentor-element-found-in__source" data-line="24" data-modal="source-view"></a>
     </aside>
 
     
@@ -998,36 +998,21 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
-            <a href="classes/rex-form.html#source-view.21"  class="phpdocumentor-element-found-in__source" data-line="21" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.18"  class="phpdocumentor-element-found-in__source" data-line="18" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, <abbr title="\list">list</abbr>&lt;string|int, <a href="classes/rex-form-element.html"><abbr title="\rex_form_element">rex_form_element</abbr></a>&gt;&gt;</span>
     <span class="phpdocumentor-signature__name">$elements</span>
     </code>
 
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-var</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>array&lt;string, list&lt;rex_form_element&gt;&gt;</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
 </article>
                     <article
@@ -1046,15 +1031,15 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">33</span>
 
-            <a href="classes/rex-form.html#source-view.39"  class="phpdocumentor-element-found-in__source" data-line="39" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.33"  class="phpdocumentor-element-found-in__source" data-line="33" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;int, string&gt;</span>
     <span class="phpdocumentor-signature__name">$errorMessages</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
 
@@ -1112,9 +1097,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">45</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
-            <a href="classes/rex-form.html#source-view.45"  class="phpdocumentor-element-found-in__source" data-line="45" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.39"  class="phpdocumentor-element-found-in__source" data-line="39" data-modal="source-view"></a>
     </aside>
 
     
@@ -1178,9 +1163,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">30</span>
 
-            <a href="classes/rex-form.html#source-view.36"  class="phpdocumentor-element-found-in__source" data-line="36" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.30"  class="phpdocumentor-element-found-in__source" data-line="30" data-modal="source-view"></a>
     </aside>
 
     
@@ -1312,36 +1297,21 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
-            <a href="classes/rex-form.html#source-view.27"  class="phpdocumentor-element-found-in__source" data-line="27" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.21"  class="phpdocumentor-element-found-in__source" data-line="21" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, string|int|bool&gt;</span>
     <span class="phpdocumentor-signature__name">$params</span>
     </code>
 
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-var</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>array&lt;string, string|int|bool&gt;</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
 </article>
                     <article
@@ -1426,15 +1396,15 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
-            <a href="classes/rex-form.html#source-view.42"  class="phpdocumentor-element-found-in__source" data-line="42" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.36"  class="phpdocumentor-element-found-in__source" data-line="36" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">string</span>
+        <span class="phpdocumentor-signature__type">null|string</span>
     <span class="phpdocumentor-signature__name">$warning</span>
     </code>
 
@@ -1496,9 +1466,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">258</span>
+    <span class="phpdocumentor-element-found-in__line">262</span>
 
-            <a href="classes/rex-form.html#source-view.258"  class="phpdocumentor-element-found-in__source" data-line="258" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.262"  class="phpdocumentor-element-found-in__source" data-line="262" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Fomular ein Checkbox-Feld hinzu.</p>
@@ -1557,9 +1527,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">152</span>
+    <span class="phpdocumentor-element-found-in__line">156</span>
 
-            <a href="classes/rex-form.html#source-view.152"  class="phpdocumentor-element-found-in__source" data-line="152" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.156"  class="phpdocumentor-element-found-in__source" data-line="156" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Container-Feld hinzu.</p>
@@ -1618,9 +1588,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">427</span>
+    <span class="phpdocumentor-element-found-in__line">431</span>
 
-            <a href="classes/rex-form.html#source-view.427"  class="phpdocumentor-element-found-in__source" data-line="427" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.431"  class="phpdocumentor-element-found-in__source" data-line="431" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Fomualar ein Control-Feld hinzu.</p>
@@ -1692,35 +1662,33 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">451</span>
+    <span class="phpdocumentor-element-found-in__line">458</span>
 
-            <a href="classes/rex-form.html#source-view.451"  class="phpdocumentor-element-found-in__source" data-line="451" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.458"  class="phpdocumentor-element-found-in__source" data-line="458" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular eine Fehlermeldung hinzu.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">addErrorMessage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorCode</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorMessage</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">addErrorMessage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorCode</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$errorMessage</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$errorCode</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$errorMessage</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1745,9 +1713,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
-            <a href="classes/rex-form.html#source-view.130"  class="phpdocumentor-element-found-in__source" data-line="130" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.134"  class="phpdocumentor-element-found-in__source" data-line="134" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Input-Feld hinzu.</p>
@@ -1818,16 +1786,16 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">113</span>
+    <span class="phpdocumentor-element-found-in__line">117</span>
 
-            <a href="classes/rex-form.html#source-view.113"  class="phpdocumentor-element-found-in__source" data-line="113" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.117"  class="phpdocumentor-element-found-in__source" data-line="117" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Fieldset hinzu.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">addFieldset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">addFieldset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>Dieses dient dazu ein Formular in mehrere Abschnitte zu gliedern.</p>
 </section>
@@ -1836,11 +1804,10 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fieldset</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1865,9 +1832,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">244</span>
+    <span class="phpdocumentor-element-found-in__line">248</span>
 
-            <a href="classes/rex-form.html#source-view.244"  class="phpdocumentor-element-found-in__source" data-line="244" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.248"  class="phpdocumentor-element-found-in__source" data-line="248" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Fomular ein Hidden-Feld hinzu.</p>
@@ -1924,9 +1891,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">174</span>
+    <span class="phpdocumentor-element-found-in__line">178</span>
 
-            <a href="classes/rex-form.html#source-view.174"  class="phpdocumentor-element-found-in__source" data-line="174" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.178"  class="phpdocumentor-element-found-in__source" data-line="178" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Input-Feld mit dem Type $type hinzu.</p>
@@ -1997,9 +1964,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">404</span>
+    <span class="phpdocumentor-element-found-in__line">408</span>
 
-            <a href="classes/rex-form.html#source-view.404"  class="phpdocumentor-element-found-in__source" data-line="404" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.408"  class="phpdocumentor-element-found-in__source" data-line="408" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Feld hinzu mit dem die Struktur-Verwaltung angebunden werden kann.</p>
@@ -2072,9 +2039,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">382</span>
+    <span class="phpdocumentor-element-found-in__line">386</span>
 
-            <a href="classes/rex-form.html#source-view.382"  class="phpdocumentor-element-found-in__source" data-line="382" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.386"  class="phpdocumentor-element-found-in__source" data-line="386" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Feld hinzu mit dem die Struktur-Verwaltung angebunden werden kann.</p>
@@ -2147,9 +2114,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">338</span>
+    <span class="phpdocumentor-element-found-in__line">342</span>
 
-            <a href="classes/rex-form.html#source-view.338"  class="phpdocumentor-element-found-in__source" data-line="338" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.342"  class="phpdocumentor-element-found-in__source" data-line="342" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Feld hinzu mit dem der Medienpool angebunden werden kann.</p>
@@ -2222,9 +2189,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">360</span>
+    <span class="phpdocumentor-element-found-in__line">364</span>
 
-            <a href="classes/rex-form.html#source-view.360"  class="phpdocumentor-element-found-in__source" data-line="360" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.364"  class="phpdocumentor-element-found-in__source" data-line="364" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Feld hinzu mit dem der Medienpool angebunden werden kann.</p>
@@ -2297,9 +2264,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">463</span>
+    <span class="phpdocumentor-element-found-in__line">470</span>
 
-            <a href="classes/rex-form.html#source-view.463"  class="phpdocumentor-element-found-in__source" data-line="463" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.470"  class="phpdocumentor-element-found-in__source" data-line="470" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular einen Parameter hinzu.</p>
@@ -2409,9 +2376,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">275</span>
+    <span class="phpdocumentor-element-found-in__line">279</span>
 
-            <a href="classes/rex-form.html#source-view.275"  class="phpdocumentor-element-found-in__source" data-line="275" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.279"  class="phpdocumentor-element-found-in__source" data-line="279" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Radio-Feld hinzu.</p>
@@ -2470,9 +2437,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">441</span>
+    <span class="phpdocumentor-element-found-in__line">445</span>
 
-            <a href="classes/rex-form.html#source-view.441"  class="phpdocumentor-element-found-in__source" data-line="441" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.445"  class="phpdocumentor-element-found-in__source" data-line="445" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular beliebiges HTML zu.</p>
@@ -2516,9 +2483,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">223</span>
+    <span class="phpdocumentor-element-found-in__line">227</span>
 
-            <a href="classes/rex-form.html#source-view.223"  class="phpdocumentor-element-found-in__source" data-line="223" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.227"  class="phpdocumentor-element-found-in__source" data-line="227" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Read-Only-Feld hinzu.</p>
@@ -2577,9 +2544,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">209</span>
 
-            <a href="classes/rex-form.html#source-view.205"  class="phpdocumentor-element-found-in__source" data-line="205" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.209"  class="phpdocumentor-element-found-in__source" data-line="209" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Read-Only-Text-Feld hinzu.</p>
@@ -2638,9 +2605,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">316</span>
+    <span class="phpdocumentor-element-found-in__line">320</span>
 
-            <a href="classes/rex-form.html#source-view.316"  class="phpdocumentor-element-found-in__source" data-line="316" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.320"  class="phpdocumentor-element-found-in__source" data-line="320" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Select/Auswahl-Feld hinzu.</p>
@@ -2697,9 +2664,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">291</span>
+    <span class="phpdocumentor-element-found-in__line">295</span>
 
-            <a href="classes/rex-form.html#source-view.291"  class="phpdocumentor-element-found-in__source" data-line="291" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.295"  class="phpdocumentor-element-found-in__source" data-line="295" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Textarea-Feld hinzu.</p>
@@ -2756,9 +2723,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">188</span>
+    <span class="phpdocumentor-element-found-in__line">192</span>
 
-            <a href="classes/rex-form.html#source-view.188"  class="phpdocumentor-element-found-in__source" data-line="188" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.192"  class="phpdocumentor-element-found-in__source" data-line="192" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fuegt dem Formular ein Text-Feld hinzu.</p>
@@ -2815,9 +2782,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">516</span>
+    <span class="phpdocumentor-element-found-in__line">522</span>
 
-            <a href="classes/rex-form.html#source-view.516"  class="phpdocumentor-element-found-in__source" data-line="516" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.522"  class="phpdocumentor-element-found-in__source" data-line="522" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Erstellt ein Input-Element anhand des Strings $inputType.</p>
@@ -2881,9 +2848,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1017</span>
+    <span class="phpdocumentor-element-found-in__line">1038</span>
 
-            <a href="classes/rex-form.html#source-view.1017"  class="phpdocumentor-element-found-in__source" data-line="1017" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.1038"  class="phpdocumentor-element-found-in__source" data-line="1038" data-modal="source-view"></a>
     </aside>
 
     
@@ -2938,9 +2905,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form.php">form.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">313</span>
+    <span class="phpdocumentor-element-found-in__line">312</span>
 
-            <a href="classes/rex-form.html#source-view.313"  class="phpdocumentor-element-found-in__source" data-line="313" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.312"  class="phpdocumentor-element-found-in__source" data-line="312" data-modal="source-view"></a>
     </aside>
 
     
@@ -2990,7 +2957,7 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">factory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldset</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$whereCondition</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;post&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$debug</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$db</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">factory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldset</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$whereCondition</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;post&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$debug</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$db</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3018,10 +2985,11 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$method</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;post&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$debug</span>
@@ -3079,9 +3047,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">997</span>
+    <span class="phpdocumentor-element-found-in__line">1018</span>
 
-            <a href="classes/rex-form.html#source-view.997"  class="phpdocumentor-element-found-in__source" data-line="997" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.1018"  class="phpdocumentor-element-found-in__source" data-line="1018" data-modal="source-view"></a>
     </aside>
 
     
@@ -3122,9 +3090,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1132</span>
+    <span class="phpdocumentor-element-found-in__line">1153</span>
 
-            <a href="classes/rex-form.html#source-view.1132"  class="phpdocumentor-element-found-in__source" data-line="1132" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.1153"  class="phpdocumentor-element-found-in__source" data-line="1153" data-modal="source-view"></a>
     </aside>
 
     
@@ -3155,9 +3123,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">708</span>
+    <span class="phpdocumentor-element-found-in__line">720</span>
 
-            <a href="classes/rex-form.html#source-view.708"  class="phpdocumentor-element-found-in__source" data-line="708" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.720"  class="phpdocumentor-element-found-in__source" data-line="720" data-modal="source-view"></a>
     </aside>
 
     
@@ -3198,15 +3166,15 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">624</span>
+    <span class="phpdocumentor-element-found-in__line">636</span>
 
-            <a href="classes/rex-form.html#source-view.624"  class="phpdocumentor-element-found-in__source" data-line="624" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.636"  class="phpdocumentor-element-found-in__source" data-line="636" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getInputClassName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inputType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getInputClassName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$inputType</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">class-string<\rex_form_element></span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3234,19 +3202,10 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
                                                             
                                              
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-return</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>class-string&lt;rex_form_element&gt;</p>
-</section>
-
-                                    </dd>
                         </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type">class-string<\rex_form_element></span>
             &mdash;
         
     
@@ -3264,9 +3223,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">677</span>
+    <span class="phpdocumentor-element-found-in__line">689</span>
 
-            <a href="classes/rex-form.html#source-view.677"  class="phpdocumentor-element-found-in__source" data-line="677" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.689"  class="phpdocumentor-element-found-in__source" data-line="689" data-modal="source-view"></a>
     </aside>
 
     
@@ -3307,9 +3266,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">972</span>
+    <span class="phpdocumentor-element-found-in__line">988</span>
 
-            <a href="classes/rex-form.html#source-view.972"  class="phpdocumentor-element-found-in__source" data-line="972" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.988"  class="phpdocumentor-element-found-in__source" data-line="988" data-modal="source-view"></a>
     </aside>
 
     
@@ -3340,9 +3299,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">940</span>
+    <span class="phpdocumentor-element-found-in__line">950</span>
 
-            <a href="classes/rex-form.html#source-view.940"  class="phpdocumentor-element-found-in__source" data-line="940" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.950"  class="phpdocumentor-element-found-in__source" data-line="950" data-modal="source-view"></a>
     </aside>
 
     
@@ -3373,9 +3332,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">488</span>
+    <span class="phpdocumentor-element-found-in__line">494</span>
 
-            <a href="classes/rex-form.html#source-view.488"  class="phpdocumentor-element-found-in__source" data-line="488" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.494"  class="phpdocumentor-element-found-in__source" data-line="494" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt den Wert des Parameters $name zurueck,
@@ -3425,38 +3384,23 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">474</span>
+    <span class="phpdocumentor-element-found-in__line">480</span>
 
-            <a href="classes/rex-form.html#source-view.474"  class="phpdocumentor-element-found-in__source" data-line="474" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.480"  class="phpdocumentor-element-found-in__source" data-line="480" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt alle Parameter des Fomulars zurueck.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getParams</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getParams</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string|int|bool&gt;</span></code>
 
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-return</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>array&lt;string, string|int|bool&gt;</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string, string|int|bool&gt;</span>
             &mdash;
         
     
@@ -3474,9 +3418,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form.php">form.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">240</span>
 
-            <a href="classes/rex-form.html#source-view.238"  class="phpdocumentor-element-found-in__source" data-line="238" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.240"  class="phpdocumentor-element-found-in__source" data-line="240" data-modal="source-view"></a>
     </aside>
 
     
@@ -3507,9 +3451,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form.php">form.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">230</span>
+    <span class="phpdocumentor-element-found-in__line">232</span>
 
-            <a href="classes/rex-form.html#source-view.230"  class="phpdocumentor-element-found-in__source" data-line="230" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.232"  class="phpdocumentor-element-found-in__source" data-line="232" data-modal="source-view"></a>
     </aside>
 
     
@@ -3540,9 +3484,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">99</span>
+    <span class="phpdocumentor-element-found-in__line">101</span>
 
-            <a href="classes/rex-form.html#source-view.99"  class="phpdocumentor-element-found-in__source" data-line="99" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.101"  class="phpdocumentor-element-found-in__source" data-line="101" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt eine Formular-Url zurück.</p>
@@ -3592,9 +3536,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">953</span>
+    <span class="phpdocumentor-element-found-in__line">966</span>
 
-            <a href="classes/rex-form.html#source-view.953"  class="phpdocumentor-element-found-in__source" data-line="953" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.966"  class="phpdocumentor-element-found-in__source" data-line="966" data-modal="source-view"></a>
     </aside>
 
     
@@ -3659,9 +3603,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
-            <a href="classes/rex-form.html#source-view.74"  class="phpdocumentor-element-found-in__source" data-line="74" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.73"  class="phpdocumentor-element-found-in__source" data-line="73" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Initialisiert das Formular.</p>
@@ -3693,9 +3637,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form.php">form.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">222</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
-            <a href="classes/rex-form.html#source-view.222"  class="phpdocumentor-element-found-in__source" data-line="222" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.224"  class="phpdocumentor-element-found-in__source" data-line="224" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Prueft ob sich das Formular im Edit-Modus befindet.</p>
@@ -3727,27 +3671,26 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">605</span>
+    <span class="phpdocumentor-element-found-in__line">618</span>
 
-            <a href="classes/rex-form.html#source-view.605"  class="phpdocumentor-element-found-in__source" data-line="605" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.618"  class="phpdocumentor-element-found-in__source" data-line="618" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt die Url die bei der apply-action genutzt wird.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setApplyUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">setApplyUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$url</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$url</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -3772,27 +3715,26 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form.php">form.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">208</span>
+    <span class="phpdocumentor-element-found-in__line">210</span>
 
-            <a href="classes/rex-form.html#source-view.208"  class="phpdocumentor-element-found-in__source" data-line="208" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.210"  class="phpdocumentor-element-found-in__source" data-line="210" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Wechselt den Modus des Formulars.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setEditMode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isEditMode</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">setEditMode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isEditMode</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$isEditMode</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -3817,27 +3759,25 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">87</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
-            <a href="classes/rex-form.html#source-view.87"  class="phpdocumentor-element-found-in__source" data-line="87" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.89"  class="phpdocumentor-element-found-in__source" data-line="89" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setFormId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">setFormId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -3913,27 +3853,25 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">964</span>
+    <span class="phpdocumentor-element-found-in__line">980</span>
 
-            <a href="classes/rex-form.html#source-view.964"  class="phpdocumentor-element-found-in__source" data-line="964" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.980"  class="phpdocumentor-element-found-in__source" data-line="980" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setMessage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">setMessage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$message</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -3958,27 +3896,25 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">945</span>
+    <span class="phpdocumentor-element-found-in__line">958</span>
 
-            <a href="classes/rex-form.html#source-view.945"  class="phpdocumentor-element-found-in__source" data-line="945" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.958"  class="phpdocumentor-element-found-in__source" data-line="958" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setWarning</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$warning</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">setWarning</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$warning</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$warning</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -4003,9 +3939,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1267</span>
+    <span class="phpdocumentor-element-found-in__line">1288</span>
 
-            <a href="classes/rex-form.html#source-view.1267"  class="phpdocumentor-element-found-in__source" data-line="1267" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.1288"  class="phpdocumentor-element-found-in__source" data-line="1288" data-modal="source-view"></a>
     </aside>
 
     
@@ -4046,7 +3982,7 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldset</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$whereCondition</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;post&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$debug</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$db</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$tableName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldset</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$whereCondition</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;post&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$debug</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$db</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -4074,10 +4010,11 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$method</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;post&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                
+                    <section class="phpdocumentor-description"></section>
+
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$debug</span>
@@ -4133,9 +4070,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">501</span>
+    <span class="phpdocumentor-element-found-in__line">507</span>
 
-            <a href="classes/rex-form.html#source-view.501"  class="phpdocumentor-element-found-in__source" data-line="501" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.507"  class="phpdocumentor-element-found-in__source" data-line="507" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Allgemeine Bootleneck-Methode um Elemente in das Formular einzufuegen.</p>
@@ -4178,9 +4115,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">535</span>
+    <span class="phpdocumentor-element-found-in__line">541</span>
 
-            <a href="classes/rex-form.html#source-view.535"  class="phpdocumentor-element-found-in__source" data-line="535" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.541"  class="phpdocumentor-element-found-in__source" data-line="541" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Erstellt ein Input-Element anhand von $tag.</p>
@@ -4244,9 +4181,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form.php">form.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">398</span>
+    <span class="phpdocumentor-element-found-in__line">397</span>
 
-            <a href="classes/rex-form.html#source-view.398"  class="phpdocumentor-element-found-in__source" data-line="398" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.397"  class="phpdocumentor-element-found-in__source" data-line="397" data-modal="source-view"></a>
     </aside>
 
     
@@ -4277,9 +4214,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">901</span>
+    <span class="phpdocumentor-element-found-in__line">911</span>
 
-            <a href="classes/rex-form.html#source-view.901"  class="phpdocumentor-element-found-in__source" data-line="901" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.911"  class="phpdocumentor-element-found-in__source" data-line="911" data-modal="source-view"></a>
     </aside>
 
     
@@ -4310,9 +4247,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">920</span>
+    <span class="phpdocumentor-element-found-in__line">930</span>
 
-            <a href="classes/rex-form.html#source-view.920"  class="phpdocumentor-element-found-in__source" data-line="920" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.930"  class="phpdocumentor-element-found-in__source" data-line="930" data-modal="source-view"></a>
     </aside>
 
     
@@ -4360,37 +4297,22 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">854</span>
+    <span class="phpdocumentor-element-found-in__line">865</span>
 
-            <a href="classes/rex-form.html#source-view.854"  class="phpdocumentor-element-found-in__source" data-line="854" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.865"  class="phpdocumentor-element-found-in__source" data-line="865" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">getFieldsetElements</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getFieldsetElements</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, <abbr title="\list">list</abbr>&lt;string|int, <a href="classes/rex-form-element.html"><abbr title="\rex_form_element">rex_form_element</abbr></a>&gt;&gt;</span></code>
 
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-return</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>array&lt;string, list&lt;rex_form_element&gt;&gt;</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string, <abbr title="\list">list</abbr>&lt;string|int, <a href="classes/rex-form-element.html"><abbr title="\rex_form_element">rex_form_element</abbr></a>&gt;&gt;</span>
             &mdash;
         
     
@@ -4408,9 +4330,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">833</span>
+    <span class="phpdocumentor-element-found-in__line">845</span>
 
-            <a href="classes/rex-form.html#source-view.833"  class="phpdocumentor-element-found-in__source" data-line="833" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.845"  class="phpdocumentor-element-found-in__source" data-line="845" data-modal="source-view"></a>
     </aside>
 
     
@@ -4441,9 +4363,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">841</span>
+    <span class="phpdocumentor-element-found-in__line">853</span>
 
-            <a href="classes/rex-form.html#source-view.841"  class="phpdocumentor-element-found-in__source" data-line="841" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.853"  class="phpdocumentor-element-found-in__source" data-line="853" data-modal="source-view"></a>
     </aside>
 
     
@@ -4474,9 +4396,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">817</span>
+    <span class="phpdocumentor-element-found-in__line">829</span>
 
-            <a href="classes/rex-form.html#source-view.817"  class="phpdocumentor-element-found-in__source" data-line="817" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.829"  class="phpdocumentor-element-found-in__source" data-line="829" data-modal="source-view"></a>
     </aside>
 
     
@@ -4507,9 +4429,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">801</span>
+    <span class="phpdocumentor-element-found-in__line">813</span>
 
-            <a href="classes/rex-form.html#source-view.801"  class="phpdocumentor-element-found-in__source" data-line="801" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.813"  class="phpdocumentor-element-found-in__source" data-line="813" data-modal="source-view"></a>
     </aside>
 
     
@@ -4540,9 +4462,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form.php">form.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">246</span>
+    <span class="phpdocumentor-element-found-in__line">245</span>
 
-            <a href="classes/rex-form.html#source-view.246"  class="phpdocumentor-element-found-in__source" data-line="246" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.245"  class="phpdocumentor-element-found-in__source" data-line="245" data-modal="source-view"></a>
     </aside>
 
     
@@ -4558,8 +4480,7 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -4584,37 +4505,22 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">878</span>
+    <span class="phpdocumentor-element-found-in__line">888</span>
 
-            <a href="classes/rex-form.html#source-view.878"  class="phpdocumentor-element-found-in__source" data-line="878" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.888"  class="phpdocumentor-element-found-in__source" data-line="888" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">getSaveElements</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">getSaveElements</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, <abbr title="\list">list</abbr>&lt;string|int, <a href="classes/rex-form-element.html"><abbr title="\rex_form_element">rex_form_element</abbr></a>&gt;&gt;</span></code>
 
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-return</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>array&lt;string, list&lt;rex_form_element&gt;&gt;</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string, <abbr title="\list">list</abbr>&lt;string|int, <a href="classes/rex-form-element.html"><abbr title="\rex_form_element">rex_form_element</abbr></a>&gt;&gt;</span>
             &mdash;
         
     
@@ -4632,9 +4538,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form.php">form.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">251</span>
+    <span class="phpdocumentor-element-found-in__line">250</span>
 
-            <a href="classes/rex-form.html#source-view.251"  class="phpdocumentor-element-found-in__source" data-line="251" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.250"  class="phpdocumentor-element-found-in__source" data-line="250" data-modal="source-view"></a>
     </aside>
 
     
@@ -4642,8 +4548,7 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">getValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -4651,8 +4556,7 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -4677,9 +4581,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">784</span>
+    <span class="phpdocumentor-element-found-in__line">796</span>
 
-            <a href="classes/rex-form.html#source-view.784"  class="phpdocumentor-element-found-in__source" data-line="784" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.796"  class="phpdocumentor-element-found-in__source" data-line="796" data-modal="source-view"></a>
     </aside>
 
     
@@ -4736,9 +4640,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">775</span>
+    <span class="phpdocumentor-element-found-in__line">787</span>
 
-            <a href="classes/rex-form.html#source-view.775"  class="phpdocumentor-element-found-in__source" data-line="775" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.787"  class="phpdocumentor-element-found-in__source" data-line="787" data-modal="source-view"></a>
     </aside>
 
     
@@ -4795,9 +4699,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">766</span>
+    <span class="phpdocumentor-element-found-in__line">778</span>
 
-            <a href="classes/rex-form.html#source-view.766"  class="phpdocumentor-element-found-in__source" data-line="766" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.778"  class="phpdocumentor-element-found-in__source" data-line="778" data-modal="source-view"></a>
     </aside>
 
     
@@ -4839,9 +4743,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">793</span>
+    <span class="phpdocumentor-element-found-in__line">805</span>
 
-            <a href="classes/rex-form.html#source-view.793"  class="phpdocumentor-element-found-in__source" data-line="793" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.805"  class="phpdocumentor-element-found-in__source" data-line="805" data-modal="source-view"></a>
     </aside>
 
     
@@ -4932,9 +4836,9 @@ oder $default kein Parameter mit dem Namen exisitiert.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form.php">form.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">270</span>
+    <span class="phpdocumentor-element-found-in__line">269</span>
 
-            <a href="classes/rex-form.html#source-view.270"  class="phpdocumentor-element-found-in__source" data-line="270" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.269"  class="phpdocumentor-element-found-in__source" data-line="269" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Callbackfunktion, damit in subklassen der Value noch beeinflusst werden kann
@@ -4999,9 +4903,9 @@ kurz vorm speichern.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">987</span>
+    <span class="phpdocumentor-element-found-in__line">1008</span>
 
-            <a href="classes/rex-form.html#source-view.987"  class="phpdocumentor-element-found-in__source" data-line="987" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.1008"  class="phpdocumentor-element-found-in__source" data-line="1008" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Callbackfunktion, damit in subklassen der Value noch beeinflusst werden kann
@@ -5009,34 +4913,31 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">preView</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldsetName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">preView</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldsetName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fieldsetName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fieldName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fieldValue</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -5061,9 +4962,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1070</span>
+    <span class="phpdocumentor-element-found-in__line">1091</span>
 
-            <a href="classes/rex-form.html#source-view.1070"  class="phpdocumentor-element-found-in__source" data-line="1070" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.1091"  class="phpdocumentor-element-found-in__source" data-line="1091" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Übernimmt die POST-Werte in die FormElemente.</p>
@@ -5095,9 +4996,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1106</span>
+    <span class="phpdocumentor-element-found-in__line">1127</span>
 
-            <a href="classes/rex-form.html#source-view.1106"  class="phpdocumentor-element-found-in__source" data-line="1106" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.1127"  class="phpdocumentor-element-found-in__source" data-line="1127" data-modal="source-view"></a>
     </aside>
 
     
@@ -5170,9 +5071,9 @@ wenn das Feld mit Datenbankwerten angezeigt wird.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form.php">form.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">331</span>
+    <span class="phpdocumentor-element-found-in__line">330</span>
 
-            <a href="classes/rex-form.html#source-view.331"  class="phpdocumentor-element-found-in__source" data-line="331" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.330"  class="phpdocumentor-element-found-in__source" data-line="330" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Speichert das Formular.</p>
@@ -5208,9 +5109,9 @@ einen String mit einer Fehlermeldung oder den von der Datenbank gelieferten Erro
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/form/form_base.php"><a href="files/redaxo-main-redaxo-src-core-lib-form-form-base.html"><abbr title="redaxo-main/redaxo/src/core/lib/form/form_base.php">form_base.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1043</span>
+    <span class="phpdocumentor-element-found-in__line">1064</span>
 
-            <a href="classes/rex-form.html#source-view.1043"  class="phpdocumentor-element-found-in__source" data-line="1043" data-modal="source-view"></a>
+            <a href="classes/rex-form.html#source-view.1064"  class="phpdocumentor-element-found-in__source" data-line="1064" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Validiert die Eingaben.</p>
