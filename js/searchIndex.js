@@ -7081,6 +7081,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-login.html#method_depersonate"
         },                {
+            "fqsen": "\\rex_login\u003A\u003AchangedPassword\u0028\u0029",
+            "name": "changedPassword",
+            "summary": "",
+            "url": "classes/rex-login.html#method_changedPassword"
+        },                {
             "fqsen": "\\rex_login\u003A\u003AgetUser\u0028\u0029",
             "name": "getUser",
             "summary": "",
