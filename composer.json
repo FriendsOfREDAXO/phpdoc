@@ -5,6 +5,6 @@
         }
     },
     "require": {
-        "phpdocumentor/shim": "^3"
+        "phpdocumentor/shim": "^999"
     }
 }
