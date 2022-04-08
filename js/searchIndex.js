@@ -166,6 +166,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/default.html#constant_REX_CRONJOB_TABLE"
         },                {
+            "fqsen": "\\REX_CRONJOB_SCRIPT",
+            "name": "REX_CRONJOB_SCRIPT",
+            "summary": "",
+            "url": "namespaces/default.html#constant_REX_CRONJOB_SCRIPT"
+        },                {
             "fqsen": "\\rex_cronjob",
             "name": "rex_cronjob",
             "summary": "Cronjob\u0020Addon.",
@@ -1105,6 +1110,126 @@ Search.appendIndex(
             "name": "PROP_INTERLACE",
             "summary": "",
             "url": "classes/rex-managed-media.html#constant_PROP_INTERLACE"
+        },                {
+            "fqsen": "\\rex_media_manager",
+            "name": "rex_media_manager",
+            "summary": "",
+            "url": "classes/rex-media-manager.html"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method___construct"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "Creates\u0020a\u0020rex_managed_media\u0020object\u0020for\u0020the\u0020given\u0020file\u0020and\u0020mediatype.",
+            "url": "classes/rex-media-manager.html#method_create"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AgetMedia\u0028\u0029",
+            "name": "getMedia",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_getMedia"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AapplyEffects\u0028\u0029",
+            "name": "applyEffects",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_applyEffects"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AeffectsFromType\u0028\u0029",
+            "name": "effectsFromType",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_effectsFromType"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AsetCachePath\u0028\u0029",
+            "name": "setCachePath",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_setCachePath"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AgetCachePath\u0028\u0029",
+            "name": "getCachePath",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_getCachePath"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AuseCache\u0028\u0029",
+            "name": "useCache",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_useCache"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AisCached\u0028\u0029",
+            "name": "isCached",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_isCached"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AgetCacheFilename\u0028\u0029",
+            "name": "getCacheFilename",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_getCacheFilename"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AgetHeaderCacheFilename\u0028\u0029",
+            "name": "getHeaderCacheFilename",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_getHeaderCacheFilename"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AdeleteCacheByType\u0028\u0029",
+            "name": "deleteCacheByType",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_deleteCacheByType"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AdeleteCache\u0028\u0029",
+            "name": "deleteCache",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_deleteCache"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AsendMedia\u0028\u0029",
+            "name": "sendMedia",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_sendMedia"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AgetSupportedEffects\u0028\u0029",
+            "name": "getSupportedEffects",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_getSupportedEffects"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AaddEffect\u0028\u0029",
+            "name": "addEffect",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_addEffect"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AmediaIsInUse\u0028\u0029",
+            "name": "mediaIsInUse",
+            "summary": "Checks\u0020if\u0020media\u0020is\u0020used\u0020by\u0020this\u0020addon.",
+            "url": "classes/rex-media-manager.html#method_mediaIsInUse"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AmediaUpdated\u0028\u0029",
+            "name": "mediaUpdated",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_mediaUpdated"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003Ainit\u0028\u0029",
+            "name": "init",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_init"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AgetMediaFile\u0028\u0029",
+            "name": "getMediaFile",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_getMediaFile"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AgetMediaType\u0028\u0029",
+            "name": "getMediaType",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_getMediaType"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "",
+            "url": "classes/rex-media-manager.html#method_getUrl"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003ASTATUS_SYSTEM_TYPE",
+            "name": "STATUS_SYSTEM_TYPE",
+            "summary": "status\u0020of\u0020a\u0020system\u0020mediatyp.",
+            "url": "classes/rex-media-manager.html#constant_STATUS_SYSTEM_TYPE"
         },                {
             "fqsen": "\\rex_media_manager_not_found_exception",
             "name": "rex_media_manager_not_found_exception",
@@ -3853,7 +3978,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_article_slice_history\u003A\u003AmakeSnapshot\u0028\u0029",
             "name": "makeSnapshot",
-            "summary": "",
+            "summary": "Only\u0020Snapshots\u0020from\u0020LiveVersion.",
             "url": "classes/rex-article-slice-history.html#method_makeSnapshot"
         },                {
             "fqsen": "\\rex_article_slice_history\u003A\u003AgetSnapshots\u0028\u0029",
@@ -4461,6 +4586,11 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020full\u0020page\u0020path.",
             "url": "classes/rex-be-page.html#method_getFullKey"
         },                {
+            "fqsen": "\\rex_be_page\u003A\u003AsetTitle\u0028\u0029",
+            "name": "setTitle",
+            "summary": "Sets\u0020the\u0020page\u0020title.",
+            "url": "classes/rex-be-page.html#method_setTitle"
+        },                {
             "fqsen": "\\rex_be_page\u003A\u003AgetTitle\u0028\u0029",
             "name": "getTitle",
             "summary": "Returns\u0020the\u0020title.",
@@ -5065,6 +5195,21 @@ Search.appendIndex(
             "name": "getParam",
             "summary": "Returns\u0020the\u0020value\u0020associated\u0020with\u0020the\u0020given\u0020parameter\u0020\u0024name.",
             "url": "classes/rex-context.html#method_getParam"
+        },                {
+            "fqsen": "\\rex_context\u003A\u003AgetParams\u0028\u0029",
+            "name": "getParams",
+            "summary": "Returns\u0020the\u0020global\u0020parameters.",
+            "url": "classes/rex-context.html#method_getParams"
+        },                {
+            "fqsen": "\\rex_context\u003A\u003AhasParam\u0028\u0029",
+            "name": "hasParam",
+            "summary": "Returns\u0020whether\u0020the\u0020given\u0020parameter\u0020exists.",
+            "url": "classes/rex-context.html#method_hasParam"
+        },                {
+            "fqsen": "\\rex_context\u003A\u003AremoveParam\u0028\u0029",
+            "name": "removeParam",
+            "summary": "Removes\u0020a\u0020global\u0020parameter.",
+            "url": "classes/rex-context.html#method_removeParam"
         },                {
             "fqsen": "\\rex_context\u003A\u003AgetHiddenInputFields\u0028\u0029",
             "name": "getHiddenInputFields",
@@ -10726,6 +10871,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-stream.html#method_url_stat"
         },                {
+            "fqsen": "\\rex_stream\u003A\u003A\u0024context",
+            "name": "context",
+            "summary": "",
+            "url": "classes/rex-stream.html#property_context"
+        },                {
             "fqsen": "\\rex_string",
             "name": "rex_string",
             "summary": "String\u0020utility\u0020class.",
@@ -10800,6 +10950,36 @@ Search.appendIndex(
             "name": "cast",
             "summary": "Casts\u0020the\u0020variable\u0020\u0024var\u0020to\u0020\u0024vartype.",
             "url": "classes/rex-type.html#method_cast"
+        },                {
+            "fqsen": "\\rex_type\u003A\u003Astring\u0028\u0029",
+            "name": "string",
+            "summary": "",
+            "url": "classes/rex-type.html#method_string"
+        },                {
+            "fqsen": "\\rex_type\u003A\u003AnullOrString\u0028\u0029",
+            "name": "nullOrString",
+            "summary": "",
+            "url": "classes/rex-type.html#method_nullOrString"
+        },                {
+            "fqsen": "\\rex_type\u003A\u003Aint\u0028\u0029",
+            "name": "int",
+            "summary": "",
+            "url": "classes/rex-type.html#method_int"
+        },                {
+            "fqsen": "\\rex_type\u003A\u003AnullOrInt\u0028\u0029",
+            "name": "nullOrInt",
+            "summary": "",
+            "url": "classes/rex-type.html#method_nullOrInt"
+        },                {
+            "fqsen": "\\rex_type\u003A\u003Aarray\u0028\u0029",
+            "name": "array",
+            "summary": "",
+            "url": "classes/rex-type.html#method_array"
+        },                {
+            "fqsen": "\\rex_type\u003A\u003AinstanceOf\u0028\u0029",
+            "name": "instanceOf",
+            "summary": "",
+            "url": "classes/rex-type.html#method_instanceOf"
         },                {
             "fqsen": "\\rex_url",
             "name": "rex_url",

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Documentation</title>
+            <title>Documentation</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
@@ -54,57 +55,63 @@
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/redaxo.html">redaxo</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/redaxo.html" class="">redaxo</a>
+</h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="packages/redaxo-backup.html">backup</a>
+                <a href="packages/redaxo-backup.html" class="">backup</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-be.html">be</a>
+                <a href="packages/redaxo-be.html" class="">be</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-cronjob.html">cronjob</a>
+                <a href="packages/redaxo-cronjob.html" class="">cronjob</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-install.html">install</a>
+                <a href="packages/redaxo-install.html" class="">install</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-media.html">media</a>
+                <a href="packages/redaxo-media.html" class="">media</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-mediapool.html">mediapool</a>
+                <a href="packages/redaxo-mediapool.html" class="">mediapool</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-metainfo.html">metainfo</a>
+                <a href="packages/redaxo-metainfo.html" class="">metainfo</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-phpmailer.html">phpmailer</a>
+                <a href="packages/redaxo-phpmailer.html" class="">phpmailer</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-structure.html">structure</a>
+                <a href="packages/redaxo-structure.html" class="">structure</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-users.html">users</a>
+                <a href="packages/redaxo-users.html" class="">users</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-core.html">core</a>
+                <a href="packages/redaxo-core.html" class="">core</a>
                 
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/redaxo5.html">redaxo5</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/redaxo5.html" class="">redaxo5</a>
+</h4>
 
                         </section>
             
@@ -131,7 +138,7 @@
         
 
 <h3 id="interfaces_class_traits">
-    Interfaces, Classes and Traits
+    Interfaces, Classes, Traits and Enums
     <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
 </h3>
 
@@ -218,6 +225,8 @@
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-effect-workspace.html"><abbr title="\rex_effect_workspace">rex_effect_workspace</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-managed-media.html"><abbr title="\rex_managed_media">rex_managed_media</abbr></a></dt>
+        <dd></dd>
+            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-manager.html"><abbr title="\rex_media_manager">rex_media_manager</abbr></a></dt>
         <dd></dd>
             <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-manager-not-found-exception.html"><abbr title="\rex_media_manager_not_found_exception">rex_media_manager_not_found_exception</abbr></a></dt>
         <dd></dd>
@@ -535,6 +544,7 @@ which is necessary to implement some sort of pagination.</dd>
         <dd>Instance Pool Trait.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/rex-singleton-trait.html"><abbr title="\rex_singleton_trait">rex_singleton_trait</abbr></a></dt>
         <dd>Trait for singletons.</dd>
+    
     </dl>
 
 
@@ -547,154 +557,161 @@ which is necessary to implement some sort of pagination.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_CRONJOB_LOG_FOLDER">REX_CRONJOB_LOG_FOLDER</a>
     <span>
-        &nbsp;= $addon-&gt;getDataPath()                    </span>
+        &nbsp;= $addon-&gt;getDataPath()                            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="namespaces/default.html#constant_REX_CRONJOB_SCRIPT">REX_CRONJOB_SCRIPT</a>
+    <span>
+        &nbsp;= true                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_CRONJOB_TABLE">REX_CRONJOB_TABLE</a>
     <span>
-        &nbsp;= ex::getTable(&#039;cronjob&#039;)                    </span>
+        &nbsp;= \rex::getTable(&#039;cronjob&#039;)                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_FORM_ERROR_VIOLATE_UNIQUE_KEY">REX_FORM_ERROR_VIOLATE_UNIQUE_KEY</a>
     <span>
-        &nbsp;= 1062                    </span>
+        &nbsp;= 1062                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_LIST_OPT_SORT">REX_LIST_OPT_SORT</a>
     <span>
-        &nbsp;= 0                    </span>
+        &nbsp;= 0                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_LIST_OPT_SORT_DIRECTION">REX_LIST_OPT_SORT_DIRECTION</a>
     <span>
-        &nbsp;= 1                    </span>
+        &nbsp;= 1                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_CHECKBOX">REX_METAINFO_FIELD_CHECKBOX</a>
     <span>
-        &nbsp;= 5                    </span>
+        &nbsp;= 5                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_COUNT">REX_METAINFO_FIELD_COUNT</a>
     <span>
-        &nbsp;= 13                    </span>
+        &nbsp;= 13                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_DATE">REX_METAINFO_FIELD_DATE</a>
     <span>
-        &nbsp;= 10                    </span>
+        &nbsp;= 10                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_DATETIME">REX_METAINFO_FIELD_DATETIME</a>
     <span>
-        &nbsp;= 11                    </span>
+        &nbsp;= 11                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_LEGEND">REX_METAINFO_FIELD_LEGEND</a>
     <span>
-        &nbsp;= 12                    </span>
+        &nbsp;= 12                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_RADIO">REX_METAINFO_FIELD_RADIO</a>
     <span>
-        &nbsp;= 4                    </span>
+        &nbsp;= 4                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_REX_LINK_WIDGET">REX_METAINFO_FIELD_REX_LINK_WIDGET</a>
     <span>
-        &nbsp;= 8                    </span>
+        &nbsp;= 8                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_REX_LINKLIST_WIDGET">REX_METAINFO_FIELD_REX_LINKLIST_WIDGET</a>
     <span>
-        &nbsp;= 9                    </span>
+        &nbsp;= 9                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_REX_MEDIA_WIDGET">REX_METAINFO_FIELD_REX_MEDIA_WIDGET</a>
     <span>
-        &nbsp;= 6                    </span>
+        &nbsp;= 6                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_REX_MEDIALIST_WIDGET">REX_METAINFO_FIELD_REX_MEDIALIST_WIDGET</a>
     <span>
-        &nbsp;= 7                    </span>
+        &nbsp;= 7                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_SELECT">REX_METAINFO_FIELD_SELECT</a>
     <span>
-        &nbsp;= 3                    </span>
+        &nbsp;= 3                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_TEXT">REX_METAINFO_FIELD_TEXT</a>
     <span>
-        &nbsp;= 1                    </span>
+        &nbsp;= 1                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_TEXTAREA">REX_METAINFO_FIELD_TEXTAREA</a>
     <span>
-        &nbsp;= 2                    </span>
+        &nbsp;= 2                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_METAINFO_FIELD_TIME">REX_METAINFO_FIELD_TIME</a>
     <span>
-        &nbsp;= 13                    </span>
+        &nbsp;= 13                            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="namespaces/default.html#constant_REX_MIN_PHP_VERSION">REX_MIN_PHP_VERSION</a>
     <span>
-        &nbsp;= &#039;7.3&#039;                    </span>
+        &nbsp;= &#039;7.3&#039;                            </span>
 </dt>
 <dd>REDAXO main boot file.</dd>
 
-                        <dt class="phpdocumentor-table-of-contents__entry -function -">
+                            <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_filename">rex_mediapool_filename()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Erstellt einen Filename der eindeutig ist für den Medienpool.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_saveMedia">rex_mediapool_saveMedia()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Holt ein upgeloadetes File und legt es in den Medienpool
 Dabei wird kontrolliert ob das File schon vorhanden ist und es
@@ -703,7 +720,7 @@ wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.</dd
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_updateMedia">rex_mediapool_updateMedia()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Holt ein upgeloadetes File und legt es in den Medienpool
 Dabei wird kontrolliert ob das File schon vorhanden ist und es
@@ -712,7 +729,7 @@ wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.</dd
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_syncFile">rex_mediapool_syncFile()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Synchronisiert die Datei $physical_filename des Mediafolders in den
 Medienpool.</dd>
@@ -720,70 +737,70 @@ Medienpool.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_deleteMedia">rex_mediapool_deleteMedia()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_mediaIsInUse">rex_mediapool_mediaIsInUse()</a>
     <span>
-                        &nbsp;: bool|string    </span>
+                                &nbsp;: bool|string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_Mediaform">rex_mediapool_Mediaform()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Ausgabe des Medienpool Formulars.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_Uploadform">rex_mediapool_Uploadform()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Ausgabe des Medienpool Upload-Formulars.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_Syncform">rex_mediapool_Syncform()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Ausgabe des Medienpool Sync-Formulars.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_isAllowedMediaType">rex_mediapool_isAllowedMediaType()</a>
     <span>
-                        &nbsp;: bool    </span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd>check if mediatpye(extension) is allowed for upload.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_isAllowedMimeType">rex_mediapool_isAllowedMimeType()</a>
     <span>
-                        &nbsp;: bool    </span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd>Checks file against optional property `allowed_mime_types`.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_getMediaTypeWhitelist">rex_mediapool_getMediaTypeWhitelist()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Get allowed mediatype extensions given via media widget &quot;types&quot; param.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_getMediaTypeBlacklist">rex_mediapool_getMediaTypeBlacklist()</a>
     <span>
-                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
 <dd>Get global blocked mediatype extensions.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_metainfo_cleanup">rex_metainfo_cleanup()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Alle Metafelder löschen, nicht das nach einem Import in der Parameter Tabelle
 noch Datensätze zu Feldern stehen, welche nicht als Spalten in der
@@ -792,161 +809,161 @@ rex_article angelegt wurden!</dd>
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_metainfo_add_field_type">rex_metainfo_add_field_type()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Fügt einen neuen Feldtyp ein.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_metainfo_delete_field_type">rex_metainfo_delete_field_type()</a>
     <span>
-                        &nbsp;: bool|string    </span>
+                                &nbsp;: bool|string    </span>
 </dt>
 <dd>Löscht einen Feldtyp.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_metainfo_add_field">rex_metainfo_add_field()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: bool|string    </span>
 </dt>
 <dd>Fügt ein MetaFeld hinzu und legt dafür eine Spalte in der MetaTable an.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_metainfo_delete_field">rex_metainfo_delete_field()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: bool|string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_metainfo_meta_prefix">rex_metainfo_meta_prefix()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Extrahiert den Prefix aus dem Namen eine Spalte.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_metainfo_meta_table">rex_metainfo_meta_table()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Gibt die mit dem Prefix verbundenen Tabellennamen zurück.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_metainfo_extensions_handler">rex_metainfo_extensions_handler()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Bindet ggf extensions ein.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_getUrl">rex_getUrl()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Gibt eine Url zu einem Artikel zurück.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_redirect">rex_redirect()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Leitet auf einen anderen Artikel weiter.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_escape">rex_escape()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Escapes a variable to be used while rendering html.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_get">rex_get()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Returns the variable $varname of $_GET and casts the value.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_post">rex_post()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Returns the variable $varname of $_POST and casts the value.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_request">rex_request()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Returns the variable $varname of $_REQUEST and casts the value.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_server">rex_server()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Returns the variable $varname of $_SERVER and casts the value.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_session">rex_session()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Returns the variable $varname of $_SESSION and casts the value.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_set_session">rex_set_session()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Sets a session variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_unset_session">rex_unset_session()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Deletes a session variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_cookie">rex_cookie()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Returns the variable $varname of $_COOKIE and casts the value.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_files">rex_files()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Returns the variable $varname of $_FILES and casts the value.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_env">rex_env()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Returns the variable $varname of $_ENV and casts the value.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_request_method">rex_request_method()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Returns the HTTP method of the current request.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_delete_cache">rex_delete_cache()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Deletes the cache.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_ini_get">rex_ini_get()</a>
     <span>
-                        &nbsp;: int    </span>
+                                &nbsp;: int    </span>
 </dt>
 <dd></dd>
 
@@ -975,9 +992,39 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_CRONJOB_LOG_FOLDER</span>
     = <span class="phpdocumentor-signature__default-value">$addon-&gt;getDataPath()</span>
+</code>
+
+
+        <section class="phpdocumentor-description"></section>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_REX_CRONJOB_SCRIPT">
+        REX_CRONJOB_SCRIPT
+        <a href="namespaces/default.html#constant_REX_CRONJOB_SCRIPT" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/cronjob/lib/command/run.php"><a href="files/redaxo-main-redaxo-src-addons-cronjob-lib-command-run.html"><abbr title="redaxo-main/redaxo/src/addons/cronjob/lib/command/run.php">run.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+            <a href="namespaces/default.html#source-view.30"  class="phpdocumentor-element-found-in__source" data-line="30" data-modal="source-view"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">REX_CRONJOB_SCRIPT</span>
+    = <span class="phpdocumentor-signature__default-value">true</span>
 </code>
 
 
@@ -1005,9 +1052,9 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_CRONJOB_TABLE</span>
-    = <span class="phpdocumentor-signature__default-value">ex::getTable(&#039;cronjob&#039;)</span>
+    = <span class="phpdocumentor-signature__default-value">\rex::getTable(&#039;cronjob&#039;)</span>
 </code>
 
 
@@ -1049,7 +1096,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_FORM_ERROR_VIOLATE_UNIQUE_KEY</span>
     = <span class="phpdocumentor-signature__default-value">1062</span>
 </code>
@@ -1079,7 +1126,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_LIST_OPT_SORT</span>
     = <span class="phpdocumentor-signature__default-value">0</span>
 </code>
@@ -1109,7 +1156,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_LIST_OPT_SORT_DIRECTION</span>
     = <span class="phpdocumentor-signature__default-value">1</span>
 </code>
@@ -1139,7 +1186,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_CHECKBOX</span>
     = <span class="phpdocumentor-signature__default-value">5</span>
 </code>
@@ -1183,7 +1230,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_COUNT</span>
     = <span class="phpdocumentor-signature__default-value">13</span>
 </code>
@@ -1227,7 +1274,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_DATE</span>
     = <span class="phpdocumentor-signature__default-value">10</span>
 </code>
@@ -1271,7 +1318,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_DATETIME</span>
     = <span class="phpdocumentor-signature__default-value">11</span>
 </code>
@@ -1315,7 +1362,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_LEGEND</span>
     = <span class="phpdocumentor-signature__default-value">12</span>
 </code>
@@ -1359,7 +1406,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_RADIO</span>
     = <span class="phpdocumentor-signature__default-value">4</span>
 </code>
@@ -1403,7 +1450,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_REX_LINK_WIDGET</span>
     = <span class="phpdocumentor-signature__default-value">8</span>
 </code>
@@ -1447,7 +1494,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_REX_LINKLIST_WIDGET</span>
     = <span class="phpdocumentor-signature__default-value">9</span>
 </code>
@@ -1491,7 +1538,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_REX_MEDIA_WIDGET</span>
     = <span class="phpdocumentor-signature__default-value">6</span>
 </code>
@@ -1535,7 +1582,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_REX_MEDIALIST_WIDGET</span>
     = <span class="phpdocumentor-signature__default-value">7</span>
 </code>
@@ -1579,7 +1626,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_SELECT</span>
     = <span class="phpdocumentor-signature__default-value">3</span>
 </code>
@@ -1623,7 +1670,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_TEXT</span>
     = <span class="phpdocumentor-signature__default-value">1</span>
 </code>
@@ -1667,7 +1714,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_TEXTAREA</span>
     = <span class="phpdocumentor-signature__default-value">2</span>
 </code>
@@ -1711,7 +1758,7 @@ rex_article angelegt wurden!</dd>
     
     <code class="phpdocumentor-signature phpdocumentor-code -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_METAINFO_FIELD_TIME</span>
     = <span class="phpdocumentor-signature__default-value">13</span>
 </code>
@@ -1756,7 +1803,7 @@ rex_article angelegt wurden!</dd>
 
     <code class="phpdocumentor-signature phpdocumentor-code ">
     <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">REX_MIN_PHP_VERSION</span>
     = <span class="phpdocumentor-signature__default-value">&#039;7.3&#039;</span>
 </code>
@@ -1834,7 +1881,7 @@ rex_article angelegt wurden!</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_filename</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mediaName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$doSubindexing</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_filename</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mediaName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$doSubindexing</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1899,7 +1946,7 @@ wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_saveMedia</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$FILE</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$FILEINFOS</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userlogin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$doSubindexing</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_saveMedia</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$FILE</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$FILEINFOS</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userlogin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$doSubindexing</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1981,9 +2028,9 @@ wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
-            <a href="namespaces/default.html#source-view.82"  class="phpdocumentor-element-found-in__source" data-line="82" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.86"  class="phpdocumentor-element-found-in__source" data-line="86" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Holt ein upgeloadetes File und legt es in den Medienpool
@@ -1992,7 +2039,7 @@ wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_updateMedia</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$FILE</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$FILEINFOS</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userlogin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_updateMedia</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$FILE</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$FILEINFOS</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userlogin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2060,9 +2107,9 @@ wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">118</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
-            <a href="namespaces/default.html#source-view.118"  class="phpdocumentor-element-found-in__source" data-line="118" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.122"  class="phpdocumentor-element-found-in__source" data-line="122" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Synchronisiert die Datei $physical_filename des Mediafolders in den
@@ -2070,7 +2117,7 @@ Medienpool.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_syncFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$physicalFilename</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$categoryId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filetype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userlogin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_syncFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$physicalFilename</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$categoryId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filetype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userlogin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2159,15 +2206,15 @@ Medienpool.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
-            <a href="namespaces/default.html#source-view.146"  class="phpdocumentor-element-found-in__source" data-line="146" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.150"  class="phpdocumentor-element-found-in__source" data-line="150" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_deleteMedia</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_deleteMedia</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2221,15 +2268,15 @@ Medienpool.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
-            <a href="namespaces/default.html#source-view.162"  class="phpdocumentor-element-found-in__source" data-line="162" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.166"  class="phpdocumentor-element-found-in__source" data-line="166" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_mediaIsInUse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|string</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_mediaIsInUse</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2274,16 +2321,16 @@ Medienpool.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">176</span>
 
-            <a href="namespaces/default.html#source-view.172"  class="phpdocumentor-element-found-in__source" data-line="172" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.176"  class="phpdocumentor-element-found-in__source" data-line="176" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Ausgabe des Medienpool Formulars.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_Mediaform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formTitle</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$buttonTitle</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fileChooser</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$closeForm</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_Mediaform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formTitle</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$buttonTitle</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fileChooser</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$closeForm</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2346,16 +2393,16 @@ Medienpool.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">310</span>
+    <span class="phpdocumentor-element-found-in__line">314</span>
 
-            <a href="namespaces/default.html#source-view.310"  class="phpdocumentor-element-found-in__source" data-line="310" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.314"  class="phpdocumentor-element-found-in__source" data-line="314" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Ausgabe des Medienpool Upload-Formulars.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_Uploadform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_Uploadform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2386,16 +2433,16 @@ Medienpool.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">318</span>
+    <span class="phpdocumentor-element-found-in__line">322</span>
 
-            <a href="namespaces/default.html#source-view.318"  class="phpdocumentor-element-found-in__source" data-line="318" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.322"  class="phpdocumentor-element-found-in__source" data-line="322" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Ausgabe des Medienpool Sync-Formulars.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_Syncform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_Syncform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2426,16 +2473,16 @@ Medienpool.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">331</span>
+    <span class="phpdocumentor-element-found-in__line">335</span>
 
-            <a href="namespaces/default.html#source-view.331"  class="phpdocumentor-element-found-in__source" data-line="331" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.335"  class="phpdocumentor-element-found-in__source" data-line="335" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">check if mediatpye(extension) is allowed for upload.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_isAllowedMediaType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_isAllowedMediaType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2488,16 +2535,16 @@ Medienpool.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">346</span>
+    <span class="phpdocumentor-element-found-in__line">350</span>
 
-            <a href="namespaces/default.html#source-view.346"  class="phpdocumentor-element-found-in__source" data-line="346" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.350"  class="phpdocumentor-element-found-in__source" data-line="350" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Checks file against optional property `allowed_mime_types`.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_isAllowedMimeType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_isAllowedMimeType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2554,16 +2601,16 @@ If not given, the extension is extracted from <code class="prettyprint">$path</c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">359</span>
+    <span class="phpdocumentor-element-found-in__line">363</span>
 
-            <a href="namespaces/default.html#source-view.359"  class="phpdocumentor-element-found-in__source" data-line="359" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.363"  class="phpdocumentor-element-found-in__source" data-line="363" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Get allowed mediatype extensions given via media widget &quot;types&quot; param.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_getMediaTypeWhitelist</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_getMediaTypeWhitelist</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$args</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2612,16 +2659,16 @@ If not given, the extension is extracted from <code class="prettyprint">$path</c
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">370</span>
+    <span class="phpdocumentor-element-found-in__line">374</span>
 
-            <a href="namespaces/default.html#source-view.370"  class="phpdocumentor-element-found-in__source" data-line="370" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.374"  class="phpdocumentor-element-found-in__source" data-line="374" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Get global blocked mediatype extensions.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_mediapool_getMediaTypeBlacklist</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_getMediaTypeBlacklist</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
     
@@ -2669,7 +2716,7 @@ rex_article angelegt wurden!</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_metainfo_cleanup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$epOrParams</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_metainfo_cleanup</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$epOrParams</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2700,16 +2747,16 @@ rex_article angelegt wurden!</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php"><a href="files/redaxo-main-redaxo-src-addons-metainfo-functions-function-metainfo.html"><abbr title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php">function_metainfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
-            <a href="namespaces/default.html#source-view.16"  class="phpdocumentor-element-found-in__source" data-line="16" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.22"  class="phpdocumentor-element-found-in__source" data-line="22" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fügt einen neuen Feldtyp ein.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_metainfo_add_field_type</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dbtype</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dblength</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_metainfo_add_field_type</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$label</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dbtype</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$dblength</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"><p>Gibt beim Erfolg die Id des Feldes zurück, bei Fehler die Fehlermeldung</p>
 </section>
@@ -2718,34 +2765,31 @@ rex_article angelegt wurden!</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$label</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$dbtype</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$dblength</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
         
     
@@ -2758,16 +2802,16 @@ rex_article angelegt wurden!</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php"><a href="files/redaxo-main-redaxo-src-addons-metainfo-functions-function-metainfo.html"><abbr title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php">function_metainfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
-            <a href="namespaces/default.html#source-view.53"  class="phpdocumentor-element-found-in__source" data-line="53" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.61"  class="phpdocumentor-element-found-in__source" data-line="61" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Löscht einen Feldtyp.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_metainfo_delete_field_type</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldTypeId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|string</span></code>
+                    <span class="phpdocumentor-signature__name">rex_metainfo_delete_field_type</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldTypeId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|string</span></code>
 
         <section class="phpdocumentor-description"><p>Gibt beim Erfolg true zurück, sonst eine Fehlermeldung</p>
 </section>
@@ -2776,11 +2820,10 @@ rex_article angelegt wurden!</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fieldTypeId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -2800,106 +2843,96 @@ rex_article angelegt wurden!</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php"><a href="files/redaxo-main-redaxo-src-addons-metainfo-functions-function-metainfo.html"><abbr title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php">function_metainfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">91</span>
 
-            <a href="namespaces/default.html#source-view.70"  class="phpdocumentor-element-found-in__source" data-line="70" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.91"  class="phpdocumentor-element-found-in__source" data-line="91" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fügt ein MetaFeld hinzu und legt dafür eine Spalte in der MetaTable an.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_metainfo_add_field</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$priority</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$validate</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$restrictions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_metainfo_add_field</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$priority</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$validate</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$restrictions</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$callback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$title</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$priority</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$attributes</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$default</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$params</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$validate</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$restrictions</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$callback</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">bool|string</span>
             &mdash;
         
     
@@ -2912,34 +2945,32 @@ rex_article angelegt wurden!</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php"><a href="files/redaxo-main-redaxo-src-addons-metainfo-functions-function-metainfo.html"><abbr title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php">function_metainfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
-            <a href="namespaces/default.html#source-view.131"  class="phpdocumentor-element-found-in__source" data-line="131" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.157"  class="phpdocumentor-element-found-in__source" data-line="157" data-modal="source-view"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_metainfo_delete_field</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldIdOrName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_metainfo_delete_field</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fieldIdOrName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|string</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fieldIdOrName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
+    <span class="phpdocumentor-signature__response_type">bool|string</span>
             &mdash;
         
     
@@ -2952,16 +2983,16 @@ rex_article angelegt wurden!</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php"><a href="files/redaxo-main-redaxo-src-addons-metainfo-functions-function-metainfo.html"><abbr title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php">function_metainfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
-            <a href="namespaces/default.html#source-view.179"  class="phpdocumentor-element-found-in__source" data-line="179" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.205"  class="phpdocumentor-element-found-in__source" data-line="205" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Extrahiert den Prefix aus dem Namen eine Spalte.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_metainfo_meta_prefix</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">rex_metainfo_meta_prefix</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -2992,16 +3023,16 @@ rex_article angelegt wurden!</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php"><a href="files/redaxo-main-redaxo-src-addons-metainfo-functions-function-metainfo.html"><abbr title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php">function_metainfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">196</span>
+    <span class="phpdocumentor-element-found-in__line">222</span>
 
-            <a href="namespaces/default.html#source-view.196"  class="phpdocumentor-element-found-in__source" data-line="196" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.222"  class="phpdocumentor-element-found-in__source" data-line="222" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt die mit dem Prefix verbundenen Tabellennamen zurück.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_metainfo_meta_table</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_metainfo_meta_table</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$prefix</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3032,16 +3063,16 @@ rex_article angelegt wurden!</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php"><a href="files/redaxo-main-redaxo-src-addons-metainfo-functions-function-metainfo.html"><abbr title="redaxo-main/redaxo/src/addons/metainfo/functions/function_metainfo.php">function_metainfo.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">210</span>
+    <span class="phpdocumentor-element-found-in__line">236</span>
 
-            <a href="namespaces/default.html#source-view.210"  class="phpdocumentor-element-found-in__source" data-line="210" data-modal="source-view"></a>
+            <a href="namespaces/default.html#source-view.236"  class="phpdocumentor-element-found-in__source" data-line="236" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Bindet ggf extensions ein.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_metainfo_extensions_handler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/rex-extension-point.html"><abbr title="\rex_extension_point">rex_extension_point</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ep</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_metainfo_extensions_handler</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/rex-extension-point.html"><abbr title="\rex_extension_point">rex_extension_point</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ep</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3081,7 +3112,7 @@ rex_article angelegt wurden!</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_getUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int|string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clang</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$separator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&amp;amp;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">rex_getUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int|string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clang</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$separator</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&amp;amp;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3145,7 +3176,7 @@ rex_article angelegt wurden!</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_redirect</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">null|int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$articleId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clang</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_redirect</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">null|int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$articleId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clang</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3215,7 +3246,7 @@ rex_article angelegt wurden!</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_escape</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$strategy</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;html&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_escape</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$strategy</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;html&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>This function is adapted from code coming from Twig.
 (c) Fabien Potencier
@@ -3343,7 +3374,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3425,7 +3456,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_post</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_post</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3507,7 +3538,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_request</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_request</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3589,7 +3620,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_server</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_server</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3662,7 +3693,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_session</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_session</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3743,7 +3774,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_set_session</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_set_session</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3815,7 +3846,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_unset_session</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_unset_session</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3878,7 +3909,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_cookie</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_cookie</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -3960,7 +3991,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_files</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_files</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -4033,7 +4064,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_env</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_env</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -4106,7 +4137,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_request_method</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">rex_request_method</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
@@ -4151,7 +4182,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_delete_cache</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">rex_delete_cache</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
     
@@ -4179,7 +4210,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">rex_ini_get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">rex_ini_get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>

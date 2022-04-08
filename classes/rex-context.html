@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Documentation</title>
+            <title>Documentation</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
@@ -54,57 +55,63 @@
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/redaxo.html">redaxo</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/redaxo.html" class="">redaxo</a>
+</h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="packages/redaxo-backup.html">backup</a>
+                <a href="packages/redaxo-backup.html" class="">backup</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-be.html">be</a>
+                <a href="packages/redaxo-be.html" class="">be</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-cronjob.html">cronjob</a>
+                <a href="packages/redaxo-cronjob.html" class="">cronjob</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-install.html">install</a>
+                <a href="packages/redaxo-install.html" class="">install</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-media.html">media</a>
+                <a href="packages/redaxo-media.html" class="">media</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-mediapool.html">mediapool</a>
+                <a href="packages/redaxo-mediapool.html" class="">mediapool</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-metainfo.html">metainfo</a>
+                <a href="packages/redaxo-metainfo.html" class="">metainfo</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-phpmailer.html">phpmailer</a>
+                <a href="packages/redaxo-phpmailer.html" class="">phpmailer</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-structure.html">structure</a>
+                <a href="packages/redaxo-structure.html" class="">structure</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-users.html">users</a>
+                <a href="packages/redaxo-users.html" class="">users</a>
                 
             </li>
                     <li>
-                <a href="packages/redaxo-core.html">core</a>
+                <a href="packages/redaxo-core.html" class="">core</a>
                 
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/redaxo5.html">redaxo5</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/redaxo5.html" class="">redaxo5</a>
+</h4>
 
                         </section>
             
@@ -178,13 +185,14 @@
 
 
 <h3 id="interfaces_class_traits">
-    Interfaces, Classes and Traits
+    Interfaces, Classes, Traits and Enums
     <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/rex-context-provider-interface.html"><abbr title="\rex_context_provider_interface">rex_context_provider_interface</abbr></a></dt>
         <dd>Generic interface for classes which provide a complete rex-context.</dd>
+    
     
     
     </dl>
@@ -196,59 +204,80 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-context.html#method___construct">__construct()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Constructs a rex_context with the given global parameters.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-context.html#method_fromGet">fromGet()</a>
     <span>
-                        &nbsp;: self    </span>
+                                &nbsp;: self    </span>
 </dt>
 <dd>Returns a rex_context instance containing all GET parameters.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-context.html#method_fromPost">fromPost()</a>
     <span>
-                        &nbsp;: self    </span>
+                                &nbsp;: self    </span>
 </dt>
 <dd>Returns a rex_context instance containing all POST parameters.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-context.html#method_getHiddenInputFields">getHiddenInputFields()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Returns a html string containg hidden input fields for the given parameters.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-context.html#method_getParam">getParam()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Returns the value associated with the given parameter $name.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-context.html#method_getParams">getParams()</a>
+    <span>
+                                &nbsp;: array&lt;string, mixed&gt;    </span>
+</dt>
+<dd>Returns the global parameters.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-context.html#method_getUrl">getUrl()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>{@inheritdoc}</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-context.html#method_hasParam">hasParam()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>Returns whether the given parameter exists.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-context.html#method_removeParam">removeParam()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Removes a global parameter.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-context.html#method_restore">restore()</a>
     <span>
-                        &nbsp;: self    </span>
+                                &nbsp;: self    </span>
 </dt>
 <dd>Returns a rex_context instance containing all GET and POST parameters.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-context.html#method_setParam">setParam()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd>Set a global parameter.</dd>
 
@@ -287,7 +316,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$globalParams</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$globalParams</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -339,16 +368,16 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/context.php"><a href="files/redaxo-main-redaxo-src-core-lib-context.html"><abbr title="redaxo-main/redaxo/src/core/lib/context.php">context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">131</span>
+    <span class="phpdocumentor-element-found-in__line">157</span>
 
-            <a href="classes/rex-context.html#source-view.131"  class="phpdocumentor-element-found-in__source" data-line="131" data-modal="source-view"></a>
+            <a href="classes/rex-context.html#source-view.157"  class="phpdocumentor-element-found-in__source" data-line="157" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns a rex_context instance containing all GET parameters.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">fromGet</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromGet</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     
     
@@ -373,16 +402,16 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/context.php"><a href="files/redaxo-main-redaxo-src-core-lib-context.html"><abbr title="redaxo-main/redaxo/src/core/lib/context.php">context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">141</span>
+    <span class="phpdocumentor-element-found-in__line">167</span>
 
-            <a href="classes/rex-context.html#source-view.141"  class="phpdocumentor-element-found-in__source" data-line="141" data-modal="source-view"></a>
+            <a href="classes/rex-context.html#source-view.167"  class="phpdocumentor-element-found-in__source" data-line="167" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns a rex_context instance containing all POST parameters.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">fromPost</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">fromPost</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     
     
@@ -407,16 +436,16 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/context.php"><a href="files/redaxo-main-redaxo-src-core-lib-context.html"><abbr title="redaxo-main/redaxo/src/core/lib/context.php">context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">107</span>
+    <span class="phpdocumentor-element-found-in__line">133</span>
 
-            <a href="classes/rex-context.html#source-view.107"  class="phpdocumentor-element-found-in__source" data-line="107" data-modal="source-view"></a>
+            <a href="classes/rex-context.html#source-view.133"  class="phpdocumentor-element-found-in__source" data-line="133" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns a html string containg hidden input fields for the given parameters.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getHiddenInputFields</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getHiddenInputFields</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -478,7 +507,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getParam</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getParam</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>When no value is set, $default will be returned.</p>
 </section>
@@ -515,6 +544,40 @@
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_getParams">
+        getParams()
+        <a href="classes/rex-context.html#method_getParams" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/context.php"><a href="files/redaxo-main-redaxo-src-core-lib-context.html"><abbr title="redaxo-main/redaxo/src/core/lib/context.php">context.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">109</span>
+
+            <a href="classes/rex-context.html#source-view.109"  class="phpdocumentor-element-found-in__source" data-line="109" data-modal="source-view"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns the global parameters.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getParams</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+
+    
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_getUrl">
         getUrl()
         <a href="classes/rex-context.html#method_getUrl" class="headerlink"><i class="fas fa-link"></i></a>
@@ -531,7 +594,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$escape</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getUrl</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$escape</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -566,6 +629,96 @@
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_hasParam">
+        hasParam()
+        <a href="classes/rex-context.html#method_hasParam" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/context.php"><a href="files/redaxo-main-redaxo-src-core-lib-context.html"><abbr title="redaxo-main/redaxo/src/core/lib/context.php">context.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">117</span>
+
+            <a href="classes/rex-context.html#source-view.117"  class="phpdocumentor-element-found-in__source" data-line="117" data-modal="source-view"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns whether the given parameter exists.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">hasParam</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_removeParam">
+        removeParam()
+        <a href="classes/rex-context.html#method_removeParam" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/context.php"><a href="files/redaxo-main-redaxo-src-core-lib-context.html"><abbr title="redaxo-main/redaxo/src/core/lib/context.php">context.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">125</span>
+
+            <a href="classes/rex-context.html#source-view.125"  class="phpdocumentor-element-found-in__source" data-line="125" data-modal="source-view"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Removes a global parameter.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">removeParam</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$name</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_restore">
@@ -575,16 +728,16 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/context.php"><a href="files/redaxo-main-redaxo-src-core-lib-context.html"><abbr title="redaxo-main/redaxo/src/core/lib/context.php">context.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">120</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
-            <a href="classes/rex-context.html#source-view.120"  class="phpdocumentor-element-found-in__source" data-line="120" data-modal="source-view"></a>
+            <a href="classes/rex-context.html#source-view.146"  class="phpdocumentor-element-found-in__source" data-line="146" data-modal="source-view"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns a rex_context instance containing all GET and POST parameters.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">restore</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">restore</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     
     
@@ -618,7 +771,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setParam</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setParam</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
