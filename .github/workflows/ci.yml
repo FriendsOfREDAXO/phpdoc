@@ -3,12 +3,12 @@ name: CI
 on:
   push:
     branches:
-    - master
+    - main
   pull_request:
     branches:
-      - master
+      - main
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "43 2 * * *"
       
 jobs:
   build:
@@ -45,12 +45,12 @@ jobs:
 
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v3
-      if: success() && github.ref == 'refs/heads/master'
+      if: success() && github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./output
 
     - name: Trigger page build
-      if: success() && github.ref == 'refs/heads/master'
+      if: success() && github.ref == 'refs/heads/main'
       run: "curl 'https://api.github.com/repos/FriendsOfREDAXO/phpdoc/pages/builds' -X POST -H 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' -H 'Accept: application/vnd.github.mister-fantastic-preview'"
