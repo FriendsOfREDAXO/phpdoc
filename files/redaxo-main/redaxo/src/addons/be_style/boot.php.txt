@@ -7,8 +7,6 @@
  * @author <a href="https://www.yakamara.de">www.yakamara.de</a>
  * @author markus[dot]staab[at]redaxo[dot]de Markus Staab
  * @author <a href="https://www.redaxo.org">www.redaxo.org</a>
- *
- * @package redaxo5
  */
 
 $addon = rex_addon::get('be_style');
@@ -52,6 +50,6 @@ if (rex::isBackend()) {
         'pt_br' => 'pt_BR',
         'sv_se' => 'sv_SE',
     ][rex_i18n::getLocale()] ?? 'en_US';
-    rex_view::addJsFile($addon->getAssetsUrl('javascripts/bootstrap-select-defaults-'.$bootstrapSelectLang.'.min.js'), [rex_view::JS_IMMUTABLE => true]);
+    rex_view::addJsFile($addon->getAssetsUrl('javascripts/bootstrap-select-defaults-' . $bootstrapSelectLang . '.min.js'), [rex_view::JS_IMMUTABLE => true]);
     rex_view::addJsFile($addon->getAssetsUrl('javascripts/main.js'), [rex_view::JS_IMMUTABLE => true]);
 }

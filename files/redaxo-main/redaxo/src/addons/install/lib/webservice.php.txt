@@ -73,7 +73,7 @@ class rex_install_webservice
             $response = $socket->doGet();
             if ($response->isOk()) {
                 $filename = rex_path::basename($url);
-                $file = rex_path::addonCache('install', md5($filename) . '.' . rex_file::extension($filename));
+                $file = rex_path::addonCache('install', rtrim(md5($filename) . '.' . rex_file::extension($filename), '.'));
                 $response->writeBodyTo($file);
                 return $file;
             }
@@ -87,10 +87,10 @@ class rex_install_webservice
     /**
      * POSTs the given data to the redaxo.org webservice.
      *
-     * @param string      $path
+     * @param string $path
      * @param string|null $archive Path to archive
-     *
      * @throws rex_functional_exception
+     * @return void
      */
     public static function post($path, array $data, $archive = null)
     {
@@ -127,8 +127,8 @@ class rex_install_webservice
      * Issues a http DELETE to the given path.
      *
      * @param string $path
-     *
      * @throws rex_functional_exception
+     * @return void
      */
     public static function delete($path)
     {
@@ -168,8 +168,10 @@ class rex_install_webservice
         $path = !str_contains($path, '?') ? rtrim($path, '/') . '/?' : $path . '&';
         $path .= 'rex_version=' . rex::getVersion();
 
+        /** @var array<string, string>|null $config */
         static $config;
         if (null === $config) {
+            /** @var array<string, string> $config */
             $config = rex_file::getCache(rex_path::addonData('install', 'config.json'));
         }
 
@@ -184,6 +186,7 @@ class rex_install_webservice
      * Deletes the local webservice cache.
      *
      * @param string|null $pathBegin
+     * @return void
      */
     public static function deleteCache($pathBegin = null)
     {
@@ -218,6 +221,7 @@ class rex_install_webservice
 
     /**
      * Loads the local cached data into memory (only fresh data will be loaded).
+     * @return void
      */
     private static function loadCache()
     {
@@ -236,7 +240,8 @@ class rex_install_webservice
      * Writes the given data into the local cache.
      *
      * @param string $path
-     * @param array  $data
+     * @param array $data
+     * @return void
      */
     private static function setCache($path, $data)
     {

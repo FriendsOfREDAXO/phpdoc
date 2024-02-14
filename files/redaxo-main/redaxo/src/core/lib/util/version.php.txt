@@ -19,6 +19,69 @@ class rex_version
     }
 
     /**
+     * Checks the version of the requirement.
+     *
+     * @param string $version Version
+     * @param string $constraints Constraint list, separated by comma
+     *
+     * @throws rex_exception
+     */
+    public static function matchesConstraints(string $version, string $constraints): bool
+    {
+        $rawConstraints = array_filter(array_map('trim', explode(',', $constraints)));
+        $constraints = [];
+        foreach ($rawConstraints as $constraint) {
+            if ('*' === $constraint) {
+                continue;
+            }
+
+            if (!preg_match('/^(?<op>==?|<=?|>=?|!=|~|\^|) ?(?<version>\d+(?:\.\d+)*)(?<wildcard>\.\*)?(?<prerelease>[ -.]?[a-z]+(?:[ -.]?\d+)?)?$/i', $constraint, $match)
+                || isset($match['wildcard']) && $match['wildcard'] && ('' != $match['op'] || isset($match['prerelease']) && $match['prerelease'])
+            ) {
+                throw new rex_exception('Unknown version constraint "' . $constraint . '"!');
+            }
+
+            if (isset($match['wildcard']) && $match['wildcard']) {
+                $constraints[] = ['>=', $match['version']];
+                $pos = strrpos($match['version'], '.');
+                if (false === $pos) {
+                    $constraints[] = ['<', (int) $match['version'] + 1];
+                } else {
+                    ++$pos;
+                    $sub = (int) substr($match['version'], $pos);
+                    $constraints[] = ['<', substr_replace($match['version'], (string) ($sub + 1), $pos)];
+                }
+            } elseif (in_array($match['op'], ['~', '^'])) {
+                $constraints[] = ['>=', $match['version'] . ($match['prerelease'] ?? '')];
+                if ('^' === $match['op'] || false === $pos = strrpos($match['version'], '.')) {
+                    // add "-foo" to get a version lower than a "-dev" version
+                    $constraints[] = ['<', ((int) $match['version'] + 1) . '-foo'];
+                } else {
+                    $main = '';
+                    $sub = substr($match['version'], 0, $pos);
+                    if (false !== ($pos = strrpos($sub, '.'))) {
+                        $main = substr($sub, 0, $pos + 1);
+                        $sub = substr($sub, $pos + 1);
+                    }
+                    // add "-foo" to get a version lower than a "-dev" version
+                    $constraints[] = ['<', $main . ((int) $sub + 1) . '-foo'];
+                }
+            } else {
+                $constraints[] = [$match['op'] ?: '=', $match['version'] . ($match['prerelease'] ?? '')];
+            }
+        }
+
+        /** @var array{0: '='|'=='|'!='|'<>'|'<'|'<='|'>'|'>=', 1: string} $constraint */
+        foreach ($constraints as $constraint) {
+            if (!self::compare($version, $constraint[1], $constraint[0])) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    /**
      * Splits a version string into its parts.
      *
      * @return list<string>
@@ -34,18 +97,18 @@ class rex_version
      * In contrast to version_compare() it treats "1.0" and "1.0.0" as equal and it supports a space as separator for
      * the version parts, e.g. "1.0 beta1"
      *
-     * @see http://www.php.net/manual/en/function.version-compare.php
+     * @see https://www.php.net/manual/en/function.version-compare.php
      *
-     * @param string $version1   First version number
-     * @param string $version2   Second version number
-     * @param null|'='|'=='|'!='|'<>'|'<'|'<='|'>'|'>=' $comparator Optional comparator
+     * @param string $version1 First version number
+     * @param string $version2 Second version number
+     * @param '='|'=='|'!='|'<>'|'<'|'<='|'>'|'>='|null $comparator Optional comparator
      *
      * @return bool
      */
     public static function compare(string $version1, string $version2, ?string $comparator = '<')
     {
         // bc
-        $comparator = $comparator ?? '<';
+        $comparator ??= '<';
 
         if (!in_array($comparator, ['=', '==', '!=', '<>', '<', '<=', '>', '>='], true)) {
             throw new InvalidArgumentException(sprintf('Unknown comparator "%s".', $comparator));
@@ -63,8 +126,8 @@ class rex_version
     /**
      * Returns the current git version hash for the given path.
      *
-     * @param string      $path A local filesystem path
-     * @param null|string $repo If given, the version hash is returned only if the remote repository matches the
+     * @param string $path A local filesystem path
+     * @param string|null $repo If given, the version hash is returned only if the remote repository matches the
      *                          given github repo (e.g. `redaxo/redaxo`)
      */
     public static function gitHash($path, ?string $repo = null): ?string
@@ -76,28 +139,16 @@ class rex_version
         $output = [];
         $exitCode = -1;
 
-        if ('WIN' === strtoupper(substr(PHP_OS, 0, 3))) {
-            $command = 'where git';
-        } else {
-            $command = 'which git';
-        }
-
-        $git = @exec($command, $output, $exitCode);
-
-        if (0 !== $exitCode) {
-            return null;
-        }
-
         if (null !== $repo) {
-            $command = 'cd '. escapeshellarg($path).' && '.escapeshellarg($git).' ls-remote --get-url';
+            $command = 'git -C ' . escapeshellarg($path) . ' ls-remote --get-url';
             $remote = @exec($command, $output, $exitCode);
 
-            if (0 !== $exitCode || !preg_match('{github.com[:/]'.preg_quote($repo).'\.git$}i', $remote)) {
+            if (0 !== $exitCode || !preg_match('{github.com[:/]' . preg_quote($repo) . '\.git$}i', $remote)) {
                 return null;
             }
         }
 
-        $command = 'cd '. escapeshellarg($path).' && '.escapeshellarg($git).' log -1 --pretty=format:%h';
+        $command = 'git -C ' . escapeshellarg($path) . ' log -1 --pretty=format:%h';
         $version = @exec($command, $output, $exitCode);
 
         return 0 === $exitCode ? $version : null;

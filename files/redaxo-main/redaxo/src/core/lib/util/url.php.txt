@@ -16,6 +16,7 @@ class rex_url
      * Initializes the class.
      *
      * @param rex_path_default_provider $pathprovider A path provider
+     * @return void
      */
     public static function init($pathprovider)
     {
@@ -27,7 +28,7 @@ class rex_url
      *
      * @param string $file File
      *
-     * @return string
+     * @return non-empty-string
      */
     public static function base($file = '')
     {
@@ -39,7 +40,7 @@ class rex_url
      *
      * @param string $file File
      *
-     * @return string
+     * @return non-empty-string
      */
     public static function frontend($file = '')
     {
@@ -50,9 +51,9 @@ class rex_url
      * Returns the url to the frontend-controller (index.php from frontend).
      *
      * @param array $params Params
-     * @param bool  $escape Flag whether the argument separator "&" should be escaped (&amp;)
+     * @param bool $escape Flag whether the argument separator "&" should be escaped (&amp;)
      *
-     * @return string
+     * @return non-empty-string
      */
     public static function frontendController(array $params = [], $escape = true)
     {
@@ -66,7 +67,7 @@ class rex_url
      *
      * @param string $file File
      *
-     * @return string
+     * @return non-empty-string
      */
     public static function backend($file = '')
     {
@@ -77,9 +78,9 @@ class rex_url
      * Returns the url to the backend-controller (index.php from backend).
      *
      * @param array $params Params
-     * @param bool  $escape Flag whether the argument separator "&" should be escaped (&amp;)
+     * @param bool $escape Flag whether the argument separator "&" should be escaped (&amp;)
      *
-     * @return string
+     * @return non-empty-string
      */
     public static function backendController(array $params = [], $escape = true)
     {
@@ -91,11 +92,11 @@ class rex_url
     /**
      * Returns the url to a backend page.
      *
-     * @param string $page   Page
-     * @param array  $params Params
-     * @param bool   $escape Flag whether the argument separator "&" should be escaped (&amp;)
+     * @param string $page Page
+     * @param array $params Params
+     * @param bool $escape Flag whether the argument separator "&" should be escaped (&amp;)
      *
-     * @return string
+     * @return non-empty-string
      */
     public static function backendPage($page, array $params = [], $escape = true)
     {
@@ -106,9 +107,9 @@ class rex_url
      * Returns the url to the current backend page.
      *
      * @param array $params Params
-     * @param bool  $escape Flag whether the argument separator "&" should be escaped (&amp;)
+     * @param bool $escape Flag whether the argument separator "&" should be escaped (&amp;)
      *
-     * @return string
+     * @return non-empty-string
      */
     public static function currentBackendPage(array $params = [], $escape = true)
     {
@@ -120,7 +121,7 @@ class rex_url
      *
      * @param string $file File
      *
-     * @return string
+     * @return non-empty-string
      */
     public static function media($file = '')
     {
@@ -132,7 +133,7 @@ class rex_url
      *
      * @param string $file File
      *
-     * @return string
+     * @return non-empty-string
      */
     public static function assets($file = '')
     {
@@ -144,7 +145,7 @@ class rex_url
      *
      * @param string $file File
      *
-     * @return string
+     * @return non-empty-string
      */
     public static function coreAssets($file = '')
     {
@@ -155,9 +156,9 @@ class rex_url
      * Returns the url to the assets folder of the given addon, which contains all assets required by the addon to work properly.
      *
      * @param string $addon Addon
-     * @param string $file  File
+     * @param string $file File
      *
-     * @return string
+     * @return non-empty-string
      *
      * @see assets()
      */
@@ -169,11 +170,11 @@ class rex_url
     /**
      * Returns the url to the assets folder of the given plugin of the given addon.
      *
-     * @param string $addon  Addon
+     * @param string $addon Addon
      * @param string $plugin Plugin
-     * @param string $file   File
+     * @param string $file File
      *
-     * @return string
+     * @return non-empty-string
      *
      * @see assets()
      */

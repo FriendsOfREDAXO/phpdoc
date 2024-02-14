@@ -11,9 +11,9 @@ if (rex_string::versionCompare($addon->getVersion(), '2.1-dev', '<')) {
         ->alter();
 
     $sql = rex_sql::factory();
-    $sql->setQuery('UPDATE '.$table.' SET environment = REPLACE(REPLACE(environment, "|0|", "|frontend|"), "|1|", "|backend|")');
+    $sql->setQuery('UPDATE ' . $table . ' SET environment = REPLACE(REPLACE(environment, "|0|", "|frontend|"), "|1|", "|backend|")');
 
-    $jobs = $sql->getArray('SELECT id, `interval` FROM '.$table);
+    $jobs = $sql->getArray('SELECT id, `interval` FROM ' . $table);
     foreach ($jobs as $job) {
         $old = explode('|', trim((string) $job['interval'], '|'));
         $count = (int) $old[0];
@@ -59,7 +59,7 @@ if (rex_string::versionCompare($addon->getVersion(), '2.1-dev', '<')) {
                     break;
                 }
                 $count = round($count / 4);
-            // no break;
+                // no break;
             case 'm':
                 $interval['days'] = [1];
                 if ($count > 6) {
@@ -82,7 +82,7 @@ if (rex_string::versionCompare($addon->getVersion(), '2.1-dev', '<')) {
     }
 }
 
-$addon->includeFile(__DIR__.'/install.php');
+$addon->includeFile(__DIR__ . '/install.php');
 
 if (rex_string::versionCompare(rex::getVersion(), '2.6.0-beta1', '<')) {
     // do not use `rex_path::log()` because it does not exist while updating from rex < 5.9

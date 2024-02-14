@@ -18,7 +18,7 @@ class rex_sql_schema_dumper
      */
     public function dumpTable(rex_sql_table $table)
     {
-        $code = 'rex_sql_table::get('.$this->tableName($table->getName()).')';
+        $code = 'rex_sql_table::get(' . $this->tableName($table->getName()) . ')';
 
         $setPrimaryKey = true;
         $primaryKeyIsId = ['id'] === $table->getPrimaryKey();
@@ -32,7 +32,7 @@ class rex_sql_schema_dumper
                 continue;
             }
 
-            $code .= "\n    ->ensureColumn(".$this->getColumn($column).')';
+            $code .= "\n    ->ensureColumn(" . $this->getColumn($column) . ')';
         }
 
         $code = str_replace(
@@ -43,19 +43,19 @@ class rex_sql_schema_dumper
     ->ensureColumn(new rex_sql_column('updateuser', 'varchar(255)'))",
             '
     ->ensureGlobalColumns()',
-            $code
+            $code,
         );
 
-        if ($setPrimaryKey && $table->getPrimaryKey()) {
-            $code .= "\n    ->setPrimaryKey(".$this->getPrimaryKey($table->getPrimaryKey()).')';
+        if ($setPrimaryKey && $primaryKey = $table->getPrimaryKey()) {
+            $code .= "\n    ->setPrimaryKey(" . $this->getPrimaryKey($primaryKey) . ')';
         }
 
         foreach ($table->getIndexes() as $index) {
-            $code .= "\n    ->ensureIndex(".$this->getIndex($index).')';
+            $code .= "\n    ->ensureIndex(" . $this->getIndex($index) . ')';
         }
 
         foreach ($table->getForeignKeys() as $foreignKey) {
-            $code .= "\n    ->ensureForeignKey(".$this->getForeignKey($foreignKey).')';
+            $code .= "\n    ->ensureForeignKey(" . $this->getForeignKey($foreignKey) . ')';
         }
 
         $code .= "\n    ->ensure();\n";
@@ -63,10 +63,7 @@ class rex_sql_schema_dumper
         return $code;
     }
 
-    /**
-     * @return string
-     */
-    private function getColumn(rex_sql_column $column)
+    private function getColumn(rex_sql_column $column): string
     {
         $parameters = [];
         $nonDefault = false;
@@ -93,35 +90,27 @@ class rex_sql_schema_dumper
         $parameters[] = $this->scalar($column->getType());
         $parameters[] = $this->scalar($column->getName());
 
-        return 'new rex_sql_column('.implode(', ', array_reverse($parameters)).')';
+        return 'new rex_sql_column(' . implode(', ', array_reverse($parameters)) . ')';
     }
 
-    /**
-     * @return string
-     */
-    private function getIndex(rex_sql_index $index)
+    private function getIndex(rex_sql_index $index): string
     {
         $parameters = [
             $this->scalar($index->getName()),
             $this->simpleArray($index->getColumns()),
         ];
 
-        static $types = [
-            rex_sql_index::UNIQUE => 'rex_sql_index::UNIQUE',
-            rex_sql_index::FULLTEXT => 'rex_sql_index::FULLTEXT',
-        ];
-
-        if (rex_sql_index::INDEX !== $index->getType()) {
-            $parameters[] = $types[$index->getType()];
+        if (rex_sql_index::INDEX !== $type = $index->getType()) {
+            $parameters[] = match ($type) {
+                rex_sql_index::UNIQUE => 'rex_sql_index::UNIQUE',
+                rex_sql_index::FULLTEXT => 'rex_sql_index::FULLTEXT',
+            };
         }
 
-        return 'new rex_sql_index('.implode(', ', $parameters).')';
+        return 'new rex_sql_index(' . implode(', ', $parameters) . ')';
     }
 
-    /**
-     * @return string
-     */
-    private function getForeignKey(rex_sql_foreign_key $foreignKey)
+    private function getForeignKey(rex_sql_foreign_key $foreignKey): string
     {
         $parameters = [
             $this->scalar($foreignKey->getName()),
@@ -129,8 +118,9 @@ class rex_sql_schema_dumper
             $this->map($foreignKey->getColumns()),
         ];
 
-        static $options = [
+        $options = [
             rex_sql_foreign_key::RESTRICT => 'rex_sql_foreign_key::RESTRICT',
+            rex_sql_foreign_key::NO_ACTION => 'rex_sql_foreign_key::NO_ACTION',
             rex_sql_foreign_key::CASCADE => 'rex_sql_foreign_key::CASCADE',
             rex_sql_foreign_key::SET_NULL => 'rex_sql_foreign_key::SET_NULL',
         ];
@@ -145,10 +135,11 @@ class rex_sql_schema_dumper
             $parameters[] = $options[$foreignKey->getOnDelete()];
         }
 
-        return 'new rex_sql_foreign_key('.implode(', ', $parameters).')';
+        return 'new rex_sql_foreign_key(' . implode(', ', $parameters) . ')';
     }
 
-    private function getPrimaryKey(array $primaryKey)
+    /** @param list<string> $primaryKey */
+    private function getPrimaryKey(array $primaryKey): string
     {
         if (1 === count($primaryKey)) {
             return $this->scalar(reset($primaryKey));
@@ -157,7 +148,7 @@ class rex_sql_schema_dumper
         return $this->simpleArray($primaryKey);
     }
 
-    private function tableName($name)
+    private function tableName(string $name): string
     {
         if (!str_starts_with($name, rex::getTablePrefix())) {
             return $this->scalar($name);
@@ -165,13 +156,11 @@ class rex_sql_schema_dumper
 
         $name = substr($name, strlen(rex::getTablePrefix()));
 
-        return 'rex::getTable('.$this->scalar($name).')';
+        return 'rex::getTable(' . $this->scalar($name) . ')';
     }
 
-    /**
-     * @return string
-     */
-    private function scalar($scalar)
+    /** @param scalar|null $scalar */
+    private function scalar($scalar): string
     {
         if (null === $scalar) {
             return 'null';
@@ -183,10 +172,8 @@ class rex_sql_schema_dumper
         return var_export($scalar, true);
     }
 
-    /**
-     * @return string
-     */
-    private function simpleArray(array $list)
+    /** @param list<scalar> $list */
+    private function simpleArray(array $list): string
     {
         $parts = [];
 
@@ -194,20 +181,18 @@ class rex_sql_schema_dumper
             $parts[] = $this->scalar($value);
         }
 
-        return '['.implode(', ', $parts).']';
+        return '[' . implode(', ', $parts) . ']';
     }
 
-    /**
-     * @return string
-     */
-    private function map(array $map)
+    /** @param array<string, scalar> $map */
+    private function map(array $map): string
     {
         $parts = [];
 
         foreach ($map as $key => $value) {
-            $parts[] = $this->scalar($key).' => '.$this->scalar($value);
+            $parts[] = $this->scalar($key) . ' => ' . $this->scalar($value);
         }
 
-        return '['.implode(', ', $parts).']';
+        return '[' . implode(', ', $parts) . ']';
     }
 }

@@ -10,9 +10,9 @@ use Symfony\Component\Console\Output\OutputInterface;
  *
  * @internal
  */
-class rex_command_db_connection_options extends rex_console_command
+class rex_command_db_connection_options extends rex_console_command implements rex_command_standalone
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Dumps the db connection options for the mysql cli tool')
@@ -32,24 +32,24 @@ class rex_command_db_connection_options extends rex_console_command
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $db = rex::getDbConfig(1);
 
         if (!str_contains($db->host, ':')) {
-            $output->writeln('--host='.escapeshellarg($db->host));
+            $output->writeln('--host=' . escapeshellarg($db->host));
         } else {
             [$host, $port] = explode(':', $db->host, 2);
 
             $output->writeln([
-                '--host='.escapeshellarg($host),
-                '--port='.escapeshellarg($port),
+                '--host=' . escapeshellarg($host),
+                '--port=' . escapeshellarg($port),
             ]);
         }
 
         $output->writeln([
-            '--user='.escapeshellarg($db->login),
-            '--password='.escapeshellarg($db->password),
+            '--user=' . escapeshellarg($db->login),
+            '--password=' . escapeshellarg($db->password),
             escapeshellarg($db->name),
         ]);
 

@@ -33,7 +33,7 @@ class rex_backup
             return str_ends_with($filename, '.sql') || str_ends_with($filename, '.sql.gz');
         }
 
-        throw new rex_exception('unexpected importType '. $importType);
+        throw new rex_exception('unexpected importType ' . $importType);
     }
 
     /**
@@ -76,22 +76,15 @@ class rex_backup
      *
      * @param string $filename Pfad + Dateinamen zur SQL-Datei
      *
-     * @return array Gibt ein Assoc. Array zurück.
+     * @return array{state: bool, message: string} Gibt ein Assoc. Array zurück.
      *               'state' => boolean (Status ob fehler aufgetreten sind)
      *               'message' => Evtl. Status/Fehlermeldung
-     * @psalm-return array{state: bool, message: string}
      */
     public static function importDb($filename)
     {
-        /**
-         * @psalm-return array{state: bool, message: string}
-         */
+        /** @return array{state: bool, message: string} */
         $returnError = static function (string $message): array {
-            $return = [];
-            $return['state'] = false;
-            $return['message'] = $message;
-
-            return $return;
+            return ['state' => false, 'message' => $message];
         };
 
         if ('' == $filename || !self::isFilenameValid(self::IMPORT_DB, $filename)) {
@@ -104,7 +97,7 @@ class rex_backup
 
             // should not happen
             if (false === $conts) {
-                return $returnError(rex_i18n::msg('backup_no_valid_import_file').'. Unable to decompress .gz');
+                return $returnError(rex_i18n::msg('backup_no_valid_import_file') . '. Unable to decompress .gz');
             }
         } else {
             $conts = rex_file::require($filename);
@@ -140,7 +133,7 @@ class rex_backup
 
             if ('utf8mb4' === $charset && !rex::getConfig('utf8mb4') && !rex_setup_importer::supportsUtf8mb4()) {
                 $sql = rex_sql::factory();
-                return $returnError(rex_i18n::msg('backup_utf8mb4_not_supported', $sql->getDbType().' '.$sql->getDbVersion()));
+                return $returnError(rex_i18n::msg('backup_utf8mb4_not_supported', $sql->getDbType() . ' ' . $sql->getDbVersion()));
             }
         }
 
@@ -149,7 +142,7 @@ class rex_backup
             // Hier case-insensitiv ersetzen, damit alle möglich Schreibweisen (TABLE TablE, tAblE,..) ersetzt werden
             // Dies ist wichtig, da auch SQLs innerhalb von Ein/Ausgabe der Module vom rex-admin verwendet werden
             $conts = preg_replace('/(TABLES? `?)' . preg_quote($prefix, '/') . '/i', '$1' . rex::getTablePrefix(), $conts);
-            $conts = preg_replace('/(INTO `?)'  . preg_quote($prefix, '/') . '/i', '$1' . rex::getTablePrefix(), $conts);
+            $conts = preg_replace('/(INTO `?)' . preg_quote($prefix, '/') . '/i', '$1' . rex::getTablePrefix(), $conts);
             $conts = preg_replace('/(EXISTS `?)' . preg_quote($prefix, '/') . '/i', '$1' . rex::getTablePrefix(), $conts);
         }
 
@@ -214,10 +207,9 @@ class rex_backup
      *
      * @param string $filename Pfad + Dateinamen zum Tar-Archiv
      *
-     * @return array Gibt ein Assoc. Array zurück.
+     * @return array{state: bool, message: string} Gibt ein Assoc. Array zurück.
      *               'state' => boolean (Status ob fehler aufgetreten sind)
      *               'message' => Evtl. Status/Fehlermeldung
-     * @psalm-return array{state: bool, message: string}
      */
     public static function importFiles($filename)
     {
@@ -261,11 +253,11 @@ class rex_backup
      * Dieser wird in der Datei $filename gespeichert.
      *
      * @param string $filename
-     * @param string[]  $tables
+     * @param string[] $tables
      *
      * @return bool TRUE wenn ein Dump erstellt wurde, sonst FALSE
      */
-    public static function exportDb($filename, array $tables = null)
+    public static function exportDb($filename, ?array $tables = null)
     {
         $fp = @tmpfile();
         $tempCacheFile = null;
@@ -290,7 +282,7 @@ class rex_backup
         // Versionsstempel hinzufügen
         fwrite($fp, '## Redaxo Database Dump Version ' . rex::getVersion('%s') . $nl);
         fwrite($fp, '## Prefix ' . rex::getTablePrefix() . $nl);
-        fwrite($fp, '## charset '.(rex::getConfig('utf8mb4') ? 'utf8mb4' : 'utf8') . $nl . $nl);
+        fwrite($fp, '## charset ' . (rex::getConfig('utf8mb4') ? 'utf8mb4' : 'utf8') . $nl . $nl);
         //  fwrite($fp, '/*!40110 START TRANSACTION; */'.$nl);
 
         fwrite($fp, 'SET FOREIGN_KEY_CHECKS = 0;' . $nl . $nl);
@@ -299,7 +291,7 @@ class rex_backup
             $tables = self::getTables();
         }
         foreach ($tables as $table) {
-            //---- export metadata
+            // ---- export metadata
             $create = rex_sql::showCreateTable($table);
 
             fwrite($fp, 'DROP TABLE IF EXISTS ' . $sql->escapeIdentifier($table) . ';' . $nl);
@@ -325,7 +317,7 @@ class rex_backup
                 $fields[] = $type;
             }
 
-            //---- export tabledata
+            // ---- export tabledata
             $start = 0;
             $max = $insertSize;
 
@@ -406,6 +398,7 @@ class rex_backup
     /**
      * @param string[] $folders
      * @param string $archivePath
+     * @return void
      */
     private static function streamExport($folders, $archivePath)
     {
@@ -430,6 +423,7 @@ class rex_backup
      *
      * @param string $path
      * @param string $dir
+     * @return void
      */
     private static function addFolderToTar(rex_backup_tar $tar, $path, $dir)
     {
@@ -450,7 +444,7 @@ class rex_backup
                 continue;
             }
 
-            if (substr($file, 0, strlen(rex::getTempPrefix())) == rex::getTempPrefix()) {
+            if (str_starts_with($file, rex::getTempPrefix())) {
                 continue;
             }
 
@@ -474,7 +468,7 @@ class rex_backup
     {
         $tables = [];
         foreach (rex_sql::factory()->getTables(rex::getTablePrefix()) as $table) {
-            if (substr($table, 0, strlen(rex::getTablePrefix() . rex::getTempPrefix())) != rex::getTablePrefix() . rex::getTempPrefix()) { // Tabellen die mit rex_tmp_ beginnne, werden nicht exportiert!
+            if (!str_starts_with($table, rex::getTablePrefix() . rex::getTempPrefix())) { // Tabellen die mit rex_tmp_ beginnne, werden nicht exportiert!
                 $tables[] = $table;
             }
         }
@@ -485,6 +479,7 @@ class rex_backup
      * @param string $filename
      * @param self::IMPORT_ARCHIVE|self::IMPORT_DB $importType
      * @param self::IMPORT_EVENT_* $eventType
+     * @return void
      */
     private static function importScript($filename, $importType, $eventType)
     {
@@ -500,6 +495,7 @@ class rex_backup
      * @param resource $fp
      * @param string $nl
      * @param list<string> $fields
+     * @return void
      */
     private static function exportTable($table, &$start, $max, $fp, $nl, array $fields)
     {
@@ -554,7 +550,7 @@ class rex_backup
                                 $record[] = "'" . $column . "'";
                                 break;
                             }
-                        // no break
+                            // no break
                         default:
                             $record[] = $sql->escape($column);
                             break;
@@ -574,7 +570,7 @@ class rex_backup
                     if ($i == $lastIdx) {
                         fwrite($fp, $values[$i]);
                     } else {
-                        fwrite($fp, $values[$i]. ',');
+                        fwrite($fp, $values[$i] . ',');
                     }
                 }
                 unset($values);

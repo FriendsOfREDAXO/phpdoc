@@ -12,7 +12,7 @@
 
     <title>Ooops, something went wrong!</title>
 
-    <style type="text/css">
+    <style type="text/css" nonce="<?= rex_response::getNonce() ?>">
         body, html {
             margin: 0;
             padding: 0;
@@ -123,8 +123,7 @@
             </defs>
             <title>ooops-badge</title>
             <g id="error">
-                <text class="cls-1" transform="translate(31.37 504.92)">SOMETHING WENT WRONG...</tspan>
-                </text>
+                <text class="cls-1" transform="translate(31.37 504.92)">SOMETHING WENT WRONG...</text>
             </g>
             <g id="rex-badge">
                 <path id="badge" class="cls-3"

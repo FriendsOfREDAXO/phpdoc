@@ -553,7 +553,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_effect_convert2img",
             "name": "rex_effect_convert2img",
-            "summary": "Benutzt\u0020den\u0020Konsolen\u0020convert\u0020Befehl.",
+            "summary": "Benutzt\u0020den\u0020Konsolen\u0020convert\u0020oder\u0020ffmpeg\u0020Befehl.",
             "url": "classes/rex-effect-convert2img.html"
         },                {
             "fqsen": "\\rex_effect_convert2img\u003A\u003Aexecute\u0028\u0029",
@@ -1011,6 +1011,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-managed-media.html#method_getFormat"
         },                {
+            "fqsen": "\\rex_managed_media\u003A\u003AformatSupportsTransparency\u0028\u0029",
+            "name": "formatSupportsTransparency",
+            "summary": "",
+            "url": "classes/rex-managed-media.html#method_formatSupportsTransparency"
+        },                {
             "fqsen": "\\rex_managed_media\u003A\u003AsetFormat\u0028\u0029",
             "name": "setFormat",
             "summary": "",
@@ -1106,6 +1111,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-managed-media.html#constant_PROP_WEBP_QUALITY"
         },                {
+            "fqsen": "\\rex_managed_media\u003A\u003APROP_AVIF_QUALITY",
+            "name": "PROP_AVIF_QUALITY",
+            "summary": "",
+            "url": "classes/rex-managed-media.html#constant_PROP_AVIF_QUALITY"
+        },                {
+            "fqsen": "\\rex_managed_media\u003A\u003APROP_AVIF_SPEED",
+            "name": "PROP_AVIF_SPEED",
+            "summary": "",
+            "url": "classes/rex-managed-media.html#constant_PROP_AVIF_SPEED"
+        },                {
             "fqsen": "\\rex_managed_media\u003A\u003APROP_INTERLACE",
             "name": "PROP_INTERLACE",
             "summary": "",
@@ -1140,6 +1155,11 @@ Search.appendIndex(
             "name": "effectsFromType",
             "summary": "",
             "url": "classes/rex-media-manager.html#method_effectsFromType"
+        },                {
+            "fqsen": "\\rex_media_manager\u003A\u003AsetCacheDirectory\u0028\u0029",
+            "name": "setCacheDirectory",
+            "summary": "Set\u0020base\u0020cache\u0020directory\u0020for\u0020generated\u0020images.",
+            "url": "classes/rex-media-manager.html#method_setCacheDirectory"
         },                {
             "fqsen": "\\rex_media_manager\u003A\u003AsetCachePath\u0028\u0029",
             "name": "setCachePath",
@@ -1803,7 +1823,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_media_perm",
             "name": "rex_media_perm",
-            "summary": "Abstract\u0020class\u0020for\u0020complex\u0020permissions.",
+            "summary": "",
             "url": "classes/rex-media-perm.html"
         },                {
             "fqsen": "\\rex_media_perm\u003A\u003AhasCategoryPerm\u0028\u0029",
@@ -1818,7 +1838,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_media_perm\u003A\u003AgetFieldParams\u0028\u0029",
             "name": "getFieldParams",
-            "summary": "Returns\u0020the\u0020field\u0020params\u0020for\u0020the\u0020role\u0020form.",
+            "summary": "",
             "url": "classes/rex-media-perm.html#method_getFieldParams"
         },                {
             "fqsen": "\\rex_media_service",
@@ -2010,6 +2030,76 @@ Search.appendIndex(
             "name": "rex_metainfo_extensions_handler",
             "summary": "Bindet\u0020ggf\u0020extensions\u0020ein.",
             "url": "namespaces/default.html#function_rex_metainfo_extensions_handler"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type",
+            "name": "rex_metainfo_default_type",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003ATEXT",
+            "name": "TEXT",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_TEXT"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003ATEXTAREA",
+            "name": "TEXTAREA",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_TEXTAREA"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003ASELECT",
+            "name": "SELECT",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_SELECT"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003ARADIO",
+            "name": "RADIO",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_RADIO"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003ACHECKBOX",
+            "name": "CHECKBOX",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_CHECKBOX"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003AREX_MEDIA_WIDGET",
+            "name": "REX_MEDIA_WIDGET",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_REX_MEDIA_WIDGET"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003AREX_MEDIALIST_WIDGET",
+            "name": "REX_MEDIALIST_WIDGET",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_REX_MEDIALIST_WIDGET"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003AREX_LINK_WIDGET",
+            "name": "REX_LINK_WIDGET",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_REX_LINK_WIDGET"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003AREX_LINKLIST_WIDGET",
+            "name": "REX_LINKLIST_WIDGET",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_REX_LINKLIST_WIDGET"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003ADATE",
+            "name": "DATE",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_DATE"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003ADATETIME",
+            "name": "DATETIME",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_DATETIME"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003ALEGEND",
+            "name": "LEGEND",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_LEGEND"
+        },                {
+            "fqsen": "\\rex_metainfo_default_type\u003A\u003ATIME",
+            "name": "TIME",
+            "summary": "",
+            "url": "classes/rex-metainfo-default-type.html#constant_TIME"
         },                {
             "fqsen": "\\rex_cronjob_mailer_purge",
             "name": "rex_cronjob_mailer_purge",
@@ -2453,7 +2543,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_structure_perm",
             "name": "rex_structure_perm",
-            "summary": "Abstract\u0020class\u0020for\u0020complex\u0020permissions.",
+            "summary": "",
             "url": "classes/rex-structure-perm.html"
         },                {
             "fqsen": "\\rex_structure_perm\u003A\u003AhasCategoryPerm\u0028\u0029",
@@ -2483,7 +2573,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_structure_perm\u003A\u003AgetFieldParams\u0028\u0029",
             "name": "getFieldParams",
-            "summary": "Returns\u0020the\u0020field\u0020params\u0020for\u0020the\u0020role\u0020form.",
+            "summary": "",
             "url": "classes/rex-structure-perm.html#method_getFieldParams"
         },                {
             "fqsen": "\\rex_category_select",
@@ -2673,7 +2763,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_structure_element\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-structure-element.html#method___construct"
         },                {
             "fqsen": "\\rex_structure_element\u003A\u003AgetValue\u0028\u0029",
@@ -2961,6 +3051,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-var-category.html#method_getCategoryValue"
         },                {
+            "fqsen": "\\rex_ctype",
+            "name": "rex_ctype",
+            "summary": "",
+            "url": "classes/rex-ctype.html"
+        },                {
+            "fqsen": "\\rex_ctype\u003A\u003AgetId\u0028\u0029",
+            "name": "getId",
+            "summary": "",
+            "url": "classes/rex-ctype.html#method_getId"
+        },                {
+            "fqsen": "\\rex_ctype\u003A\u003AgetName\u0028\u0029",
+            "name": "getName",
+            "summary": "",
+            "url": "classes/rex-ctype.html#method_getName"
+        },                {
+            "fqsen": "\\rex_ctype\u003A\u003AforTemplate\u0028\u0029",
+            "name": "forTemplate",
+            "summary": "",
+            "url": "classes/rex-ctype.html#method_forTemplate"
+        },                {
             "fqsen": "\\rex_api_content_copy",
             "name": "rex_api_content_copy",
             "summary": "This\u0020is\u0020a\u0020base\u0020class\u0020for\u0020all\u0020functions\u0020which\u0020a\u0020component\u0020may\u0020provide\u0020for\u0020public\u0020use.",
@@ -3070,6 +3180,21 @@ Search.appendIndex(
             "name": "hasModule",
             "summary": "",
             "url": "classes/rex-template.html#method_hasModule"
+        },                {
+            "fqsen": "\\rex_template\u003A\u003AgetCtypes\u0028\u0029",
+            "name": "getCtypes",
+            "summary": "",
+            "url": "classes/rex-template.html#method_getCtypes"
+        },                {
+            "fqsen": "\\rex_template\u003A\u003AtemplateIsInUse\u0028\u0029",
+            "name": "templateIsInUse",
+            "summary": "",
+            "url": "classes/rex-template.html#method_templateIsInUse"
+        },                {
+            "fqsen": "\\rex_template\u003A\u003Aexists\u0028\u0029",
+            "name": "exists",
+            "summary": "",
+            "url": "classes/rex-template.html#method_exists"
         },                {
             "fqsen": "\\rex_article_action",
             "name": "rex_article_action",
@@ -3463,17 +3588,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_article_content_editor\u003A\u003AoutputSlice\u0028\u0029",
             "name": "outputSlice",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-article-content-editor.html#method_outputSlice"
         },                {
             "fqsen": "\\rex_article_content_editor\u003A\u003ApreArticle\u0028\u0029",
             "name": "preArticle",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-article-content-editor.html#method_preArticle"
         },                {
             "fqsen": "\\rex_article_content_editor\u003A\u003ApostArticle\u0028\u0029",
             "name": "postArticle",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-article-content-editor.html#method_postArticle"
         },                {
             "fqsen": "\\rex_article_content_editor\u003A\u003AaddSlice\u0028\u0029",
@@ -3768,7 +3893,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_extension_point_art_content_updated\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-extension-point-art-content-updated.html#method___construct"
         },                {
             "fqsen": "\\rex_extension_point_art_content_updated\u003A\u003AgetArticle\u0028\u0029",
@@ -3793,7 +3918,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_extension_point_slice_menu\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-extension-point-slice-menu.html#method___construct"
         },                {
             "fqsen": "\\rex_extension_point_slice_menu\u003A\u003AgetMenuEditAction\u0028\u0029",
@@ -3908,7 +4033,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_module_perm",
             "name": "rex_module_perm",
-            "summary": "Abstract\u0020class\u0020for\u0020complex\u0020permissions.",
+            "summary": "",
             "url": "classes/rex-module-perm.html"
         },                {
             "fqsen": "\\rex_module_perm\u003A\u003AhasPerm\u0028\u0029",
@@ -3918,7 +4043,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_module_perm\u003A\u003AgetFieldParams\u0028\u0029",
             "name": "getFieldParams",
-            "summary": "Returns\u0020the\u0020field\u0020params\u0020for\u0020the\u0020role\u0020form.",
+            "summary": "",
             "url": "classes/rex-module-perm.html#method_getFieldParams"
         },                {
             "fqsen": "\\rex_template_select",
@@ -4040,6 +4165,16 @@ Search.appendIndex(
             "name": "clearContent",
             "summary": "",
             "url": "classes/rex-article-revision.html#method_clearContent"
+        },                {
+            "fqsen": "\\rex_article_revision\u003A\u003AsetSessionArticleRevision\u0028\u0029",
+            "name": "setSessionArticleRevision",
+            "summary": "",
+            "url": "classes/rex-article-revision.html#method_setSessionArticleRevision"
+        },                {
+            "fqsen": "\\rex_article_revision\u003A\u003AgetSessionArticleRevision\u0028\u0029",
+            "name": "getSessionArticleRevision",
+            "summary": "",
+            "url": "classes/rex-article-revision.html#method_getSessionArticleRevision"
         },                {
             "fqsen": "\\rex_article_revision\u003A\u003ALIVE",
             "name": "LIVE",
@@ -4466,6 +4601,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-be-controller.html#method_getCurrentPageObject"
         },                {
+            "fqsen": "\\rex_be_controller\u003A\u003ArequireCurrentPageObject\u0028\u0029",
+            "name": "requireCurrentPageObject",
+            "summary": "",
+            "url": "classes/rex-be-controller.html#method_requireCurrentPageObject"
+        },                {
             "fqsen": "\\rex_be_controller\u003A\u003AgetPageObject\u0028\u0029",
             "name": "getPageObject",
             "summary": "",
@@ -4573,7 +4713,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_be_page\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-be-page.html#method___construct"
         },                {
             "fqsen": "\\rex_be_page\u003A\u003AgetKey\u0028\u0029",
@@ -4698,7 +4838,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_be_page\u003A\u003AgetSubPath\u0028\u0029",
             "name": "getSubPath",
-            "summary": "Returns\u0020the\u0020subpath\u0020which\u0020should\u0020by\u0020used\u0020by\u0020packages\u0020to\u0020include\u0020this\u0020page\u0020inside\u0020their\u0020main\u0020page.",
+            "summary": "Returns\u0020the\u0020subpath\u0020which\u0020should\u0020be\u0020used\u0020by\u0020packages\u0020to\u0020include\u0020this\u0020page\u0020inside\u0020their\u0020main\u0020page.",
             "url": "classes/rex-be-page.html#method_getSubPath"
         },                {
             "fqsen": "\\rex_be_page\u003A\u003AaddSubpage\u0028\u0029",
@@ -4818,7 +4958,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_be_page_main\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-be-page-main.html#method___construct"
         },                {
             "fqsen": "\\rex_be_page_main\u003A\u003AsetBlock\u0028\u0029",
@@ -4933,7 +5073,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_clang_perm",
             "name": "rex_clang_perm",
-            "summary": "Abstract\u0020class\u0020for\u0020complex\u0020permissions.",
+            "summary": "",
             "url": "classes/rex-clang-perm.html"
         },                {
             "fqsen": "\\rex_clang_perm\u003A\u003AhasPerm\u0028\u0029",
@@ -4953,7 +5093,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_clang_perm\u003A\u003AgetFieldParams\u0028\u0029",
             "name": "getFieldParams",
-            "summary": "Returns\u0020the\u0020field\u0020params\u0020for\u0020the\u0020role\u0020form.",
+            "summary": "",
             "url": "classes/rex-clang-perm.html#method_getFieldParams"
         },                {
             "fqsen": "\\rex_clang_service",
@@ -5081,6 +5221,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-config-db.html#property_sslCa"
         },                {
+            "fqsen": "\\rex_config_db\u003A\u003A\u0024sslVerifyServerCert",
+            "name": "sslVerifyServerCert",
+            "summary": "",
+            "url": "classes/rex-config-db.html#property_sslVerifyServerCert"
+        },                {
             "fqsen": "\\rex_console_application",
             "name": "rex_console_application",
             "summary": "",
@@ -5143,7 +5288,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_extension_point_console_shutdown\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-extension-point-console-shutdown.html#method___construct"
         },                {
             "fqsen": "\\rex_extension_point_console_shutdown\u003A\u003AgetCommand\u0028\u0029",
@@ -5183,7 +5328,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_context\u003A\u003AgetUrl\u0028\u0029",
             "name": "getUrl",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-context.html#method_getUrl"
         },                {
             "fqsen": "\\rex_context\u003A\u003AsetParam\u0028\u0029",
@@ -5396,41 +5541,6 @@ Search.appendIndex(
             "summary": "Exception\u0020class\u0020for\u0020yaml\u0020parse\u0020errors.",
             "url": "classes/rex-yaml-parse-exception.html"
         },                {
-            "fqsen": "\\rex_extension",
-            "name": "rex_extension",
-            "summary": "Klasse\u0020die\u0020Einsprungpunkte\u0020zur\u0020Erweiterung\u0020der\u0020Kernfunktionalitaetet\u0020bietet.",
-            "url": "classes/rex-extension.html"
-        },                {
-            "fqsen": "\\rex_extension\u003A\u003AregisterPoint\u0028\u0029",
-            "name": "registerPoint",
-            "summary": "Registers\u0020an\u0020extension\u0020point.",
-            "url": "classes/rex-extension.html#method_registerPoint"
-        },                {
-            "fqsen": "\\rex_extension\u003A\u003Aregister\u0028\u0029",
-            "name": "register",
-            "summary": "Registers\u0020an\u0020extension\u0020for\u0020an\u0020extension\u0020point.",
-            "url": "classes/rex-extension.html#method_register"
-        },                {
-            "fqsen": "\\rex_extension\u003A\u003AisRegistered\u0028\u0029",
-            "name": "isRegistered",
-            "summary": "Checks\u0020whether\u0020an\u0020extension\u0020is\u0020registered\u0020for\u0020the\u0020given\u0020extension\u0020point.",
-            "url": "classes/rex-extension.html#method_isRegistered"
-        },                {
-            "fqsen": "\\rex_extension\u003A\u003AEARLY",
-            "name": "EARLY",
-            "summary": "",
-            "url": "classes/rex-extension.html#constant_EARLY"
-        },                {
-            "fqsen": "\\rex_extension\u003A\u003ANORMAL",
-            "name": "NORMAL",
-            "summary": "",
-            "url": "classes/rex-extension.html#constant_NORMAL"
-        },                {
-            "fqsen": "\\rex_extension\u003A\u003ALATE",
-            "name": "LATE",
-            "summary": "",
-            "url": "classes/rex-extension.html#constant_LATE"
-        },                {
             "fqsen": "\\rex_extension_point",
             "name": "rex_extension_point",
             "summary": "Extension\u0020Point\u0020Class.",
@@ -5438,7 +5548,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_extension_point\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-extension-point.html#method___construct"
         },                {
             "fqsen": "\\rex_extension_point\u003A\u003AgetName\u0028\u0029",
@@ -5786,6 +5896,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-form-element.html#method_getValidator"
         },                {
+            "fqsen": "\\rex_form_element\u003A\u003AisLabelOnTop\u0028\u0029",
+            "name": "isLabelOnTop",
+            "summary": "",
+            "url": "classes/rex-form-element.html#method_isLabelOnTop"
+        },                {
+            "fqsen": "\\rex_form_element\u003A\u003AsetLabelOnTop\u0028\u0029",
+            "name": "setLabelOnTop",
+            "summary": "",
+            "url": "classes/rex-form-element.html#method_setLabelOnTop"
+        },                {
             "fqsen": "\\rex_form_element\u003A\u003AformatClass\u0028\u0029",
             "name": "formatClass",
             "summary": "",
@@ -5900,6 +6020,11 @@ Search.appendIndex(
             "name": "validator",
             "summary": "",
             "url": "classes/rex-form-element.html#property_validator"
+        },                {
+            "fqsen": "\\rex_form_element\u003A\u003A\u0024labelOnTop",
+            "name": "labelOnTop",
+            "summary": "",
+            "url": "classes/rex-form-element.html#property_labelOnTop"
         },                {
             "fqsen": "\\rex_form_options_element",
             "name": "rex_form_options_element",
@@ -6456,6 +6581,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-form-base.html#method_getMessage"
         },                {
+            "fqsen": "\\rex_form_base\u003A\u003AsetFormAttribute\u0028\u0029",
+            "name": "setFormAttribute",
+            "summary": "",
+            "url": "classes/rex-form-base.html#method_setFormAttribute"
+        },                {
             "fqsen": "\\rex_form_base\u003A\u003ApreView\u0028\u0029",
             "name": "preView",
             "summary": "Callbackfunktion,\u0020damit\u0020in\u0020subklassen\u0020der\u0020Value\u0020noch\u0020beeinflusst\u0020werden\u0020kann\nwenn\u0020das\u0020Feld\u0020mit\u0020Datenbankwerten\u0020angezeigt\u0020wird.",
@@ -6781,6 +6911,16 @@ Search.appendIndex(
             "summary": "Gibt\u0020alle\u0020Namen\u0020der\u0020Spalten\u0020als\u0020Array\u0020zur\u00FCck.",
             "url": "classes/rex-list.html#method_getColumnNames"
         },                {
+            "fqsen": "\\rex_list\u003A\u003AgetEnabledColumnNames\u0028\u0029",
+            "name": "getEnabledColumnNames",
+            "summary": "",
+            "url": "classes/rex-list.html#method_getEnabledColumnNames"
+        },                {
+            "fqsen": "\\rex_list\u003A\u003AgetColumnValue\u0028\u0029",
+            "name": "getColumnValue",
+            "summary": "",
+            "url": "classes/rex-list.html#method_getColumnValue"
+        },                {
             "fqsen": "\\rex_list\u003A\u003AsetColumnLabel\u0028\u0029",
             "name": "setColumnLabel",
             "summary": "Setzt\u0020ein\u0020Label\u0020f\u00FCr\u0020eine\u0020Spalte.",
@@ -6881,6 +7021,11 @@ Search.appendIndex(
             "summary": "Gibt\u0020die\u0020Anzahl\u0020der\u0020Zeilen\u0020zur\u00FCck,\u0020welche\u0020vom\u0020urspr\u00FCngliche\u0020SQL\u0020Statement\u0020betroffen\u0020werden.",
             "url": "classes/rex-list.html#method_getRows"
         },                {
+            "fqsen": "\\rex_list\u003A\u003AgetRowsOnCurrentPage\u0028\u0029",
+            "name": "getRowsOnCurrentPage",
+            "summary": "",
+            "url": "classes/rex-list.html#method_getRowsOnCurrentPage"
+        },                {
             "fqsen": "\\rex_list\u003A\u003AgetPager\u0028\u0029",
             "name": "getPager",
             "summary": "Returns\u0020the\u0020pager\u0020for\u0020this\u0020list.",
@@ -6931,6 +7076,11 @@ Search.appendIndex(
             "summary": "Formatiert\u0020einen\u0020\u00FCbergebenen\u0020String\u0020anhand\u0020der\u0020rexFormatter\u0020Klasse.",
             "url": "classes/rex-list.html#method_formatValue"
         },                {
+            "fqsen": "\\rex_list\u003A\u003AformatRowAttributes\u0028\u0029",
+            "name": "formatRowAttributes",
+            "summary": "",
+            "url": "classes/rex-list.html#method_formatRowAttributes"
+        },                {
             "fqsen": "\\rex_list\u003A\u003A_getAttributeString\u0028\u0029",
             "name": "_getAttributeString",
             "summary": "",
@@ -6966,6 +7116,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-list.html#constant_DISABLE_PAGINATION"
         },                {
+            "fqsen": "\\rex_list\u003A\u003A\u0024sql",
+            "name": "sql",
+            "summary": "",
+            "url": "classes/rex-list.html#property_sql"
+        },                {
             "fqsen": "\\rex_backend_login",
             "name": "rex_backend_login",
             "summary": "",
@@ -6973,8 +7128,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_backend_login\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-backend-login.html#method___construct"
+        },                {
+            "fqsen": "\\rex_backend_login\u003A\u003AsetPasskey\u0028\u0029",
+            "name": "setPasskey",
+            "summary": "",
+            "url": "classes/rex-backend-login.html#method_setPasskey"
         },                {
             "fqsen": "\\rex_backend_login\u003A\u003AsetStayLoggedIn\u0028\u0029",
             "name": "setStayLoggedIn",
@@ -6986,6 +7146,11 @@ Search.appendIndex(
             "summary": "Pr\u00FCft\u0020die\u0020mit\u0020setLogin\u0028\u0029\u0020und\u0020setPassword\u0028\u0029\u0020gesetzten\u0020Werte\nanhand\u0020des\u0020LoginQueries\/UserQueries\u0020und\u0020gibt\u0020den\u0020Status\u0020zur\u00FCck.",
             "url": "classes/rex-backend-login.html#method_checkLogin"
         },                {
+            "fqsen": "\\rex_backend_login\u003A\u003AincreaseLoginTries\u0028\u0029",
+            "name": "increaseLoginTries",
+            "summary": "",
+            "url": "classes/rex-backend-login.html#method_increaseLoginTries"
+        },                {
             "fqsen": "\\rex_backend_login\u003A\u003ArequiresPasswordChange\u0028\u0029",
             "name": "requiresPasswordChange",
             "summary": "",
@@ -6996,10 +7161,20 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-backend-login.html#method_changedPassword"
         },                {
+            "fqsen": "\\rex_backend_login\u003A\u003AgetPasskey\u0028\u0029",
+            "name": "getPasskey",
+            "summary": "",
+            "url": "classes/rex-backend-login.html#method_getPasskey"
+        },                {
             "fqsen": "\\rex_backend_login\u003A\u003AdeleteSession\u0028\u0029",
             "name": "deleteSession",
             "summary": "",
             "url": "classes/rex-backend-login.html#method_deleteSession"
+        },                {
+            "fqsen": "\\rex_backend_login\u003A\u003AgetStayLoggedInCookieName\u0028\u0029",
+            "name": "getStayLoggedInCookieName",
+            "summary": "",
+            "url": "classes/rex-backend-login.html#method_getStayLoggedInCookieName"
         },                {
             "fqsen": "\\rex_backend_login\u003A\u003AhasSession\u0028\u0029",
             "name": "hasSession",
@@ -7016,30 +7191,15 @@ Search.appendIndex(
             "summary": "returns\u0020the\u0020backends\u0020session\u0020namespace.",
             "url": "classes/rex-backend-login.html#method_getSessionNamespace"
         },                {
+            "fqsen": "\\rex_backend_login\u003A\u003AgetLoginPolicy\u0028\u0029",
+            "name": "getLoginPolicy",
+            "summary": "",
+            "url": "classes/rex-backend-login.html#method_getLoginPolicy"
+        },                {
             "fqsen": "\\rex_backend_login\u003A\u003ASYSTEM_ID",
             "name": "SYSTEM_ID",
             "summary": "",
             "url": "classes/rex-backend-login.html#constant_SYSTEM_ID"
-        },                {
-            "fqsen": "\\rex_backend_login\u003A\u003ALOGIN_TRIES_1",
-            "name": "LOGIN_TRIES_1",
-            "summary": "",
-            "url": "classes/rex-backend-login.html#constant_LOGIN_TRIES_1"
-        },                {
-            "fqsen": "\\rex_backend_login\u003A\u003ARELOGIN_DELAY_1",
-            "name": "RELOGIN_DELAY_1",
-            "summary": "",
-            "url": "classes/rex-backend-login.html#constant_RELOGIN_DELAY_1"
-        },                {
-            "fqsen": "\\rex_backend_login\u003A\u003ALOGIN_TRIES_2",
-            "name": "LOGIN_TRIES_2",
-            "summary": "",
-            "url": "classes/rex-backend-login.html#constant_LOGIN_TRIES_2"
-        },                {
-            "fqsen": "\\rex_backend_login\u003A\u003ARELOGIN_DELAY_2",
-            "name": "RELOGIN_DELAY_2",
-            "summary": "",
-            "url": "classes/rex-backend-login.html#constant_RELOGIN_DELAY_2"
         },                {
             "fqsen": "\\rex_backend_password_policy",
             "name": "rex_backend_password_policy",
@@ -7071,66 +7231,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-backend-password-policy.html#method_getBlockAccountAfter"
         },                {
-            "fqsen": "\\rex_complex_perm",
-            "name": "rex_complex_perm",
-            "summary": "Abstract\u0020class\u0020for\u0020complex\u0020permissions.",
-            "url": "classes/rex-complex-perm.html"
-        },                {
-            "fqsen": "\\rex_complex_perm\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Constructor.",
-            "url": "classes/rex-complex-perm.html#method___construct"
-        },                {
-            "fqsen": "\\rex_complex_perm\u003A\u003AhasAll\u0028\u0029",
-            "name": "hasAll",
-            "summary": "Returns\u0020if\u0020the\u0020user\u0020has\u0020the\u0020permission\u0020for\u0020all\u0020items.",
-            "url": "classes/rex-complex-perm.html#method_hasAll"
-        },                {
-            "fqsen": "\\rex_complex_perm\u003A\u003AgetFieldParams\u0028\u0029",
-            "name": "getFieldParams",
-            "summary": "Returns\u0020the\u0020field\u0020params\u0020for\u0020the\u0020role\u0020form.",
-            "url": "classes/rex-complex-perm.html#method_getFieldParams"
-        },                {
-            "fqsen": "\\rex_complex_perm\u003A\u003Aregister\u0028\u0029",
-            "name": "register",
-            "summary": "Registers\u0020a\u0020new\u0020complex\u0020perm\u0020class.",
-            "url": "classes/rex-complex-perm.html#method_register"
-        },                {
-            "fqsen": "\\rex_complex_perm\u003A\u003AgetAll\u0028\u0029",
-            "name": "getAll",
-            "summary": "Returns\u0020all\u0020complex\u0020perm\u0020classes.",
-            "url": "classes/rex-complex-perm.html#method_getAll"
-        },                {
-            "fqsen": "\\rex_complex_perm\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "Returns\u0020the\u0020complex\u0020perm.",
-            "url": "classes/rex-complex-perm.html#method_get"
-        },                {
-            "fqsen": "\\rex_complex_perm\u003A\u003AremoveItem\u0028\u0029",
-            "name": "removeItem",
-            "summary": "Should\u0020be\u0020called\u0020if\u0020an\u0020item\u0020is\u0020removed.",
-            "url": "classes/rex-complex-perm.html#method_removeItem"
-        },                {
-            "fqsen": "\\rex_complex_perm\u003A\u003AreplaceItem\u0028\u0029",
-            "name": "replaceItem",
-            "summary": "Should\u0020be\u0020called\u0020if\u0020an\u0020item\u0020is\u0020replaced.",
-            "url": "classes/rex-complex-perm.html#method_replaceItem"
-        },                {
-            "fqsen": "\\rex_complex_perm\u003A\u003AALL",
-            "name": "ALL",
-            "summary": "",
-            "url": "classes/rex-complex-perm.html#constant_ALL"
-        },                {
-            "fqsen": "\\rex_complex_perm\u003A\u003A\u0024user",
-            "name": "user",
-            "summary": "User\u0020instance.",
-            "url": "classes/rex-complex-perm.html#property_user"
-        },                {
-            "fqsen": "\\rex_complex_perm\u003A\u003A\u0024perms",
-            "name": "perms",
-            "summary": "Array\u0020of\u0020permissions.",
-            "url": "classes/rex-complex-perm.html#property_perms"
-        },                {
             "fqsen": "\\rex_login",
             "name": "rex_login",
             "summary": "",
@@ -7138,7 +7238,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_login\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-login.html#method___construct"
         },                {
             "fqsen": "\\rex_login\u003A\u003AsetCache\u0028\u0029",
@@ -7258,13 +7358,18 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_login\u003A\u003AregenerateSessionId\u0028\u0029",
             "name": "regenerateSessionId",
-            "summary": "",
+            "summary": "refresh\u0020session\u0020on\u0020permission\u0020elevation\u0020for\u0020security\u0020reasons.",
             "url": "classes/rex-login.html#method_regenerateSessionId"
         },                {
             "fqsen": "\\rex_login\u003A\u003AstartSession\u0028\u0029",
             "name": "startSession",
             "summary": "starts\u0020a\u0020http\u002Dsession\u0020if\u0020not\u0020already\u0020started.",
             "url": "classes/rex-login.html#method_startSession"
+        },                {
+            "fqsen": "\\rex_login\u003A\u003AgetCookieParams\u0028\u0029",
+            "name": "getCookieParams",
+            "summary": "Einstellen\u0020der\u0020Cookie\u0020Paramter\u0020bevor\u0020die\u0020session\u0020gestartet\u0020wird.",
+            "url": "classes/rex-login.html#method_getCookieParams"
         },                {
             "fqsen": "\\rex_login\u003A\u003ApasswordHash\u0028\u0029",
             "name": "passwordHash",
@@ -7286,6 +7391,36 @@ Search.appendIndex(
             "summary": "returns\u0020the\u0020current\u0020session\u0020namespace.",
             "url": "classes/rex-login.html#method_getSessionNamespace"
         },                {
+            "fqsen": "\\rex_login\u003A\u003ASESSION_ID",
+            "name": "SESSION_ID",
+            "summary": "Session\u0020ID\u0020is\u0020saved\u0020in\u0020session\u0020under\u0020this\u0020key\u0020for\u0020session\u0020fixation\u0020prevention.",
+            "url": "classes/rex-login.html#constant_SESSION_ID"
+        },                {
+            "fqsen": "\\rex_login\u003A\u003ASESSION_START_TIME",
+            "name": "SESSION_START_TIME",
+            "summary": "the\u0020timestamp\u0020when\u0020the\u0020session\u0020was\u0020initially\u0020started.",
+            "url": "classes/rex-login.html#constant_SESSION_START_TIME"
+        },                {
+            "fqsen": "\\rex_login\u003A\u003ASESSION_LAST_ACTIVITY",
+            "name": "SESSION_LAST_ACTIVITY",
+            "summary": "",
+            "url": "classes/rex-login.html#constant_SESSION_LAST_ACTIVITY"
+        },                {
+            "fqsen": "\\rex_login\u003A\u003ASESSION_USER_ID",
+            "name": "SESSION_USER_ID",
+            "summary": "the\u0020id\u0020of\u0020the\u0020user.",
+            "url": "classes/rex-login.html#constant_SESSION_USER_ID"
+        },                {
+            "fqsen": "\\rex_login\u003A\u003ASESSION_PASSWORD",
+            "name": "SESSION_PASSWORD",
+            "summary": "the\u0020encrypted\u0020user\u0020password.",
+            "url": "classes/rex-login.html#constant_SESSION_PASSWORD"
+        },                {
+            "fqsen": "\\rex_login\u003A\u003ASESSION_IMPERSONATOR",
+            "name": "SESSION_IMPERSONATOR",
+            "summary": "the\u0020userid\u0020of\u0020the\u0020impersonator\u0020user.",
+            "url": "classes/rex-login.html#constant_SESSION_IMPERSONATOR"
+        },                {
             "fqsen": "\\rex_login\u003A\u003A\u0024DB",
             "name": "DB",
             "summary": "",
@@ -7293,8 +7428,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_login\u003A\u003A\u0024sessionDuration",
             "name": "sessionDuration",
-            "summary": "",
+            "summary": "A\u0020Session\u0020will\u0020be\u0020closed\u0020when\u0020not\u0020activly\u0020used\u0020for\u0020this\u0020timespan\u0020\u0028seconds\u0029.",
             "url": "classes/rex-login.html#property_sessionDuration"
+        },                {
+            "fqsen": "\\rex_login\u003A\u003A\u0024sessionMaxOverallDuration",
+            "name": "sessionMaxOverallDuration",
+            "summary": "A\u0020session\u0020cannot\u0020stay\u0020longer\u0020then\u0020this\u0020value,\u0020no\u0020matter\u0020its\u0020actively\u0020used\u0020once\u0020in\u0020a\u0020while\u0020\u0028seconds\u0029.",
+            "url": "classes/rex-login.html#property_sessionMaxOverallDuration"
         },                {
             "fqsen": "\\rex_login\u003A\u003A\u0024loginQuery",
             "name": "loginQuery",
@@ -7366,6 +7506,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-login.html#property_impersonator"
         },                {
+            "fqsen": "\\rex_login_policy",
+            "name": "rex_login_policy",
+            "summary": "",
+            "url": "classes/rex-login-policy.html"
+        },                {
+            "fqsen": "\\rex_login_policy\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/rex-login-policy.html#method___construct"
+        },                {
+            "fqsen": "\\rex_login_policy\u003A\u003AgetMaxTriesUntilDelay\u0028\u0029",
+            "name": "getMaxTriesUntilDelay",
+            "summary": "Returns\u0020the\u0020number\u0020of\u0020allowed\u0020login\u0020tries,\u0020until\u0020login\u0020will\u0020be\u0020delayed.",
+            "url": "classes/rex-login-policy.html#method_getMaxTriesUntilDelay"
+        },                {
+            "fqsen": "\\rex_login_policy\u003A\u003AgetMaxTriesUntilBlock\u0028\u0029",
+            "name": "getMaxTriesUntilBlock",
+            "summary": "Returns\u0020the\u0020number\u0020of\u0020allowed\u0020login\u0020tries,\u0020until\u0020login\u0020will\u0020be\u0020blocked.",
+            "url": "classes/rex-login-policy.html#method_getMaxTriesUntilBlock"
+        },                {
+            "fqsen": "\\rex_login_policy\u003A\u003AgetReloginDelay\u0028\u0029",
+            "name": "getReloginDelay",
+            "summary": "Returns\u0020the\u0020relogin\u0020delay\u0020in\u0020seconds.",
+            "url": "classes/rex-login-policy.html#method_getReloginDelay"
+        },                {
+            "fqsen": "\\rex_login_policy\u003A\u003AisStayLoggedInEnabled\u0028\u0029",
+            "name": "isStayLoggedInEnabled",
+            "summary": "",
+            "url": "classes/rex-login-policy.html#method_isStayLoggedInEnabled"
+        },                {
             "fqsen": "\\rex_password_policy",
             "name": "rex_password_policy",
             "summary": "",
@@ -7385,6 +7555,11 @@ Search.appendIndex(
             "name": "getDescription",
             "summary": "",
             "url": "classes/rex-password-policy.html#method_getDescription"
+        },                {
+            "fqsen": "\\rex_password_policy\u003A\u003AgetHtmlAttributes\u0028\u0029",
+            "name": "getHtmlAttributes",
+            "summary": "Generates\u0020the\u0020corresponding\u0020html\u0020attributes\u0020\u0060minlength\u0060,\u0020\u0060maxlength\u0060\u0020and\u0020\u0060passwordrules\u0060.",
+            "url": "classes/rex-password-policy.html#method_getHtmlAttributes"
         },                {
             "fqsen": "\\rex_password_policy\u003A\u003AgetRule\u0028\u0029",
             "name": "getRule",
@@ -7463,7 +7638,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_user\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-user.html#method___construct"
         },                {
             "fqsen": "\\rex_user\u003A\u003Aget\u0028\u0029",
@@ -7588,7 +7763,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_addon\u003A\u003AgetAddon\u0028\u0029",
             "name": "getAddon",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-addon.html#method_getAddon"
         },                {
             "fqsen": "\\rex_addon\u003A\u003AgetPackageId\u0028\u0029",
@@ -7598,42 +7773,42 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_addon\u003A\u003AgetType\u0028\u0029",
             "name": "getType",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-addon.html#method_getType"
         },                {
             "fqsen": "\\rex_addon\u003A\u003AgetPath\u0028\u0029",
             "name": "getPath",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-addon.html#method_getPath"
         },                {
             "fqsen": "\\rex_addon\u003A\u003AgetAssetsPath\u0028\u0029",
             "name": "getAssetsPath",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-addon.html#method_getAssetsPath"
         },                {
             "fqsen": "\\rex_addon\u003A\u003AgetAssetsUrl\u0028\u0029",
             "name": "getAssetsUrl",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-addon.html#method_getAssetsUrl"
         },                {
             "fqsen": "\\rex_addon\u003A\u003AgetDataPath\u0028\u0029",
             "name": "getDataPath",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-addon.html#method_getDataPath"
         },                {
             "fqsen": "\\rex_addon\u003A\u003AgetCachePath\u0028\u0029",
             "name": "getCachePath",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-addon.html#method_getCachePath"
         },                {
             "fqsen": "\\rex_addon\u003A\u003AisSystemPackage\u0028\u0029",
             "name": "isSystemPackage",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-addon.html#method_isSystemPackage"
         },                {
             "fqsen": "\\rex_addon\u003A\u003Ai18n\u0028\u0029",
             "name": "i18n",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-addon.html#method_i18n"
         },                {
             "fqsen": "\\rex_addon\u003A\u003AgetPlugin\u0028\u0029",
@@ -7743,7 +7918,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_addon_manager\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-addon-manager.html#method___construct"
         },                {
             "fqsen": "\\rex_addon_manager\u003A\u003Ainstall\u0028\u0029",
@@ -7778,7 +7953,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_null_addon\u003A\u003AgetType\u0028\u0029",
             "name": "getType",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-null-addon.html#method_getType"
         },                {
             "fqsen": "\\rex_null_addon\u003A\u003AgetPlugin\u0028\u0029",
@@ -7810,6 +7985,21 @@ Search.appendIndex(
             "name": "getSystemPlugins",
             "summary": "Returns\u0020the\u0020system\u0020plugins.",
             "url": "classes/rex-null-addon.html#method_getSystemPlugins"
+        },                {
+            "fqsen": "\\rex_extension_point_package_cache_deleted",
+            "name": "rex_extension_point_package_cache_deleted",
+            "summary": "Extension\u0020Point\u0020Class.",
+            "url": "classes/rex-extension-point-package-cache-deleted.html"
+        },                {
+            "fqsen": "\\rex_extension_point_package_cache_deleted\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/rex-extension-point-package-cache-deleted.html#method___construct"
+        },                {
+            "fqsen": "\\rex_extension_point_package_cache_deleted\u003A\u003ANAME",
+            "name": "NAME",
+            "summary": "",
+            "url": "classes/rex-extension-point-package-cache-deleted.html#constant_NAME"
         },                {
             "fqsen": "\\rex_package_interface",
             "name": "rex_package_interface",
@@ -8188,7 +8378,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_package\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-package.html#method___construct"
         },                {
             "fqsen": "\\rex_package\u003A\u003Aget\u0028\u0029",
@@ -8383,7 +8573,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_plugin_manager\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-plugin-manager.html#method___construct"
         },                {
             "fqsen": "\\rex_plugin_manager\u003A\u003AwrongPackageId\u0028\u0029",
@@ -8398,7 +8588,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_null_plugin\u003A\u003AgetType\u0028\u0029",
             "name": "getType",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-null-plugin.html#method_getType"
         },                {
             "fqsen": "\\rex_plugin",
@@ -8408,7 +8598,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_plugin\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-plugin.html#method___construct"
         },                {
             "fqsen": "\\rex_plugin\u003A\u003Aget\u0028\u0029",
@@ -8428,7 +8618,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_plugin\u003A\u003AgetAddon\u0028\u0029",
             "name": "getAddon",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-plugin.html#method_getAddon"
         },                {
             "fqsen": "\\rex_plugin\u003A\u003AgetPackageId\u0028\u0029",
@@ -8438,32 +8628,32 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_plugin\u003A\u003AgetType\u0028\u0029",
             "name": "getType",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-plugin.html#method_getType"
         },                {
             "fqsen": "\\rex_plugin\u003A\u003AgetPath\u0028\u0029",
             "name": "getPath",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-plugin.html#method_getPath"
         },                {
             "fqsen": "\\rex_plugin\u003A\u003AgetAssetsPath\u0028\u0029",
             "name": "getAssetsPath",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-plugin.html#method_getAssetsPath"
         },                {
             "fqsen": "\\rex_plugin\u003A\u003AgetAssetsUrl\u0028\u0029",
             "name": "getAssetsUrl",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-plugin.html#method_getAssetsUrl"
         },                {
             "fqsen": "\\rex_plugin\u003A\u003AgetDataPath\u0028\u0029",
             "name": "getDataPath",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-plugin.html#method_getDataPath"
         },                {
             "fqsen": "\\rex_plugin\u003A\u003AgetCachePath\u0028\u0029",
             "name": "getCachePath",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-plugin.html#method_getCachePath"
         },                {
             "fqsen": "\\rex_plugin\u003A\u003AisAvailable\u0028\u0029",
@@ -8473,12 +8663,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_plugin\u003A\u003AisSystemPackage\u0028\u0029",
             "name": "isSystemPackage",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-plugin.html#method_isSystemPackage"
         },                {
             "fqsen": "\\rex_plugin\u003A\u003Ai18n\u0028\u0029",
             "name": "i18n",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-plugin.html#method_i18n"
         },                {
             "fqsen": "\\rex_plugin\u003A\u003AgetRegisteredPlugins\u0028\u0029",
@@ -8605,6 +8795,11 @@ Search.appendIndex(
             "name": "getStatus",
             "summary": "Returns\u0020the\u0020HTTP\u0020Status\u0020code.",
             "url": "classes/rex-response.html#method_getStatus"
+        },                {
+            "fqsen": "\\rex_response\u003A\u003AgetNonce\u0028\u0029",
+            "name": "getNonce",
+            "summary": "Returns\u0020a\u0020request\u0020save\u0020NONCE\u0020f\u00FCr\u0020CSP\u0020Headers\u0020and\u0020Implemntations.",
+            "url": "classes/rex-response.html#method_getNonce"
         },                {
             "fqsen": "\\rex_response\u003A\u003AsetHeader\u0028\u0029",
             "name": "setHeader",
@@ -8831,6 +9026,11 @@ Search.appendIndex(
             "summary": "Returns\u0020if\u0020the\u0020safe\u0020mode\u0020is\u0020active.",
             "url": "classes/rex.html#method_isSafeMode"
         },                {
+            "fqsen": "\\rex\u003A\u003AisLiveMode\u0028\u0029",
+            "name": "isLiveMode",
+            "summary": "Returns\u0020if\u0020the\u0020live\u0020mode\u0020is\u0020active.",
+            "url": "classes/rex.html#method_isLiveMode"
+        },                {
             "fqsen": "\\rex\u003A\u003AgetTablePrefix\u0028\u0029",
             "name": "getTablePrefix",
             "summary": "Returns\u0020the\u0020table\u0020prefix.",
@@ -9025,6 +9225,11 @@ Search.appendIndex(
             "name": "addOptgroup",
             "summary": "",
             "url": "classes/rex-select.html#method_addOptgroup"
+        },                {
+            "fqsen": "\\rex_select\u003A\u003AendOptgroup\u0028\u0029",
+            "name": "endOptgroup",
+            "summary": "",
+            "url": "classes/rex-select.html#method_endOptgroup"
         },                {
             "fqsen": "\\rex_select\u003A\u003AaddOption\u0028\u0029",
             "name": "addOption",
@@ -9246,6 +9451,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-sql-foreign-key.html#constant_RESTRICT"
         },                {
+            "fqsen": "\\rex_sql_foreign_key\u003A\u003ANO_ACTION",
+            "name": "NO_ACTION",
+            "summary": "",
+            "url": "classes/rex-sql-foreign-key.html#constant_NO_ACTION"
+        },                {
             "fqsen": "\\rex_sql_foreign_key\u003A\u003ACASCADE",
             "name": "CASCADE",
             "summary": "",
@@ -9335,6 +9545,541 @@ Search.appendIndex(
             "name": "dumpTable",
             "summary": "Dumps\u0020the\u0020schema\u0020for\u0020the\u0020given\u0020table\u0020as\u0020php\u0020code\u0020\u0028using\u0020\u0060rex_sql_table\u0060\u0029.",
             "url": "classes/rex-sql-schema-dumper.html#method_dumpTable"
+        },                {
+            "fqsen": "\\rex_sql",
+            "name": "rex_sql",
+            "summary": "Klasse\u0020zur\u0020Verbindung\u0020und\u0020Interatkion\u0020mit\u0020der\u0020Datenbank.",
+            "url": "classes/rex-sql.html"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/rex-sql.html#method___construct"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AselectDB\u0028\u0029",
+            "name": "selectDB",
+            "summary": "Stellt\u0020die\u0020Verbindung\u0020zur\u0020Datenbank\u0020her.",
+            "url": "classes/rex-sql.html#method_selectDB"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetConnection\u0028\u0029",
+            "name": "getConnection",
+            "summary": "return\u0020the\u0020PDO\u0020Instance,\u0020create\u0020database\u0020connection\u0020when\u0020not\u0020already\u0020created.",
+            "url": "classes/rex-sql.html#method_getConnection"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AcreateConnection\u0028\u0029",
+            "name": "createConnection",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_createConnection"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetQueryDBID\u0028\u0029",
+            "name": "getQueryDBID",
+            "summary": "Gibt\u0020die\u0020DatenbankId\u0020der\u0020Abfrage\u0020\u0028SQL\u0029\u0020zurueck,\noder\u0020false\u0020wenn\u0020die\u0020Abfrage\u0020keine\u0020DBID\u0020enthaelt.",
+            "url": "classes/rex-sql.html#method_getQueryDBID"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AstripQueryDBID\u0028\u0029",
+            "name": "stripQueryDBID",
+            "summary": "Entfernt\u0020die\u0020DBID\u0020aus\u0020einer\u0020Abfrage\u0020\u0028SQL\u0029\u0020und\u0020gibt\u0020die\u0020DBID\u0020zurueck\u0020falls\nvorhanden,\u0020sonst\u0020false.",
+            "url": "classes/rex-sql.html#method_stripQueryDBID"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetQueryType\u0028\u0029",
+            "name": "getQueryType",
+            "summary": "Gibt\u0020den\u0020Typ\u0020der\u0020Abfrage\u0020\u0028SQL\u0029\u0020zurueck,\noder\u0020false\u0020wenn\u0020die\u0020Abfrage\u0020keinen\u0020Typ\u0020enthaelt.",
+            "url": "classes/rex-sql.html#method_getQueryType"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Adatetime\u0028\u0029",
+            "name": "datetime",
+            "summary": "Returns\u0020a\u0020datetime\u0020string\u0020in\u0020sql\u0020datetime\u0020format\u0020\u0028Y\u002Dm\u002Dd\u0020H\u003Ai\u003As\u0029\u0020using\u0020the\u0020given\u0020timestamp\u0020or\u0020the\u0020current\u0020time\nif\u0020no\u0020timestamp\u0020\u0028or\u0020\u0060null\u0060\u0029\u0020is\u0020given.",
+            "url": "classes/rex-sql.html#method_datetime"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AsetDBQuery\u0028\u0029",
+            "name": "setDBQuery",
+            "summary": "Setzt\u0020eine\u0020Abfrage\u0020\u0028SQL\u0029\u0020ab,\u0020wechselt\u0020die\u0020DBID\u0020falls\u0020vorhanden.",
+            "url": "classes/rex-sql.html#method_setDBQuery"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AsetDebug\u0028\u0029",
+            "name": "setDebug",
+            "summary": "Setzt\u0020Debugmodus\u0020an\/aus.",
+            "url": "classes/rex-sql.html#method_setDebug"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AprepareQuery\u0028\u0029",
+            "name": "prepareQuery",
+            "summary": "Prepares\u0020a\u0020PDOStatement.",
+            "url": "classes/rex-sql.html#method_prepareQuery"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Aexecute\u0028\u0029",
+            "name": "execute",
+            "summary": "Executes\u0020the\u0020prepared\u0020statement\u0020with\u0020the\u0020given\u0020input\u0020parameters.",
+            "url": "classes/rex-sql.html#method_execute"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AsetQuery\u0028\u0029",
+            "name": "setQuery",
+            "summary": "Executes\u0020the\u0020given\u0020sql\u002Dquery.",
+            "url": "classes/rex-sql.html#method_setQuery"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AsetTable\u0028\u0029",
+            "name": "setTable",
+            "summary": "Setzt\u0020den\u0020Tabellennamen.",
+            "url": "classes/rex-sql.html#method_setTable"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AsetRawValue\u0028\u0029",
+            "name": "setRawValue",
+            "summary": "Sets\u0020the\u0020raw\u0020value\u0020of\u0020a\u0020column.",
+            "url": "classes/rex-sql.html#method_setRawValue"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AsetValue\u0028\u0029",
+            "name": "setValue",
+            "summary": "Set\u0020the\u0020value\u0020of\u0020a\u0020column.",
+            "url": "classes/rex-sql.html#method_setValue"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AsetArrayValue\u0028\u0029",
+            "name": "setArrayValue",
+            "summary": "Set\u0020the\u0020array\u0020value\u0020of\u0020a\u0020column\u0020\u0028json\u0020encoded\u0029.",
+            "url": "classes/rex-sql.html#method_setArrayValue"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AsetDateTimeValue\u0028\u0029",
+            "name": "setDateTimeValue",
+            "summary": "Sets\u0020the\u0020datetime\u0020value\u0020of\u0020a\u0020column.",
+            "url": "classes/rex-sql.html#method_setDateTimeValue"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AsetValues\u0028\u0029",
+            "name": "setValues",
+            "summary": "Setzt\u0020ein\u0020Array\u0020von\u0020Werten\u0020zugleich.",
+            "url": "classes/rex-sql.html#method_setValues"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AhasValues\u0028\u0029",
+            "name": "hasValues",
+            "summary": "Returns\u0020whether\u0020values\u0020are\u0020set\u0020inside\u0020this\u0020rex_sql\u0020object.",
+            "url": "classes/rex-sql.html#method_hasValues"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AisValueOf\u0028\u0029",
+            "name": "isValueOf",
+            "summary": "Prueft\u0020den\u0020Wert\u0020der\u0020Spalte\u0020\u0024column\u0020der\u0020aktuellen\u0020Zeile,\u0020ob\u0020\u0024value\u0020enthalten\u0020ist.",
+            "url": "classes/rex-sql.html#method_isValueOf"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AaddRecord\u0028\u0029",
+            "name": "addRecord",
+            "summary": "Adds\u0020a\u0020record\u0020for\u0020multi\u0020row\/batch\u0020operations.",
+            "url": "classes/rex-sql.html#method_addRecord"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AsetWhere\u0028\u0029",
+            "name": "setWhere",
+            "summary": "Setzt\u0020die\u0020WHERE\u0020Bedienung\u0020der\u0020Abfrage.",
+            "url": "classes/rex-sql.html#method_setWhere"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetValue\u0028\u0029",
+            "name": "getValue",
+            "summary": "Returns\u0020the\u0020value\u0020of\u0020a\u0020column.",
+            "url": "classes/rex-sql.html#method_getValue"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetArrayValue\u0028\u0029",
+            "name": "getArrayValue",
+            "summary": "Returns\u0020the\u0020array\u0020value\u0020of\u0020a\u0020\u0028json\u0020encoded\u0029\u0020column.",
+            "url": "classes/rex-sql.html#method_getArrayValue"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetDateTimeValue\u0028\u0029",
+            "name": "getDateTimeValue",
+            "summary": "Returns\u0020the\u0020unix\u0020timestamp\u0020of\u0020a\u0020datetime\u0020column.",
+            "url": "classes/rex-sql.html#method_getDateTimeValue"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AfetchValue\u0028\u0029",
+            "name": "fetchValue",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_fetchValue"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetRow\u0028\u0029",
+            "name": "getRow",
+            "summary": "Gibt\u0020den\u0020Wert\u0020der\u0020aktuellen\u0020Zeile\u0020im\u0020ResultSet\u0020zurueck\nFalls\u0020es\u0020noch\u0020keine\u0020erste\u0020Zeile\u0020\u0028lastRow\u0029\u0020gibt,\u0020wird\u0020der\u0020Satzzeiger\ninitialisiert.\u0020Weitere\u0020Satzwechsel\u0020mittels\u0020next\u0028\u0029.",
+            "url": "classes/rex-sql.html#method_getRow"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AhasValue\u0028\u0029",
+            "name": "hasValue",
+            "summary": "Prueft,\u0020ob\u0020eine\u0020Spalte\u0020im\u0020Resultset\u0020vorhanden\u0020ist.",
+            "url": "classes/rex-sql.html#method_hasValue"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AisNull\u0028\u0029",
+            "name": "isNull",
+            "summary": "Prueft,\u0020ob\u0020das\u0020Feld\u0020mit\u0020dem\u0020Namen\u0020\u0024feldname\u0020Null\u0020ist.",
+            "url": "classes/rex-sql.html#method_isNull"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetRows\u0028\u0029",
+            "name": "getRows",
+            "summary": "Gibt\u0020die\u0020Anzahl\u0020der\u0020Zeilen\u0020zurueck.",
+            "url": "classes/rex-sql.html#method_getRows"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetFields\u0028\u0029",
+            "name": "getFields",
+            "summary": "Gibt\u0020die\u0020Anzahl\u0020der\u0020Felder\/Spalten\u0020zurueck.",
+            "url": "classes/rex-sql.html#method_getFields"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AbuildPreparedValues\u0028\u0029",
+            "name": "buildPreparedValues",
+            "summary": "Baut\u0020den\u0020SET\u0020bestandteil\u0020mit\u0020der\nverfuegbaren\u0020values\u0020zusammen\u0020und\u0020gibt\u0020diesen\u0020zurueck.",
+            "url": "classes/rex-sql.html#method_buildPreparedValues"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetWhere\u0028\u0029",
+            "name": "getWhere",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_getWhere"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Aselect\u0028\u0029",
+            "name": "select",
+            "summary": "Setzt\u0020eine\u0020Select\u002DAnweisung\u0020auf\u0020die\u0020angegebene\u0020Tabelle\nmit\u0020den\u0020WHERE\u0020Parametern\u0020ab.",
+            "url": "classes/rex-sql.html#method_select"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "Setzt\u0020eine\u0020Update\u002DAnweisung\u0020auf\u0020die\u0020angegebene\u0020Tabelle\nmit\u0020den\u0020angegebenen\u0020Werten\u0020und\u0020WHERE\u0020Parametern\u0020ab.",
+            "url": "classes/rex-sql.html#method_update"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Ainsert\u0028\u0029",
+            "name": "insert",
+            "summary": "Setzt\u0020eine\u0020Insert\u002DAnweisung\u0020auf\u0020die\u0020angegebene\u0020Tabelle\nmit\u0020den\u0020angegebenen\u0020Werten\u0020ab.",
+            "url": "classes/rex-sql.html#method_insert"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AinsertOrUpdate\u0028\u0029",
+            "name": "insertOrUpdate",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_insertOrUpdate"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Areplace\u0028\u0029",
+            "name": "replace",
+            "summary": "Setzt\u0020eine\u0020Replace\u002DAnweisung\u0020auf\u0020die\u0020angegebene\u0020Tabelle\nmit\u0020den\u0020angegebenen\u0020Werten\u0020ab.",
+            "url": "classes/rex-sql.html#method_replace"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Adelete\u0028\u0029",
+            "name": "delete",
+            "summary": "Setzt\u0020eine\u0020Delete\u002DAnweisung\u0020auf\u0020die\u0020angegebene\u0020Tabelle\nmit\u0020den\u0020angegebenen\u0020WHERE\u0020Parametern\u0020ab.",
+            "url": "classes/rex-sql.html#method_delete"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AflushValues\u0028\u0029",
+            "name": "flushValues",
+            "summary": "Stellt\u0020alle\u0020Values,\u0020die\u0020mit\u0020setValue\u0028\u0029\u0020gesetzt\u0020wurden,\u0020zurueck.",
+            "url": "classes/rex-sql.html#method_flushValues"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AhasNext\u0028\u0029",
+            "name": "hasNext",
+            "summary": "Prueft\u0020ob\u0020das\u0020Resultset\u0020weitere\u0020Datensaetze\u0020enthaelt.",
+            "url": "classes/rex-sql.html#method_hasNext"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "Setzt\u0020den\u0020Cursor\u0020des\u0020Resultsets\u0020zurueck\u0020zum\u0020Anfang.",
+            "url": "classes/rex-sql.html#method_reset"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetLastId\u0028\u0029",
+            "name": "getLastId",
+            "summary": "Gibt\u0020die\u0020letzte\u0020InsertId\u0020zurueck.",
+            "url": "classes/rex-sql.html#method_getLastId"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetDBArray\u0028\u0029",
+            "name": "getDBArray",
+            "summary": "Laedt\u0020das\u0020komplette\u0020Resultset\u0020in\u0020ein\u0020Array\u0020und\u0020gibt\u0020dieses\u0020zurueck\u0020und\nwechselt\u0020die\u0020DBID\u0020falls\u0020vorhanden.",
+            "url": "classes/rex-sql.html#method_getDBArray"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetArray\u0028\u0029",
+            "name": "getArray",
+            "summary": "Laedt\u0020das\u0020komplette\u0020Resultset\u0020in\u0020ein\u0020Array\u0020und\u0020gibt\u0020dieses\u0020zurueck.",
+            "url": "classes/rex-sql.html#method_getArray"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetErrno\u0028\u0029",
+            "name": "getErrno",
+            "summary": "Gibt\u0020die\u0020zuletzt\u0020aufgetretene\u0020Fehlernummer\u0020zurueck.",
+            "url": "classes/rex-sql.html#method_getErrno"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetMysqlErrno\u0028\u0029",
+            "name": "getMysqlErrno",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_getMysqlErrno"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetError\u0028\u0029",
+            "name": "getError",
+            "summary": "Gibt\u0020den\u0020zuletzt\u0020aufgetretene\u0020Fehler\u0020zurueck.",
+            "url": "classes/rex-sql.html#method_getError"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AhasError\u0028\u0029",
+            "name": "hasError",
+            "summary": "Prueft,\u0020ob\u0020ein\u0020Fehler\u0020aufgetreten\u0020ist.",
+            "url": "classes/rex-sql.html#method_hasError"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AprintError\u0028\u0029",
+            "name": "printError",
+            "summary": "Gibt\u0020die\u0020letzte\u0020Fehlermeldung\u0020aus.",
+            "url": "classes/rex-sql.html#method_printError"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AsetNewId\u0028\u0029",
+            "name": "setNewId",
+            "summary": "Setzt\u0020eine\u0020Spalte\u0020auf\u0020den\u0020naechst\u0020moeglich\u0020auto_increment\u0020Wert.",
+            "url": "classes/rex-sql.html#method_setNewId"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetFieldnames\u0028\u0029",
+            "name": "getFieldnames",
+            "summary": "Gibt\u0020die\u0020Spaltennamen\u0020des\u0020ResultSets\u0020zurueck.",
+            "url": "classes/rex-sql.html#method_getFieldnames"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetTablenames\u0028\u0029",
+            "name": "getTablenames",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_getTablenames"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Aescape\u0028\u0029",
+            "name": "escape",
+            "summary": "Escaped\u0020den\u0020uebergeben\u0020Wert\u0020fuer\u0020den\u0020DB\u0020Query.",
+            "url": "classes/rex-sql.html#method_escape"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AescapeIdentifier\u0028\u0029",
+            "name": "escapeIdentifier",
+            "summary": "Escapes\u0020and\u0020adds\u0020backsticks\u0020around.",
+            "url": "classes/rex-sql.html#method_escapeIdentifier"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AescapeLikeWildcards\u0028\u0029",
+            "name": "escapeLikeWildcards",
+            "summary": "Escapes\u0020the\u0020\u0060LIKE\u0060\u0020wildcard\u0020chars\u0020\u0022\u0025\u0022\u0020and\u0020\u0022_\u0022\u0020in\u0020given\u0020value.",
+            "url": "classes/rex-sql.html#method_escapeLikeWildcards"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Ain\u0028\u0029",
+            "name": "in",
+            "summary": "Escapes\u0020and\u0020transforms\u0020values\u0020for\u0020\u0060IN\u0020\u0028...\u0029\u0060\u0020clause.",
+            "url": "classes/rex-sql.html#method_in"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AaddGlobalUpdateFields\u0028\u0029",
+            "name": "addGlobalUpdateFields",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_addGlobalUpdateFields"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AaddGlobalCreateFields\u0028\u0029",
+            "name": "addGlobalCreateFields",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_addGlobalCreateFields"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AbeginTransaction\u0028\u0029",
+            "name": "beginTransaction",
+            "summary": "Starts\u0020a\u0020database\u0020transaction.",
+            "url": "classes/rex-sql.html#method_beginTransaction"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003ArollBack\u0028\u0029",
+            "name": "rollBack",
+            "summary": "Rollback\u0020a\u0020already\u0020started\u0020database\u0020transaction.",
+            "url": "classes/rex-sql.html#method_rollBack"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Acommit\u0028\u0029",
+            "name": "commit",
+            "summary": "Commit\u0020a\u0020already\u0020started\u0020database\u0020transaction.",
+            "url": "classes/rex-sql.html#method_commit"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AinTransaction\u0028\u0029",
+            "name": "inTransaction",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_inTransaction"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Atransactional\u0028\u0029",
+            "name": "transactional",
+            "summary": "Convenience\u0020method\u0020which\u0020executes\u0020the\u0020given\u0020callable\u0020within\u0020a\u0020transaction.",
+            "url": "classes/rex-sql.html#method_transactional"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Arewind\u0028\u0029",
+            "name": "rewind",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_rewind"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_current"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Akey\u0028\u0029",
+            "name": "key",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_key"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Anext\u0028\u0029",
+            "name": "next",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_next"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Avalid\u0028\u0029",
+            "name": "valid",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_valid"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AshowCreateTable\u0028\u0029",
+            "name": "showCreateTable",
+            "summary": "Erstellt\u0020das\u0020CREATE\u0020TABLE\u0020Statement\u0020um\u0020die\u0020Tabelle\u0020\u0024table\nder\u0020Datenbankverbindung\u0020\u0024DBID\u0020zu\u0020erstellen.",
+            "url": "classes/rex-sql.html#method_showCreateTable"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AshowTables\u0028\u0029",
+            "name": "showTables",
+            "summary": "Sucht\u0020alle\u0020Tabellen\/Views\u0020der\u0020Datenbankverbindung\u0020\u0024DBID.",
+            "url": "classes/rex-sql.html#method_showTables"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetTablesAndViews\u0028\u0029",
+            "name": "getTablesAndViews",
+            "summary": "Sucht\u0020alle\u0020Tabellen\/Views\u0020der\u0020Datenbankverbindung\u0020\u0024DBID.",
+            "url": "classes/rex-sql.html#method_getTablesAndViews"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetTables\u0028\u0029",
+            "name": "getTables",
+            "summary": "Sucht\u0020alle\u0020Tabellen\u0020der\u0020Datenbankverbindung\u0020\u0024DBID.",
+            "url": "classes/rex-sql.html#method_getTables"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetViews\u0028\u0029",
+            "name": "getViews",
+            "summary": "Sucht\u0020alle\u0020Views\u0020der\u0020Datenbankverbindung\u0020\u0024DBID.",
+            "url": "classes/rex-sql.html#method_getViews"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AshowColumns\u0028\u0029",
+            "name": "showColumns",
+            "summary": "Sucht\u0020Spalteninformationen\u0020der\u0020Tabelle\u0020\u0024table\u0020der\u0020Datenbankverbindung\u0020\u0024DBID.",
+            "url": "classes/rex-sql.html#method_showColumns"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetServerVersion\u0028\u0029",
+            "name": "getServerVersion",
+            "summary": "Returns\u0020the\u0020full\u0020database\u0020version\u0020string.",
+            "url": "classes/rex-sql.html#method_getServerVersion"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetDbType\u0028\u0029",
+            "name": "getDbType",
+            "summary": "Returns\u0020the\u0020database\u0020type\u0020\u0028MySQL\u0020or\u0020MariaDB\u0029.",
+            "url": "classes/rex-sql.html#method_getDbType"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AgetDbVersion\u0028\u0029",
+            "name": "getDbVersion",
+            "summary": "Returns\u0020the\u0020normalized\u0020database\u0020version.",
+            "url": "classes/rex-sql.html#method_getDbVersion"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003Afactory\u0028\u0029",
+            "name": "factory",
+            "summary": "Creates\u0020a\u0020rex_sql\u0020instance.",
+            "url": "classes/rex-sql.html#method_factory"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AcloseConnection\u0028\u0029",
+            "name": "closeConnection",
+            "summary": "",
+            "url": "classes/rex-sql.html#method_closeConnection"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AcheckDbConnection\u0028\u0029",
+            "name": "checkDbConnection",
+            "summary": "Prueft\u0020die\u0020uebergebenen\u0020Zugangsdaten\u0020auf\u0020gueltigkeit\u0020und\u0020legt\u0020ggf.\u0020die\nDatenbank\u0020an.",
+            "url": "classes/rex-sql.html#method_checkDbConnection"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AMYSQL",
+            "name": "MYSQL",
+            "summary": "",
+            "url": "classes/rex-sql.html#constant_MYSQL"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AMARIADB",
+            "name": "MARIADB",
+            "summary": "",
+            "url": "classes/rex-sql.html#constant_MARIADB"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AERROR_VIOLATE_UNIQUE_KEY",
+            "name": "ERROR_VIOLATE_UNIQUE_KEY",
+            "summary": "",
+            "url": "classes/rex-sql.html#constant_ERROR_VIOLATE_UNIQUE_KEY"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AERRNO_TABLE_OR_VIEW_DOESNT_EXIST",
+            "name": "ERRNO_TABLE_OR_VIEW_DOESNT_EXIST",
+            "summary": "",
+            "url": "classes/rex-sql.html#constant_ERRNO_TABLE_OR_VIEW_DOESNT_EXIST"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AFORMAT_DATETIME",
+            "name": "FORMAT_DATETIME",
+            "summary": "Default\u0020SQL\u0020datetime\u0020format.",
+            "url": "classes/rex-sql.html#constant_FORMAT_DATETIME"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003AOPT_BUFFERED",
+            "name": "OPT_BUFFERED",
+            "summary": "Controls\u0020query\u0020buffering.",
+            "url": "classes/rex-sql.html#constant_OPT_BUFFERED"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024debug",
+            "name": "debug",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_debug"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024values",
+            "name": "values",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_values"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024rawValues",
+            "name": "rawValues",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_rawValues"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024fieldnames",
+            "name": "fieldnames",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_fieldnames"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024rawFieldnames",
+            "name": "rawFieldnames",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_rawFieldnames"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024tablenames",
+            "name": "tablenames",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_tablenames"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024lastRow",
+            "name": "lastRow",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_lastRow"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024table",
+            "name": "table",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_table"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024wherevar",
+            "name": "wherevar",
+            "summary": "Where\u0020condition\u0020as\u0020string\u0020or\u0020as\u0020nested\u0020array\u0020\u0028see\u0020\u0060setWhere\u0060\u0020for\u0020examples\u0029.",
+            "url": "classes/rex-sql.html#property_wherevar"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024whereParams",
+            "name": "whereParams",
+            "summary": "Params\u0020for\u0020where\u0020condition.",
+            "url": "classes/rex-sql.html#property_whereParams"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024rows",
+            "name": "rows",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_rows"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024counter",
+            "name": "counter",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_counter"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024query",
+            "name": "query",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_query"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024params",
+            "name": "params",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_params"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024DBID",
+            "name": "DBID",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_DBID"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024records",
+            "name": "records",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_records"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024stmt",
+            "name": "stmt",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_stmt"
+        },                {
+            "fqsen": "\\rex_sql\u003A\u003A\u0024pdo",
+            "name": "pdo",
+            "summary": "",
+            "url": "classes/rex-sql.html#property_pdo"
         },                {
             "fqsen": "\\rex_sql_table",
             "name": "rex_sql_table",
@@ -9521,6 +10266,11 @@ Search.appendIndex(
             "summary": "Class\u0020to\u0020execute\u0020a\u0020sql\u0020dump.",
             "url": "classes/rex-sql-util.html"
         },                {
+            "fqsen": "\\rex_sql_util\u003A\u003AslowQueryLogPath\u0028\u0029",
+            "name": "slowQueryLogPath",
+            "summary": "",
+            "url": "classes/rex-sql-util.html#method_slowQueryLogPath"
+        },                {
             "fqsen": "\\rex_sql_util\u003A\u003AcopyTable\u0028\u0029",
             "name": "copyTable",
             "summary": "Copy\u0020the\u0020table\u0020structure\u0020\u0028without\u0020its\u0020data\u0029\u0020to\u0020another\u0020table.",
@@ -9646,81 +10396,6 @@ Search.appendIndex(
             "summary": "Deletes\u0020files\u0020and\u0020directories\u0020by\u0020a\u0020rex_dir_iterator.",
             "url": "classes/rex-dir.html#method_deleteIterator"
         },                {
-            "fqsen": "\\rex_editor",
-            "name": "rex_editor",
-            "summary": "",
-            "url": "classes/rex-editor.html"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003Afactory\u0028\u0029",
-            "name": "factory",
-            "summary": "Creates\u0020a\u0020rex_editor\u0020instance.",
-            "url": "classes/rex-editor.html#method_factory"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AgetUrl\u0028\u0029",
-            "name": "getUrl",
-            "summary": "",
-            "url": "classes/rex-editor.html#method_getUrl"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AgetSupportedEditors\u0028\u0029",
-            "name": "getSupportedEditors",
-            "summary": "",
-            "url": "classes/rex-editor.html#method_getSupportedEditors"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "Returns\u0020the\u0020editor\u0020name,\u0020e.g.\u0020\u201Eatom\u201C.",
-            "url": "classes/rex-editor.html#method_getName"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AgetBasepath\u0028\u0029",
-            "name": "getBasepath",
-            "summary": "",
-            "url": "classes/rex-editor.html#method_getBasepath"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AEDITOR_ATOM",
-            "name": "EDITOR_ATOM",
-            "summary": "",
-            "url": "classes/rex-editor.html#constant_EDITOR_ATOM"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AEDITOR_EMACS",
-            "name": "EDITOR_EMACS",
-            "summary": "",
-            "url": "classes/rex-editor.html#constant_EDITOR_EMACS"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AEDITOR_IDEA",
-            "name": "EDITOR_IDEA",
-            "summary": "",
-            "url": "classes/rex-editor.html#constant_EDITOR_IDEA"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AEDITOR_MACVIM",
-            "name": "EDITOR_MACVIM",
-            "summary": "",
-            "url": "classes/rex-editor.html#constant_EDITOR_MACVIM"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AEDITOR_PHPSTORM",
-            "name": "EDITOR_PHPSTORM",
-            "summary": "",
-            "url": "classes/rex-editor.html#constant_EDITOR_PHPSTORM"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AEDITOR_SUBLIME",
-            "name": "EDITOR_SUBLIME",
-            "summary": "",
-            "url": "classes/rex-editor.html#constant_EDITOR_SUBLIME"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AEDITOR_TEXTMATE",
-            "name": "EDITOR_TEXTMATE",
-            "summary": "",
-            "url": "classes/rex-editor.html#constant_EDITOR_TEXTMATE"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AEDITOR_VSCODE",
-            "name": "EDITOR_VSCODE",
-            "summary": "",
-            "url": "classes/rex-editor.html#constant_EDITOR_VSCODE"
-        },                {
-            "fqsen": "\\rex_editor\u003A\u003AEDITOR_XDEBUG",
-            "name": "EDITOR_XDEBUG",
-            "summary": "",
-            "url": "classes/rex-editor.html#constant_EDITOR_XDEBUG"
-        },                {
             "fqsen": "\\rex_file",
             "name": "rex_file",
             "summary": "Class\u0020for\u0020handling\u0020files.",
@@ -9750,6 +10425,11 @@ Search.appendIndex(
             "name": "put",
             "summary": "Puts\u0020content\u0020in\u0020a\u0020file.",
             "url": "classes/rex-file.html#method_put"
+        },                {
+            "fqsen": "\\rex_file\u003A\u003Aappend\u0028\u0029",
+            "name": "append",
+            "summary": "Appends\u0020content\u0020to\u0020a\u0020file.",
+            "url": "classes/rex-file.html#method_append"
         },                {
             "fqsen": "\\rex_file\u003A\u003AputConfig\u0028\u0029",
             "name": "putConfig",
@@ -9858,7 +10538,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_finder\u003A\u003Acount\u0028\u0029",
             "name": "count",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-finder.html#method_count"
         },                {
             "fqsen": "\\rex_finder\u003A\u003AALL",
@@ -10058,12 +10738,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_log_file\u003A\u003Avalid\u0028\u0029",
             "name": "valid",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-log-file.html#method_valid"
         },                {
             "fqsen": "\\rex_log_file\u003A\u003Arewind\u0028\u0029",
             "name": "rewind",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-log-file.html#method_rewind"
         },                {
             "fqsen": "\\rex_log_file\u003A\u003Adelete\u0028\u0029",
@@ -10150,36 +10830,6 @@ Search.appendIndex(
             "name": "factory",
             "summary": "",
             "url": "classes/rex-logger.html#method_factory"
-        },                {
-            "fqsen": "\\rex_markdown",
-            "name": "rex_markdown",
-            "summary": "Markdown\u0020parser.",
-            "url": "classes/rex-markdown.html"
-        },                {
-            "fqsen": "\\rex_markdown\u003A\u003Afactory\u0028\u0029",
-            "name": "factory",
-            "summary": "",
-            "url": "classes/rex-markdown.html#method_factory"
-        },                {
-            "fqsen": "\\rex_markdown\u003A\u003Aparse\u0028\u0029",
-            "name": "parse",
-            "summary": "Parses\u0020markdown\u0020code.",
-            "url": "classes/rex-markdown.html#method_parse"
-        },                {
-            "fqsen": "\\rex_markdown\u003A\u003AparseWithToc\u0028\u0029",
-            "name": "parseWithToc",
-            "summary": "Parses\u0020markdown\u0020code\u0020and\u0020extracts\u0020a\u0020table\u002Dof\u002Dcontent.",
-            "url": "classes/rex-markdown.html#method_parseWithToc"
-        },                {
-            "fqsen": "\\rex_markdown\u003A\u003ASOFT_LINE_BREAKS",
-            "name": "SOFT_LINE_BREAKS",
-            "summary": "",
-            "url": "classes/rex-markdown.html#constant_SOFT_LINE_BREAKS"
-        },                {
-            "fqsen": "\\rex_markdown\u003A\u003AHIGHLIGHT_PHP",
-            "name": "HIGHLIGHT_PHP",
-            "summary": "",
-            "url": "classes/rex-markdown.html#constant_HIGHLIGHT_PHP"
         },                {
             "fqsen": "\\rex_pager",
             "name": "rex_pager",
@@ -10411,6 +11061,11 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020basename\u0020\u0028filename\u0029\u0020of\u0020the\u0020path\u0020independent\u0020of\u0020directory\u0020separator\u0020\u0028\/\u0020or\u0020\\\u0029.",
             "url": "classes/rex-path.html#method_basename"
         },                {
+            "fqsen": "\\rex_path\u003A\u003AfindBinaryPath\u0028\u0029",
+            "name": "findBinaryPath",
+            "summary": "",
+            "url": "classes/rex-path.html#method_findBinaryPath"
+        },                {
             "fqsen": "\\rex_path\u003A\u003A\u0024pathprovider",
             "name": "pathprovider",
             "summary": "",
@@ -10558,7 +11213,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_socket\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-socket.html#method___construct"
         },                {
             "fqsen": "\\rex_socket\u003A\u003Afactory\u0028\u0029",
@@ -10570,6 +11225,11 @@ Search.appendIndex(
             "name": "factoryUrl",
             "summary": "Creates\u0020a\u0020socket\u0020by\u0020a\u0020full\u0020URL.",
             "url": "classes/rex-socket.html#method_factoryUrl"
+        },                {
+            "fqsen": "\\rex_socket\u003A\u003A\u0024acceptCompression",
+            "name": "acceptCompression",
+            "summary": "",
+            "url": "classes/rex-socket.html#property_acceptCompression"
         },                {
             "fqsen": "\\rex_socket\u003A\u003AsetPath\u0028\u0029",
             "name": "setPath",
@@ -10723,8 +11383,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_socket_response\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-socket-response.html#method___construct"
+        },                {
+            "fqsen": "\\rex_socket_response\u003A\u003AdecompressContent\u0028\u0029",
+            "name": "decompressContent",
+            "summary": "",
+            "url": "classes/rex-socket-response.html#method_decompressContent"
         },                {
             "fqsen": "\\rex_socket_response\u003A\u003AgetStatusCode\u0028\u0029",
             "name": "getStatusCode",
@@ -10776,6 +11441,11 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020header\u0020for\u0020the\u0020given\u0020key,\u0020or\u0020the\u0020entire\u0020header\u0020if\u0020no\u0020key\u0020is\u0020given.",
             "url": "classes/rex-socket-response.html#method_getHeader"
         },                {
+            "fqsen": "\\rex_socket_response\u003A\u003AgetContentEncodings\u0028\u0029",
+            "name": "getContentEncodings",
+            "summary": "Returns\u0020an\u0020array\u0020with\u0020all\u0020applied\u0020content\u0020encodings.",
+            "url": "classes/rex-socket-response.html#method_getContentEncodings"
+        },                {
             "fqsen": "\\rex_socket_response\u003A\u003AgetBufferedBody\u0028\u0029",
             "name": "getBufferedBody",
             "summary": "Returns\u0020up\u0020to\u0020\u0060\u0024length\u0060\u0020bytes\u0020from\u0020the\u0020body,\u0020or\u0020\u0060false\u0060\u0020if\u0020the\u0020end\u0020is\u0020reached.",
@@ -10785,6 +11455,11 @@ Search.appendIndex(
             "name": "getBody",
             "summary": "Returns\u0020the\u0020entire\u0020body.",
             "url": "classes/rex-socket-response.html#method_getBody"
+        },                {
+            "fqsen": "\\rex_socket_response\u003A\u003AisGzipOrDeflateEncoded\u0028\u0029",
+            "name": "isGzipOrDeflateEncoded",
+            "summary": "",
+            "url": "classes/rex-socket-response.html#method_isGzipOrDeflateEncoded"
         },                {
             "fqsen": "\\rex_socket_response\u003A\u003AwriteBodyTo\u0028\u0029",
             "name": "writeBodyTo",
@@ -10798,12 +11473,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_sortable_iterator\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "Constructor.",
+            "summary": "",
             "url": "classes/rex-sortable-iterator.html#method___construct"
         },                {
             "fqsen": "\\rex_sortable_iterator\u003A\u003AgetIterator\u0028\u0029",
             "name": "getIterator",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-sortable-iterator.html#method_getIterator"
         },                {
             "fqsen": "\\rex_sortable_iterator\u003A\u003AVALUES",
@@ -10941,6 +11616,61 @@ Search.appendIndex(
             "summary": "Cleanup\u0020the\u0020given\u0020html\u0020string\u0020and\u0020removes\u0020possible\u0020malicious\u0020codes\/markup.",
             "url": "classes/rex-string.html#method_sanitizeHtml"
         },                {
+            "fqsen": "\\rex_timer",
+            "name": "rex_timer",
+            "summary": "Class\u0020to\u0020stop\u0020the\u0020script\u0020time.",
+            "url": "classes/rex-timer.html"
+        },                {
+            "fqsen": "\\rex_timer\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/rex-timer.html#method___construct"
+        },                {
+            "fqsen": "\\rex_timer\u003A\u003Ameasure\u0028\u0029",
+            "name": "measure",
+            "summary": "Measures\u0020the\u0020runtime\u0020of\u0020the\u0020given\u0020callable.",
+            "url": "classes/rex-timer.html#method_measure"
+        },                {
+            "fqsen": "\\rex_timer\u003A\u003Ameasured\u0028\u0029",
+            "name": "measured",
+            "summary": "Saves\u0020the\u0020measurement\u0020of\u0020the\u0020given\u0020timer.",
+            "url": "classes/rex-timer.html#method_measured"
+        },                {
+            "fqsen": "\\rex_timer\u003A\u003Areset\u0028\u0029",
+            "name": "reset",
+            "summary": "Resets\u0020the\u0020timer.",
+            "url": "classes/rex-timer.html#method_reset"
+        },                {
+            "fqsen": "\\rex_timer\u003A\u003Astop\u0028\u0029",
+            "name": "stop",
+            "summary": "Stops\u0020the\u0020timer.",
+            "url": "classes/rex-timer.html#method_stop"
+        },                {
+            "fqsen": "\\rex_timer\u003A\u003AgetDelta\u0028\u0029",
+            "name": "getDelta",
+            "summary": "Returns\u0020the\u0020time\u0020difference.",
+            "url": "classes/rex-timer.html#method_getDelta"
+        },                {
+            "fqsen": "\\rex_timer\u003A\u003AgetFormattedDelta\u0028\u0029",
+            "name": "getFormattedDelta",
+            "summary": "Returns\u0020the\u0020formatted\u0020time\u0020difference.",
+            "url": "classes/rex-timer.html#method_getFormattedDelta"
+        },                {
+            "fqsen": "\\rex_timer\u003A\u003ASEC",
+            "name": "SEC",
+            "summary": "",
+            "url": "classes/rex-timer.html#constant_SEC"
+        },                {
+            "fqsen": "\\rex_timer\u003A\u003AMILLISEC",
+            "name": "MILLISEC",
+            "summary": "",
+            "url": "classes/rex-timer.html#constant_MILLISEC"
+        },                {
+            "fqsen": "\\rex_timer\u003A\u003AMICROSEC",
+            "name": "MICROSEC",
+            "summary": "",
+            "url": "classes/rex-timer.html#constant_MICROSEC"
+        },                {
             "fqsen": "\\rex_type",
             "name": "rex_type",
             "summary": "Class\u0020for\u0020var\u0020casting.",
@@ -10950,6 +11680,21 @@ Search.appendIndex(
             "name": "cast",
             "summary": "Casts\u0020the\u0020variable\u0020\u0024var\u0020to\u0020\u0024vartype.",
             "url": "classes/rex-type.html#method_cast"
+        },                {
+            "fqsen": "\\rex_type\u003A\u003AnotNull\u0028\u0029",
+            "name": "notNull",
+            "summary": "",
+            "url": "classes/rex-type.html#method_notNull"
+        },                {
+            "fqsen": "\\rex_type\u003A\u003Abool\u0028\u0029",
+            "name": "bool",
+            "summary": "",
+            "url": "classes/rex-type.html#method_bool"
+        },                {
+            "fqsen": "\\rex_type\u003A\u003AnullOrBool\u0028\u0029",
+            "name": "nullOrBool",
+            "summary": "",
+            "url": "classes/rex-type.html#method_nullOrBool"
         },                {
             "fqsen": "\\rex_type\u003A\u003Astring\u0028\u0029",
             "name": "string",
@@ -11246,6 +11991,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-version.html#method_isUnstable"
         },                {
+            "fqsen": "\\rex_version\u003A\u003AmatchesConstraints\u0028\u0029",
+            "name": "matchesConstraints",
+            "summary": "Checks\u0020the\u0020version\u0020of\u0020the\u0020requirement.",
+            "url": "classes/rex-version.html#method_matchesConstraints"
+        },                {
             "fqsen": "\\rex_version\u003A\u003Asplit\u0028\u0029",
             "name": "split",
             "summary": "Splits\u0020a\u0020version\u0020string\u0020into\u0020its\u0020parts.",
@@ -11268,7 +12018,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_clang\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-var-clang.html#method_getOutput"
         },                {
             "fqsen": "\\rex_var_config",
@@ -11278,7 +12028,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_config\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-var-config.html#method_getOutput"
         },                {
             "fqsen": "\\rex_var_property",
@@ -11288,7 +12038,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_var_property\u003A\u003AgetOutput\u0028\u0029",
             "name": "getOutput",
-            "summary": "\u007B\u0040inheritdoc\u007D",
+            "summary": "",
             "url": "classes/rex-var-property.html#method_getOutput"
         },                {
             "fqsen": "\\rex_var_dumper",
@@ -11305,121 +12055,6 @@ Search.appendIndex(
             "name": "dump",
             "summary": "",
             "url": "classes/rex-var-dumper.html#method_dump"
-        },                {
-            "fqsen": "\\rex_view",
-            "name": "rex_view",
-            "summary": "",
-            "url": "classes/rex-view.html"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AaddCssFile\u0028\u0029",
-            "name": "addCssFile",
-            "summary": "Adds\u0020a\u0020CSS\u0020file.",
-            "url": "classes/rex-view.html#method_addCssFile"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AgetCssFiles\u0028\u0029",
-            "name": "getCssFiles",
-            "summary": "Returns\u0020the\u0020CSS\u0020files.",
-            "url": "classes/rex-view.html#method_getCssFiles"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AaddJsFile\u0028\u0029",
-            "name": "addJsFile",
-            "summary": "Adds\u0020a\u0020JS\u0020file.",
-            "url": "classes/rex-view.html#method_addJsFile"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AgetJsFiles\u0028\u0029",
-            "name": "getJsFiles",
-            "summary": "Returns\u0020the\u0020JS\u0020files.",
-            "url": "classes/rex-view.html#method_getJsFiles"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AgetJsFilesWithOptions\u0028\u0029",
-            "name": "getJsFilesWithOptions",
-            "summary": "Returns\u0020all\u0020JS\u0020files\u0020besides\u0020their\u0020options.",
-            "url": "classes/rex-view.html#method_getJsFilesWithOptions"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AsetJsProperty\u0028\u0029",
-            "name": "setJsProperty",
-            "summary": "Sets\u0020a\u0020JS\u0020property.",
-            "url": "classes/rex-view.html#method_setJsProperty"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AgetJsProperties\u0028\u0029",
-            "name": "getJsProperties",
-            "summary": "Returns\u0020the\u0020JS\u0020properties.",
-            "url": "classes/rex-view.html#method_getJsProperties"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AsetFavicon\u0028\u0029",
-            "name": "setFavicon",
-            "summary": "Sets\u0020the\u0020favicon\u0020path.",
-            "url": "classes/rex-view.html#method_setFavicon"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AgetFavicon\u0028\u0029",
-            "name": "getFavicon",
-            "summary": "Returns\u0020the\u0020favicon.",
-            "url": "classes/rex-view.html#method_getFavicon"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003Ainfo\u0028\u0029",
-            "name": "info",
-            "summary": "Returns\u0020an\u0020info\u0020message.",
-            "url": "classes/rex-view.html#method_info"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003Asuccess\u0028\u0029",
-            "name": "success",
-            "summary": "Returns\u0020a\u0020success\u0020message.",
-            "url": "classes/rex-view.html#method_success"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003Awarning\u0028\u0029",
-            "name": "warning",
-            "summary": "Returns\u0020an\u0020warning\u0020message.",
-            "url": "classes/rex-view.html#method_warning"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003Aerror\u0028\u0029",
-            "name": "error",
-            "summary": "Returns\u0020an\u0020error\u0020message.",
-            "url": "classes/rex-view.html#method_error"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003Atoolbar\u0028\u0029",
-            "name": "toolbar",
-            "summary": "Returns\u0020a\u0020toolbar.",
-            "url": "classes/rex-view.html#method_toolbar"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003Acontent\u0028\u0029",
-            "name": "content",
-            "summary": "Returns\u0020a\u0020content\u0020block.",
-            "url": "classes/rex-view.html#method_content"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003Atitle\u0028\u0029",
-            "name": "title",
-            "summary": "Returns\u0020the\u0020formatted\u0020title.",
-            "url": "classes/rex-view.html#method_title"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AclangSwitch\u0028\u0029",
-            "name": "clangSwitch",
-            "summary": "Returns\u0020a\u0020clang\u0020switch.",
-            "url": "classes/rex-view.html#method_clangSwitch"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AclangSwitchAsButtons\u0028\u0029",
-            "name": "clangSwitchAsButtons",
-            "summary": "Returns\u0020a\u0020clang\u0020switch.",
-            "url": "classes/rex-view.html#method_clangSwitchAsButtons"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AclangSwitchAsDropdown\u0028\u0029",
-            "name": "clangSwitchAsDropdown",
-            "summary": "Returns\u0020a\u0020clang\u0020switch.",
-            "url": "classes/rex-view.html#method_clangSwitchAsDropdown"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AJS_DEFERED",
-            "name": "JS_DEFERED",
-            "summary": "",
-            "url": "classes/rex-view.html#constant_JS_DEFERED"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AJS_ASYNC",
-            "name": "JS_ASYNC",
-            "summary": "",
-            "url": "classes/rex-view.html#constant_JS_ASYNC"
-        },                {
-            "fqsen": "\\rex_view\u003A\u003AJS_IMMUTABLE",
-            "name": "JS_IMMUTABLE",
-            "summary": "",
-            "url": "classes/rex-view.html#constant_JS_IMMUTABLE"
         },                {
             "fqsen": "\\",
             "name": "\\",

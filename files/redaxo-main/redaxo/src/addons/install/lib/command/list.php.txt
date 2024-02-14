@@ -11,16 +11,16 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class rex_command_install_list extends rex_console_command
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this->setDescription('List available packages on redaxo.org')
             ->addOption('search', 's', InputOption::VALUE_REQUIRED, 'filter list')
             ->addOption('updates-only', 'u', InputOption::VALUE_NONE, 'only list packages with available updates')
             ->addOption('json', null, InputOption::VALUE_NONE, 'output table as json')
-            ;
+        ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = $this->getStyle($input, $output);
 
@@ -38,7 +38,7 @@ class rex_command_install_list extends rex_console_command
         foreach ($packages as $key => $package) {
             $rowData = [
                 'key' => $key,
-                'name' => strlen($package['name']) > 40 ? substr($package['name'], 0, 40).'...' : $package['name'],
+                'name' => strlen($package['name']) > 40 ? substr($package['name'], 0, 40) . '...' : $package['name'],
                 'author' => $package['author'],
                 'last updated' => rex_formatter::intlDate($package['updated']),
                 'latest version' => reset($package['files'])['version'],

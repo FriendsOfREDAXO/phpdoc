@@ -11,14 +11,26 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class rex_command_package_activate extends rex_console_command
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Activates the selected package')
-            ->addArgument('package-id', InputArgument::REQUIRED, 'The id of the package (addon or plugin); e.g. "cronjob" or "structure/content"');
+            ->addArgument('package-id', InputArgument::REQUIRED, 'The id of the package (addon or plugin); e.g. "cronjob" or "structure/content"', null, static function () {
+                $packageNames = [];
+
+                foreach (rex_package::getRegisteredPackages() as $package) {
+                    if ($package->isAvailable()) {
+                        continue;
+                    }
+
+                    $packageNames[] = $package->getPackageId();
+                }
+
+                return $packageNames;
+            });
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = $this->getStyle($input, $output);
 
@@ -30,7 +42,7 @@ class rex_command_package_activate extends rex_console_command
 
         $package = rex_package::get($packageId);
         if (!$package instanceof rex_package) {
-            $io->error('Package "'.$packageId.'" doesn\'t exists!');
+            $io->error('Package "' . $packageId . '" doesn\'t exists!');
             return 1;
         }
 

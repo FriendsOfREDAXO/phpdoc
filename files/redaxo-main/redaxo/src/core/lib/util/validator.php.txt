@@ -11,11 +11,7 @@ class rex_validator
 {
     use rex_factory_trait;
 
-    /**
-     * @psalm-var list<rex_validation_rule>
-     *
-     * @var rex_validation_rule[]
-     */
+    /** @var list<rex_validation_rule> */
     private $rules = [];
     /** @var string|null */
     private $message;
@@ -39,9 +35,9 @@ class rex_validator
     /**
      * Adds a validation rule.
      *
-     * @param string      $type    Validator type (any static method name of this class)
-     * @param null|string $message Message which is used if this validator type does not match
-     * @param mixed       $option  Type specific option
+     * @param string $type Validator type (any static method name of this class)
+     * @param string|null $message Message which is used if this validator type does not match
+     * @param mixed $option Type specific option
      *
      * @throws InvalidArgumentException
      *
@@ -73,9 +69,7 @@ class rex_validator
     }
 
     /**
-     * @psalm-return list<rex_validation_rule>
-     *
-     * @return rex_validation_rule[]
+     * @return list<rex_validation_rule>
      */
     public function getRules(): array
     {
@@ -141,25 +135,18 @@ class rex_validator
      */
     public function type($value, $type)
     {
-        switch ($type) {
-            case 'int':
-            case 'integer':
-                return $this->match($value, '/^\d+$/');
-
-            case 'float':
-            case 'real':
-                return is_numeric($value);
-
-            default:
-                throw new InvalidArgumentException('Unknown $type:' . $type);
-        }
+        return match ($type) {
+            'int', 'integer' => $this->match($value, '/^\d+$/'),
+            'float', 'real' => is_numeric($value),
+            default => throw new InvalidArgumentException('Unknown $type:' . $type),
+        };
     }
 
     /**
      * Checks whether the value has the given min length.
      *
      * @param string $value
-     * @param int    $minLength
+     * @param int $minLength
      *
      * @return bool
      */
@@ -172,7 +159,7 @@ class rex_validator
      * Checks whether the value has the given max value.
      *
      * @param string $value
-     * @param int    $maxLength
+     * @param int $maxLength
      *
      * @return bool
      */
@@ -185,7 +172,7 @@ class rex_validator
      * Checks whether the value is equal or greater than the given min value.
      *
      * @param string $value
-     * @param int    $min
+     * @param int $min
      *
      * @return bool
      */
@@ -198,7 +185,7 @@ class rex_validator
      * Checks whether the value is equal or lower than the given max value.
      *
      * @param string $value
-     * @param int    $max
+     * @param int $max
      *
      * @return bool
      */
@@ -273,7 +260,7 @@ class rex_validator
      * Checks the value by using the given callable.
      *
      * @param string $value
-     * @psalm-param callable(string):bool $callback
+     * @param callable(string):bool $callback
      *
      * @return bool
      */

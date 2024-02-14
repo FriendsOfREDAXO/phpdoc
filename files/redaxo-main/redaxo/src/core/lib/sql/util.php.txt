@@ -8,7 +8,33 @@
 class rex_sql_util
 {
     /**
+     * @psalm-taint-escape file
+     */
+    public static function slowQueryLogPath(): ?string
+    {
+        $db = rex_sql::factory();
+        $db->setQuery("show variables like 'slow_query_log_file'");
+        $slowQueryLogPath = (string) $db->getValue('Value');
+
+        if ('' !== $slowQueryLogPath) {
+            if ('.' === dirname($slowQueryLogPath)) {
+                $db->setQuery('select @@datadir as default_data_dir');
+                $defaultDataDir = (string) $db->getValue('default_data_dir');
+
+                return $defaultDataDir . $slowQueryLogPath;
+            }
+
+            return $slowQueryLogPath;
+        }
+
+        return null;
+    }
+
+    /**
      * Copy the table structure (without its data) to another table.
+     *
+     * @param non-empty-string $sourceTable
+     * @param non-empty-string $destinationTable
      *
      * @throws rex_exception
      */
@@ -23,13 +49,16 @@ class rex_sql_util
         }
 
         $sql = rex_sql::factory();
-        $sql->setQuery('CREATE TABLE '.$sql->escapeIdentifier($destinationTable).' LIKE '.$sql->escapeIdentifier($sourceTable));
+        $sql->setQuery('CREATE TABLE ' . $sql->escapeIdentifier($destinationTable) . ' LIKE ' . $sql->escapeIdentifier($sourceTable));
 
         rex_sql_table::clearInstance($destinationTable);
     }
 
     /**
      * Copy the table structure and its data to another table.
+     *
+     * @param non-empty-string $sourceTable
+     * @param non-empty-string $destinationTable
      *
      * @throws rex_exception
      */
@@ -38,18 +67,19 @@ class rex_sql_util
         self::copyTable($sourceTable, $destinationTable);
 
         $sql = rex_sql::factory();
-        $sql->setQuery('INSERT '.$sql->escapeIdentifier($destinationTable).' SELECT * FROM '.$sql->escapeIdentifier($sourceTable));
+        $sql->setQuery('INSERT ' . $sql->escapeIdentifier($destinationTable) . ' SELECT * FROM ' . $sql->escapeIdentifier($sourceTable));
     }
 
     /**
      * Allgemeine funktion die eine Datenbankspalte fortlaufend durchnummeriert.
      * Dies ist z.B. nützlich beim Umgang mit einer Prioritäts-Spalte.
      *
-     * @param string $tableName      Name der Datenbanktabelle
-     * @param string $prioColumnName Name der Spalte in der Tabelle, in der die Priorität (Integer) gespeichert wird
+     * @param non-empty-string $tableName Name der Datenbanktabelle
+     * @param non-empty-string $prioColumnName Name der Spalte in der Tabelle, in der die Priorität (Integer) gespeichert wird
      * @param string $whereCondition Where-Bedingung zur Einschränkung des ResultSets
-     * @param string $orderBy        Sortierung des ResultSets
-     * @param int    $startBy        Startpriorität
+     * @param string $orderBy Sortierung des ResultSets
+     * @param int $startBy Startpriorität
+     * @return void
      */
     public static function organizePriorities($tableName, $prioColumnName, $whereCondition = '', $orderBy = '', $startBy = 1)
     {
@@ -75,8 +105,8 @@ class rex_sql_util
     /**
      * Importiert die gegebene SQL-Datei in die Datenbank.
      *
-     * @param string $file
-     * @param bool   $debug
+     * @param non-empty-string $file
+     * @param bool $debug
      *
      * @throws rex_sql_exception
      *
@@ -85,7 +115,7 @@ class rex_sql_util
     public static function importDump($file, $debug = false)
     {
         if (!str_ends_with($file, '.sql')) {
-            throw new rex_exception('Expecting a .sql file, "'. $file .'" given.');
+            throw new rex_exception('Expecting a .sql file, "' . $file . '" given.');
         }
 
         $sql = rex_sql::factory();
@@ -109,11 +139,11 @@ class rex_sql_util
     /**
      * @return string
      */
-    private static function prepareQuery($query)
+    private static function prepareQuery(string $query)
     {
         // rex::getUser() gibts im Setup nicht
         /** @psalm-taint-escape sql */ // we trust the user db table
-        $user = rex::getUser() ? rex::getUser()->getValue('login') : '';
+        $user = rex::getUser()?->getLogin() ?? '';
 
         $query = str_replace('%USER%', $user, $query);
         $query = str_replace('%TIME%', (string) time(), $query);
@@ -126,7 +156,7 @@ class rex_sql_util
     /**
      * Reads a file and split all statements in it.
      *
-     * @param string $file Path to the SQL-dump-file
+     * @param non-empty-string $file Path to the SQL-dump-file
      *
      * @return array
      */
@@ -147,7 +177,7 @@ class rex_sql_util
             return $ret;
         }
 
-        throw new rex_exception('File "'.$file.'" could not be read.');
+        throw new rex_exception('File "' . $file . '" could not be read.');
     }
 
     // Taken from phpmyadmin (read_dump.lib.php: PMA_splitSqlFile)
@@ -157,17 +187,17 @@ class rex_sql_util
      *
      * Last revision: September 23, 2001 - gandon
      *
-     * @param array  $queries the splitted sql commands
-     * @param string $sql     the sql commands
-     * @param int    $release the MySQL release number (because certains php3 versions
-     *                        can't get the value of a constant from within a function)
+     * @param array $queries the splitted sql commands
+     * @param string $sql the sql commands
+     * @param int $release the MySQL release number (because certains php3 versions
+     *                     can't get the value of a constant from within a function)
      *
      * @return bool always true
      */
     public static function splitSqlFile(&$queries, $sql, $release)
     {
         // do not trim, see bug #1030644
-        //$sql          = trim($sql);
+        // $sql          = trim($sql);
         $sql = rtrim($sql, "\n\r");
         $sqlLen = strlen($sql);
         $stringStart = '';
@@ -181,8 +211,7 @@ class rex_sql_util
             // We are in a string, check for not escaped end of strings except for
             // backquotes that can't be escaped
             if ($inString) {
-                for (;;) {
-                    /** @psalm-suppress LoopInvalidation */
+                while (true) {
                     $i = strpos($sql, $stringStart, $i);
                     // No end of string found -> add the current substring to the
                     // returned array
@@ -223,7 +252,6 @@ class rex_sql_util
 
             // lets skip comments (/*, -- and #)
             elseif (('-' == $char && $sqlLen > $i + 2 && '-' == $sql[$i + 1] && $sql[$i + 2] <= ' ') || '#' == $char || ('/' == $char && $sqlLen > $i + 1 && '*' == $sql[$i + 1])) {
-                /** @psalm-suppress LoopInvalidation */
                 $i = strpos($sql, '/' == $char ? '*/' : "\n", $i);
                 // didn't we hit end of string?
                 if (false === $i) {

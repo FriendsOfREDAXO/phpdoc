@@ -5,11 +5,11 @@
  */
 ?>
 <!doctype html>
-<html lang="<?php echo rex_i18n::msg('htmllang'); ?>">
+<html lang="<?= rex_i18n::msg('htmllang') ?>">
 <head>
     <meta charset="utf-8" />
 
-    <title><?php echo $this->pageTitle ?></title>
+    <title><?= $this->pageTitle ?></title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 <?php
@@ -24,7 +24,7 @@
         $colorScheme = rex_escape($user->getValue('theme'));
     }
     echo "\n" . '    <meta name="color-scheme" content="' . $colorScheme . '">';
-    echo "\n" . '    <style>:root { color-scheme: ' . $colorScheme . ' }</style>';
+    echo "\n" . '    <style nonce="' . rex_response::getNonce() . '">:root { color-scheme: ' . $colorScheme . ' }</style>';
 
     $assetDir = rex_path::assets();
 
@@ -35,15 +35,15 @@
             if (!rex::isDebugMode() && str_starts_with($path, $assetDir) && $mtime = @filemtime($path)) {
                 $file = rex_url::backendController(['asset' => ltrim($file, '.'), 'buster' => $mtime]);
             } elseif ($mtime = @filemtime($path)) {
-                $file .= '?buster='. $mtime;
+                $file .= '?buster=' . $mtime;
             }
-            echo "\n" . '    <link rel="stylesheet" type="text/css" media="' . $media . '" href="' . $file .'" />';
+            echo "\n" . '    <link rel="stylesheet" type="text/css" media="' . $media . '" href="' . $file . '" />';
         }
     }
     echo "\n";
-    echo "\n" . '    <script type="text/javascript">';
+    echo "\n" . '    <script type="text/javascript" nonce="' . rex_response::getNonce() . '">';
     echo "\n" . '    <!--';
-    echo "\n" . '    var rex = '.$this->jsProperties.';';
+    echo "\n" . '    var rex = ' . $this->jsProperties . ';';
     echo "\n" . '    //-->';
     echo "\n" . '    </script>';
     foreach ($this->jsFiles as $file) {
@@ -61,7 +61,7 @@
                 $file = rex_url::backendController(['asset' => ltrim($file, '.'), 'buster' => $mtime]);
             }
         } elseif ($mtime = @filemtime($path)) {
-            $file .= '?buster='. $mtime;
+            $file .= '?buster=' . $mtime;
         }
 
         $attributes = [];
@@ -72,16 +72,16 @@
             $attributes[] = 'defer="defer"';
         }
 
-        echo "\n" . '    <script type="text/javascript" src="' . $file .'" '. implode(' ', $attributes) .'></script>';
+        echo "\n" . '    <script type="text/javascript" src="' . $file . '" ' . implode(' ', $attributes) . ' nonce="' . rex_response::getNonce() . '"></script>';
     }
 ?>
 
-    <?php echo $this->favicon ? '<link rel="shortcut icon" href="' . $this->favicon . '" />' : '' ?>
+    <?= $this->favicon ? '<link rel="shortcut icon" href="' . $this->favicon . '" />' : '' ?>
 
-    <?php echo $this->pageHeader ?>
+    <?= $this->pageHeader ?>
 
 </head>
-<body<?php echo $this->bodyAttr; ?>>
+<body<?= $this->bodyAttr ?>>
 
 <div class="rex-ajax-loader" id="rex-js-ajax-loader">
     <div class="rex-ajax-loader-element"></div>

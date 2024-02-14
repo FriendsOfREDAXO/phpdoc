@@ -9,16 +9,9 @@
  */
 trait rex_instance_pool_trait
 {
-    /**
-     * @psalm-var array<class-string, array<string, null|static>>
-     *
-     * @var static[][]
-     */
+    /** @var array<class-string, array<string, static|null>> */
     private static $instances = [];
 
-    /**
-     * Constructor.
-     */
     private function __construct()
     {
         // noop
@@ -27,8 +20,9 @@ trait rex_instance_pool_trait
     /**
      * Adds an instance.
      *
-     * @param mixed $key      Key
-     * @param self  $instance Instance
+     * @param mixed $key Key
+     * @param self $instance Instance
+     * @return void
      */
     protected static function addInstance($key, self $instance)
     {
@@ -56,13 +50,13 @@ trait rex_instance_pool_trait
      *
      * If the instance does not exist it will be created by calling the $createCallback
      *
-     * @param mixed    $key            Key
+     * @param mixed $key Key
      * @param callable $createCallback Callback, will be called to create a new instance
      * @psalm-param callable(mixed...):?static $createCallback
      *
-     * @return null|static
+     * @return static|null
      */
-    protected static function getInstance($key, callable $createCallback = null)
+    protected static function getInstance($key, ?callable $createCallback = null)
     {
         $args = (array) $key;
         $key = self::getInstancePoolKey($args);
@@ -71,16 +65,14 @@ trait rex_instance_pool_trait
             $instance = call_user_func_array($createCallback, $args);
             self::$instances[$class][$key] = $instance instanceof static ? $instance : null;
         }
-        if (isset(self::$instances[$class][$key])) {
-            return self::$instances[$class][$key];
-        }
-        return null;
+        return self::$instances[$class][$key] ?? null;
     }
 
     /**
      * Removes the instance of the given key.
      *
      * @param mixed $key Key
+     * @return void
      */
     public static function clearInstance($key)
     {
@@ -91,6 +83,7 @@ trait rex_instance_pool_trait
 
     /**
      * Clears the instance pool.
+     * @return void
      */
     public static function clearInstancePool()
     {

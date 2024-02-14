@@ -22,16 +22,13 @@ class rex_article_content_editor extends rex_article_content
         parent::__construct($articleId, $clang);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function outputSlice(rex_sql $artDataSql, $moduleIdToAdd)
     {
         if ('edit' != $this->mode) {
             // ----- wenn mode nicht edit
             $sliceContent = parent::outputSlice(
                 $artDataSql,
-                $moduleIdToAdd
+                $moduleIdToAdd,
             );
         } else {
             $sliceId = (int) $artDataSql->getValue(rex::getTablePrefix() . 'article_slice.id');
@@ -51,7 +48,7 @@ class rex_article_content_editor extends rex_article_content
 
             $panel = '';
             // ----- Display message at current slice
-            //if(rex::getUser()->getComplexPerm('modules')->hasPerm($moduleId)) {
+            // if(rex::requireUser()->getComplexPerm('modules')->hasPerm($moduleId)) {
             if ('add' != $this->function && $this->slice_id == $sliceId) {
                 $msg = '';
                 if ('' != $this->warning) {
@@ -62,10 +59,10 @@ class rex_article_content_editor extends rex_article_content
                 }
                 $panel .= $msg;
             }
-            //}
+            // }
 
             // ----- EDIT/DELETE BLOCK - Wenn Rechte vorhanden
-            if (rex::getUser()->getComplexPerm('modules')->hasPerm($moduleId)) {
+            if (rex::requireUser()->getComplexPerm('modules')->hasPerm($moduleId)) {
                 if ('edit' == $this->function && $this->slice_id == $sliceId) {
                     // **************** Aktueller Slice
 
@@ -80,21 +77,26 @@ class rex_article_content_editor extends rex_article_content
                     $moduleInput = $this->replaceVars($artDataSql, $moduleInput);
                     return $sliceContent . $this->editSlice($sliceId, $moduleInput, $sliceCtype, $moduleId, $artDataSql);
                 }
-                // Modulinhalt ausgeben
-                $moduleOutput = $this->replaceVars($artDataSql, $moduleOutput);
-                $panel .= $this->getWrappedModuleOutput($moduleId, $moduleOutput);
-            } else {
-                // ----- hat keine rechte an diesem modul, einfach ausgeben
-                $moduleOutput = $this->replaceVars($artDataSql, $moduleOutput);
-                $panel .= $this->getWrappedModuleOutput($moduleId, $moduleOutput);
             }
+            // Modulinhalt ausgeben
+            $moduleOutput = $this->replaceVars($artDataSql, $moduleOutput);
+            $content = $this->getWrappedModuleOutput($moduleId, $moduleOutput);
+
+            // EP for changing the module preview
+            $panel .= rex_extension::registerPoint(new rex_extension_point('SLICE_BE_PREVIEW', $content, [
+                'article_id' => $this->article_id,
+                'clang' => $this->clang,
+                'ctype' => $this->ctype,
+                'module_id' => $moduleId,
+                'slice_id' => $sliceId,
+            ]));
 
             $fragment = new rex_fragment();
             $fragment->setVar('title', $this->getSliceHeading($artDataSql), false);
             $fragment->setVar('options', $this->getSliceMenu($artDataSql), false);
             $fragment->setVar('body', $panel, false);
             $statusName = $sliceStatus ? 'online' : 'offline';
-            $sliceContent .= '<li class="rex-slice rex-slice-output rex-slice-'.$statusName.'" id="slice'.$sliceId.'">' . $fragment->parse('core/page/section.php') . '</li>';
+            $sliceContent .= '<li class="rex-slice rex-slice-output rex-slice-' . $statusName . '" id="slice' . $sliceId . '">' . $fragment->parse('core/page/section.php') . '</li>';
         }
 
         return $sliceContent;
@@ -144,7 +146,7 @@ class rex_article_content_editor extends rex_article_content
         $menuStatusAction = [];
         $menuMoveupAction = [];
         $menuMovedownAction = [];
-        if (rex::getUser()->getComplexPerm('modules')->hasPerm($moduleId)) {
+        if (rex::requireUser()->getComplexPerm('modules')->hasPerm($moduleId)) {
             $templateHasModule = rex_template::hasModule($this->template_attributes, $this->ctype, $moduleId);
             if ($templateHasModule) {
                 // edit
@@ -165,18 +167,18 @@ class rex_article_content_editor extends rex_article_content
             $item['attributes']['data-confirm'] = rex_i18n::msg('confirm_delete_block');
             $menuDeleteAction = $item;
 
-            if ($templateHasModule && rex::getUser()->hasPerm('publishSlice[]')) {
+            if ($templateHasModule && rex::requireUser()->hasPerm('publishSlice[]')) {
                 // status
                 $item = [];
                 $statusName = $sliceStatus ? 'online' : 'offline';
-                $item['label'] = rex_i18n::msg('status_'.$statusName);
+                $item['label'] = rex_i18n::msg('status_' . $statusName);
                 $item['url'] = $context->getUrl(['status' => $sliceStatus ? 0 : 1] + rex_api_content_slice_status::getUrlParams());
                 $item['attributes']['class'][] = 'btn-default';
-                $item['attributes']['class'][] = 'rex-'.$statusName;
+                $item['attributes']['class'][] = 'rex-' . $statusName;
                 $menuStatusAction = $item;
             }
 
-            if ($templateHasModule && rex::getUser()->hasPerm('moveSlice[]')) {
+            if ($templateHasModule && rex::requireUser()->hasPerm('moveSlice[]')) {
                 // moveup
                 $item = [];
                 $item['hidden_label'] = rex_i18n::msg('module') . ' ' . $moduleName . ' ' . rex_i18n::msg('move_slice_up');
@@ -213,7 +215,7 @@ class rex_article_content_editor extends rex_article_content
             $sliceCtype,
             $moduleId,
             $sliceId,
-            rex::getUser()->getComplexPerm('modules')->hasPerm($moduleId),
+            rex::requireUser()->getComplexPerm('modules')->hasPerm($moduleId),
         ));
 
         $actionItems = [];
@@ -254,7 +256,7 @@ class rex_article_content_editor extends rex_article_content
             $headerRight .= $fragment->parse('slice_menu_move.php');
         }
 
-        //$header_right = $header_right != '' ? '<div class="col-md-4 text-right">' . $header_right . '</div>' : '';
+        // $header_right = $header_right != '' ? '<div class="col-md-4 text-right">' . $header_right . '</div>' : '';
 
         return $headerRight;
     }
@@ -262,7 +264,7 @@ class rex_article_content_editor extends rex_article_content
     /**
      * Wraps the output of a module.
      *
-     * @param int    $moduleId     The id of the module
+     * @param int $moduleId The id of the module
      * @param string $moduleOutput The output of the module
      *
      * @return string
@@ -315,21 +317,18 @@ class rex_article_content_editor extends rex_article_content
         $select = $fragment->parse('module_select.php');
         $select = rex_extension::registerPoint(new rex_extension_point(
             'STRUCTURE_CONTENT_MODULE_SELECT',
-                $select,
+            $select,
             [
                 'page' => rex_be_controller::getCurrentPage(),
                 'article_id' => $this->article_id,
                 'clang' => $this->clang,
                 'ctype' => $this->ctype,
                 'slice_id' => $sliceId,
-            ]
+            ],
         ));
         return '<li class="rex-slice rex-slice-select" id="slice-add-pos-' . $position . '">' . $select . '</li>';
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function preArticle($articleContent, $moduleId)
     {
         // ---------- moduleselect: nur module nehmen auf die der user rechte hat
@@ -347,7 +346,7 @@ class rex_article_content_editor extends rex_article_content
             foreach ($templateCtypes as $ctId => $ctName) {
                 foreach ($modules as $m) {
                     $id = (int) $m['id'];
-                    if (rex::getUser()->getComplexPerm('modules')->hasPerm($id)) {
+                    if (rex::requireUser()->getComplexPerm('modules')->hasPerm($id)) {
                         if (rex_template::hasModule($this->template_attributes, $ctId, $id)) {
                             $this->MODULESELECT[$ctId][] = ['name' => rex_i18n::translate((string) $m['name'], false), 'id' => $id, 'key' => (string) $m['key']];
                         }
@@ -359,9 +358,6 @@ class rex_article_content_editor extends rex_article_content
         return parent::preArticle($articleContent, $moduleId);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function postArticle($articleContent, $moduleId)
     {
         // special identifier for the slot behind the last slice
@@ -462,7 +458,7 @@ class rex_article_content_editor extends rex_article_content
                     <form action="' . rex_url::currentBackendPage(['article_id' => $this->article_id, 'slice_id' => $sliceId, 'clang' => $this->clang, 'ctype' => $this->ctype]) . '#slice-add-pos-' . $this->sliceAddPosition . '" method="post" id="REX_FORM" enctype="multipart/form-data">
                         ' . $sliceContent . '
                     </form>
-                    <script type="text/javascript">
+                    <script type="text/javascript" nonce="' . rex_response::getNonce() . '">
                          <!--
                         jQuery(function($) {
                             $(":input:visible:enabled:not([readonly]):first", $("#REX_FORM")).focus();
@@ -476,10 +472,10 @@ class rex_article_content_editor extends rex_article_content
     // ----- EDIT Slice
 
     /**
-     * @param int     $sliceId
-     * @param string  $moduleInput
-     * @param int     $ctypeId
-     * @param int     $moduleId
+     * @param int $sliceId
+     * @param string $moduleInput
+     * @param int $ctypeId
+     * @param int $moduleId
      * @param rex_sql $artDataSql
      * @return string
      */
@@ -540,7 +536,7 @@ class rex_article_content_editor extends rex_article_content
                 <form enctype="multipart/form-data" action="' . rex_url::currentBackendPage(['article_id' => $this->article_id, 'slice_id' => $sliceId, 'ctype' => $ctypeId, 'clang' => $this->clang, 'function' => 'edit']) . '#slice' . $sliceId . '" method="post" id="REX_FORM">
                     ' . $sliceContent . '
                 </form>
-                <script type="text/javascript">
+                <script type="text/javascript" nonce="' . rex_response::getNonce() . '">
                      <!--
                     jQuery(function($) {
                         $(":input:visible:enabled:not([readonly]):first", $("#REX_FORM")).focus();

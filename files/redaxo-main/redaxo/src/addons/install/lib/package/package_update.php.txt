@@ -9,9 +9,7 @@
  */
 class rex_install_package_update extends rex_install_package_download
 {
-    /**
-     * @var rex_addon
-     */
+    /** @var rex_addon */
     private $addon;
 
     protected function getPackages()
@@ -37,6 +35,9 @@ class rex_install_package_update extends rex_install_package_download
         $path = rex_path::addon($this->addonkey);
         $temppath = rex_path::addon('.new.' . $this->addonkey);
         $oldVersion = $this->addon->getVersion();
+
+        // remove temp dir very late otherwise Whoops could not find source files in case of errors
+        register_shutdown_function(static fn () => rex_dir::delete($temppath));
 
         if (true !== ($msg = $this->extractArchiveTo($temppath))) {
             return $msg;
@@ -99,15 +100,35 @@ class rex_install_package_update extends rex_install_package_download
         foreach ($this->addon->getRegisteredPlugins() as $plugin) {
             $pluginPath = $temppath . '/plugins/' . $plugin->getName();
             if (!is_dir($pluginPath)) {
-                rex_dir::copy($plugin->getPath(), $pluginPath);
+                if (is_dir($plugin->getPath())) {
+                    rex_dir::copy($plugin->getPath(), $pluginPath);
+                }
             } elseif ($plugin->isInstalled() && is_dir($pluginPath . '/assets')) {
                 rex_dir::copy($pluginPath . '/assets', $plugin->getAssetsPath());
             }
         }
 
         // ---- update main addon dir
-        rex_dir::delete($path);
-        rename($temppath, $path);
+        $pathOld = rex_path::addon($this->addonkey . '.old');
+        error_clear_last();
+        // move current addon to temp path
+        if (!@rename($path, $pathOld)) {
+            $message = $path . ' could not be moved to ' . $pathOld;
+            $message .= ($error = error_get_last()) ? ': ' . $error['message'] : '.';
+            throw new rex_functional_exception($message);
+        }
+        // move new addon to main addon path
+        if (@rename($temppath, $path)) {
+            // remove temp path of old addon
+            rex_dir::delete($pathOld);
+        } else {
+            // revert to old addon
+            rename($pathOld, $path);
+
+            $message = $temppath . ' could not be moved to ' . $path;
+            $message .= ($error = error_get_last()) ? ': ' . $error['message'] : '.';
+            throw new rex_functional_exception($message);
+        }
 
         // ---- update assets
         $origAssets = $this->addon->getPath('assets');
@@ -117,9 +138,9 @@ class rex_install_package_update extends rex_install_package_download
 
         // ---- update package order
         if ($this->addon->isAvailable()) {
-            $this->addon->loadProperties();
+            $this->addon->loadProperties(true);
             foreach ($this->addon->getAvailablePlugins() as $plugin) {
-                $plugin->loadProperties();
+                $plugin->loadProperties(true);
             }
             rex_package_manager::generatePackageOrder();
         }
@@ -127,7 +148,7 @@ class rex_install_package_update extends rex_install_package_download
         $this->addon->setProperty('version', $this->file['version']);
         rex_install_packages::updatedPackage($this->addonkey, $this->fileId);
 
-        rex_logger::factory()->info('AddOn '. $this->addonkey .' updated from '. $oldVersion .' to version '. $this->file['version']);
+        rex_logger::factory()->info('AddOn ' . $this->addonkey . ' updated from ' . $oldVersion . ' to version ' . $this->file['version']);
 
         // re-generate opcache to make sure new/updated classes immediately are available
         if (function_exists('opcache_reset')) {
@@ -145,11 +166,11 @@ class rex_install_package_update extends rex_install_package_download
         $temppath = rex_path::addon('.new.' . $this->addonkey);
 
         // ---- update "version", "requires" and "conflicts" properties
-        /** @psalm-var SplObjectStorage<rex_package, string> $versions */
+        /** @var SplObjectStorage<rex_package, string> $versions */
         $versions = new SplObjectStorage();
-        /** @psalm-var SplObjectStorage<rex_package, array> $requirements */
+        /** @var SplObjectStorage<rex_package, array> $requirements */
         $requirements = new SplObjectStorage();
-        /** @psalm-var SplObjectStorage<rex_package, array> $conflicts */
+        /** @var SplObjectStorage<rex_package, array> $conflicts */
         $conflicts = new SplObjectStorage();
 
         $requirements[$this->addon] = $this->addon->getProperty('requires', []);
@@ -225,16 +246,11 @@ class rex_install_package_update extends rex_install_package_download
             $package->setProperty('conflicts', $conflicts[$package]);
         }
 
-        return empty($messages) ? true : '<ul><li>'.implode('</li><li>', $messages).'</li></ul>';
+        return empty($messages) ? true : '<ul><li>' . implode('</li><li>', $messages) . '</li></ul>';
     }
 
     private function messageFromPackage(rex_package $package, rex_package_manager $manager): string
     {
-        return rex_i18n::msg('install_warning_message_from_'.$package->getType(), $package->getPackageId()).' '.$manager->getMessage();
-    }
-
-    public function __destruct()
-    {
-        rex_dir::delete(rex_path::addon('.new.' . $this->addonkey));
+        return rex_i18n::msg('install_warning_message_from_' . $package->getType(), $package->getPackageId()) . ' ' . $manager->getMessage();
     }
 }

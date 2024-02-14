@@ -13,17 +13,19 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class rex_command_user_set_password extends rex_console_command
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Sets a new password for a user')
-            ->addArgument('user', InputArgument::REQUIRED, 'Username')
+            ->addArgument('user', InputArgument::REQUIRED, 'Username', null, static function () {
+                return array_column(rex_sql::factory()->getArray('SELECT login FROM ' . rex::getTable('user')), 'login');
+            })
             ->addArgument('password', InputArgument::OPTIONAL, 'Password')
             ->addOption('password-change-required', null, InputOption::VALUE_NONE, 'Require password change after login')
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = $this->getStyle($input, $output);
 
@@ -52,9 +54,9 @@ class rex_command_user_set_password extends rex_console_command
 
         if (!$password) {
             $description = $passwordPolicy->getDescription();
-            $description = $description ? ' ('.$description.')' : '';
+            $description = $description ? ' (' . $description . ')' : '';
 
-            $password = $io->askHidden('Password'.$description, static function ($password) use ($id, $passwordPolicy) {
+            $password = $io->askHidden('Password' . $description, static function ($password) use ($id, $passwordPolicy) {
                 if (true !== $msg = $passwordPolicy->check($password, $id)) {
                     throw new InvalidArgumentException($msg);
                 }
@@ -73,6 +75,7 @@ class rex_command_user_set_password extends rex_console_command
             ->setTable(rex::getTable('user'))
             ->setWhere(['id' => $id])
             ->setValue('password', $passwordHash)
+            ->setValue('login_tries', 0)
             ->addGlobalUpdateFields('console')
             ->setDateTimeValue('password_changed', time())
             ->setArrayValue('previous_passwords', $passwordPolicy->updatePreviousPasswords($user, $passwordHash))

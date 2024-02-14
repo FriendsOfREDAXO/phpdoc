@@ -2,16 +2,14 @@
 
 /**
  * Getter functions for the superglobals.
- *
- * @package redaxo5
  */
 
 /**
  * Returns the variable $varname of $_GET and casts the value.
  *
  * @param string $varname Variable name
- * @param mixed  $vartype Variable type
- * @param mixed  $default Default value
+ * @param mixed $vartype Variable type
+ * @param mixed $default Default value
  *
  * @return mixed
  *
@@ -30,8 +28,8 @@ function rex_get($varname, $vartype = '', $default = '')
  * Returns the variable $varname of $_POST and casts the value.
  *
  * @param string $varname Variable name
- * @param mixed  $vartype Variable type
- * @param mixed  $default Default value
+ * @param mixed $vartype Variable type
+ * @param mixed $default Default value
  *
  * @return mixed
  *
@@ -50,8 +48,8 @@ function rex_post($varname, $vartype = '', $default = '')
  * Returns the variable $varname of $_REQUEST and casts the value.
  *
  * @param string $varname Variable name
- * @param mixed  $vartype Variable type
- * @param mixed  $default Default value
+ * @param mixed $vartype Variable type
+ * @param mixed $default Default value
  *
  * @return mixed
  *
@@ -70,8 +68,8 @@ function rex_request($varname, $vartype = '', $default = '')
  * Returns the variable $varname of $_SERVER and casts the value.
  *
  * @param string $varname Variable name
- * @param mixed  $vartype Variable type
- * @param mixed  $default Default value
+ * @param mixed $vartype Variable type
+ * @param mixed $default Default value
  *
  * @return mixed
  *
@@ -88,8 +86,8 @@ function rex_server($varname, $vartype = '', $default = '')
  * Returns the variable $varname of $_SESSION and casts the value.
  *
  * @param string $varname Variable name
- * @param mixed  $vartype Variable type
- * @param mixed  $default Default value
+ * @param mixed $vartype Variable type
+ * @param mixed $default Default value
  *
  * @throws rex_exception
  *
@@ -108,13 +106,14 @@ function rex_session($varname, $vartype = '', $default = '')
  * Sets a session variable.
  *
  * @param string $varname Variable name
- * @param mixed  $value   Value
+ * @param mixed $value Value
  *
  * @throws rex_exception
  *
  * @see rex_request::setSession()
  *
  * @package redaxo\core
+ * @return void
  */
 function rex_set_session($varname, $value)
 {
@@ -131,6 +130,7 @@ function rex_set_session($varname, $value)
  * @see rex_request::unsetSession()
  *
  * @package redaxo\core
+ * @return void
  */
 function rex_unset_session($varname)
 {
@@ -141,8 +141,8 @@ function rex_unset_session($varname)
  * Returns the variable $varname of $_COOKIE and casts the value.
  *
  * @param string $varname Variable name
- * @param mixed  $vartype Variable type
- * @param mixed  $default Default value
+ * @param mixed $vartype Variable type
+ * @param mixed $default Default value
  *
  * @return mixed
  *
@@ -161,8 +161,8 @@ function rex_cookie($varname, $vartype = '', $default = '')
  * Returns the variable $varname of $_FILES and casts the value.
  *
  * @param string $varname Variable name
- * @param mixed  $vartype Variable type
- * @param mixed  $default Default value
+ * @param mixed $vartype Variable type
+ * @param mixed $default Default value
  *
  * @return mixed
  *
@@ -179,8 +179,8 @@ function rex_files($varname, $vartype = '', $default = '')
  * Returns the variable $varname of $_ENV and casts the value.
  *
  * @param string $varname Variable name
- * @param mixed  $vartype Variable type
- * @param mixed  $default Default value
+ * @param mixed $vartype Variable type
+ * @param mixed $default Default value
  *
  * @return mixed
  *

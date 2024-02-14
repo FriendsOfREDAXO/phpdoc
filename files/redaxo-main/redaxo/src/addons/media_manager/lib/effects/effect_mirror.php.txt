@@ -22,32 +22,25 @@ class rex_effect_mirror extends rex_effect_abstract
         }
 
         $this->params['bg_r'] = (int) $this->params['bg_r'];
-        if (!isset($this->params['bg_r']) || $this->params['bg_r'] > 255 || $this->params['bg_r'] < 0) {
+        if ($this->params['bg_r'] > 255 || $this->params['bg_r'] < 0) {
             $this->params['bg_r'] = 255;
         }
 
         $this->params['bg_g'] = (int) $this->params['bg_g'];
-        if (!isset($this->params['bg_g']) || $this->params['bg_g'] > 255 || $this->params['bg_g'] < 0) {
+        if ($this->params['bg_g'] > 255 || $this->params['bg_g'] < 0) {
             $this->params['bg_g'] = 255;
         }
 
         $this->params['bg_b'] = (int) $this->params['bg_b'];
-        if (!isset($this->params['bg_b']) || $this->params['bg_b'] > 255 || $this->params['bg_b'] < 0) {
+        if ($this->params['bg_b'] > 255 || $this->params['bg_b'] < 0) {
             $this->params['bg_b'] = 255;
         }
 
-        if ('colored' != $this->params['set_transparent']) {
-            if ('webp' == $this->media->getFormat()) {
-                $this->media->setFormat('webp');
-            } else {
-                $this->media->setFormat('png');
-            }
+        if ('colored' != $this->params['set_transparent'] && !$this->media->formatSupportsTransparency()) {
+            $this->media->setFormat('png');
         }
 
-        $trans = false;
-        if ('png' == $this->media->getFormat() || 'webp' == $this->media->getFormat()) {
-            $trans = true;
-        }
+        $trans = $this->media->formatSupportsTransparency();
 
         $gdimage = $this->imagereflection($gdimage, $this->params['height'], $this->params['opacity'] ?? 100, $trans, [$this->params['bg_r'], $this->params['bg_g'], $this->params['bg_b']]);
         $this->media->setImage($gdimage);
@@ -81,7 +74,7 @@ class rex_effect_mirror extends rex_effect_abstract
                 'options' => ['colored', 'transparent / png24'],
                 'default' => 'colored',
                 'suffix' => '
-<script type="text/javascript">
+<script type="text/javascript" nonce="' . rex_response::getNonce() . '">
 <!--
 
 (function($) {
@@ -129,7 +122,7 @@ class rex_effect_mirror extends rex_effect_abstract
     }
 
     /**
-     * @return resource
+     * @return GdImage
      */
     private function imagereflection(&$image, $reflectionHeight, $reflectionOpacity, $transparent, $bgColor)
     {
@@ -160,7 +153,7 @@ class rex_effect_mirror extends rex_effect_abstract
         for ($y = 1; $y <= $reflectionHeight; ++$y) {
             for ($x = 0; $x < $destWidth; ++$x) {
                 $rgba = imagecolorat($image, $x, $srcHeight - $y);
-                $alpha = ($rgba & 0x7F000000) >> 24;
+                $alpha = ($rgba & 0x7F_00_00_00) >> 24;
                 $alpha = max($alpha, 47 + ($y * $alphaStep));
                 $rgba = imagecolorsforindex($image, $rgba);
                 $rgba = imagecolorallocatealpha($reflected, $rgba['red'], $rgba['green'], $rgba['blue'], $alpha);

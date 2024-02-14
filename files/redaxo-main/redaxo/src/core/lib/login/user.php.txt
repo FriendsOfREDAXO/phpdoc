@@ -20,9 +20,7 @@ class rex_user
      */
     protected $sql;
 
-    /**
-     * @var null|bool
-     */
+    /** @var bool|null */
     private $admin;
 
     /**
@@ -35,13 +33,10 @@ class rex_user
     /**
      * Class name for user roles.
      *
-     * @psalm-var class-string<rex_user_role_interface>
+     * @var class-string<rex_user_role_interface>
      */
     protected static $roleClass;
 
-    /**
-     * Constructor.
-     */
     public function __construct(rex_sql $sql)
     {
         $this->sql = $sql;
@@ -50,7 +45,7 @@ class rex_user
     public static function get(int $id): ?self
     {
         return static::getInstance($id, static function (int $id) {
-            $sql = rex_sql::factory()->setQuery('SELECT * FROM '.rex::getTable('user').' WHERE id = ?', [$id]);
+            $sql = rex_sql::factory()->setQuery('SELECT * FROM ' . rex::getTable('user') . ' WHERE id = ?', [$id]);
 
             if ($sql->getRows()) {
                 $user = new static($sql);
@@ -62,10 +57,10 @@ class rex_user
         });
     }
 
-    public static function forLogin(string $login): ?self
+    public static function forLogin(#[SensitiveParameter] string $login): ?self
     {
         return static::getInstance('login_' . $login, static function () use ($login) {
-            $sql = rex_sql::factory()->setQuery('SELECT * FROM '.rex::getTable('user').' WHERE login = ?', [$login]);
+            $sql = rex_sql::factory()->setQuery('SELECT * FROM ' . rex::getTable('user') . ' WHERE login = ?', [$login]);
 
             if ($sql->getRows()) {
                 $user = new static($sql);
@@ -245,6 +240,7 @@ class rex_user
      * Sets the role class.
      *
      * @param class-string<rex_user_role_interface> $class Class name
+     * @return void
      */
     public static function setRoleClass($class)
     {
@@ -255,6 +251,7 @@ class rex_user
      * Removes the instance of the given key.
      *
      * @param mixed $key Key
+     * @return void
      */
     public static function clearInstance($key)
     {
@@ -265,6 +262,6 @@ class rex_user
         }
 
         static::baseClearInstance($user->getId());
-        static::baseClearInstance('login_'.$user->getLogin());
+        static::baseClearInstance('login_' . $user->getLogin());
     }
 }

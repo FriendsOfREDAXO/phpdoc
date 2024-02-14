@@ -47,20 +47,20 @@ if ($core && !empty($coreVersions)) {
         $description = $markdown($file['description']);
 
         if (rex_version::isUnstable($version)) {
-            $releaseLabel = '<br><span class="label label-warning" title="'. rex_i18n::msg('unstable_version') .'">'.rex_i18n::msg('unstable_version').'</span> ';
-            $confirm = ' data-confirm="'.rex_i18n::msg('install_download_unstable').'"';
+            $releaseLabel = '<br><span class="label label-warning" title="' . rex_i18n::msg('unstable_version') . '">' . rex_i18n::msg('unstable_version') . '</span> ';
+            $confirm = ' data-confirm="' . rex_i18n::msg('install_download_unstable') . '"';
             $packageIcon = '<i class="rex-icon rex-icon-unstable-version"></i>';
         } elseif (!$latestRelease) {
-            $releaseLabel = '<br><span class="label label-success">'.rex_i18n::msg('install_latest_release').'</span>';
+            $releaseLabel = '<br><span class="label label-success">' . rex_i18n::msg('install_latest_release') . '</span>';
             $latestRelease = true;
         }
 
         $panel .= '
                 <tr data-pjax-scroll-to="0">
-                    <td class="rex-table-icon">'.$packageIcon.'</td>
+                    <td class="rex-table-icon">' . $packageIcon . '</td>
                     <td data-title="' . $package->i18n('version') . '">' . $version . $releaseLabel . '</td>
                     <td data-title="' . $package->i18n('description') . '">' . $description . '</td>
-                    <td class="rex-table-action"><a'.$confirm.' class="rex-link-expanded" href="' . rex_url::currentBackendPage(['core' => 1, 'version_id' => $id] + rex_api_install_core_update::getUrlParams()) . '" data-pjax="false">' . $package->i18n('update') . '</a></td>
+                    <td class="rex-table-action"><a' . $confirm . ' class="rex-link-expanded" href="' . rex_url::currentBackendPage(['core' => 1, 'version_id' => $id] + rex_api_install_core_update::getUrlParams()) . '" data-pjax="false">' . $package->i18n('update') . '</a></td>
                 </tr>';
     }
 
@@ -74,8 +74,8 @@ if ($core && !empty($coreVersions)) {
     $addon = $addons[$addonkey];
 
     $version = rex_escape(rex_addon::get($addonkey)->getVersion());
-    if (class_exists(rex_version::class) && rex_version::isUnstable($version)) {
-        $version = '<i class="rex-icon rex-icon-unstable-version" title="'. rex_i18n::msg('unstable_version') .'"></i> '. $version;
+    if (rex_version::isUnstable($version)) {
+        $version = '<i class="rex-icon rex-icon-unstable-version" title="' . rex_i18n::msg('unstable_version') . '"></i> ' . $version;
     }
 
     $panel = '
@@ -140,20 +140,20 @@ if ($core && !empty($coreVersions)) {
         $description = $markdown($file['description']);
 
         if (rex_version::isUnstable($version)) {
-            $releaseLabel = '<br><span class="label label-warning" title="'. rex_i18n::msg('unstable_version') .'">'.rex_i18n::msg('unstable_version').'</span> ';
-            $confirm = ' data-confirm="'.rex_i18n::msg('install_download_unstable').'"';
+            $releaseLabel = '<br><span class="label label-warning" title="' . rex_i18n::msg('unstable_version') . '">' . rex_i18n::msg('unstable_version') . '</span> ';
+            $confirm = ' data-confirm="' . rex_i18n::msg('install_download_unstable') . '"';
             $packageIcon = '<i class="rex-icon rex-icon-unstable-version"></i>';
         } elseif (!$latestRelease) {
-            $releaseLabel = '<br><span class="label label-success">'.rex_i18n::msg('install_latest_release').'</span>';
+            $releaseLabel = '<br><span class="label label-success">' . rex_i18n::msg('install_latest_release') . '</span>';
             $latestRelease = true;
         }
 
         $panel .= '
             <tr>
-                <td class="rex-table-icon">'.$packageIcon.'</td>
-                <td data-title="' . $package->i18n('version') . '">' . $version . $releaseLabel .'</td>
+                <td class="rex-table-icon">' . $packageIcon . '</td>
+                <td data-title="' . $package->i18n('version') . '">' . $version . $releaseLabel . '</td>
                 <td data-title="' . $package->i18n('description') . '">' . $description . '</td>
-                <td class="rex-table-action"><a'.$confirm.' class="rex-link-expanded" href="' . rex_url::currentBackendPage(['addonkey' => $addonkey, 'file' => $fileId] + rex_api_install_package_update::getUrlParams()) . '" data-pjax="false">' . $package->i18n('update') . '</a></td>
+                <td class="rex-table-action"><a' . $confirm . ' class="rex-link-expanded" href="' . rex_url::currentBackendPage(['addonkey' => $addonkey, 'file' => $fileId] + rex_api_install_package_update::getUrlParams()) . '" data-pjax="false">' . $package->i18n('update') . '</a></td>
             </tr>';
     }
 
@@ -181,16 +181,16 @@ if ($core && !empty($coreVersions)) {
         $availableVersions = [];
         foreach ($coreVersions as $file) {
             $availVers = rex_escape($file['version']);
-            if (class_exists(rex_version::class) && rex_version::isUnstable($availVers)) {
-                $availVers = '<i class="rex-icon rex-icon-unstable-version" title="'. rex_i18n::msg('unstable_version') .'"></i> '. $availVers;
+            if (rex_version::isUnstable($availVers)) {
+                $availVers = '<i class="rex-icon rex-icon-unstable-version" title="' . rex_i18n::msg('unstable_version') . '"></i> ' . $availVers;
             }
             $availableVersions[] = $availVers;
         }
         $url = rex_url::currentBackendPage(['core' => 1]);
 
         $coreVersion = rex_escape(rex::getVersion());
-        if (class_exists(rex_version::class) && rex_version::isUnstable($coreVersion)) {
-            $coreVersion = '<i class="rex-icon rex-icon-unstable-version" title="'. rex_i18n::msg('unstable_version') .'"></i> '. $coreVersion;
+        if (rex_version::isUnstable($coreVersion)) {
+            $coreVersion = '<i class="rex-icon rex-icon-unstable-version" title="' . rex_i18n::msg('unstable_version') . '"></i> ' . $coreVersion;
         }
 
         $panel .= '
@@ -207,16 +207,19 @@ if ($core && !empty($coreVersions)) {
         $availableVersions = [];
         foreach ($addon['files'] as $file) {
             $availVers = rex_escape($file['version']);
-            if (class_exists(rex_version::class) && rex_version::isUnstable($availVers)) {
-                $availVers = '<i class="rex-icon rex-icon-unstable-version" title="'. rex_i18n::msg('unstable_version') .'"></i> '. $availVers;
+            if (rex_version::isUnstable($availVers)) {
+                $availVers = '<i class="rex-icon rex-icon-unstable-version" title="' . rex_i18n::msg('unstable_version') . '"></i> ' . $availVers;
+                $availableVersions[] = '<span class="label label-warning" title="' . rex_escape(rex_formatter::intlDate($file['created'])) . '">' . $availVers . '</span> ';
+            } else {
+                $availableVersions[] = '<span class="label label-success" title="' . rex_escape(rex_formatter::intlDate($file['created'])) . '">' . $availVers . '</span> ';
             }
-            $availableVersions[] = $availVers;
         }
+
         $url = rex_url::currentBackendPage(['addonkey' => $key]);
 
         $packageVersion = rex_escape(rex_addon::get($key)->getVersion());
-        if (class_exists(rex_version::class) && rex_version::isUnstable($packageVersion)) {
-            $packageVersion = '<i class="rex-icon rex-icon-unstable-version" title="'. rex_i18n::msg('unstable_version') .'"></i> '. $packageVersion;
+        if (rex_version::isUnstable($packageVersion)) {
+            $packageVersion = '<i class="rex-icon rex-icon-unstable-version" title="' . rex_i18n::msg('unstable_version') . '"></i> ' . $packageVersion;
         }
 
         $panel .= '
@@ -225,7 +228,7 @@ if ($core && !empty($coreVersions)) {
                 <td data-title="' . $package->i18n('key') . '"><a class="rex-link-expanded" href="' . $url . '">' . rex_escape($key) . '</a></td>
                 <td data-title="' . $package->i18n('name') . '">' . rex_escape($addon['name']) . '</td>
                 <td data-title="' . $package->i18n('existing_version') . '">' . $packageVersion . '</td>
-                <td data-title="' . $package->i18n('available_versions') . '">' . implode(', ', $availableVersions) . '</td>
+                <td data-title="' . $package->i18n('available_versions') . '">' . implode('', $availableVersions) . '</td>
             </tr>';
     }
 

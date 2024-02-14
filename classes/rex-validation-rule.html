@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -109,10 +110,6 @@
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="packages/redaxo5.html" class="">redaxo5</a>
-</h4>
-
                         </section>
             
     <section class="phpdocumentor-sidebar__category">
@@ -128,8 +125,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-core.html">core</a></li>
     </ul>
@@ -150,12 +148,19 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/validation_rule.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-validation-rule.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/validation_rule.php">validation_rule.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">6</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.6"  class="phpdocumentor-element-found-in__source" data-line="6" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.6" class="phpdocumentor-element-found-in__source" data-line="6" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
         
@@ -164,98 +169,105 @@
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/rex-validation-rule.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/rex-validation-rule.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/rex-validation-rule.html#constant_CUSTOM">CUSTOM</a>
     <span>
         &nbsp;= &#039;custom&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/rex-validation-rule.html#constant_EMAIL">EMAIL</a>
     <span>
         &nbsp;= &#039;email&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/rex-validation-rule.html#constant_MATCH">MATCH</a>
     <span>
         &nbsp;= &#039;match&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/rex-validation-rule.html#constant_MAX">MAX</a>
     <span>
         &nbsp;= &#039;max&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/rex-validation-rule.html#constant_MAX_LENGTH">MAX_LENGTH</a>
     <span>
         &nbsp;= &#039;maxLength&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/rex-validation-rule.html#constant_MIN">MIN</a>
     <span>
         &nbsp;= &#039;min&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/rex-validation-rule.html#constant_MIN_LENGTH">MIN_LENGTH</a>
     <span>
         &nbsp;= &#039;minLength&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/rex-validation-rule.html#constant_NOT_EMPTY">NOT_EMPTY</a>
     <span>
         &nbsp;= &#039;notEmpty&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/rex-validation-rule.html#constant_NOT_MATCH">NOT_MATCH</a>
     <span>
         &nbsp;= &#039;notMatch&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/rex-validation-rule.html#constant_URL">URL</a>
     <span>
         &nbsp;= &#039;url&#039;                            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/rex-validation-rule.html#constant_VALUES">VALUES</a>
     <span>
         &nbsp;= &#039;values&#039;                            </span>
 </dt>
-<dd></dd>
 
-                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/rex-validation-rule.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-validation-rule.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-validation-rule.html#method_getMessage">getMessage()</a>
@@ -274,11 +286,12 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-validation-rule.html#method_getType">getType()</a>
     <span>
-                                &nbsp;: string    </span>
+                                &nbsp;: <abbr title="\rex_validation_rule::*">rex_validation_rule::*</abbr>|string    </span>
 </dt>
 <dd>Validator type, e.g. one of rex_validation_rule::* but could also be extended via rex-factory.</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -287,11 +300,13 @@
         <h3 class="phpdocumentor-elements__header" id="constants">
             Constants
             <a href="classes/rex-validation-rule.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_CUSTOM">
         CUSTOM
         <a href="classes/rex-validation-rule.html#constant_CUSTOM" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -299,7 +314,7 @@
     :
     <span class="phpdocumentor-element-found-in__line">18</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.18"  class="phpdocumentor-element-found-in__source" data-line="18" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.18" class="phpdocumentor-element-found-in__source" data-line="18" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
@@ -311,10 +326,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -322,6 +335,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_EMAIL">
         EMAIL
         <a href="classes/rex-validation-rule.html#constant_EMAIL" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -329,7 +343,7 @@
     :
     <span class="phpdocumentor-element-found-in__line">14</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.14"  class="phpdocumentor-element-found-in__source" data-line="14" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.14" class="phpdocumentor-element-found-in__source" data-line="14" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
@@ -341,10 +355,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -352,6 +364,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_MATCH">
         MATCH
         <a href="classes/rex-validation-rule.html#constant_MATCH" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -359,7 +372,7 @@
     :
     <span class="phpdocumentor-element-found-in__line">15</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.15"  class="phpdocumentor-element-found-in__source" data-line="15" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.15" class="phpdocumentor-element-found-in__source" data-line="15" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
@@ -371,10 +384,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -382,6 +393,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_MAX">
         MAX
         <a href="classes/rex-validation-rule.html#constant_MAX" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -389,7 +401,7 @@
     :
     <span class="phpdocumentor-element-found-in__line">12</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.12"  class="phpdocumentor-element-found-in__source" data-line="12" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.12" class="phpdocumentor-element-found-in__source" data-line="12" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
@@ -401,10 +413,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -412,6 +422,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_MAX_LENGTH">
         MAX_LENGTH
         <a href="classes/rex-validation-rule.html#constant_MAX_LENGTH" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -419,7 +430,7 @@
     :
     <span class="phpdocumentor-element-found-in__line">10</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.10"  class="phpdocumentor-element-found-in__source" data-line="10" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.10" class="phpdocumentor-element-found-in__source" data-line="10" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
@@ -431,10 +442,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -442,6 +451,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_MIN">
         MIN
         <a href="classes/rex-validation-rule.html#constant_MIN" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -449,7 +459,7 @@
     :
     <span class="phpdocumentor-element-found-in__line">11</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.11"  class="phpdocumentor-element-found-in__source" data-line="11" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.11" class="phpdocumentor-element-found-in__source" data-line="11" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
@@ -461,10 +471,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -472,6 +480,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_MIN_LENGTH">
         MIN_LENGTH
         <a href="classes/rex-validation-rule.html#constant_MIN_LENGTH" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -479,7 +488,7 @@
     :
     <span class="phpdocumentor-element-found-in__line">9</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.9"  class="phpdocumentor-element-found-in__source" data-line="9" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.9" class="phpdocumentor-element-found-in__source" data-line="9" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
@@ -491,10 +500,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -502,6 +509,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_NOT_EMPTY">
         NOT_EMPTY
         <a href="classes/rex-validation-rule.html#constant_NOT_EMPTY" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -509,7 +517,7 @@
     :
     <span class="phpdocumentor-element-found-in__line">8</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.8"  class="phpdocumentor-element-found-in__source" data-line="8" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.8" class="phpdocumentor-element-found-in__source" data-line="8" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
@@ -521,10 +529,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -532,6 +538,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_NOT_MATCH">
         NOT_MATCH
         <a href="classes/rex-validation-rule.html#constant_NOT_MATCH" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -539,7 +546,7 @@
     :
     <span class="phpdocumentor-element-found-in__line">16</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.16"  class="phpdocumentor-element-found-in__source" data-line="16" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.16" class="phpdocumentor-element-found-in__source" data-line="16" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
@@ -551,10 +558,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -562,6 +567,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_URL">
         URL
         <a href="classes/rex-validation-rule.html#constant_URL" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -569,7 +575,7 @@
     :
     <span class="phpdocumentor-element-found-in__line">13</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.13"  class="phpdocumentor-element-found-in__source" data-line="13" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.13" class="phpdocumentor-element-found-in__source" data-line="13" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
@@ -581,10 +587,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -592,6 +596,7 @@
     <h4 class="phpdocumentor-element__name" id="constant_VALUES">
         VALUES
         <a href="classes/rex-validation-rule.html#constant_VALUES" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
 
     <aside class="phpdocumentor-element-found-in">
@@ -599,7 +604,7 @@
     :
     <span class="phpdocumentor-element-found-in__line">17</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.17"  class="phpdocumentor-element-found-in__source" data-line="17" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.17" class="phpdocumentor-element-found-in__source" data-line="17" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
@@ -611,10 +616,8 @@
 </code>
 
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -626,6 +629,7 @@
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/rex-validation-rule.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -636,26 +640,29 @@
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/rex-validation-rule.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/validation_rule.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-validation-rule.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/validation_rule.php">validation_rule.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.41"  class="phpdocumentor-element-found-in__source" data-line="41" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.32" class="phpdocumentor-element-found-in__source" data-line="32" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$option</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\rex_validation_rule::*">rex_validation_rule::*</abbr>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$option</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$type</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\rex_validation_rule::*">rex_validation_rule::*</abbr>|string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Validator type, e.g. one of rex_validation_rule::* but could also be extended via rex-factory</p>
@@ -664,7 +671,7 @@
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$message</span>
-                : <span class="phpdocumentor-signature__argument__return-type">null|string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Message which is used if this validator type does not match</p>
@@ -683,26 +690,7 @@
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-param</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>rex_validation_rule::*|string $type</p>
-</section>
 
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -714,13 +702,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getMessage">
         getMessage()
         <a href="classes/rex-validation-rule.html#method_getMessage" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/validation_rule.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-validation-rule.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/validation_rule.php">validation_rule.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.71"  class="phpdocumentor-element-found-in__source" data-line="71" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.62" class="phpdocumentor-element-found-in__source" data-line="62" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Message which is used if this validator type does not match.</p>
@@ -729,15 +718,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMessage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -748,13 +739,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getOption">
         getOption()
         <a href="classes/rex-validation-rule.html#method_getOption" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/validation_rule.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-validation-rule.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/validation_rule.php">validation_rule.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.63"  class="phpdocumentor-element-found-in__source" data-line="63" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.54" class="phpdocumentor-element-found-in__source" data-line="54" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Type specific option.</p>
@@ -763,14 +755,12 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getOption</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -782,45 +772,37 @@
     <h4 class="phpdocumentor-element__name" id="method_getType">
         getType()
         <a href="classes/rex-validation-rule.html#method_getType" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/validation_rule.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-validation-rule.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/validation_rule.php">validation_rule.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
-            <a href="classes/rex-validation-rule.html#source-view.53"  class="phpdocumentor-element-found-in__source" data-line="53" data-modal="source-view"></a>
+            <a href="classes/rex-validation-rule.html#source-view.44" class="phpdocumentor-element-found-in__source" data-line="44" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Validator type, e.g. one of rex_validation_rule::* but could also be extended via rex-factory.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rex_validation_rule::*">rex_validation_rule::*</abbr>|string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-return</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>rex_validation_rule::*|string $type</p>
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rex_validation_rule::*">rex_validation_rule::*</abbr>|string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>$type</p>
 </section>
 
-                                    </dd>
-                        </dl>
+            </section>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
 </article>
             </section>
 
@@ -828,75 +810,142 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-        <pre style="max-height: 500px; overflow-y: scroll" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/redaxo-main/redaxo/src/core/lib/util/validation_rule.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
-        <button data-exit-button class="phpdocumentor-modal__close">X</button>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
 </div>
 
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/rex-validation-rule.html#toc-constants">Constants</a></li>
+                                                                                <li><a href="classes/rex-validation-rule.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/rex-validation-rule.html#constant_CUSTOM">CUSTOM</a></li>
+                                                    <li><a href="classes/rex-validation-rule.html#constant_EMAIL">EMAIL</a></li>
+                                                    <li><a href="classes/rex-validation-rule.html#constant_MATCH">MATCH</a></li>
+                                                    <li><a href="classes/rex-validation-rule.html#constant_MAX">MAX</a></li>
+                                                    <li><a href="classes/rex-validation-rule.html#constant_MAX_LENGTH">MAX_LENGTH</a></li>
+                                                    <li><a href="classes/rex-validation-rule.html#constant_MIN">MIN</a></li>
+                                                    <li><a href="classes/rex-validation-rule.html#constant_MIN_LENGTH">MIN_LENGTH</a></li>
+                                                    <li><a href="classes/rex-validation-rule.html#constant_NOT_EMPTY">NOT_EMPTY</a></li>
+                                                    <li><a href="classes/rex-validation-rule.html#constant_NOT_MATCH">NOT_MATCH</a></li>
+                                                    <li><a href="classes/rex-validation-rule.html#constant_URL">URL</a></li>
+                                                    <li><a href="classes/rex-validation-rule.html#constant_VALUES">VALUES</a></li>
+                                            </ul>
+                </li>
+            
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/rex-validation-rule.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/rex-validation-rule.html#method_getMessage">getMessage()</a></li>
+                                            <li><a href="classes/rex-validation-rule.html#method_getOption">getOption()</a></li>
+                                            <li><a href="classes/rex-validation-rule.html#method_getType">getType()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -907,7 +956,6 @@
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/rex-validation-rule.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

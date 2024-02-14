@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -109,10 +110,6 @@
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="packages/redaxo5.html" class="">redaxo5</a>
-</h4>
-
                         </section>
             
     <section class="phpdocumentor-sidebar__category">
@@ -128,8 +125,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-core.html">core</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-core-packages.html">packages</a></li>
@@ -155,12 +153,17 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-addons-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php">manager.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">8</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.8"  class="phpdocumentor-element-found-in__source" data-line="8" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.8" class="phpdocumentor-element-found-in__source" data-line="8" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/addons/manager.php.txt"></a>
     </aside>
 
             <p class="phpdocumentor-summary">Manager class for packages.</p>
@@ -169,7 +172,8 @@
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/rex-addon-manager.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -181,41 +185,57 @@
 </section>
 
                                     </dd>
-                        </dl>
-
-
-
+                                            </dl>
 
 
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/rex-addon-manager.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/rex-addon-manager.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-package-manager.html#property_generatePackageOrder">$generatePackageOrder</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-package-manager.html#property_message">$message</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-package-manager.html#property_package">$package</a>
     <span>
-                        &nbsp;: <a href="classes/rex-package.html"><abbr title="\rex_package">rex_package</abbr></a>            </span>
+                        &nbsp;: <abbr title="\T">T</abbr>            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/rex-addon-manager.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-addon-manager.html#method_activate">activate()</a>
     <span>
                                 &nbsp;: bool    </span>
@@ -288,7 +308,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-package-manager.html#method_generatePackageOrder">generatePackageOrder()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Generates the package order.</dd>
 
@@ -309,7 +329,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-package-manager.html#method_synchronizeWithFileSystem">synchronizeWithFileSystem()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Synchronizes the packages with the file system.</dd>
 
@@ -325,7 +345,6 @@
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/rex-package-manager.html#method__delete">_delete()</a>
@@ -344,7 +363,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/rex-package-manager.html#method_saveConfig">saveConfig()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Saves the package config.</dd>
 
@@ -353,9 +372,9 @@
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -366,6 +385,7 @@
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/rex-addon-manager.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -377,15 +397,16 @@
     <h4 class="phpdocumentor-element__name" id="property_generatePackageOrder">
         $generatePackageOrder
         <a href="classes/rex-package-manager.html#property_generatePackageOrder" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.23"  class="phpdocumentor-element-found-in__source" data-line="23" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.18" class="phpdocumentor-element-found-in__source" data-line="18" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
     
@@ -410,15 +431,16 @@
     <h4 class="phpdocumentor-element__name" id="property_message">
         $message
         <a href="classes/rex-package-manager.html#property_message" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">21</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.28"  class="phpdocumentor-element-found-in__source" data-line="28" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.21" class="phpdocumentor-element-found-in__source" data-line="21" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
     
@@ -443,42 +465,28 @@
     <h4 class="phpdocumentor-element__name" id="property_package">
         $package
         <a href="classes/rex-package-manager.html#property_package" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.18"  class="phpdocumentor-element-found-in__source" data-line="18" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.15" class="phpdocumentor-element-found-in__source" data-line="15" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/rex-package.html"><abbr title="\rex_package">rex_package</abbr></a></span>
+        <span class="phpdocumentor-signature__type"><abbr title="\T">T</abbr></span>
     <span class="phpdocumentor-signature__name">$package</span>
     </code>
 
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-var</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>T</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
 </article>
             </section>
@@ -487,6 +495,7 @@
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/rex-addon-manager.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -497,13 +506,14 @@
     <h4 class="phpdocumentor-element__name" id="method_activate">
         activate()
         <a href="classes/rex-addon-manager.html#method_activate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-addons-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.68"  class="phpdocumentor-element-found-in__source" data-line="68" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.57" class="phpdocumentor-element-found-in__source" data-line="57" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/addons/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Activates a package.</p>
@@ -512,17 +522,21 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">activate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -533,13 +547,14 @@
     <h4 class="phpdocumentor-element__name" id="method_checkConflicts">
         checkConflicts()
         <a href="classes/rex-package-manager.html#method_checkConflicts" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">537</span>
+    <span class="phpdocumentor-element-found-in__line">527</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.537"  class="phpdocumentor-element-found-in__source" data-line="537" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.527" class="phpdocumentor-element-found-in__source" data-line="527" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Checks whether the package is in conflict with other packages.</p>
@@ -548,15 +563,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">checkConflicts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -567,13 +584,14 @@
     <h4 class="phpdocumentor-element__name" id="method_checkDependencies">
         checkDependencies()
         <a href="classes/rex-addon-manager.html#method_checkDependencies" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-addons-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">114</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.114"  class="phpdocumentor-element-found-in__source" data-line="114" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.100" class="phpdocumentor-element-found-in__source" data-line="100" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/addons/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Checks if another Package which is activated, depends on the given package.</p>
@@ -582,15 +600,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">checkDependencies</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -601,13 +621,14 @@
     <h4 class="phpdocumentor-element__name" id="method_checkPackageConflict">
         checkPackageConflict()
         <a href="classes/rex-package-manager.html#method_checkPackageConflict" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">579</span>
+    <span class="phpdocumentor-element-found-in__line">569</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.579"  class="phpdocumentor-element-found-in__source" data-line="579" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.569" class="phpdocumentor-element-found-in__source" data-line="569" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Checks whether the package is in conflict with another package.</p>
@@ -616,6 +637,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">checkPackageConflict</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$packageId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -632,11 +655,11 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -647,13 +670,14 @@
     <h4 class="phpdocumentor-element__name" id="method_checkPackageRequirement">
         checkPackageRequirement()
         <a href="classes/rex-package-manager.html#method_checkPackageRequirement" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">476</span>
+    <span class="phpdocumentor-element-found-in__line">466</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.476"  class="phpdocumentor-element-found-in__source" data-line="476" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.466" class="phpdocumentor-element-found-in__source" data-line="466" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Checks whether the package requirement is met.</p>
@@ -662,6 +686,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">checkPackageRequirement</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$packageId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -678,11 +704,11 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -693,13 +719,14 @@
     <h4 class="phpdocumentor-element__name" id="method_checkRedaxoRequirement">
         checkRedaxoRequirement()
         <a href="classes/rex-package-manager.html#method_checkRedaxoRequirement" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">459</span>
+    <span class="phpdocumentor-element-found-in__line">449</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.459"  class="phpdocumentor-element-found-in__source" data-line="459" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.449" class="phpdocumentor-element-found-in__source" data-line="449" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Checks whether the redaxo requirement is met.</p>
@@ -708,6 +735,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">checkRedaxoRequirement</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$redaxoVersion</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -724,11 +753,11 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -739,13 +768,14 @@
     <h4 class="phpdocumentor-element__name" id="method_checkRequirements">
         checkRequirements()
         <a href="classes/rex-package-manager.html#method_checkRequirements" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">402</span>
+    <span class="phpdocumentor-element-found-in__line">392</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.402"  class="phpdocumentor-element-found-in__source" data-line="402" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.392" class="phpdocumentor-element-found-in__source" data-line="392" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Checks whether the requirements are met.</p>
@@ -754,15 +784,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">checkRequirements</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -773,13 +805,14 @@
     <h4 class="phpdocumentor-element__name" id="method_deactivate">
         deactivate()
         <a href="classes/rex-package-manager.html#method_deactivate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">316</span>
+    <span class="phpdocumentor-element-found-in__line">306</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.316"  class="phpdocumentor-element-found-in__source" data-line="316" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.306" class="phpdocumentor-element-found-in__source" data-line="306" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Deactivates a package.</p>
@@ -788,17 +821,21 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">deactivate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -809,13 +846,14 @@
     <h4 class="phpdocumentor-element__name" id="method_delete">
         delete()
         <a href="classes/rex-package-manager.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">348</span>
+    <span class="phpdocumentor-element-found-in__line">338</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.348"  class="phpdocumentor-element-found-in__source" data-line="348" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.338" class="phpdocumentor-element-found-in__source" data-line="338" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Deletes a package.</p>
@@ -824,17 +862,21 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">delete</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -845,13 +887,14 @@
     <h4 class="phpdocumentor-element__name" id="method_factory">
         factory()
         <a href="classes/rex-package-manager.html#method_factory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">57</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.57"  class="phpdocumentor-element-found-in__source" data-line="57" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.47" class="phpdocumentor-element-found-in__source" data-line="47" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Creates the manager for the package.</p>
@@ -860,6 +903,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">factory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/rex-package.html"><abbr title="\rex_package">rex_package</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$package</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -877,7 +922,8 @@
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/rex-package-manager.html#method_factory#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -907,13 +953,13 @@
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">static</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">static</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -924,29 +970,28 @@
     <h4 class="phpdocumentor-element__name" id="method_generatePackageOrder">
         generatePackageOrder()
         <a href="classes/rex-package-manager.html#method_generatePackageOrder" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">648</span>
+    <span class="phpdocumentor-element-found-in__line">639</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.648"  class="phpdocumentor-element-found-in__source" data-line="648" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.639" class="phpdocumentor-element-found-in__source" data-line="639" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Generates the package order.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">generatePackageOrder</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">generatePackageOrder</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -958,13 +1003,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getMessage">
         getMessage()
         <a href="classes/rex-package-manager.html#method_getMessage" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.72"  class="phpdocumentor-element-found-in__source" data-line="72" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.62" class="phpdocumentor-element-found-in__source" data-line="62" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the message.</p>
@@ -973,15 +1019,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMessage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -992,13 +1040,14 @@
     <h4 class="phpdocumentor-element__name" id="method_install">
         install()
         <a href="classes/rex-addon-manager.html#method_install" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-addons-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">18</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.23"  class="phpdocumentor-element-found-in__source" data-line="23" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.18" class="phpdocumentor-element-found-in__source" data-line="18" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/addons/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Installs a package.</p>
@@ -1007,6 +1056,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">install</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$installDump</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1023,13 +1074,15 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1040,29 +1093,28 @@
     <h4 class="phpdocumentor-element__name" id="method_synchronizeWithFileSystem">
         synchronizeWithFileSystem()
         <a href="classes/rex-package-manager.html#method_synchronizeWithFileSystem" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">723</span>
+    <span class="phpdocumentor-element-found-in__line">716</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.723"  class="phpdocumentor-element-found-in__source" data-line="723" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.716" class="phpdocumentor-element-found-in__source" data-line="716" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Synchronizes the packages with the file system.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">synchronizeWithFileSystem</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">synchronizeWithFileSystem</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1074,13 +1126,14 @@
     <h4 class="phpdocumentor-element__name" id="method_uninstall">
         uninstall()
         <a href="classes/rex-addon-manager.html#method_uninstall" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-addons-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">48</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.48"  class="phpdocumentor-element-found-in__source" data-line="48" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.40" class="phpdocumentor-element-found-in__source" data-line="40" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/addons/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Uninstalls a package.</p>
@@ -1089,6 +1142,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">uninstall</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$installDump</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1105,13 +1160,15 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1122,21 +1179,23 @@
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/rex-addon-manager.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-addons-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">13</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.15"  class="phpdocumentor-element-found-in__source" data-line="15" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.13" class="phpdocumentor-element-found-in__source" data-line="13" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/addons/manager.php.txt"></a>
     </aside>
 
-        <p class="phpdocumentor-summary">Constructor.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/rex-addon.html"><abbr title="\rex_addon">rex_addon</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$addon</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1153,10 +1212,6 @@
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1168,13 +1223,14 @@
     <h4 class="phpdocumentor-element__name" id="method__delete">
         _delete()
         <a href="classes/rex-package-manager.html#method__delete" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">366</span>
+    <span class="phpdocumentor-element-found-in__line">356</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.366"  class="phpdocumentor-element-found-in__source" data-line="366" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.356" class="phpdocumentor-element-found-in__source" data-line="356" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Deletes a package.</p>
@@ -1183,6 +1239,8 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">_delete</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ignoreState</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1197,13 +1255,15 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>TRUE on success, FALSE on error</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1214,13 +1274,14 @@
     <h4 class="phpdocumentor-element__name" id="method_i18n">
         i18n()
         <a href="classes/rex-package-manager.html#method_i18n" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">633</span>
+    <span class="phpdocumentor-element-found-in__line">623</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.633"  class="phpdocumentor-element-found-in__source" data-line="633" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.623" class="phpdocumentor-element-found-in__source" data-line="623" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Translates the given key.</p>
@@ -1229,6 +1290,8 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">i18n</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1245,13 +1308,15 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Tranlates text</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Tranlates text</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1262,29 +1327,28 @@
     <h4 class="phpdocumentor-element__name" id="method_saveConfig">
         saveConfig()
         <a href="classes/rex-package-manager.html#method_saveConfig" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">706</span>
+    <span class="phpdocumentor-element-found-in__line">698</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.706"  class="phpdocumentor-element-found-in__source" data-line="706" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.698" class="phpdocumentor-element-found-in__source" data-line="698" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/manager.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Saves the package config.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">saveConfig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">saveConfig</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1296,13 +1360,14 @@
     <h4 class="phpdocumentor-element__name" id="method_wrongPackageId">
         wrongPackageId()
         <a href="classes/rex-addon-manager.html#method_wrongPackageId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php"><a href="files/redaxo-main-redaxo-src-core-lib-packages-addons-manager.html"><abbr title="redaxo-main/redaxo/src/core/lib/packages/addons/manager.php">manager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">120</span>
 
-            <a href="classes/rex-addon-manager.html#source-view.137"  class="phpdocumentor-element-found-in__source" data-line="137" data-modal="source-view"></a>
+            <a href="classes/rex-addon-manager.html#source-view.120" class="phpdocumentor-element-found-in__source" data-line="120" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/packages/addons/manager.php.txt"></a>
     </aside>
 
     
@@ -1310,6 +1375,8 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
                     <span class="phpdocumentor-signature__name">wrongPackageId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$addonName</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pluginName</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1331,11 +1398,11 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
             </section>
 
@@ -1343,75 +1410,150 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-        <pre style="max-height: 500px; overflow-y: scroll" data-src="files/redaxo-main/redaxo/src/core/lib/packages/addons/manager.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/redaxo-main/redaxo/src/core/lib/packages/addons/manager.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
-        <button data-exit-button class="phpdocumentor-modal__close">X</button>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
 </div>
 
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/rex-addon-manager.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/rex-addon-manager.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/rex-package-manager.html#property_generatePackageOrder">$generatePackageOrder<a href="classes/rex-addon-manager.html"></li>
+                                                    <li><a href="classes/rex-package-manager.html#property_message">$message<a href="classes/rex-addon-manager.html"></li>
+                                                    <li><a href="classes/rex-package-manager.html#property_package">$package<a href="classes/rex-addon-manager.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/rex-addon-manager.html#method_activate">activate()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_checkConflicts">checkConflicts()</a></li>
+                                            <li><a href="classes/rex-addon-manager.html#method_checkDependencies">checkDependencies()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_checkPackageConflict">checkPackageConflict()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_checkPackageRequirement">checkPackageRequirement()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_checkRedaxoRequirement">checkRedaxoRequirement()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_checkRequirements">checkRequirements()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_deactivate">deactivate()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_delete">delete()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_factory">factory()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_generatePackageOrder">generatePackageOrder()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_getMessage">getMessage()</a></li>
+                                            <li><a href="classes/rex-addon-manager.html#method_install">install()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_synchronizeWithFileSystem">synchronizeWithFileSystem()</a></li>
+                                            <li><a href="classes/rex-addon-manager.html#method_uninstall">uninstall()</a></li>
+                                            <li><a href="classes/rex-addon-manager.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method__delete">_delete()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_i18n">i18n()</a></li>
+                                            <li><a href="classes/rex-package-manager.html#method_saveConfig">saveConfig()</a></li>
+                                            <li><a href="classes/rex-addon-manager.html#method_wrongPackageId">wrongPackageId()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1422,7 +1564,6 @@
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/rex-addon-manager.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

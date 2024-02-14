@@ -10,13 +10,13 @@ class rex_content_service
      */
     public static function addSlice(int $articleId, int $clangId, int $ctypeId, int $moduleId, array $data = []): string
     {
-        $data['revision'] = $data['revision'] ?? 0;
+        $data['revision'] ??= 0;
 
         $where = 'article_id=' . $articleId . ' AND clang_id=' . $clangId . ' AND ctype_id=' . $ctypeId . ' AND revision=' . (int) $data['revision'];
 
         if (!isset($data['priority'])) {
             $prevSlice = rex_sql::factory();
-            $prevSlice->setQuery('SELECT IFNULL(MAX(priority),0)+1 as priority FROM ' . rex::getTable('article_slice') . ' WHERE '.$where);
+            $prevSlice->setQuery('SELECT IFNULL(MAX(priority),0)+1 as priority FROM ' . rex::getTable('article_slice') . ' WHERE ' . $where);
 
             $data['priority'] = $prevSlice->getValue('priority');
         } elseif ($data['priority'] <= 0) {
@@ -45,7 +45,7 @@ class rex_content_service
                 rex::getTable('article_slice'),
                 'priority',
                 $where,
-                'priority, updatedate DESC'
+                'priority, updatedate DESC',
             );
         } catch (rex_sql_exception $e) {
             throw new rex_api_exception($e->getMessage(), $e);
@@ -77,8 +77,8 @@ class rex_content_service
     /**
      * Verschiebt einen Slice.
      *
-     * @param int    $sliceId  Id des Slices
-     * @param int    $clang     Id der Sprache
+     * @param int $sliceId Id des Slices
+     * @param int $clang Id der Sprache
      * @param string $direction Richtung in die verschoben werden soll
      *
      * @throws rex_exception
@@ -134,7 +134,7 @@ class rex_content_service
                     rex::getTable('article_slice'),
                     'priority',
                     'article_id=' . (int) $articleId . ' AND clang_id=' . (int) $clang . ' AND ctype_id=' . (int) $ctype . ' AND revision=' . (int) $sliceRevision,
-                    'priority, updatedate ' . $updSort
+                    'priority, updatedate ' . $updSort,
                 );
 
                 // check if the slice moved at all (first cannot be moved up, last not down)
@@ -191,17 +191,20 @@ class rex_content_service
             rex::getTable('article_slice'),
             'priority',
             'article_id=' . (int) $curr->getValue('article_id') . ' AND clang_id=' . (int) $curr->getValue('clang_id') . ' AND ctype_id=' . (int) $curr->getValue('ctype_id') . ' AND revision=' . (int) $curr->getValue('revision'),
-            'priority'
+            'priority',
         );
 
         // check if delete was successfull
         return 1 == $curr->getRows();
     }
 
+    /**
+     * @return void
+     */
     public static function sliceStatus(int $sliceId, int $status)
     {
         $sql = rex_sql::factory();
-        $sql->setQuery('SELECT article_id, clang_id FROM '.rex::getTable('article_slice').' WHERE id = ?', [$sliceId]);
+        $sql->setQuery('SELECT article_id, clang_id FROM ' . rex::getTable('article_slice') . ' WHERE id = ?', [$sliceId]);
 
         if (!$sql->getRows()) {
             throw new rex_exception(sprintf('Slice with id=%d not found.', $sliceId));
@@ -222,11 +225,11 @@ class rex_content_service
     /**
      * Kopiert die Inhalte eines Artikels in einen anderen Artikel.
      *
-     * @param int $fromId    ArtikelId des Artikels, aus dem kopiert werden (Quell ArtikelId)
-     * @param int $toId      ArtikelId des Artikel, in den kopiert werden sollen (Ziel ArtikelId)
+     * @param int $fromId ArtikelId des Artikels, aus dem kopiert werden (Quell ArtikelId)
+     * @param int $toId ArtikelId des Artikel, in den kopiert werden sollen (Ziel ArtikelId)
      * @param int $fromClang ClangId des Artikels, aus dem kopiert werden soll (Quell ClangId)
-     * @param int $toClang   ClangId des Artikels, in den kopiert werden soll (Ziel ClangId)
-     * @param null|int $revision If null, slices of all revisions are copied
+     * @param int $toClang ClangId des Artikels, in den kopiert werden soll (Ziel ClangId)
+     * @param int|null $revision If null, slices of all revisions are copied
      *
      * @return bool TRUE bei Erfolg, sonst FALSE
      */
@@ -254,16 +257,16 @@ class rex_content_service
         ]));
 
         $ins = rex_sql::factory();
-        //$ins->setDebug();
+        // $ins->setDebug();
         $ctypes = [];
 
         $cols = rex_sql::factory();
-        //$cols->setDebug();
+        // $cols->setDebug();
         $cols->setQuery('SHOW COLUMNS FROM ' . rex::getTablePrefix() . 'article_slice');
 
         $maxPriorityRaw = rex_sql::factory()->getArray(
             'SELECT `ctype_id`, `revision`, MAX(`priority`) as max FROM ' . rex::getTable('article_slice') . ' WHERE `article_id` = :to_id AND `clang_id` = :to_clang GROUP BY `ctype_id`, `revision`',
-            ['to_id' => $toId, 'to_clang' => $toClang]
+            ['to_id' => $toId, 'to_clang' => $toClang],
         );
         $maxPriority = [];
         foreach ($maxPriorityRaw as $row) {
@@ -309,7 +312,7 @@ class rex_content_service
                     rex::getTable('article_slice'),
                     'priority',
                     'article_id=' . (int) $toId . ' AND clang_id=' . (int) $toClang . ' AND ctype_id=' . (int) $ctype . ' AND revision=' . $revision,
-                    'priority, updatedate'
+                    'priority, updatedate',
                 );
             }
         }
@@ -326,7 +329,7 @@ class rex_content_service
      * Generiert den Artikel-Cache des Artikelinhalts.
      *
      * @param int $articleId Id des zu generierenden Artikels
-     * @param int $clang      ClangId des Artikels
+     * @param int $clang ClangId des Artikels
      *
      * @throws rex_exception
      *
@@ -374,10 +377,6 @@ class rex_content_service
      */
     private static function getUser()
     {
-        if (rex::getUser()) {
-            return rex::getUser()->getLogin();
-        }
-
-        return rex::getEnvironment();
+        return rex::getUser()?->getLogin() ?? rex::getEnvironment();
     }
 }

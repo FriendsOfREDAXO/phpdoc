@@ -9,8 +9,8 @@
 /**
  * Erstellt einen Filename der eindeutig ist für den Medienpool.
  *
- * @param string $mediaName      Dateiname
- * @param bool   $doSubindexing
+ * @param string $mediaName Dateiname
+ * @param bool $doSubindexing
  *
  * @deprecated since 2.11, use `rex_mediapool::filename` instead
  */
@@ -24,15 +24,14 @@ function rex_mediapool_filename($mediaName, $doSubindexing = true): string
  * Dabei wird kontrolliert ob das File schon vorhanden ist und es
  * wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.
  *
- * @param array  $FILE
- * @param int    $rexFileCategory
- * @param array  $FILEINFOS
+ * @param array $FILE
+ * @param int $rexFileCategory
+ * @param array $FILEINFOS
  * @param string $userlogin
- * @param bool   $doSubindexing
+ * @param bool $doSubindexing
  *
  * @return array
  * @deprecated since 2.11, use `rex_media_service::addMedia` instead
- * @psalm-suppress UnusedParam
  */
 function rex_mediapool_saveMedia($FILE, $rexFileCategory, $FILEINFOS, $userlogin = null, $doSubindexing = true)
 {
@@ -75,13 +74,12 @@ function rex_mediapool_saveMedia($FILE, $rexFileCategory, $FILEINFOS, $userlogin
  * Dabei wird kontrolliert ob das File schon vorhanden ist und es
  * wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.
  *
- * @param array  $FILE
- * @param array  $FILEINFOS
+ * @param array $FILE
+ * @param array $FILEINFOS
  * @param string $userlogin
  *
  * @return array
  * @deprecated since 2.11, use `rex_media_service::updateMedia` instead
- * @psalm-suppress UnusedParam
  */
 function rex_mediapool_updateMedia($FILE, &$FILEINFOS, $userlogin = null)
 {
@@ -108,16 +106,15 @@ function rex_mediapool_updateMedia($FILE, &$FILEINFOS, $userlogin = null)
  * Synchronisiert die Datei $physical_filename des Mediafolders in den
  * Medienpool.
  *
- * @param string      $physicalFilename
- * @param int         $categoryId
- * @param string      $title
- * @param null|int    $filesize
- * @param null|string $filetype
- * @param null|string $userlogin
+ * @param string $physicalFilename
+ * @param int $categoryId
+ * @param string $title
+ * @param int|null $filesize
+ * @param string|null $filetype
+ * @param string|null $userlogin
  *
  * @return array
  * @deprecated since 2.11, use `rex_media_service::addMedia` instead
- * @psalm-suppress UnusedParam
  */
 function rex_mediapool_syncFile($physicalFilename, $categoryId, $title, $filesize = null, $filetype = null, $userlogin = null)
 {
@@ -142,9 +139,8 @@ function rex_mediapool_syncFile($physicalFilename, $categoryId, $title, $filesiz
 /**
  * @param string $filename
  *
- * @return array
+ * @return array{ok: bool, msg: string}
  *
- * @psalm-return array{ok: bool, msg: string}
  * @deprecated since 2.11, use `rex_media_service::deleteMedia` instead
  */
 function rex_mediapool_deleteMedia($filename)
@@ -189,7 +185,7 @@ function rex_mediapool_Mediaform($formTitle, $buttonTitle, $rexFileCategory, $fi
     $catsSel->setAttribute('onchange', 'this.form.submit()');
     $catsSel->setSelected($rexFileCategory);
 
-    if (rex::getUser()->getComplexPerm('media')->hasAll()) {
+    if (rex::requireUser()->getComplexPerm('media')->hasAll()) {
         $catsSel->addOption(rex_i18n::msg('pool_kats_no'), '0');
     }
 
@@ -310,6 +306,7 @@ function rex_mediapool_Mediaform($formTitle, $buttonTitle, $rexFileCategory, $fi
 
 /**
  * Ausgabe des Medienpool Upload-Formulars.
+ * @return string
  */
 function rex_mediapool_Uploadform($rexFileCategory)
 {
@@ -318,6 +315,7 @@ function rex_mediapool_Uploadform($rexFileCategory)
 
 /**
  * Ausgabe des Medienpool Sync-Formulars.
+ * @return string
  */
 function rex_mediapool_Syncform($rexFileCategory)
 {
@@ -340,8 +338,8 @@ function rex_mediapool_isAllowedMediaType($filename, array $args = [])
 /**
  * Checks file against optional property `allowed_mime_types`.
  *
- * @param string      $path     Path to the physical file
- * @param null|string $filename Optional filename, will be used for extracting the file extension.
+ * @param string $path Path to the physical file
+ * @param string|null $filename Optional filename, will be used for extracting the file extension.
  *                              If not given, the extension is extracted from `$path`.
  *
  * @return bool

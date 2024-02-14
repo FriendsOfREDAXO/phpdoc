@@ -13,7 +13,7 @@ use Symfony\Component\Console\Style\SymfonyStyle;
  */
 class rex_command_assets_sync extends rex_console_command
 {
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setDescription('Sync assets within the assets-dir with the sources-dir')
@@ -26,7 +26,7 @@ class rex_command_assets_sync extends rex_console_command
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $created = $updated = $errored = 0;
         $io = $this->getStyle($input, $output);
@@ -91,11 +91,9 @@ class rex_command_assets_sync extends rex_console_command
     }
 
     /**
-     * @return int[]
-     *
-     * @psalm-return array{0: int, 1: int, 2: int}
+     * @return array{0: int, 1: int, 2: int}
      */
-    private function sync(SymfonyStyle $io, $folder1, $folder2)
+    private function sync(SymfonyStyle $io, string $folder1, string $folder2)
     {
         $created = $updated = $errored = 0;
 
@@ -103,7 +101,6 @@ class rex_command_assets_sync extends rex_console_command
         $folder1 = realpath($folder1);
         $folder2 = realpath($folder2);
 
-        /** @var rex_finder $finder */
         $finder = rex_finder::factory($folder1)
             ->recursive()
             ->ignoreDirs('plugins')

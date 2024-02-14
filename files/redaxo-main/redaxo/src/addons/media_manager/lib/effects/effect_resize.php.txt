@@ -25,9 +25,13 @@ class rex_effect_resize extends rex_effect_abstract
         // relatives resizen
         if (isset($this->params['width']) && str_ends_with(trim($this->params['width']), '%')) {
             $this->params['width'] = round($w * ((int) rtrim($this->params['width'], '%') / 100));
+        } elseif ($this->params['width'] ?? false) {
+            $this->params['width'] = (int) $this->params['width'];
         }
         if (isset($this->params['height']) && str_ends_with(trim($this->params['height']), '%')) {
             $this->params['height'] = round($h * ((int) rtrim($this->params['height'], '%') / 100));
+        } elseif ($this->params['height'] ?? false) {
+            $this->params['height'] = (int) $this->params['height'];
         }
 
         if ('maximum' == $this->params['style']) {
@@ -45,20 +49,15 @@ class rex_effect_resize extends rex_effect_abstract
             return;
         }
 
-        if (!isset($this->params['width'])) {
+        if (!isset($this->params['width']) || '' === $this->params['width']) {
             $this->params['width'] = $w;
         }
 
-        if (!isset($this->params['height'])) {
+        if (!isset($this->params['height']) || '' === $this->params['height']) {
             $this->params['height'] = $h;
         }
 
-        if (function_exists('ImageCreateTrueColor')) {
-            $des = @imagecreatetruecolor($this->params['width'], $this->params['height']);
-        } else {
-            $des = @imagecreate($this->params['width'], $this->params['height']);
-        }
-
+        $des = @imagecreatetruecolor($this->params['width'], $this->params['height']);
         if (!$des) {
             return;
         }
@@ -71,6 +70,11 @@ class rex_effect_resize extends rex_effect_abstract
         $this->media->refreshImageDimensions();
     }
 
+    /**
+     * @param int $width
+     * @param int $height
+     * @return void
+     */
     private function resizeMax($width, $height)
     {
         if (!empty($this->params['height']) && !empty($this->params['width'])) {
@@ -93,6 +97,11 @@ class rex_effect_resize extends rex_effect_abstract
         }
     }
 
+    /**
+     * @param int $width
+     * @param int $height
+     * @return void
+     */
     private function resizeMin($width, $height)
     {
         if (!empty($this->params['height']) && !empty($this->params['width'])) {
@@ -140,7 +149,7 @@ class rex_effect_resize extends rex_effect_abstract
                 'options' => self::OPTIONS,
                 'default' => 'fit',
                 'suffix' => '
-<script type="text/javascript">
+<script type="text/javascript" nonce="' . rex_response::getNonce() . '">
 <!--
 
 $(function() {

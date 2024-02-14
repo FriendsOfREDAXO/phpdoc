@@ -8,6 +8,8 @@ class rex_managed_media
     public const PROP_JPG_QUALITY = 'jpg_quality';
     public const PROP_PNG_COMPRESSION = 'png_compression';
     public const PROP_WEBP_QUALITY = 'webp_quality';
+    public const PROP_AVIF_QUALITY = 'avif_quality';
+    public const PROP_AVIF_SPEED = 'avif_speed';
     public const PROP_INTERLACE = 'interlace';
 
     private const MIMETYPE_MAP = [
@@ -18,6 +20,7 @@ class rex_managed_media
         'image/png' => 'png',
         'image/gif' => 'gif',
         'image/webp' => 'webp',
+        'image/avif' => 'avif',
     ];
 
     /** @var string|null */
@@ -29,7 +32,7 @@ class rex_managed_media
     /** @var bool */
     private $asImage = false;
 
-    /** @var array{width: ?int, height: ?int, src?: resource}&array<string, mixed> */
+    /** @var array{width: ?int, height: ?int, src?: GdImage}&array<string, mixed> */
     private $image = [
         'width' => null,
         'height' => null,
@@ -58,7 +61,7 @@ class rex_managed_media
      *
      * To get the current source path (can be changed by effects) use `getSourcePath` instead.
      *
-     * @return null|string
+     * @return string|null
      */
     public function getMediaPath()
     {
@@ -67,6 +70,7 @@ class rex_managed_media
 
     /**
      * @param string|null $mediaPath
+     * @return void
      */
     public function setMediaPath($mediaPath)
     {
@@ -92,6 +96,7 @@ class rex_managed_media
 
     /**
      * @param string $filename
+     * @return void
      */
     public function setMediaFilename($filename)
     {
@@ -101,6 +106,7 @@ class rex_managed_media
     /**
      * @param string $name
      * @param string $value
+     * @return void
      */
     public function setHeader($name, $value)
     {
@@ -115,6 +121,9 @@ class rex_managed_media
         return $this->header;
     }
 
+    /**
+     * @return void
+     */
     public function asImage()
     {
         if ($this->asImage) {
@@ -153,6 +162,13 @@ class rex_managed_media
                 imagealphablending($image, false);
                 imagesavealpha($image, true);
             }
+        } elseif ('avif' == $format) {
+            $image = false;
+            if (function_exists('imagecreatefromavif')) {
+                $image = @imagecreatefromavif($this->getSourcePath());
+                imagealphablending($image, false);
+                imagesavealpha($image, true);
+            }
         } else {
             $image = @imagecreatefrompng($this->getSourcePath());
             if ($image) {
@@ -174,6 +190,9 @@ class rex_managed_media
         $this->refreshImageDimensions();
     }
 
+    /**
+     * @return void
+     */
     public function refreshImageDimensions()
     {
         if ($this->asImage) {
@@ -201,8 +220,14 @@ class rex_managed_media
         return $this->format;
     }
 
+    public function formatSupportsTransparency(): bool
+    {
+        return in_array($this->format, ['gif', 'png', 'webp', 'avif'], true);
+    }
+
     /**
      * @param string $format
+     * @return void
      */
     public function setFormat($format)
     {
@@ -213,6 +238,7 @@ class rex_managed_media
      * @param string $sourceCachePath
      * @param string $headerCachePath
      * @param bool $save
+     * @return void
      */
     public function sendMedia($sourceCachePath, $headerCachePath, $save = false)
     {
@@ -232,6 +258,7 @@ class rex_managed_media
             if ($save) {
                 rex_file::putCache($headerCachePath, [
                     'media_path' => $this->getMediaPath(),
+                    'media_filename' => $this->getMediaFilename(),
                     'format' => $this->format,
                     'headers' => $this->header,
                 ]);
@@ -251,6 +278,7 @@ class rex_managed_media
             if ($save) {
                 rex_file::putCache($headerCachePath, [
                     'media_path' => $this->getMediaPath(),
+                    'media_filename' => $this->getMediaFilename(),
                     'format' => $this->format,
                     'headers' => $this->header,
                 ]);
@@ -263,6 +291,7 @@ class rex_managed_media
     /**
      * @param string $sourceCachePath
      * @param string $headerCachePath
+     * @return void
      */
     public function save($sourceCachePath, $headerCachePath)
     {
@@ -283,7 +312,7 @@ class rex_managed_media
     protected function getImageSource()
     {
         if (!isset($this->image['src'])) {
-            throw new BadMethodCallException(__METHOD__.' can not be called without calling asImage() before');
+            throw new BadMethodCallException(__METHOD__ . ' can not be called without calling asImage() before');
         }
 
         $addon = rex_addon::get('media_manager');
@@ -292,7 +321,7 @@ class rex_managed_media
         $format = 'jpeg' === $format ? 'jpg' : $format;
 
         $interlace = (array) $this->getImageProperty(self::PROP_INTERLACE, $addon->getConfig('interlace'));
-        imageinterlace($this->image['src'], in_array($format, $interlace) ? 1 : 0);
+        imageinterlace($this->image['src'], in_array($format, $interlace));
 
         ob_start();
         if ('jpg' == $format) {
@@ -308,24 +337,29 @@ class rex_managed_media
         } elseif ('webp' == $format) {
             $quality = (int) $this->getImageProperty(self::PROP_WEBP_QUALITY, $addon->getConfig('webp_quality'));
             imagewebp($this->image['src'], null, $quality);
+        } elseif ('avif' == $format) {
+            $quality = (int) $this->getImageProperty(self::PROP_AVIF_QUALITY, $addon->getConfig('avif_quality'));
+            $speed = (int) $this->getImageProperty(self::PROP_AVIF_SPEED, $addon->getConfig('avif_speed'));
+            imageavif($this->image['src'], null, $quality, $speed);
         }
         return ob_get_clean();
     }
 
     /**
-     * @return resource
+     * @return GdImage
      */
     public function getImage()
     {
         if (!isset($this->image['src'])) {
-            throw new BadMethodCallException(__METHOD__.' can not be called without calling asImage() before');
+            throw new BadMethodCallException(__METHOD__ . ' can not be called without calling asImage() before');
         }
 
         return $this->image['src'];
     }
 
     /**
-     * @param resource $src
+     * @param GdImage $src
+     * @return void
      */
     public function setImage($src)
     {
@@ -335,19 +369,13 @@ class rex_managed_media
 
     /**
      * @param string $path
+     * @return void
      */
     public function setSourcePath($path)
     {
         $this->sourcePath = $path;
 
         $this->asImage = false;
-        if (!isset($this->image['src'])) {
-            return;
-        }
-        if (!is_resource($this->image['src'])) {
-            return;
-        }
-        imagedestroy($this->image['src']);
     }
 
     /**
@@ -377,6 +405,7 @@ class rex_managed_media
     /**
      * @param string $name
      * @param mixed $value
+     * @return void
      */
     public function setImageProperty($name, $value)
     {
@@ -386,7 +415,7 @@ class rex_managed_media
     /**
      * @param string $name
      * @param mixed $default
-     * @return null|mixed
+     * @return mixed|null
      */
     public function getImageProperty($name, $default = null)
     {
@@ -411,6 +440,7 @@ class rex_managed_media
 
     /**
      * @deprecated since 2.3.0, use `getWidth()` instead
+     * @return int|null
      */
     public function getImageWidth()
     {
@@ -419,16 +449,20 @@ class rex_managed_media
 
     /**
      * @deprecated since 2.3.0, use `getHeight()` instead
+     * @return int|null
      */
     public function getImageHeight()
     {
         return $this->getHeight();
     }
 
+    /**
+     * @return void
+     */
     private function fixOrientation()
     {
         if (!isset($this->image['src'])) {
-            throw new BadMethodCallException(__METHOD__.' can not be called without calling asImage() before');
+            throw new BadMethodCallException(__METHOD__ . ' can not be called without calling asImage() before');
         }
 
         if (!function_exists('exif_read_data')) {
@@ -460,6 +494,7 @@ class rex_managed_media
 
     /**
      * @param string|null $src Source content
+     * @return void
      */
     private function prepareHeaders($src = null)
     {
@@ -484,14 +519,16 @@ class rex_managed_media
     }
 
     /**
-     * @param string $src             Source content
+     * @param string $src Source content
      * @param string $sourceCachePath
      * @param string $headerCachePath
+     * @return void
      */
     private function saveFiles($src, $sourceCachePath, $headerCachePath)
     {
         rex_file::putCache($headerCachePath, [
             'media_path' => $this->getMediaPath(),
+            'media_filename' => $this->getMediaFilename(),
             'format' => $this->format,
             'headers' => $this->header,
         ]);

@@ -7,11 +7,12 @@
  */
 class rex_api_package extends rex_api_function
 {
-    /**
-     * {@inheritdoc}
-     */
     public function execute()
     {
+        if (rex::isLiveMode()) {
+            throw new rex_api_exception('Package management is not available in live mode!');
+        }
+
         $function = rex_request('function', 'string');
         if (!in_array($function, ['install', 'uninstall', 'activate', 'deactivate', 'delete'])) {
             throw new rex_api_exception('Unknown package function "' . $function . '"!');
@@ -31,7 +32,7 @@ class rex_api_package extends rex_api_function
         }
         $reinstall = 'install' === $function && $package->isInstalled();
         $manager = rex_package_manager::factory($package);
-        $success = $manager->$function();
+        $success = rex_type::bool($manager->$function());
         $message = $manager->getMessage();
         $result = new rex_api_result($success, $message);
         if ($success && !$reinstall) {

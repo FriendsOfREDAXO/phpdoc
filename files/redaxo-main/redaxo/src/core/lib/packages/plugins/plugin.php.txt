@@ -17,9 +17,7 @@ class rex_plugin extends rex_package implements rex_plugin_interface
     private $addon;
 
     /**
-     * Constructor.
-     *
-     * @param string    $name  Name
+     * @param string $name Name
      * @param rex_addon $addon Parent addon
      */
     public function __construct($name, rex_addon $addon)
@@ -31,7 +29,7 @@ class rex_plugin extends rex_package implements rex_plugin_interface
     /**
      * Returns the plugin by the given name.
      *
-     * @param string $addon  Name of the addon
+     * @param string $addon Name of the addon
      * @param string $plugin Name of the plugin
      *
      * @throws InvalidArgumentException
@@ -63,7 +61,7 @@ class rex_plugin extends rex_package implements rex_plugin_interface
      *
      * @psalm-suppress ParamNameMismatch
      */
-    public static function require(string $addon, string $plugin = null): rex_package
+    public static function require(string $addon, ?string $plugin = null): rex_package
     {
         if (null === $plugin) {
             throw new InvalidArgumentException('Missing Argument 2 for ' . __METHOD__ . '()');
@@ -75,7 +73,7 @@ class rex_plugin extends rex_package implements rex_plugin_interface
     /**
      * Returns if the plugin exists.
      *
-     * @param string $addon  Name of the addon
+     * @param string $addon Name of the addon
      * @param string $plugin Name of the plugin
      *
      * @return bool
@@ -88,8 +86,6 @@ class rex_plugin extends rex_package implements rex_plugin_interface
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return rex_addon
      */
     public function getAddon()
@@ -98,8 +94,6 @@ class rex_plugin extends rex_package implements rex_plugin_interface
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return string
      */
     public function getPackageId()
@@ -107,80 +101,53 @@ class rex_plugin extends rex_package implements rex_plugin_interface
         return $this->getAddon()->getName() . '/' . $this->getName();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getType()
     {
         return 'plugin';
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getPath($file = '')
     {
         return rex_path::plugin($this->getAddon()->getName(), $this->getName(), $file);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getAssetsPath($file = '')
     {
         return rex_path::pluginAssets($this->getAddon()->getName(), $this->getName(), $file);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getAssetsUrl($file = '')
     {
         return rex_url::pluginAssets($this->getAddon()->getName(), $this->getName(), $file);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getDataPath($file = '')
     {
         return rex_path::pluginData($this->getAddon()->getName(), $this->getName(), $file);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function getCachePath($file = '')
     {
         return rex_path::pluginCache($this->getAddon()->getName(), $this->getName(), $file);
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function isAvailable()
     {
         return $this->getAddon()->isAvailable() && parent::isAvailable();
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function isSystemPackage()
     {
         return in_array($this->getName(), (array) $this->addon->getProperty('system_plugins', []));
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function i18n($key, ...$replacements)
     {
         $args = func_get_args();
         $key = $this->getAddon()->getName() . '_' . $this->getName() . '_' . $key;
         if (rex_i18n::hasMsgOrFallback($key)) {
             $args[0] = $key;
-            return call_user_func_array([rex_i18n::class, 'msg'], $args);
+            return call_user_func_array(rex_i18n::msg(...), $args);
         }
         return call_user_func_array([$this->getAddon(), 'i18n'], $args);
     }

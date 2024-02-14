@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -109,10 +110,6 @@
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="packages/redaxo5.html" class="">redaxo5</a>
-</h4>
-
                         </section>
             
     <section class="phpdocumentor-sidebar__category">
@@ -128,8 +125,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-mediapool.html">mediapool</a></li>
     </ul>
@@ -153,12 +151,17 @@
                             <a href="classes/rex-instance-list-pool-trait.html"><abbr title="\rex_instance_list_pool_trait">rex_instance_list_pool_trait</abbr></a>,                             <a href="classes/rex-instance-pool-trait.html"><abbr title="\rex_instance_pool_trait">rex_instance_pool_trait</abbr></a>                    </span>
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">8</span>
 
-            <a href="classes/rex-media.html#source-view.8"  class="phpdocumentor-element-found-in__source" data-line="8" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.8" class="phpdocumentor-element-found-in__source" data-line="8" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
             <p class="phpdocumentor-summary">Object Oriented Framework: Bildet ein Medium des Medienpools ab.</p>
@@ -168,131 +171,137 @@
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/rex-media.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/rex-media.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_category_id">$category_id</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: int            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_createdate">$createdate</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: int            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_createuser">$createuser</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_height">$height</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: int|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_id">$id</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: int            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_name">$name</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_originalname">$originalname</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_size">$size</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: int            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_title">$title</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_type">$type</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_updatedate">$updatedate</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: int            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_updateuser">$updateuser</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-media.html#property_width">$width</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: int|null            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/rex-media.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-instance-pool-trait.html#method_clearInstance">clearInstance()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Removes the instance of the given key.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-instance-list-pool-trait.html#method_clearInstanceList">clearInstanceList()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Clears the instance list of the given key.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-instance-list-pool-trait.html#method_clearInstanceListPool">clearInstanceListPool()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Clears the instance list pool.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-instance-pool-trait.html#method_clearInstancePool">clearInstancePool()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Clears the instance pool.</dd>
 
@@ -301,196 +310,168 @@
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_forId">forId()</a>
     <span>
-                                &nbsp;: null|static    </span>
+                                &nbsp;: static|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_get">get()</a>
     <span>
-                                &nbsp;: null|static    </span>
+                                &nbsp;: static|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getCategory">getCategory()</a>
     <span>
                                 &nbsp;: <a href="classes/rex-media-category.html"><abbr title="\rex_media_category">rex_media_category</abbr></a>|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getCategoryId">getCategoryId()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getCreateDate">getCreateDate()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getCreateUser">getCreateUser()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getDocTypes">getDocTypes()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: array&lt;int, string&gt;    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getExtension">getExtension()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getFileName">getFileName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getFormattedSize">getFormattedSize()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getHeight">getHeight()</a>
     <span>
-                                &nbsp;: int    </span>
+                                &nbsp;: int|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getId">getId()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getImageTypes">getImageTypes()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: array&lt;int, string&gt;    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getOriginalFileName">getOriginalFileName()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getRootMedia">getRootMedia()</a>
     <span>
                                 &nbsp;: array&lt;string|int, static&gt;    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getSize">getSize()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getTitle">getTitle()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getType">getType()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getUpdateDate">getUpdateDate()</a>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getUpdateUser">getUpdateUser()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getUrl">getUrl()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getValue">getValue()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: string|int|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_getWidth">getWidth()</a>
     <span>
-                                &nbsp;: int    </span>
+                                &nbsp;: int|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_hasValue">hasValue()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_isDocType">isDocType()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_isImage">isImage()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_isImageType">isImageType()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_isPermitted">isPermitted()</a>
@@ -504,33 +485,31 @@
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-media.html#method_toLink">toLink()</a>
     <span>
                                 &nbsp;: string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/rex-instance-pool-trait.html#method_addInstance">addInstance()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Adds an instance.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/rex-instance-list-pool-trait.html#method_addInstanceList">addInstanceList()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Adds an instance list.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/rex-instance-pool-trait.html#method_getInstance">getInstance()</a>
     <span>
-                                &nbsp;: null|static    </span>
+                                &nbsp;: static|null    </span>
 </dt>
 <dd>Returns the instance for the given key.</dd>
 
@@ -555,7 +534,8 @@
 </dt>
 <dd>Checks whether an instance list exists for the given key.</dd>
 
-        </dl>
+    </dl>
+
 
 
 
@@ -566,6 +546,7 @@
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/rex-media.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -577,6 +558,7 @@
     <h4 class="phpdocumentor-element__name" id="property_category_id">
         $category_id
         <a href="classes/rex-media.html#property_category_id" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -585,20 +567,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">17</span>
 
-            <a href="classes/rex-media.html#source-view.17"  class="phpdocumentor-element-found-in__source" data-line="17" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.17" class="phpdocumentor-element-found-in__source" data-line="17" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$category_id</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+    </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -612,6 +592,7 @@
     <h4 class="phpdocumentor-element__name" id="property_createdate">
         $createdate
         <a href="classes/rex-media.html#property_createdate" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -620,20 +601,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">39</span>
 
-            <a href="classes/rex-media.html#source-view.39"  class="phpdocumentor-element-found-in__source" data-line="39" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.39" class="phpdocumentor-element-found-in__source" data-line="39" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$createdate</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+    </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -647,6 +626,7 @@
     <h4 class="phpdocumentor-element__name" id="property_createuser">
         $createuser
         <a href="classes/rex-media.html#property_createuser" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -655,20 +635,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">44</span>
 
-            <a href="classes/rex-media.html#source-view.44"  class="phpdocumentor-element-found-in__source" data-line="44" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.44" class="phpdocumentor-element-found-in__source" data-line="44" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$createuser</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -682,6 +660,7 @@
     <h4 class="phpdocumentor-element__name" id="property_height">
         $height
         <a href="classes/rex-media.html#property_height" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -690,20 +669,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">31</span>
 
-            <a href="classes/rex-media.html#source-view.31"  class="phpdocumentor-element-found-in__source" data-line="31" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.31" class="phpdocumentor-element-found-in__source" data-line="31" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">int|null</span>
     <span class="phpdocumentor-signature__name">$height</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+    </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -717,6 +694,7 @@
     <h4 class="phpdocumentor-element__name" id="property_id">
         $id
         <a href="classes/rex-media.html#property_id" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -725,20 +703,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">15</span>
 
-            <a href="classes/rex-media.html#source-view.15"  class="phpdocumentor-element-found-in__source" data-line="15" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.15" class="phpdocumentor-element-found-in__source" data-line="15" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$id</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+    </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -752,6 +728,7 @@
     <h4 class="phpdocumentor-element__name" id="property_name">
         $name
         <a href="classes/rex-media.html#property_name" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -760,20 +737,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">20</span>
 
-            <a href="classes/rex-media.html#source-view.20"  class="phpdocumentor-element-found-in__source" data-line="20" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.20" class="phpdocumentor-element-found-in__source" data-line="20" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$name</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -787,6 +762,7 @@
     <h4 class="phpdocumentor-element__name" id="property_originalname">
         $originalname
         <a href="classes/rex-media.html#property_originalname" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -795,20 +771,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">22</span>
 
-            <a href="classes/rex-media.html#source-view.22"  class="phpdocumentor-element-found-in__source" data-line="22" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.22" class="phpdocumentor-element-found-in__source" data-line="22" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$originalname</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -822,6 +796,7 @@
     <h4 class="phpdocumentor-element__name" id="property_size">
         $size
         <a href="classes/rex-media.html#property_size" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -830,20 +805,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">26</span>
 
-            <a href="classes/rex-media.html#source-view.26"  class="phpdocumentor-element-found-in__source" data-line="26" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.26" class="phpdocumentor-element-found-in__source" data-line="26" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$size</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+    </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -857,6 +830,7 @@
     <h4 class="phpdocumentor-element__name" id="property_title">
         $title
         <a href="classes/rex-media.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -865,20 +839,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">34</span>
 
-            <a href="classes/rex-media.html#source-view.34"  class="phpdocumentor-element-found-in__source" data-line="34" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.34" class="phpdocumentor-element-found-in__source" data-line="34" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$title</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -892,6 +864,7 @@
     <h4 class="phpdocumentor-element__name" id="property_type">
         $type
         <a href="classes/rex-media.html#property_type" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -900,20 +873,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">24</span>
 
-            <a href="classes/rex-media.html#source-view.24"  class="phpdocumentor-element-found-in__source" data-line="24" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.24" class="phpdocumentor-element-found-in__source" data-line="24" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$type</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -927,6 +898,7 @@
     <h4 class="phpdocumentor-element__name" id="property_updatedate">
         $updatedate
         <a href="classes/rex-media.html#property_updatedate" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -935,20 +907,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">37</span>
 
-            <a href="classes/rex-media.html#source-view.37"  class="phpdocumentor-element-found-in__source" data-line="37" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.37" class="phpdocumentor-element-found-in__source" data-line="37" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$updatedate</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+    </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -962,6 +932,7 @@
     <h4 class="phpdocumentor-element__name" id="property_updateuser">
         $updateuser
         <a href="classes/rex-media.html#property_updateuser" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -970,20 +941,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">42</span>
 
-            <a href="classes/rex-media.html#source-view.42"  class="phpdocumentor-element-found-in__source" data-line="42" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.42" class="phpdocumentor-element-found-in__source" data-line="42" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$updateuser</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -997,6 +966,7 @@
     <h4 class="phpdocumentor-element__name" id="property_width">
         $width
         <a href="classes/rex-media.html#property_width" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
@@ -1005,20 +975,18 @@
     :
     <span class="phpdocumentor-element-found-in__line">29</span>
 
-            <a href="classes/rex-media.html#source-view.29"  class="phpdocumentor-element-found-in__source" data-line="29" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.29" class="phpdocumentor-element-found-in__source" data-line="29" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">int|null</span>
     <span class="phpdocumentor-signature__name">$width</span>
-     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+    </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -1028,6 +996,7 @@
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/rex-media.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -1038,21 +1007,24 @@
     <h4 class="phpdocumentor-element__name" id="method_clearInstance">
         clearInstance()
         <a href="classes/rex-instance-pool-trait.html#method_clearInstance" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php"><a href="files/redaxo-main-redaxo-src-core-lib-base-instance-pool-trait.html"><abbr title="redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php">instance_pool_trait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
-            <a href="classes/rex-media.html#source-view.85"  class="phpdocumentor-element-found-in__source" data-line="85" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.77" class="phpdocumentor-element-found-in__source" data-line="77" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Removes the instance of the given key.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">clearInstance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">clearInstance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1069,10 +1041,6 @@
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1084,21 +1052,24 @@
     <h4 class="phpdocumentor-element__name" id="method_clearInstanceList">
         clearInstanceList()
         <a href="classes/rex-instance-list-pool-trait.html#method_clearInstanceList" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php"><a href="files/redaxo-main-redaxo-src-core-lib-base-instance-list-pool-trait.html"><abbr title="redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php">instance_list_pool_trait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">85</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
-            <a href="classes/rex-media.html#source-view.85"  class="phpdocumentor-element-found-in__source" data-line="85" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.84" class="phpdocumentor-element-found-in__source" data-line="84" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Clears the instance list of the given key.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">clearInstanceList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">clearInstanceList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1115,10 +1086,6 @@
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1130,29 +1097,28 @@
     <h4 class="phpdocumentor-element__name" id="method_clearInstanceListPool">
         clearInstanceListPool()
         <a href="classes/rex-instance-list-pool-trait.html#method_clearInstanceListPool" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php"><a href="files/redaxo-main-redaxo-src-core-lib-base-instance-list-pool-trait.html"><abbr title="redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php">instance_list_pool_trait.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">94</span>
 
-            <a href="classes/rex-media.html#source-view.94"  class="phpdocumentor-element-found-in__source" data-line="94" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.94" class="phpdocumentor-element-found-in__source" data-line="94" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Clears the instance list pool.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">clearInstanceListPool</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">clearInstanceListPool</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1164,29 +1130,28 @@
     <h4 class="phpdocumentor-element__name" id="method_clearInstancePool">
         clearInstancePool()
         <a href="classes/rex-instance-pool-trait.html#method_clearInstancePool" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php"><a href="files/redaxo-main-redaxo-src-core-lib-base-instance-pool-trait.html"><abbr title="redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php">instance_pool_trait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">88</span>
 
-            <a href="classes/rex-media.html#source-view.95"  class="phpdocumentor-element-found-in__source" data-line="95" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.88" class="phpdocumentor-element-found-in__source" data-line="88" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Clears the instance pool.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">clearInstancePool</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">clearInstancePool</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1198,13 +1163,14 @@
     <h4 class="phpdocumentor-element__name" id="method_fileExists">
         fileExists()
         <a href="classes/rex-media.html#method_fileExists" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">321</span>
+    <span class="phpdocumentor-element-found-in__line">325</span>
 
-            <a href="classes/rex-media.html#source-view.321"  class="phpdocumentor-element-found-in__source" data-line="321" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.325" class="phpdocumentor-element-found-in__source" data-line="325" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1212,15 +1178,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">fileExists</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1231,20 +1199,23 @@
     <h4 class="phpdocumentor-element__name" id="method_forId">
         forId()
         <a href="classes/rex-media.html#method_forId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
-            <a href="classes/rex-media.html#source-view.95"  class="phpdocumentor-element-found-in__source" data-line="95" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.99" class="phpdocumentor-element-found-in__source" data-line="99" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">forId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mediaId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|static</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">forId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$mediaId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1253,15 +1224,15 @@
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/rex-media.html#method_forId#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1272,13 +1243,13 @@
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">null|static</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">static|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1289,20 +1260,23 @@
     <h4 class="phpdocumentor-element__name" id="method_get">
         get()
         <a href="classes/rex-media.html#method_get" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">51</span>
 
-            <a href="classes/rex-media.html#source-view.51"  class="phpdocumentor-element-found-in__source" data-line="51" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.51" class="phpdocumentor-element-found-in__source" data-line="51" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|static</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -1317,11 +1291,11 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">null|static</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">static|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1332,13 +1306,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getCategory">
         getCategory()
         <a href="classes/rex-media.html#method_getCategory" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">142</span>
 
-            <a href="classes/rex-media.html#source-view.138"  class="phpdocumentor-element-found-in__source" data-line="138" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.142" class="phpdocumentor-element-found-in__source" data-line="142" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1346,15 +1321,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getCategory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/rex-media-category.html"><abbr title="\rex_media_category">rex_media_category</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><a href="classes/rex-media-category.html"><abbr title="\rex_media_category">rex_media_category</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/rex-media-category.html"><abbr title="\rex_media_category">rex_media_category</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1365,13 +1342,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getCategoryId">
         getCategoryId()
         <a href="classes/rex-media.html#method_getCategoryId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">146</span>
+    <span class="phpdocumentor-element-found-in__line">150</span>
 
-            <a href="classes/rex-media.html#source-view.146"  class="phpdocumentor-element-found-in__source" data-line="146" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.150" class="phpdocumentor-element-found-in__source" data-line="150" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1379,15 +1357,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getCategoryId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1398,13 +1378,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getCreateDate">
         getCreateDate()
         <a href="classes/rex-media.html#method_getCreateDate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">251</span>
+    <span class="phpdocumentor-element-found-in__line">255</span>
 
-            <a href="classes/rex-media.html#source-view.251"  class="phpdocumentor-element-found-in__source" data-line="251" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.255" class="phpdocumentor-element-found-in__source" data-line="255" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1412,15 +1393,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getCreateDate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1431,13 +1414,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getCreateUser">
         getCreateUser()
         <a href="classes/rex-media.html#method_getCreateUser" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">243</span>
+    <span class="phpdocumentor-element-found-in__line">247</span>
 
-            <a href="classes/rex-media.html#source-view.243"  class="phpdocumentor-element-found-in__source" data-line="243" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.247" class="phpdocumentor-element-found-in__source" data-line="247" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1445,15 +1429,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getCreateUser</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1464,30 +1450,32 @@
     <h4 class="phpdocumentor-element__name" id="method_getDocTypes">
         getDocTypes()
         <a href="classes/rex-media.html#method_getDocTypes" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">327</span>
+    <span class="phpdocumentor-element-found-in__line">334</span>
 
-            <a href="classes/rex-media.html#source-view.327"  class="phpdocumentor-element-found-in__source" data-line="327" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.334" class="phpdocumentor-element-found-in__source" data-line="334" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getDocTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getDocTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1498,13 +1486,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getExtension">
         getExtension()
         <a href="classes/rex-media.html#method_getExtension" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">313</span>
+    <span class="phpdocumentor-element-found-in__line">317</span>
 
-            <a href="classes/rex-media.html#source-view.313"  class="phpdocumentor-element-found-in__source" data-line="313" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.317" class="phpdocumentor-element-found-in__source" data-line="317" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1512,15 +1501,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getExtension</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1531,13 +1522,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getFileName">
         getFileName()
         <a href="classes/rex-media.html#method_getFileName" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">162</span>
+    <span class="phpdocumentor-element-found-in__line">166</span>
 
-            <a href="classes/rex-media.html#source-view.162"  class="phpdocumentor-element-found-in__source" data-line="162" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.166" class="phpdocumentor-element-found-in__source" data-line="166" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1545,15 +1537,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getFileName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1564,13 +1558,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getFormattedSize">
         getFormattedSize()
         <a href="classes/rex-media.html#method_getFormattedSize" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">219</span>
+    <span class="phpdocumentor-element-found-in__line">223</span>
 
-            <a href="classes/rex-media.html#source-view.219"  class="phpdocumentor-element-found-in__source" data-line="219" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.223" class="phpdocumentor-element-found-in__source" data-line="223" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1578,15 +1573,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getFormattedSize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1597,29 +1594,32 @@
     <h4 class="phpdocumentor-element__name" id="method_getHeight">
         getHeight()
         <a href="classes/rex-media.html#method_getHeight" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">195</span>
+    <span class="phpdocumentor-element-found-in__line">199</span>
 
-            <a href="classes/rex-media.html#source-view.195"  class="phpdocumentor-element-found-in__source" data-line="195" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.199" class="phpdocumentor-element-found-in__source" data-line="199" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getHeight</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">getHeight</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1630,13 +1630,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getId">
         getId()
         <a href="classes/rex-media.html#method_getId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
-            <a href="classes/rex-media.html#source-view.130"  class="phpdocumentor-element-found-in__source" data-line="130" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.134" class="phpdocumentor-element-found-in__source" data-line="134" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1644,15 +1645,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1663,30 +1666,32 @@
     <h4 class="phpdocumentor-element__name" id="method_getImageTypes">
         getImageTypes()
         <a href="classes/rex-media.html#method_getImageTypes" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">341</span>
+    <span class="phpdocumentor-element-found-in__line">351</span>
 
-            <a href="classes/rex-media.html#source-view.341"  class="phpdocumentor-element-found-in__source" data-line="341" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.351" class="phpdocumentor-element-found-in__source" data-line="351" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getImageTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getImageTypes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1697,13 +1702,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getOriginalFileName">
         getOriginalFileName()
         <a href="classes/rex-media.html#method_getOriginalFileName" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">170</span>
+    <span class="phpdocumentor-element-found-in__line">174</span>
 
-            <a href="classes/rex-media.html#source-view.170"  class="phpdocumentor-element-found-in__source" data-line="170" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.174" class="phpdocumentor-element-found-in__source" data-line="174" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1711,15 +1717,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getOriginalFileName</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1730,13 +1738,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getRootMedia">
         getRootMedia()
         <a href="classes/rex-media.html#method_getRootMedia" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">113</span>
 
-            <a href="classes/rex-media.html#source-view.109"  class="phpdocumentor-element-found-in__source" data-line="109" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.113" class="phpdocumentor-element-found-in__source" data-line="113" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1744,15 +1753,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getRootMedia</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, static&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, static&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, static&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1763,13 +1774,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getSize">
         getSize()
         <a href="classes/rex-media.html#method_getSize" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">211</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
-            <a href="classes/rex-media.html#source-view.211"  class="phpdocumentor-element-found-in__source" data-line="211" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.215" class="phpdocumentor-element-found-in__source" data-line="215" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1777,15 +1789,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getSize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1796,13 +1810,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getTitle">
         getTitle()
         <a href="classes/rex-media.html#method_getTitle" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 
-            <a href="classes/rex-media.html#source-view.154"  class="phpdocumentor-element-found-in__source" data-line="154" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.158" class="phpdocumentor-element-found-in__source" data-line="158" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1810,15 +1825,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getTitle</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1829,13 +1846,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getType">
         getType()
         <a href="classes/rex-media.html#method_getType" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">203</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 
-            <a href="classes/rex-media.html#source-view.203"  class="phpdocumentor-element-found-in__source" data-line="203" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.207" class="phpdocumentor-element-found-in__source" data-line="207" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1843,15 +1861,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getType</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1862,13 +1882,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getUpdateDate">
         getUpdateDate()
         <a href="classes/rex-media.html#method_getUpdateDate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">235</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
-            <a href="classes/rex-media.html#source-view.235"  class="phpdocumentor-element-found-in__source" data-line="235" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.239" class="phpdocumentor-element-found-in__source" data-line="239" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1876,15 +1897,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUpdateDate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1895,13 +1918,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getUpdateUser">
         getUpdateUser()
         <a href="classes/rex-media.html#method_getUpdateUser" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">227</span>
+    <span class="phpdocumentor-element-found-in__line">231</span>
 
-            <a href="classes/rex-media.html#source-view.227"  class="phpdocumentor-element-found-in__source" data-line="227" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.231" class="phpdocumentor-element-found-in__source" data-line="231" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1909,15 +1933,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUpdateUser</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1928,13 +1954,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getUrl">
         getUrl()
         <a href="classes/rex-media.html#method_getUrl" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">178</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
-            <a href="classes/rex-media.html#source-view.178"  class="phpdocumentor-element-found-in__source" data-line="178" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.182" class="phpdocumentor-element-found-in__source" data-line="182" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -1942,15 +1969,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getUrl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1961,22 +1990,24 @@
     <h4 class="phpdocumentor-element__name" id="method_getValue">
         getValue()
         <a href="classes/rex-media.html#method_getValue" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">362</span>
+    <span class="phpdocumentor-element-found-in__line">375</span>
 
-            <a href="classes/rex-media.html#source-view.362"  class="phpdocumentor-element-found-in__source" data-line="362" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.375" class="phpdocumentor-element-found-in__source" data-line="375" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|int|null</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1984,18 +2015,17 @@
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|int|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2006,29 +2036,32 @@
     <h4 class="phpdocumentor-element__name" id="method_getWidth">
         getWidth()
         <a href="classes/rex-media.html#method_getWidth" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">187</span>
+    <span class="phpdocumentor-element-found-in__line">191</span>
 
-            <a href="classes/rex-media.html#source-view.187"  class="phpdocumentor-element-found-in__source" data-line="187" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.191" class="phpdocumentor-element-found-in__source" data-line="191" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getWidth</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">getWidth</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2039,13 +2072,14 @@
     <h4 class="phpdocumentor-element__name" id="method_hasValue">
         hasValue()
         <a href="classes/rex-media.html#method_hasValue" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">357</span>
+    <span class="phpdocumentor-element-found-in__line">367</span>
 
-            <a href="classes/rex-media.html#source-view.357"  class="phpdocumentor-element-found-in__source" data-line="357" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.367" class="phpdocumentor-element-found-in__source" data-line="367" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -2053,6 +2087,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">hasValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2061,18 +2097,17 @@
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2083,13 +2118,14 @@
     <h4 class="phpdocumentor-element__name" id="method_isDocType">
         isDocType()
         <a href="classes/rex-media.html#method_isDocType" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">335</span>
+    <span class="phpdocumentor-element-found-in__line">342</span>
 
-            <a href="classes/rex-media.html#source-view.335"  class="phpdocumentor-element-found-in__source" data-line="335" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.342" class="phpdocumentor-element-found-in__source" data-line="342" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -2097,6 +2133,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">isDocType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$type</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2105,18 +2143,17 @@
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2127,13 +2164,14 @@
     <h4 class="phpdocumentor-element__name" id="method_isImage">
         isImage()
         <a href="classes/rex-media.html#method_isImage" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">303</span>
+    <span class="phpdocumentor-element-found-in__line">307</span>
 
-            <a href="classes/rex-media.html#source-view.303"  class="phpdocumentor-element-found-in__source" data-line="303" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.307" class="phpdocumentor-element-found-in__source" data-line="307" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -2141,15 +2179,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isImage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2160,13 +2200,14 @@
     <h4 class="phpdocumentor-element__name" id="method_isImageType">
         isImageType()
         <a href="classes/rex-media.html#method_isImageType" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">349</span>
+    <span class="phpdocumentor-element-found-in__line">359</span>
 
-            <a href="classes/rex-media.html#source-view.349"  class="phpdocumentor-element-found-in__source" data-line="349" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.359" class="phpdocumentor-element-found-in__source" data-line="359" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -2174,6 +2215,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">isImageType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extension</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2182,18 +2225,17 @@
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2204,13 +2246,14 @@
     <h4 class="phpdocumentor-element__name" id="method_isPermitted">
         isPermitted()
         <a href="classes/rex-media.html#method_isPermitted" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">379</span>
+    <span class="phpdocumentor-element-found-in__line">394</span>
 
-            <a href="classes/rex-media.html#source-view.379"  class="phpdocumentor-element-found-in__source" data-line="379" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.394" class="phpdocumentor-element-found-in__source" data-line="394" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns whether the element is permitted.</p>
@@ -2219,15 +2262,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isPermitted</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2238,13 +2283,14 @@
     <h4 class="phpdocumentor-element__name" id="method_toImage">
         toImage()
         <a href="classes/rex-media.html#method_toImage" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">259</span>
+    <span class="phpdocumentor-element-found-in__line">263</span>
 
-            <a href="classes/rex-media.html#source-view.259"  class="phpdocumentor-element-found-in__source" data-line="259" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.263" class="phpdocumentor-element-found-in__source" data-line="263" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -2252,6 +2298,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">toImage</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$params</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2260,18 +2308,17 @@
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2282,13 +2329,14 @@
     <h4 class="phpdocumentor-element__name" id="method_toLink">
         toLink()
         <a href="classes/rex-media.html#method_toLink" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-lib-media.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/lib/media.php">media.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">295</span>
+    <span class="phpdocumentor-element-found-in__line">299</span>
 
-            <a href="classes/rex-media.html#source-view.295"  class="phpdocumentor-element-found-in__source" data-line="295" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.299" class="phpdocumentor-element-found-in__source" data-line="299" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt"></a>
     </aside>
 
     
@@ -2296,6 +2344,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">toLink</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2310,11 +2360,11 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2325,21 +2375,24 @@
     <h4 class="phpdocumentor-element__name" id="method_addInstance">
         addInstance()
         <a href="classes/rex-instance-pool-trait.html#method_addInstance" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php"><a href="files/redaxo-main-redaxo-src-core-lib-base-instance-pool-trait.html"><abbr title="redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php">instance_pool_trait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 
-            <a href="classes/rex-media.html#source-view.33"  class="phpdocumentor-element-found-in__source" data-line="33" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.27" class="phpdocumentor-element-found-in__source" data-line="27" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Adds an instance.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">addInstance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">self&nbsp;</span><span class="phpdocumentor-signature__argument__name">$instance</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">addInstance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">self&nbsp;</span><span class="phpdocumentor-signature__argument__name">$instance</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2365,10 +2418,6 @@
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2380,21 +2429,24 @@
     <h4 class="phpdocumentor-element__name" id="method_addInstanceList">
         addInstanceList()
         <a href="classes/rex-instance-list-pool-trait.html#method_addInstanceList" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php"><a href="files/redaxo-main-redaxo-src-core-lib-base-instance-list-pool-trait.html"><abbr title="redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php">instance_list_pool_trait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
-            <a href="classes/rex-media.html#source-view.24"  class="phpdocumentor-element-found-in__source" data-line="24" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.22" class="phpdocumentor-element-found-in__source" data-line="22" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Adds an instance list.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">addInstanceList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$instanceKeyList</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">addInstanceList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$instanceKeyList</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2420,10 +2472,6 @@
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2435,21 +2483,24 @@
     <h4 class="phpdocumentor-element__name" id="method_getInstance">
         getInstance()
         <a href="classes/rex-instance-pool-trait.html#method_getInstance" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php"><a href="files/redaxo-main-redaxo-src-core-lib-base-instance-pool-trait.html"><abbr title="redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php">instance_pool_trait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">65</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 
-            <a href="classes/rex-media.html#source-view.65"  class="phpdocumentor-element-found-in__source" data-line="65" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.59" class="phpdocumentor-element-found-in__source" data-line="59" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the instance for the given key.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getInstance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$createCallback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">null|static</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getInstance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$createCallback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>If the instance does not exist it will be created by calling the $createCallback</p>
 </section>
 
@@ -2478,7 +2529,8 @@
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/rex-instance-pool-trait.html#method_getInstance#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2490,13 +2542,13 @@
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">null|static</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">static|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2507,13 +2559,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getInstanceList">
         getInstanceList()
         <a href="classes/rex-instance-list-pool-trait.html#method_getInstanceList" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php"><a href="files/redaxo-main-redaxo-src-core-lib-base-instance-list-pool-trait.html"><abbr title="redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php">instance_list_pool_trait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">57</span>
 
-            <a href="classes/rex-media.html#source-view.59"  class="phpdocumentor-element-found-in__source" data-line="59" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.57" class="phpdocumentor-element-found-in__source" data-line="57" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the instance list for the given key.</p>
@@ -2522,6 +2575,8 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getInstanceList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable&nbsp;</span><span class="phpdocumentor-signature__argument__name">$getInstanceCallback</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">callable|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$createListCallback</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>If the instance list does not exist it will be created by calling the $createListCallback</p>
 </section>
 
@@ -2559,7 +2614,8 @@
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/rex-instance-list-pool-trait.html#method_getInstanceList#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -2598,13 +2654,13 @@
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2615,13 +2671,14 @@
     <h4 class="phpdocumentor-element__name" id="method_hasInstance">
         hasInstance()
         <a href="classes/rex-instance-pool-trait.html#method_hasInstance" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php"><a href="files/redaxo-main-redaxo-src-core-lib-base-instance-pool-trait.html"><abbr title="redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php">instance_pool_trait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
-            <a href="classes/rex-media.html#source-view.47"  class="phpdocumentor-element-found-in__source" data-line="47" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.41" class="phpdocumentor-element-found-in__source" data-line="41" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/base/instance_pool_trait.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Checks whether an instance exists for the given key.</p>
@@ -2630,6 +2687,8 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">hasInstance</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2646,11 +2705,11 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -2661,13 +2720,14 @@
     <h4 class="phpdocumentor-element__name" id="method_hasInstanceList">
         hasInstanceList()
         <a href="classes/rex-instance-list-pool-trait.html#method_hasInstanceList" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php"><a href="files/redaxo-main-redaxo-src-core-lib-base-instance-list-pool-trait.html"><abbr title="redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php">instance_list_pool_trait.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 
-            <a href="classes/rex-media.html#source-view.37"  class="phpdocumentor-element-found-in__source" data-line="37" data-modal="source-view"></a>
+            <a href="classes/rex-media.html#source-view.35" class="phpdocumentor-element-found-in__source" data-line="35" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/base/instance_list_pool_trait.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Checks whether an instance list exists for the given key.</p>
@@ -2676,6 +2736,8 @@
     <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">hasInstanceList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2692,11 +2754,11 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
             </section>
 
@@ -2704,75 +2766,181 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-        <pre style="max-height: 500px; overflow-y: scroll" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/redaxo-main/redaxo/src/addons/mediapool/lib/media.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
-        <button data-exit-button class="phpdocumentor-modal__close">X</button>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
 </div>
 
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                            <li><a href="classes/rex-media.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/rex-media.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/rex-media.html#property_category_id">$category_id<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_createdate">$createdate<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_createuser">$createuser<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_height">$height<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_id">$id<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_name">$name<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_originalname">$originalname<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_size">$size<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_title">$title<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_type">$type<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_updatedate">$updatedate<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_updateuser">$updateuser<a href="classes/rex-media.html"></li>
+                                                    <li><a href="classes/rex-media.html#property_width">$width<a href="classes/rex-media.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/rex-instance-pool-trait.html#method_clearInstance">clearInstance()</a></li>
+                                            <li><a href="classes/rex-instance-list-pool-trait.html#method_clearInstanceList">clearInstanceList()</a></li>
+                                            <li><a href="classes/rex-instance-list-pool-trait.html#method_clearInstanceListPool">clearInstanceListPool()</a></li>
+                                            <li><a href="classes/rex-instance-pool-trait.html#method_clearInstancePool">clearInstancePool()</a></li>
+                                            <li><a href="classes/rex-media.html#method_fileExists">fileExists()</a></li>
+                                            <li><a href="classes/rex-media.html#method_forId">forId()</a></li>
+                                            <li><a href="classes/rex-media.html#method_get">get()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getCategory">getCategory()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getCategoryId">getCategoryId()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getCreateDate">getCreateDate()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getCreateUser">getCreateUser()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getDocTypes">getDocTypes()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getExtension">getExtension()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getFileName">getFileName()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getFormattedSize">getFormattedSize()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getHeight">getHeight()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getId">getId()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getImageTypes">getImageTypes()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getOriginalFileName">getOriginalFileName()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getRootMedia">getRootMedia()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getSize">getSize()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getTitle">getTitle()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getType">getType()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getUpdateDate">getUpdateDate()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getUpdateUser">getUpdateUser()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getUrl">getUrl()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getValue">getValue()</a></li>
+                                            <li><a href="classes/rex-media.html#method_getWidth">getWidth()</a></li>
+                                            <li><a href="classes/rex-media.html#method_hasValue">hasValue()</a></li>
+                                            <li><a href="classes/rex-media.html#method_isDocType">isDocType()</a></li>
+                                            <li><a href="classes/rex-media.html#method_isImage">isImage()</a></li>
+                                            <li><a href="classes/rex-media.html#method_isImageType">isImageType()</a></li>
+                                            <li><a href="classes/rex-media.html#method_isPermitted">isPermitted()</a></li>
+                                            <li><a href="classes/rex-media.html#method_toImage">toImage()</a></li>
+                                            <li><a href="classes/rex-media.html#method_toLink">toLink()</a></li>
+                                            <li><a href="classes/rex-instance-pool-trait.html#method_addInstance">addInstance()</a></li>
+                                            <li><a href="classes/rex-instance-list-pool-trait.html#method_addInstanceList">addInstanceList()</a></li>
+                                            <li><a href="classes/rex-instance-pool-trait.html#method_getInstance">getInstance()</a></li>
+                                            <li><a href="classes/rex-instance-list-pool-trait.html#method_getInstanceList">getInstanceList()</a></li>
+                                            <li><a href="classes/rex-instance-pool-trait.html#method_hasInstance">hasInstance()</a></li>
+                                            <li><a href="classes/rex-instance-list-pool-trait.html#method_hasInstanceList">hasInstanceList()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -2783,7 +2951,6 @@
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/rex-media.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

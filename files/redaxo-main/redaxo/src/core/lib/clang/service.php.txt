@@ -8,10 +8,11 @@ class rex_clang_service
     /**
      * Erstellt eine Clang.
      *
-     * @param string $code     Clang Code
-     * @param string $name     Name
-     * @param int    $priority Priority
-     * @param bool   $status   Status
+     * @param string $code Clang Code
+     * @param string $name Name
+     * @param int $priority Priority
+     * @param bool $status Status
+     * @return void
      */
     public static function addCLang($code, $name, $priority, $status = false)
     {
@@ -41,11 +42,11 @@ class rex_clang_service
     /**
      * Ändert eine Clang.
      *
-     * @param int       $id       Id der Clang
-     * @param string    $code     Clang Code
-     * @param string    $name     Name der Clang
-     * @param int       $priority Priority
-     * @param bool|null $status   Status
+     * @param int $id Id der Clang
+     * @param string $code Clang Code
+     * @param string $name Name der Clang
+     * @param int $priority Priority
+     * @param bool|null $status Status
      *
      * @throws rex_exception
      *
@@ -92,6 +93,7 @@ class rex_clang_service
      * @param int $id Zu löschende ClangId
      *
      * @throws rex_exception
+     * @return void
      */
     public static function deleteCLang($id)
     {
@@ -125,6 +127,7 @@ class rex_clang_service
      * Schreibt Spracheigenschaften in die Datei include/clang.php.
      *
      * @throws rex_exception
+     * @return void
      */
     public static function generateCache()
     {
@@ -133,7 +136,7 @@ class rex_clang_service
 
         $clangs = [];
         foreach ($lg as $lang) {
-            $id = $lang->getValue('id');
+            $id = (int) $lang->getValue('id');
             foreach ($lg->getFieldnames() as $field) {
                 $clangs[$id][$field] = $lang->getValue($field);
             }

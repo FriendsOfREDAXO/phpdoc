@@ -36,7 +36,7 @@ class rex_var_link extends rex_var
             $value = self::getWidget($id, 'REX_INPUT_LINK[' . $id . ']', $value, $args);
         } else {
             if ($value && $this->hasArg('output') && 'id' != $this->getArg('output')) {
-                return 'rex_getUrl('.self::quote($value).')';
+                return 'rex_getUrl(' . self::quote($value) . ')';
             }
         }
 
@@ -69,7 +69,7 @@ class rex_var_link extends rex_var
         $class = ' rex-disabled';
         $openFunc = '';
         $deleteFunc = '';
-        if (rex::getUser()->getComplexPerm('structure')->hasStructurePerm()) {
+        if (rex::requireUser()->getComplexPerm('structure')->hasStructurePerm()) {
             $class = '';
             $escapedId = rex_escape($id, 'js');
             $openFunc = 'openLinkMap(\'REX_LINK_' . $escapedId . '\', \'' . $openParams . '\');';

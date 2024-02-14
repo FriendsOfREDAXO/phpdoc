@@ -12,10 +12,12 @@ class rex_dir
     /**
      * Creates a directory.
      *
-     * @param string $dir       Path of the new directory
-     * @param bool   $recursive When FALSE, nested directories won't be created
+     * @param string $dir Path of the new directory
+     * @param bool $recursive When FALSE, nested directories won't be created
      *
      * @return bool TRUE on success, FALSE on failure
+     *
+     * @psalm-assert-if-true =non-empty-string $dir
      */
     public static function create($dir, $recursive = true)
     {
@@ -42,6 +44,8 @@ class rex_dir
      * @param string $dir Path of the directory
      *
      * @return bool
+     *
+     * @psalm-assert-if-true =non-empty-string $dir
      */
     public static function isWritable($dir)
     {
@@ -56,6 +60,9 @@ class rex_dir
      * @param string $dstdir Path of the destination directory
      *
      * @return bool TRUE on success, FALSE on failure
+     *
+     * @psalm-assert-if-true =non-empty-string $srcdir
+     * @psalm-assert-if-true =non-empty-string $dstdir
      */
     public static function copy($srcdir, $dstdir)
     {
@@ -83,8 +90,8 @@ class rex_dir
     /**
      * Deletes a directory.
      *
-     * @param string $dir        Path of the directory
-     * @param bool   $deleteSelf When FALSE, only subdirectories and files will be deleted
+     * @param string $dir Path of the directory
+     * @param bool $deleteSelf When FALSE, only subdirectories and files will be deleted
      *
      * @return bool TRUE on success, FALSE on failure
      */
@@ -105,8 +112,8 @@ class rex_dir
     /**
      * Deletes the files in a directory.
      *
-     * @param string $dir       Path of the directory
-     * @param bool   $recursive When FALSE, files in subdirectories won't be deleted
+     * @param string $dir Path of the directory
+     * @param bool $recursive When FALSE, files in subdirectories won't be deleted
      *
      * @return bool TRUE on success, FALSE on failure
      */

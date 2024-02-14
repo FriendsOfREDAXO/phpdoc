@@ -5,9 +5,7 @@
  */
 abstract class rex_effect_abstract
 {
-    /**
-     * @var rex_managed_media
-     */
+    /** @var rex_managed_media */
     public $media;
 
     /**
@@ -17,10 +15,11 @@ abstract class rex_effect_abstract
      */
     public $params = [];
 
-    public function __construct()
-    {
-    }
+    public function __construct() {}
 
+    /**
+     * @return void
+     */
     public function setMedia(rex_managed_media $media)
     {
         $this->media = $media;
@@ -28,12 +27,16 @@ abstract class rex_effect_abstract
 
     /**
      * @param array<string, mixed> $params
+     * @return void
      */
     public function setParams(array $params)
     {
         $this->params = $params;
     }
 
+    /**
+     * @return void
+     */
     abstract public function execute();
 
     /**
@@ -68,23 +71,31 @@ abstract class rex_effect_abstract
     }
 
     /**
-     * @param resource $gdImage
+     * @param GdImage $gdImage
+     * @return void
      */
     protected function keepTransparent($gdImage)
     {
         $image = $this->media;
-        if ('png' == $image->getFormat() || 'webp' == $image->getFormat()) {
+
+        if (!$image->formatSupportsTransparency()) {
+            return;
+        }
+
+        if ('gif' !== $image->getFormat()) {
             imagealphablending($gdImage, false);
             imagesavealpha($gdImage, true);
-        } elseif ('gif' == $image->getFormat()) {
-            $gdimage = $image->getImage();
-            $colorTransparent = imagecolortransparent($gdimage);
-            imagepalettecopy($gdimage, $gdImage);
-            if ($colorTransparent > 0) {
-                imagefill($gdImage, 0, 0, $colorTransparent);
-                imagecolortransparent($gdImage, $colorTransparent);
-            }
-            imagetruecolortopalette($gdImage, true, 256);
+
+            return;
         }
+
+        $gdimage = $image->getImage();
+        $colorTransparent = imagecolortransparent($gdimage);
+        imagepalettecopy($gdimage, $gdImage);
+        if ($colorTransparent > 0) {
+            imagefill($gdImage, 0, 0, $colorTransparent);
+            imagecolortransparent($gdImage, $colorTransparent);
+        }
+        imagetruecolortopalette($gdImage, true, 256);
     }
 }

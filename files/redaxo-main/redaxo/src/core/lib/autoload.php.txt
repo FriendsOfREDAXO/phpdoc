@@ -12,46 +12,34 @@
  */
 class rex_autoload
 {
-    /**
-     * @var Composer\Autoload\ClassLoader
-     */
+    // see https://github.com/redaxo/redaxo/issues/5780
+    private const SYMFONY_NON_UTF8_CLASS = "\xA9";
+
+    private const SYMFONY_NON_UTF8_CLASS_REPLACEMENT = 'rexsymfonycachevaluewrappernonutf8class';
+
+    /** @var Composer\Autoload\ClassLoader */
     protected static $composerLoader;
 
-    /**
-     * @var bool
-     */
+    /** @var bool */
     protected static $registered = false;
-    /**
-     * @var null|string
-     */
+    /** @var string|null */
     protected static $cacheFile;
-    /**
-     * @var bool
-     */
+    /** @var bool */
     protected static $cacheChanged = false;
-    /**
-     * @var bool remember the cache was deleted, to make sure we don't generate a stale cache file
-     */
+    /** @var bool remember the cache was deleted, to make sure we don't generate a stale cache file */
     protected static $cacheDeleted = false;
-    /**
-     * @var bool
-     */
+    /** @var bool */
     protected static $reloaded = false;
-    /**
-     * @var string[][]
-     */
+    /** @var string[][] */
     protected static $dirs = [];
-    /**
-     * @var string[]
-     */
+    /** @var string[] */
     protected static $addedDirs = [];
-    /**
-     * @var string[]
-     */
+    /** @var string[] */
     protected static $classes = [];
 
     /**
      * Register rex_autoload in spl autoloader.
+     * @return void
      */
     public static function register()
     {
@@ -67,7 +55,7 @@ class rex_autoload
             self::$composerLoader->unregister();
         }
 
-        if (!spl_autoload_register([self::class, 'autoload'])) {
+        if (!spl_autoload_register(self::autoload(...))) {
             throw new Exception(sprintf('Unable to register %s::autoload as an autoloading method.', self::class));
         }
 
@@ -80,10 +68,11 @@ class rex_autoload
 
     /**
      * Unregister rex_autoload from spl autoloader.
+     * @return void
      */
     public static function unregister()
     {
-        spl_autoload_unregister([self::class, 'autoload']);
+        spl_autoload_unregister(self::autoload(...));
         self::$registered = false;
     }
 
@@ -102,7 +91,13 @@ class rex_autoload
         }
 
         $force = false;
-        $lowerClass = strtolower($class);
+
+        if (self::SYMFONY_NON_UTF8_CLASS === $class) {
+            $lowerClass = self::SYMFONY_NON_UTF8_CLASS_REPLACEMENT;
+        } else {
+            $lowerClass = strtolower($class);
+        }
+
         if (isset(self::$classes[$lowerClass])) {
             $path = rex_path::base(self::$classes[$lowerClass]);
             // we have a class path for the class, let's include it
@@ -153,6 +148,7 @@ class rex_autoload
 
     /**
      * Loads the cache.
+     * @return void
      */
     private static function loadCache()
     {
@@ -165,6 +161,7 @@ class rex_autoload
 
     /**
      * Saves the cache.
+     * @return void
      */
     public static function saveCache()
     {
@@ -196,6 +193,7 @@ class rex_autoload
      * Reanalyses all added directories.
      *
      * @param bool $force If true, all files are reanalysed, otherwise only new and changed files
+     * @return void
      */
     public static function reload($force = false)
     {
@@ -211,6 +209,7 @@ class rex_autoload
 
     /**
      * Removes the cache.
+     * @return void
      */
     public static function removeCache()
     {
@@ -222,6 +221,7 @@ class rex_autoload
      * Adds a directory to the autoloading system if not yet present.
      *
      * @param string $dir The directory to look for classes
+     * @return void
      */
     public static function addDirectory($dir)
     {
@@ -248,6 +248,7 @@ class rex_autoload
 
     /**
      * @param string $dir
+     * @return void
      */
     private static function _addDirectory($dir)
     {
@@ -280,7 +281,11 @@ class rex_autoload
 
             $classes = self::findClasses($path);
             foreach ($classes as $class) {
-                $class = strtolower($class);
+                if (self::SYMFONY_NON_UTF8_CLASS === $class) {
+                    $class = self::SYMFONY_NON_UTF8_CLASS_REPLACEMENT;
+                } else {
+                    $class = strtolower($class);
+                }
 
                 // Force usage of Parsedown and ParsedownExtra from core vendors (via composer autoloader)
                 // to avoid problems between incompatible version of Parsedown (from addon) and ParsedownExtra (from core)
@@ -342,7 +347,7 @@ class rex_autoload
         }
 
         // return early if there is no chance of matching anything in this file
-        if (!preg_match('{\b(?:class|interface'.$extraTypes.')\s}i', $contents)) {
+        if (!preg_match('{\b(?:class|interface' . $extraTypes . ')\s}i', $contents)) {
             return [];
         }
 
@@ -364,7 +369,7 @@ class rex_autoload
         }x';
 
         // run first assuming the file is valid unicode
-        $contentWithoutHeredoc = preg_replace($heredocRegex.'u', 'null', $contents);
+        $contentWithoutHeredoc = preg_replace($heredocRegex . 'u', 'null', $contents);
         if (null === $contentWithoutHeredoc) {
             // run again without unicode support if the file failed to be parsed
             $contents = preg_replace($heredocRegex, 'null', $contents);
@@ -396,7 +401,7 @@ class rex_autoload
 
         preg_match_all('{
             (?:
-                 \b(?<![\$:>])(?P<type>class|interface'.$extraTypes.') \s++ (?P<name>[a-zA-Z_\x7f-\xff:][a-zA-Z0-9_\x7f-\xff:\-]*+)
+                 \b(?<![\$:>])(?P<type>class|interface' . $extraTypes . ') \s++ (?P<name>[a-zA-Z_\x7f-\xff:][a-zA-Z0-9_\x7f-\xff:\-]*+)
                | \b(?<![\$:>])(?P<ns>namespace) (?P<nsname>\s++[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*+(?:\s*+\\\\\s*+[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*+)*+)? \s*+ [\{;]
             )
         }ix', $contents, $matches);
@@ -415,7 +420,7 @@ class rex_autoload
                 }
                 if (':' === $name[0]) {
                     // This is an XHP class, https://github.com/facebook/xhp
-                    $name = 'xhp'.substr(str_replace(['-', ':'], ['_', '__'], $name), 1);
+                    $name = 'xhp' . substr(str_replace(['-', ':'], ['_', '__'], $name), 1);
                 } elseif ('enum' === $matches['type'][$i]) {
                     // In Hack, something like:
                     //   enum Foo: int { HERP = '123'; }

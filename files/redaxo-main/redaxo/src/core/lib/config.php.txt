@@ -58,9 +58,9 @@ class rex_config
      *
      * The set-method returns TRUE when an existing value was overridden, otherwise FALSE is returned.
      *
-     * @param string       $namespace The namespace e.g. an addon name
-     * @param string|array $key       The associated key or an associative array of key/value pairs
-     * @param mixed        $value     The value to save
+     * @param string $namespace The namespace e.g. an addon name
+     * @param string|array<string, mixed> $key The associated key or an associative array of key/value pairs
+     * @param mixed $value The value to save
      *
      * @throws InvalidArgumentException
      *
@@ -112,17 +112,12 @@ class rex_config
      *
      * If no value can be found for the given key/namespace combination $default is returned.
      *
-     * @param string      $namespace The namespace e.g. an addon name
-     * @param string|null $key       The associated key
-     * @param mixed       $default   Default return value if no associated-value can be found
-     *
-     * @throws InvalidArgumentException
-     *
-     * @return mixed the value for $key or $default if $key cannot be found in the given $namespace
-     *
      * @template T as ?string
-     * @phpstan-template T
-     * @psalm-param T $key
+     * @param string $namespace The namespace e.g. an addon name
+     * @param T $key The associated key
+     * @param mixed $default Default return value if no associated-value can be found
+     * @throws InvalidArgumentException
+     * @return mixed the value for $key or $default if $key cannot be found in the given $namespace
      * @psalm-return (T is string ? mixed|null : array<string, mixed>)
      */
     public static function get($namespace, $key = null, $default = null)
@@ -140,18 +135,14 @@ class rex_config
         if (!is_string($key)) {
             throw new InvalidArgumentException('rex_config: expecting $key to be a string, ' . gettype($key) . ' given!');
         }
-
-        if (isset(self::$data[$namespace][$key])) {
-            return self::$data[$namespace][$key];
-        }
-        return $default;
+        return self::$data[$namespace][$key] ?? $default;
     }
 
     /**
      * Returns if the given key is set.
      *
-     * @param string      $namespace The namespace e.g. an addon name
-     * @param string|null $key       The associated key
+     * @param string $namespace The namespace e.g. an addon name
+     * @param string|null $key The associated key
      *
      * @throws InvalidArgumentException
      *
@@ -180,7 +171,7 @@ class rex_config
      * Removes the setting associated with the given namespace and key.
      *
      * @param string $namespace The namespace e.g. an addon name
-     * @param string $key       The associated key
+     * @param string $key The associated key
      *
      * @throws InvalidArgumentException
      *
@@ -249,6 +240,7 @@ class rex_config
 
     /**
      * Refreshes rex_config by reloading config from db.
+     * @return void
      */
     public static function refresh()
     {
@@ -269,6 +261,7 @@ class rex_config
 
     /**
      * initilizes the rex_config class.
+     * @return void
      */
     protected static function init()
     {
@@ -295,6 +288,7 @@ class rex_config
 
     /**
      * load the config-data.
+     * @return void
      */
     protected static function load()
     {
@@ -324,6 +318,7 @@ class rex_config
 
     /**
      * load the config-data from database.
+     * @return void
      */
     private static function loadFromDb()
     {
@@ -338,6 +333,7 @@ class rex_config
 
     /**
      * save config to file-cache.
+     * @return void
      */
     private static function generateCache()
     {
@@ -348,6 +344,7 @@ class rex_config
 
     /**
      * persists the config-data and truncates the file-cache.
+     * @return void
      */
     public static function save()
     {
@@ -373,6 +370,7 @@ class rex_config
 
     /**
      * save the config-data into the db.
+     * @return void
      */
     private static function saveToDb()
     {
@@ -390,7 +388,7 @@ class rex_config
                     continue;
                 }
                 $params[] = $namespace;
-                $where[] = 'namespace = ? AND `key` IN ('.$sql->in(array_keys($nsData)).')';
+                $where[] = 'namespace = ? AND `key` IN (' . $sql->in(array_keys($nsData)) . ')';
             }
             if (count($where) > 0) {
                 $sql->setWhere(implode("\n    OR ", $where), $params);

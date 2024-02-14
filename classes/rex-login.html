@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -109,10 +110,6 @@
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="packages/redaxo5.html" class="">redaxo5</a>
-</h4>
-
                         </section>
             
     <section class="phpdocumentor-sidebar__category">
@@ -128,8 +125,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-core.html">core</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-core-login.html">login</a></li>
@@ -152,12 +150,17 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">6</span>
 
-            <a href="classes/rex-login.html#source-view.6"  class="phpdocumentor-element-found-in__source" data-line="6" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.6" class="phpdocumentor-element-found-in__source" data-line="6" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         
@@ -166,140 +169,197 @@
 
 
 
-
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/rex-login.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/rex-login.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/rex-login.html#constant_SESSION_ID">SESSION_ID</a>
+    <span>
+        &nbsp;= &#039;REX_SESSID&#039;                            </span>
+</dt>
+<dd>Session ID is saved in session under this key for session fixation prevention.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/rex-login.html#constant_SESSION_IMPERSONATOR">SESSION_IMPERSONATOR</a>
+    <span>
+        &nbsp;= &#039;impersonator&#039;                            </span>
+</dt>
+<dd>the userid of the impersonator user.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/rex-login.html#constant_SESSION_LAST_ACTIVITY">SESSION_LAST_ACTIVITY</a>
+    <span>
+        &nbsp;= &#039;STAMP&#039;                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/rex-login.html#constant_SESSION_PASSWORD">SESSION_PASSWORD</a>
+    <span>
+        &nbsp;= &#039;password&#039;                            </span>
+</dt>
+<dd>the encrypted user password.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/rex-login.html#constant_SESSION_START_TIME">SESSION_START_TIME</a>
+    <span>
+        &nbsp;= &#039;starttime&#039;                            </span>
+</dt>
+<dd>the timestamp when the session was initially started.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/rex-login.html#constant_SESSION_USER_ID">SESSION_USER_ID</a>
+    <span>
+        &nbsp;= &#039;UID&#039;                            </span>
+</dt>
+<dd>the id of the user.</dd>
+
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/rex-login.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_cache">$cache</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_DB">$DB</a>
     <span>
-                        &nbsp;: int            </span>
+                        &nbsp;: positive-int            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_idColumn">$idColumn</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_impersonateQuery">$impersonateQuery</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_impersonator">$impersonator</a>
     <span>
-                        &nbsp;: <abbr title="\rex_sql">rex_sql</abbr>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null            </span>
+                        &nbsp;: <a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_loginQuery">$loginQuery</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_loginStatus">$loginStatus</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_logout">$logout</a>
     <span>
                         &nbsp;: bool            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_message">$message</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_passwordColumn">$passwordColumn</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_sessionDuration">$sessionDuration</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: int            </span>
 </dt>
-<dd></dd>
+<dd>A Session will be closed when not activly used for this timespan (seconds).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/rex-login.html#property_sessionMaxOverallDuration">$sessionMaxOverallDuration</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+<dd>A session cannot stay longer then this value, no matter its actively used once in a while (seconds).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_systemId">$systemId</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_user">$user</a>
     <span>
-                        &nbsp;: <abbr title="\rex_sql">rex_sql</abbr>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>            </span>
+                        &nbsp;: <a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_userLogin">$userLogin</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_userPassword">$userPassword</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string|null            </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-login.html#property_userQuery">$userQuery</a>
     <span>
-                        &nbsp;: mixed            </span>
+                        &nbsp;: string            </span>
 </dt>
-<dd></dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/rex-login.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>Constructor.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_changedPassword">changedPassword()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_checkLogin">checkLogin()</a>
@@ -312,16 +372,21 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_depersonate">depersonate()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
-<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-login.html#method_getCookieParams">getCookieParams()</a>
+    <span>
+                                &nbsp;: array{lifetime: ?int, path: ?string, domain: ?string, secure: ?bool, httponly: ?bool, samesite: ?string}    </span>
+</dt>
+<dd>Einstellen der Cookie Paramter bevor die session gestartet wird.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_getImpersonator">getImpersonator()</a>
     <span>
-                                &nbsp;: <abbr title="\rex_sql">rex_sql</abbr>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null    </span>
+                                &nbsp;: <a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_getMessage">getMessage()</a>
@@ -340,9 +405,8 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_getUser">getUser()</a>
     <span>
-                                &nbsp;: <abbr title="\rex_sql">rex_sql</abbr>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null    </span>
+                                &nbsp;: <a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_getValue">getValue()</a>
@@ -354,14 +418,13 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_impersonate">impersonate()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_isLoggedOut">isLoggedOut()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: bool    </span>
 </dt>
 <dd>Prüft, ob die aktuelle Session ausgeloggt ist.</dd>
 
@@ -377,19 +440,24 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</dd>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_passwordVerify">passwordVerify()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-login.html#method_regenerateSessionId">regenerateSessionId()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>refresh session on permission elevation for security reasons.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setCache">setCache()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Setzt, ob die Ergebnisse der Login-Abfrage
 pro Seitenaufruf gecached werden sollen.</dd>
@@ -397,70 +465,70 @@ pro Seitenaufruf gecached werden sollen.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setIdColumn">setIdColumn()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Setzt den Namen der Spalte, der die User-Id enthält.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setImpersonateQuery">setImpersonateQuery()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Setzt den ImpersonateQuery.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setLogin">setLogin()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Setzt den Login und das Password.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setLoginQuery">setLoginQuery()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Setzt den LoginQuery.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setLogout">setLogout()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Markiert die aktuelle Session als ausgeloggt.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setPasswordColumn">setPasswordColumn()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Sets the password column.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setSessionDuration">setSessionDuration()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Setzt das Session Timeout.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setSessionVar">setSessionVar()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Setzte eine Session-Variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setSqlDb">setSqlDb()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Setzt die Id der zu verwendenden SQL Connection.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setSystemId">setSystemId()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Setzt eine eindeutige System Id, damit mehrere
 Sessions auf der gleichen Domain unterschieden werden können.</dd>
@@ -468,14 +536,14 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_setUserQuery">setUserQuery()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Setzt den UserQuery.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-login.html#method_startSession">startSession()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>starts a http-session if not already started.</dd>
 
@@ -487,30 +555,211 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
 <dd>returns the current session namespace.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/rex-login.html#method_regenerateSessionId">regenerateSessionId()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd></dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/rex-login.html#method_setMessage">setMessage()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Setzt einen Meldungstext.</dd>
 
-        </dl>
+    </dl>
+
 
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/rex-login.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SESSION_ID">
+        SESSION_ID
+        <a href="classes/rex-login.html#constant_SESSION_ID" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">11</span>
+
+            <a href="classes/rex-login.html#source-view.11" class="phpdocumentor-element-found-in__source" data-line="11" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Session ID is saved in session under this key for session fixation prevention.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SESSION_ID</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;REX_SESSID&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SESSION_IMPERSONATOR">
+        SESSION_IMPERSONATOR
+        <a href="classes/rex-login.html#constant_SESSION_IMPERSONATOR" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">31</span>
+
+            <a href="classes/rex-login.html#source-view.31" class="phpdocumentor-element-found-in__source" data-line="31" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">the userid of the impersonator user.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SESSION_IMPERSONATOR</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;impersonator&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SESSION_LAST_ACTIVITY">
+        SESSION_LAST_ACTIVITY
+        <a href="classes/rex-login.html#constant_SESSION_LAST_ACTIVITY" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">19</span>
+
+            <a href="classes/rex-login.html#source-view.19" class="phpdocumentor-element-found-in__source" data-line="19" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SESSION_LAST_ACTIVITY</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;STAMP&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SESSION_PASSWORD">
+        SESSION_PASSWORD
+        <a href="classes/rex-login.html#constant_SESSION_PASSWORD" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+
+            <a href="classes/rex-login.html#source-view.27" class="phpdocumentor-element-found-in__source" data-line="27" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">the encrypted user password.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SESSION_PASSWORD</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;password&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SESSION_START_TIME">
+        SESSION_START_TIME
+        <a href="classes/rex-login.html#constant_SESSION_START_TIME" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">15</span>
+
+            <a href="classes/rex-login.html#source-view.15" class="phpdocumentor-element-found-in__source" data-line="15" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">the timestamp when the session was initially started.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SESSION_START_TIME</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;starttime&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SESSION_USER_ID">
+        SESSION_USER_ID
+        <a href="classes/rex-login.html#constant_SESSION_USER_ID" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+
+            <a href="classes/rex-login.html#source-view.23" class="phpdocumentor-element-found-in__source" data-line="23" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">the id of the user.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SESSION_USER_ID</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;UID&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+            </section>
 
         
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
             <a href="classes/rex-login.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="
@@ -522,15 +771,16 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_cache">
         $cache
         <a href="classes/rex-login.html#property_cache" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">39</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 
-            <a href="classes/rex-login.html#source-view.39"  class="phpdocumentor-element-found-in__source" data-line="39" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.66" class="phpdocumentor-element-found-in__source" data-line="66" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
@@ -555,42 +805,28 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_DB">
         $DB
         <a href="classes/rex-login.html#property_DB" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">34</span>
 
-            <a href="classes/rex-login.html#source-view.13"  class="phpdocumentor-element-found-in__source" data-line="13" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.34" class="phpdocumentor-element-found-in__source" data-line="34" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">int</span>
+        <span class="phpdocumentor-signature__type">positive-int</span>
     <span class="phpdocumentor-signature__name">$DB</span>
      = <span class="phpdocumentor-signature__default-value">1</span></code>
 
     
     
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-var</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>positive-int</p>
-</section>
-
-                                    </dd>
-                        </dl>
 
 </article>
                     <article
@@ -603,15 +839,16 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_idColumn">
         $idColumn
         <a href="classes/rex-login.html#property_idColumn" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
-            <a href="classes/rex-login.html#source-view.31"  class="phpdocumentor-element-found-in__source" data-line="31" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.62" class="phpdocumentor-element-found-in__source" data-line="62" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
@@ -636,28 +873,27 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_impersonateQuery">
         $impersonateQuery
         <a href="classes/rex-login.html#property_impersonateQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">17</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
-            <a href="classes/rex-login.html#source-view.17"  class="phpdocumentor-element-found-in__source" data-line="17" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.52" class="phpdocumentor-element-found-in__source" data-line="52" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$impersonateQuery</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -671,21 +907,22 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_impersonator">
         $impersonator
         <a href="classes/rex-login.html#property_impersonator" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">53</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 
-            <a href="classes/rex-login.html#source-view.53"  class="phpdocumentor-element-found-in__source" data-line="53" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.76" class="phpdocumentor-element-found-in__source" data-line="76" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\rex_sql">rex_sql</abbr>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null</span>
     <span class="phpdocumentor-signature__name">$impersonator</span>
     </code>
 
@@ -704,28 +941,27 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_loginQuery">
         $loginQuery
         <a href="classes/rex-login.html#property_loginQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">15</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
-            <a href="classes/rex-login.html#source-view.15"  class="phpdocumentor-element-found-in__source" data-line="15" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.48" class="phpdocumentor-element-found-in__source" data-line="48" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$loginQuery</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -739,15 +975,16 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_loginStatus">
         $loginStatus
         <a href="classes/rex-login.html#property_loginStatus" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 
-            <a href="classes/rex-login.html#source-view.43"  class="phpdocumentor-element-found-in__source" data-line="43" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.68" class="phpdocumentor-element-found-in__source" data-line="68" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
@@ -772,15 +1009,16 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_logout">
         $logout
         <a href="classes/rex-login.html#property_logout" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 
-            <a href="classes/rex-login.html#source-view.27"  class="phpdocumentor-element-found-in__source" data-line="27" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.60" class="phpdocumentor-element-found-in__source" data-line="60" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
@@ -805,15 +1043,16 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_message">
         $message
         <a href="classes/rex-login.html#property_message" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">70</span>
 
-            <a href="classes/rex-login.html#source-view.47"  class="phpdocumentor-element-found-in__source" data-line="47" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.70" class="phpdocumentor-element-found-in__source" data-line="70" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
@@ -838,15 +1077,16 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_passwordColumn">
         $passwordColumn
         <a href="classes/rex-login.html#property_passwordColumn" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">35</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
-            <a href="classes/rex-login.html#source-view.35"  class="phpdocumentor-element-found-in__source" data-line="35" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.64" class="phpdocumentor-element-found-in__source" data-line="64" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
@@ -871,28 +1111,63 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_sessionDuration">
         $sessionDuration
         <a href="classes/rex-login.html#property_sessionDuration" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">14</span>
+    <span class="phpdocumentor-element-found-in__line">40</span>
 
-            <a href="classes/rex-login.html#source-view.14"  class="phpdocumentor-element-found-in__source" data-line="14" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.40" class="phpdocumentor-element-found-in__source" data-line="40" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
-    
+        <p class="phpdocumentor-summary">A Session will be closed when not activly used for this timespan (seconds).</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">int</span>
     <span class="phpdocumentor-signature__name">$sessionDuration</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
+    
+    
+    
 
-        <section class="phpdocumentor-description"></section>
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_sessionMaxOverallDuration">
+        $sessionMaxOverallDuration
+        <a href="classes/rex-login.html#property_sessionMaxOverallDuration" class="headerlink"><i class="fas fa-link"></i></a>
 
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+            <a href="classes/rex-login.html#source-view.46" class="phpdocumentor-element-found-in__source" data-line="46" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">A session cannot stay longer then this value, no matter its actively used once in a while (seconds).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$sessionMaxOverallDuration</span>
+    </code>
+
+    
+    
     
 
 </article>
@@ -906,15 +1181,16 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_systemId">
         $systemId
         <a href="classes/rex-login.html#property_systemId" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 
-            <a href="classes/rex-login.html#source-view.21"  class="phpdocumentor-element-found-in__source" data-line="21" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.54" class="phpdocumentor-element-found-in__source" data-line="54" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
@@ -939,21 +1215,22 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_user">
         $user
         <a href="classes/rex-login.html#property_user" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">73</span>
 
-            <a href="classes/rex-login.html#source-view.50"  class="phpdocumentor-element-found-in__source" data-line="50" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.73" class="phpdocumentor-element-found-in__source" data-line="73" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\rex_sql">rex_sql</abbr>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a></span>
+        <span class="phpdocumentor-signature__type"><a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a></span>
     <span class="phpdocumentor-signature__name">$user</span>
     </code>
 
@@ -972,28 +1249,27 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_userLogin">
         $userLogin
         <a href="classes/rex-login.html#property_userLogin" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">56</span>
 
-            <a href="classes/rex-login.html#source-view.22"  class="phpdocumentor-element-found-in__source" data-line="22" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.56" class="phpdocumentor-element-found-in__source" data-line="56" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$userLogin</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -1007,28 +1283,27 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_userPassword">
         $userPassword
         <a href="classes/rex-login.html#property_userPassword" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">23</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
-            <a href="classes/rex-login.html#source-view.23"  class="phpdocumentor-element-found-in__source" data-line="23" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.58" class="phpdocumentor-element-found-in__source" data-line="58" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string|null</span>
     <span class="phpdocumentor-signature__name">$userPassword</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -1042,28 +1317,27 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="property_userQuery">
         $userQuery
         <a href="classes/rex-login.html#property_userQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 
-            <a href="classes/rex-login.html#source-view.16"  class="phpdocumentor-element-found-in__source" data-line="16" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.50" class="phpdocumentor-element-found-in__source" data-line="50" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
+        <span class="phpdocumentor-signature__type">string</span>
     <span class="phpdocumentor-signature__name">$userQuery</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -1073,6 +1347,7 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/rex-login.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -1083,29 +1358,27 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/rex-login.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">78</span>
 
-            <a href="classes/rex-login.html#source-view.58"  class="phpdocumentor-element-found-in__source" data-line="58" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.78" class="phpdocumentor-element-found-in__source" data-line="78" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
-        <p class="phpdocumentor-summary">Constructor.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1117,40 +1390,37 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="method_changedPassword">
         changedPassword()
         <a href="classes/rex-login.html#method_changedPassword" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">338</span>
+    <span class="phpdocumentor-element-found-in__line">421</span>
 
-            <a href="classes/rex-login.html#source-view.338"  class="phpdocumentor-element-found-in__source" data-line="338" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.421" class="phpdocumentor-element-found-in__source" data-line="421" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">changedPassword</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$passwordHash</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">changedPassword</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$passwordHash</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$passwordHash</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1162,13 +1432,14 @@ Sessions auf der gleichen Domain unterschieden werden können.</dd>
     <h4 class="phpdocumentor-element__name" id="method_checkLogin">
         checkLogin()
         <a href="classes/rex-login.html#method_checkLogin" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">258</span>
 
-            <a href="classes/rex-login.html#source-view.202"  class="phpdocumentor-element-found-in__source" data-line="202" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.258" class="phpdocumentor-element-found-in__source" data-line="258" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Prüft die mit setLogin() und setPassword() gesetzten Werte
@@ -1178,17 +1449,19 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">checkLogin</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Gibt true zurück bei erfolg, sonst false</p>
 </section>
 
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1199,30 +1472,65 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_depersonate">
         depersonate()
         <a href="classes/rex-login.html#method_depersonate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">325</span>
+    <span class="phpdocumentor-element-found-in__line">408</span>
 
-            <a href="classes/rex-login.html#source-view.325"  class="phpdocumentor-element-found-in__source" data-line="325" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.408" class="phpdocumentor-element-found-in__source" data-line="408" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">depersonate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">depersonate</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
+    
 
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCookieParams">
+        getCookieParams()
+        <a href="classes/rex-login.html#method_getCookieParams" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">601</span>
+
+            <a href="classes/rex-login.html#source-view.601" class="phpdocumentor-element-found-in__source" data-line="601" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Einstellen der Cookie Paramter bevor die session gestartet wird.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getCookieParams</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{lifetime: ?int, path: ?string, domain: ?string, secure: ?bool, httponly: ?bool, samesite: ?string}</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array{lifetime: ?int, path: ?string, domain: ?string, secure: ?bool, httponly: ?bool, samesite: ?string}</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1233,29 +1541,32 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_getImpersonator">
         getImpersonator()
         <a href="classes/rex-login.html#method_getImpersonator" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">354</span>
+    <span class="phpdocumentor-element-found-in__line">437</span>
 
-            <a href="classes/rex-login.html#source-view.354"  class="phpdocumentor-element-found-in__source" data-line="354" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.437" class="phpdocumentor-element-found-in__source" data-line="437" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getImpersonator</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rex_sql">rex_sql</abbr>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null</span></code>
+                    <span class="phpdocumentor-signature__name">getImpersonator</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\rex_sql">rex_sql</abbr>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1266,13 +1577,14 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_getMessage">
         getMessage()
         <a href="classes/rex-login.html#method_getMessage" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">245</span>
 
-            <a href="classes/rex-login.html#source-view.189"  class="phpdocumentor-element-found-in__source" data-line="189" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.245" class="phpdocumentor-element-found-in__source" data-line="245" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the message.</p>
@@ -1281,15 +1593,17 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getMessage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1300,48 +1614,70 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_getSessionVar">
         getSessionVar()
         <a href="classes/rex-login.html#method_getSessionVar" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">382</span>
+    <span class="phpdocumentor-element-found-in__line">487</span>
 
-            <a href="classes/rex-login.html#source-view.382"  class="phpdocumentor-element-found-in__source" data-line="382" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.487" class="phpdocumentor-element-found-in__source" data-line="487" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt den Wert einer Session-Variable zurück.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getSessionVar</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getSessionVar</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$varname</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$default</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/rex-login.html#method_getSessionVar#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-return</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>(
+$varname is 'starttime' ? int|null :
+($varname is 'STAMP' ? int|null :
+($varname is 'UID' ? int|null :
+($varname is 'password' ? string|null :
+($varname is 'impersonator' ? int|null :
+($varname is 'last_db_update' ? int|null :
+mixed
+)))))
+)</p>
+</section>
+
+                                    </dd>
+                                            </dl>
+
     
 </article>
                     <article
@@ -1353,29 +1689,32 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_getUser">
         getUser()
         <a href="classes/rex-login.html#method_getUser" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">346</span>
+    <span class="phpdocumentor-element-found-in__line">429</span>
 
-            <a href="classes/rex-login.html#source-view.346"  class="phpdocumentor-element-found-in__source" data-line="346" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.429" class="phpdocumentor-element-found-in__source" data-line="429" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getUser</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rex_sql">rex_sql</abbr>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null</span></code>
+                    <span class="phpdocumentor-signature__name">getUser</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\rex_sql">rex_sql</abbr>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type"><a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a>|<a href="classes/rex-user.html"><abbr title="\rex_user">rex_user</abbr></a>|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1386,48 +1725,45 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_getValue">
         getValue()
         <a href="classes/rex-login.html#method_getValue" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">362</span>
+    <span class="phpdocumentor-element-found-in__line">449</span>
 
-            <a href="classes/rex-login.html#source-view.362"  class="phpdocumentor-element-found-in__source" data-line="362" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.449" class="phpdocumentor-element-found-in__source" data-line="449" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt einen Benutzer-Spezifischen Wert zurück.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">getValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$key</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$default</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1439,40 +1775,37 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_impersonate">
         impersonate()
         <a href="classes/rex-login.html#method_impersonate" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">302</span>
+    <span class="phpdocumentor-element-found-in__line">382</span>
 
-            <a href="classes/rex-login.html#source-view.302"  class="phpdocumentor-element-found-in__source" data-line="302" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.382" class="phpdocumentor-element-found-in__source" data-line="382" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">impersonate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">impersonate</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    <div class="phpdocumentor-label-line">
+        </div>
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1484,30 +1817,33 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_isLoggedOut">
         isLoggedOut()
         <a href="classes/rex-login.html#method_isLoggedOut" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">117</span>
+    <span class="phpdocumentor-element-found-in__line">161</span>
 
-            <a href="classes/rex-login.html#source-view.117"  class="phpdocumentor-element-found-in__source" data-line="117" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.161" class="phpdocumentor-element-found-in__source" data-line="161" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Prüft, ob die aktuelle Session ausgeloggt ist.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">isLoggedOut</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">isLoggedOut</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1518,65 +1854,54 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_passwordHash">
         passwordHash()
         <a href="classes/rex-login.html#method_passwordHash" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">522</span>
+    <span class="phpdocumentor-element-found-in__line">662</span>
 
-            <a href="classes/rex-login.html#source-view.522"  class="phpdocumentor-element-found-in__source" data-line="522" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.662" class="phpdocumentor-element-found-in__source" data-line="662" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Verschlüsselt den übergebnen String.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">passwordHash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$password</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isPreHashed</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">passwordHash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$password</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isPreHashed</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$password</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$isPreHashed</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/rex-exception.html"><abbr title="\rex_exception">rex_exception</abbr></a></span>
-                                                            
-                                             
-                                    </dd>
-                        </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Returns the hashed password</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Returns the hashed password</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1587,42 +1912,46 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_passwordNeedsRehash">
         passwordNeedsRehash()
         <a href="classes/rex-login.html#method_passwordNeedsRehash" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">544</span>
+    <span class="phpdocumentor-element-found-in__line">685</span>
 
-            <a href="classes/rex-login.html#source-view.544"  class="phpdocumentor-element-found-in__source" data-line="544" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.685" class="phpdocumentor-element-found-in__source" data-line="685" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">passwordNeedsRehash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hash</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">passwordNeedsRehash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hash</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$hash</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>returns TRUE if the hash should be rehashed to match the given algo and options, or FALSE otherwise</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>returns TRUE if the hash should be rehashed to match the given algo and options, or FALSE otherwise</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -1633,56 +1962,91 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_passwordVerify">
         passwordVerify()
         <a href="classes/rex-login.html#method_passwordVerify" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">535</span>
+    <span class="phpdocumentor-element-found-in__line">675</span>
 
-            <a href="classes/rex-login.html#source-view.535"  class="phpdocumentor-element-found-in__source" data-line="535" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.675" class="phpdocumentor-element-found-in__source" data-line="675" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">passwordVerify</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$password</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hash</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isPreHashed</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">passwordVerify</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$password</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hash</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isPreHashed</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$password</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$hash</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$isPreHashed</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>returns TRUE if the password and hash match, or FALSE otherwise</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>returns TRUE if the password and hash match, or FALSE otherwise</p>
 </section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_regenerateSessionId">
+        regenerateSessionId()
+        <a href="classes/rex-login.html#method_regenerateSessionId" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">510</span>
+
+            <a href="classes/rex-login.html#source-view.510" class="phpdocumentor-element-found-in__source" data-line="510" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">refresh session on permission elevation for security reasons.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">regenerateSessionId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
 
     
 </article>
@@ -1695,13 +2059,14 @@ anhand des LoginQueries/UserQueries und gibt den Status zurück.</p>
     <h4 class="phpdocumentor-element__name" id="method_setCache">
         setCache()
         <a href="classes/rex-login.html#method_setCache" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">92</span>
 
-            <a href="classes/rex-login.html#source-view.67"  class="phpdocumentor-element-found-in__source" data-line="67" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.92" class="phpdocumentor-element-found-in__source" data-line="92" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt, ob die Ergebnisse der Login-Abfrage
@@ -1709,27 +2074,24 @@ pro Seitenaufruf gecached werden sollen.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setCache</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$status</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$status</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1741,40 +2103,38 @@ pro Seitenaufruf gecached werden sollen.</p>
     <h4 class="phpdocumentor-element__name" id="method_setIdColumn">
         setIdColumn()
         <a href="classes/rex-login.html#method_setIdColumn" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">161</span>
+    <span class="phpdocumentor-element-found-in__line">213</span>
 
-            <a href="classes/rex-login.html#source-view.161"  class="phpdocumentor-element-found-in__source" data-line="161" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.213" class="phpdocumentor-element-found-in__source" data-line="213" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt den Namen der Spalte, der die User-Id enthält.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setIdColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idColumn</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setIdColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$idColumn</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$idColumn</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1786,21 +2146,24 @@ pro Seitenaufruf gecached werden sollen.</p>
     <h4 class="phpdocumentor-element__name" id="method_setImpersonateQuery">
         setImpersonateQuery()
         <a href="classes/rex-login.html#method_setImpersonateQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">140</span>
+    <span class="phpdocumentor-element-found-in__line">188</span>
 
-            <a href="classes/rex-login.html#source-view.140"  class="phpdocumentor-element-found-in__source" data-line="140" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.188" class="phpdocumentor-element-found-in__source" data-line="188" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt den ImpersonateQuery.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setImpersonateQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$impersonateQuery</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setImpersonateQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$impersonateQuery</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Dieser wird benutzt, um den User abzurufen, dessen Identität ein Admin einnehmen möchte.</p>
 </section>
 
@@ -1808,20 +2171,15 @@ pro Seitenaufruf gecached werden sollen.</p>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$impersonateQuery</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1833,56 +2191,52 @@ pro Seitenaufruf gecached werden sollen.</p>
     <h4 class="phpdocumentor-element__name" id="method_setLogin">
         setLogin()
         <a href="classes/rex-login.html#method_setLogin" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">100</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
-            <a href="classes/rex-login.html#source-view.100"  class="phpdocumentor-element-found-in__source" data-line="100" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.139" class="phpdocumentor-element-found-in__source" data-line="139" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt den Login und das Password.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setLogin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$login</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$password</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isPreHashed</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setLogin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$login</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$password</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$isPreHashed</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$login</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$password</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$isPreHashed</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                  = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1894,21 +2248,24 @@ pro Seitenaufruf gecached werden sollen.</p>
     <h4 class="phpdocumentor-element__name" id="method_setLoginQuery">
         setLoginQuery()
         <a href="classes/rex-login.html#method_setLoginQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
-            <a href="classes/rex-login.html#source-view.153"  class="phpdocumentor-element-found-in__source" data-line="153" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.202" class="phpdocumentor-element-found-in__source" data-line="202" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt den LoginQuery.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setLoginQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loginQuery</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setLoginQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$loginQuery</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Dieser wird benutzt, um den eigentlichne Loginvorgang durchzuführen.
 Hier wird das eingegebene Password und der Login eingesetzt.</p>
 </section>
@@ -1926,10 +2283,6 @@ Hier wird das eingegebene Password und der Login eingesetzt.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1941,40 +2294,38 @@ Hier wird das eingegebene Password und der Login eingesetzt.</p>
     <h4 class="phpdocumentor-element__name" id="method_setLogout">
         setLogout()
         <a href="classes/rex-login.html#method_setLogout" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 
-            <a href="classes/rex-login.html#source-view.109"  class="phpdocumentor-element-found-in__source" data-line="109" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.151" class="phpdocumentor-element-found-in__source" data-line="151" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Markiert die aktuelle Session als ausgeloggt.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setLogout</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logout</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setLogout</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$logout</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$logout</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -1986,21 +2337,24 @@ Hier wird das eingegebene Password und der Login eingesetzt.</p>
     <h4 class="phpdocumentor-element__name" id="method_setPasswordColumn">
         setPasswordColumn()
         <a href="classes/rex-login.html#method_setPasswordColumn" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">171</span>
+    <span class="phpdocumentor-element-found-in__line">224</span>
 
-            <a href="classes/rex-login.html#source-view.171"  class="phpdocumentor-element-found-in__source" data-line="171" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.224" class="phpdocumentor-element-found-in__source" data-line="224" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Sets the password column.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setPasswordColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$passwordColumn</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setPasswordColumn</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$passwordColumn</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -2015,10 +2369,6 @@ Hier wird das eingegebene Password und der Login eingesetzt.</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2030,40 +2380,38 @@ Hier wird das eingegebene Password und der Login eingesetzt.</p>
     <h4 class="phpdocumentor-element__name" id="method_setSessionDuration">
         setSessionDuration()
         <a href="classes/rex-login.html#method_setSessionDuration" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">126</span>
 
-            <a href="classes/rex-login.html#source-view.92"  class="phpdocumentor-element-found-in__source" data-line="92" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.126" class="phpdocumentor-element-found-in__source" data-line="126" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt das Session Timeout.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setSessionDuration</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sessionDuration</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setSessionDuration</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sessionDuration</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$sessionDuration</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2075,48 +2423,45 @@ Hier wird das eingegebene Password und der Login eingesetzt.</p>
     <h4 class="phpdocumentor-element__name" id="method_setSessionVar">
         setSessionVar()
         <a href="classes/rex-login.html#method_setSessionVar" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">374</span>
+    <span class="phpdocumentor-element-found-in__line">465</span>
 
-            <a href="classes/rex-login.html#source-view.374"  class="phpdocumentor-element-found-in__source" data-line="374" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.465" class="phpdocumentor-element-found-in__source" data-line="465" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzte eine Session-Variable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setSessionVar</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setSessionVar</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">scalar|array&lt;string|int, mixed&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$varname</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">scalar|array&lt;string|int, mixed&gt;|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2128,40 +2473,38 @@ Hier wird das eingegebene Password und der Login eingesetzt.</p>
     <h4 class="phpdocumentor-element__name" id="method_setSqlDb">
         setSqlDb()
         <a href="classes/rex-login.html#method_setSqlDb" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">75</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
-            <a href="classes/rex-login.html#source-view.75"  class="phpdocumentor-element-found-in__source" data-line="75" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.103" class="phpdocumentor-element-found-in__source" data-line="103" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt die Id der zu verwendenden SQL Connection.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setSqlDb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$DB</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setSqlDb</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">positive-int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$DB</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$DB</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">positive-int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2173,13 +2516,14 @@ Hier wird das eingegebene Password und der Login eingesetzt.</p>
     <h4 class="phpdocumentor-element__name" id="method_setSystemId">
         setSystemId()
         <a href="classes/rex-login.html#method_setSystemId" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">115</span>
 
-            <a href="classes/rex-login.html#source-view.84"  class="phpdocumentor-element-found-in__source" data-line="84" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.115" class="phpdocumentor-element-found-in__source" data-line="115" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt eine eindeutige System Id, damit mehrere
@@ -2187,27 +2531,24 @@ Sessions auf der gleichen Domain unterschieden werden können.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setSystemId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$systemId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setSystemId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$systemId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$systemId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2219,21 +2560,24 @@ Sessions auf der gleichen Domain unterschieden werden können.</p>
     <h4 class="phpdocumentor-element__name" id="method_setUserQuery">
         setUserQuery()
         <a href="classes/rex-login.html#method_setUserQuery" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">175</span>
 
-            <a href="classes/rex-login.html#source-view.130"  class="phpdocumentor-element-found-in__source" data-line="130" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.175" class="phpdocumentor-element-found-in__source" data-line="175" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt den UserQuery.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setUserQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userQuery</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setUserQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userQuery</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
         <section class="phpdocumentor-description"><p>Dieser wird benutzt, um einen bereits eingeloggten User
 im Verlauf seines Aufenthaltes auf der Webseite zu verifizieren</p>
 </section>
@@ -2251,10 +2595,6 @@ im Verlauf seines Aufenthaltes auf der Webseite zu verifizieren</p>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2266,29 +2606,28 @@ im Verlauf seines Aufenthaltes auf der Webseite zu verifizieren</p>
     <h4 class="phpdocumentor-element__name" id="method_startSession">
         startSession()
         <a href="classes/rex-login.html#method_startSession" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">426</span>
+    <span class="phpdocumentor-element-found-in__line">553</span>
 
-            <a href="classes/rex-login.html#source-view.426"  class="phpdocumentor-element-found-in__source" data-line="426" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.553" class="phpdocumentor-element-found-in__source" data-line="553" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">starts a http-session if not already started.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">startSession</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">startSession</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article
@@ -2300,13 +2639,14 @@ im Verlauf seines Aufenthaltes auf der Webseite zu verifizieren</p>
     <h4 class="phpdocumentor-element__name" id="method_getSessionNamespace">
         getSessionNamespace()
         <a href="classes/rex-login.html#method_getSessionNamespace" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">554</span>
+    <span class="phpdocumentor-element-found-in__line">695</span>
 
-            <a href="classes/rex-login.html#source-view.554"  class="phpdocumentor-element-found-in__source" data-line="554" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.695" class="phpdocumentor-element-found-in__source" data-line="695" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">returns the current session namespace.</p>
@@ -2315,49 +2655,17 @@ im Verlauf seines Aufenthaltes auf der Webseite zu verifizieren</p>
     <span class="phpdocumentor-signature__visibility">protected</span>
             <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getSessionNamespace</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_regenerateSessionId">
-        regenerateSessionId()
-        <a href="classes/rex-login.html#method_regenerateSessionId" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">406</span>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
 
-            <a href="classes/rex-login.html#source-view.406"  class="phpdocumentor-element-found-in__source" data-line="406" data-modal="source-view"></a>
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">regenerateSessionId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
 </article>
                     <article
         class="phpdocumentor-element
@@ -2368,40 +2676,38 @@ im Verlauf seines Aufenthaltes auf der Webseite zu verifizieren</p>
     <h4 class="phpdocumentor-element__name" id="method_setMessage">
         setMessage()
         <a href="classes/rex-login.html#method_setMessage" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/login/login.php"><a href="files/redaxo-main-redaxo-src-core-lib-login-login.html"><abbr title="redaxo-main/redaxo/src/core/lib/login/login.php">login.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">179</span>
+    <span class="phpdocumentor-element-found-in__line">235</span>
 
-            <a href="classes/rex-login.html#source-view.179"  class="phpdocumentor-element-found-in__source" data-line="179" data-modal="source-view"></a>
+            <a href="classes/rex-login.html#source-view.235" class="phpdocumentor-element-found-in__source" data-line="235" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt einen Meldungstext.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">setMessage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">setMessage</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$message</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
             </section>
@@ -2410,75 +2716,187 @@ im Verlauf seines Aufenthaltes auf der Webseite zu verifizieren</p>
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-        <pre style="max-height: 500px; overflow-y: scroll" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/redaxo-main/redaxo/src/core/lib/login/login.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
-        <button data-exit-button class="phpdocumentor-modal__close">X</button>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
 </div>
 
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/rex-login.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/rex-login.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/rex-login.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/rex-login.html#constant_SESSION_ID">SESSION_ID</a></li>
+                                                    <li><a href="classes/rex-login.html#constant_SESSION_IMPERSONATOR">SESSION_IMPERSONATOR</a></li>
+                                                    <li><a href="classes/rex-login.html#constant_SESSION_LAST_ACTIVITY">SESSION_LAST_ACTIVITY</a></li>
+                                                    <li><a href="classes/rex-login.html#constant_SESSION_PASSWORD">SESSION_PASSWORD</a></li>
+                                                    <li><a href="classes/rex-login.html#constant_SESSION_START_TIME">SESSION_START_TIME</a></li>
+                                                    <li><a href="classes/rex-login.html#constant_SESSION_USER_ID">SESSION_USER_ID</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/rex-login.html#property_cache">$cache<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_DB">$DB<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_idColumn">$idColumn<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_impersonateQuery">$impersonateQuery<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_impersonator">$impersonator<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_loginQuery">$loginQuery<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_loginStatus">$loginStatus<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_logout">$logout<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_message">$message<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_passwordColumn">$passwordColumn<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_sessionDuration">$sessionDuration<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_sessionMaxOverallDuration">$sessionMaxOverallDuration<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_systemId">$systemId<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_user">$user<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_userLogin">$userLogin<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_userPassword">$userPassword<a href="classes/rex-login.html"></li>
+                                                    <li><a href="classes/rex-login.html#property_userQuery">$userQuery<a href="classes/rex-login.html"></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/rex-login.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/rex-login.html#method_changedPassword">changedPassword()</a></li>
+                                            <li><a href="classes/rex-login.html#method_checkLogin">checkLogin()</a></li>
+                                            <li><a href="classes/rex-login.html#method_depersonate">depersonate()</a></li>
+                                            <li><a href="classes/rex-login.html#method_getCookieParams">getCookieParams()</a></li>
+                                            <li><a href="classes/rex-login.html#method_getImpersonator">getImpersonator()</a></li>
+                                            <li><a href="classes/rex-login.html#method_getMessage">getMessage()</a></li>
+                                            <li><a href="classes/rex-login.html#method_getSessionVar">getSessionVar()</a></li>
+                                            <li><a href="classes/rex-login.html#method_getUser">getUser()</a></li>
+                                            <li><a href="classes/rex-login.html#method_getValue">getValue()</a></li>
+                                            <li><a href="classes/rex-login.html#method_impersonate">impersonate()</a></li>
+                                            <li><a href="classes/rex-login.html#method_isLoggedOut">isLoggedOut()</a></li>
+                                            <li><a href="classes/rex-login.html#method_passwordHash">passwordHash()</a></li>
+                                            <li><a href="classes/rex-login.html#method_passwordNeedsRehash">passwordNeedsRehash()</a></li>
+                                            <li><a href="classes/rex-login.html#method_passwordVerify">passwordVerify()</a></li>
+                                            <li><a href="classes/rex-login.html#method_regenerateSessionId">regenerateSessionId()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setCache">setCache()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setIdColumn">setIdColumn()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setImpersonateQuery">setImpersonateQuery()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setLogin">setLogin()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setLoginQuery">setLoginQuery()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setLogout">setLogout()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setPasswordColumn">setPasswordColumn()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setSessionDuration">setSessionDuration()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setSessionVar">setSessionVar()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setSqlDb">setSqlDb()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setSystemId">setSystemId()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setUserQuery">setUserQuery()</a></li>
+                                            <li><a href="classes/rex-login.html#method_startSession">startSession()</a></li>
+                                            <li><a href="classes/rex-login.html#method_getSessionNamespace">getSessionNamespace()</a></li>
+                                            <li><a href="classes/rex-login.html#method_setMessage">setMessage()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -2489,7 +2907,6 @@ im Verlauf seines Aufenthaltes auf der Webseite zu verifizieren</p>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/rex-login.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

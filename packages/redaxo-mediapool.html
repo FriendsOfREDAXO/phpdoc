@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -109,10 +110,6 @@
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="packages/redaxo5.html" class="">redaxo5</a>
-</h4>
-
                         </section>
             
     <section class="phpdocumentor-sidebar__category">
@@ -128,8 +125,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
     </ul>
 
@@ -137,50 +135,36 @@
         <h2 class="phpdocumentor-content__title">mediapool</h2>
 
         
-
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-    
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-cache.html"><abbr title="\rex_media_cache">rex_media_cache</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-form-widget-media-element.html"><abbr title="\rex_form_widget_media_element">rex_form_widget_media_element</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-form-widget-medialist-element.html"><abbr title="\rex_form_widget_medialist_element">rex_form_widget_medialist_element</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media.html"><abbr title="\rex_media">rex_media</abbr></a></dt>
-        <dd>Object Oriented Framework: Bildet ein Medium des Medienpools ab.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-category.html"><abbr title="\rex_media_category">rex_media_category</abbr></a></dt>
-        <dd>Object Oriented Framework: Bildet eine Kategorie im Medienpool ab.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-category-select.html"><abbr title="\rex_media_category_select">rex_media_category_select</abbr></a></dt>
-        <dd>Class MediaKategorie Select.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-mediapool.html"><abbr title="\rex_mediapool">rex_mediapool</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-perm.html"><abbr title="\rex_media_perm">rex_media_perm</abbr></a></dt>
-        <dd>Abstract class for complex permissions.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-service.html"><abbr title="\rex_media_service">rex_media_service</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-category-service.html"><abbr title="\rex_media_category_service">rex_media_category_service</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-media.html"><abbr title="\rex_var_media">rex_var_media</abbr></a></dt>
-        <dd>REX_MEDIA[1].</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-medialist.html"><abbr title="\rex_var_medialist">rex_var_medialist</abbr></a></dt>
-        <dd>REX_MEDIALIST[1].</dd>
-    
-    
-    </dl>
-
-
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="packages/redaxo-mediapool.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+    <h4 id="toc-classes">
+        Classes
+        <a href="packages/redaxo-mediapool.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-cache.html"><abbr title="\rex_media_cache">rex_media_cache</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-form-widget-media-element.html"><abbr title="\rex_form_widget_media_element">rex_form_widget_media_element</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-form-widget-medialist-element.html"><abbr title="\rex_form_widget_medialist_element">rex_form_widget_medialist_element</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media.html"><abbr title="\rex_media">rex_media</abbr></a></dt><dd>Object Oriented Framework: Bildet ein Medium des Medienpools ab.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-category.html"><abbr title="\rex_media_category">rex_media_category</abbr></a></dt><dd>Object Oriented Framework: Bildet eine Kategorie im Medienpool ab.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-category-select.html"><abbr title="\rex_media_category_select">rex_media_category_select</abbr></a></dt><dd>Class MediaKategorie Select.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-mediapool.html"><abbr title="\rex_mediapool">rex_mediapool</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-perm.html"><abbr title="\rex_media_perm">rex_media_perm</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-service.html"><abbr title="\rex_media_service">rex_media_service</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-media-category-service.html"><abbr title="\rex_media_category_service">rex_media_category_service</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-media.html"><abbr title="\rex_var_media">rex_var_media</abbr></a></dt><dd>REX_MEDIA[1].</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-medialist.html"><abbr title="\rex_var_medialist">rex_var_medialist</abbr></a></dt><dd>REX_MEDIALIST[1].</dd>    </dl>
+
+
+
+
+
+
+
+<h4 id="toc-functions">
+    Functions
+    <a href="packages/redaxo-mediapool.html#toc-functions" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                            <dt class="phpdocumentor-table-of-contents__entry -function -">
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_filename">rex_mediapool_filename()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -216,16 +200,14 @@ Medienpool.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_deleteMedia">rex_mediapool_deleteMedia()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array{ok: bool, msg: string}    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_mediaIsInUse">rex_mediapool_mediaIsInUse()</a>
     <span>
                                 &nbsp;: bool|string    </span>
 </dt>
-<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_Mediaform">rex_mediapool_Mediaform()</a>
@@ -237,14 +219,14 @@ Medienpool.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_Uploadform">rex_mediapool_Uploadform()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Ausgabe des Medienpool Upload-Formulars.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_mediapool_Syncform">rex_mediapool_Syncform()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd>Ausgabe des Medienpool Sync-Formulars.</dd>
 
@@ -284,18 +266,20 @@ Medienpool.</dd>
         <h3 class="phpdocumentor-elements__header" id="functions">
             Functions
             <a href="packages/redaxo-mediapool.html#functions" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -function - -deprecated">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_filename">
         rex_mediapool_filename()
         <a href="namespaces/default.html#function_rex_mediapool_filename" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">17</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.17"  class="phpdocumentor-element-found-in__source" data-line="17" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.17" class="phpdocumentor-element-found-in__source" data-line="17" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Erstellt einen Filename der eindeutig ist für den Medienpool.</p>
@@ -328,7 +312,8 @@ Medienpool.</dd>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_mediapool_filename#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -340,25 +325,26 @@ Medienpool.</dd>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - -deprecated">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_saveMedia">
         rex_mediapool_saveMedia()
         <a href="namespaces/default.html#function_rex_mediapool_saveMedia" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.37"  class="phpdocumentor-element-found-in__source" data-line="37" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.36" class="phpdocumentor-element-found-in__source" data-line="36" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Holt ein upgeloadetes File und legt es in den Medienpool
@@ -412,7 +398,8 @@ wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_mediapool_saveMedia#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -424,34 +411,26 @@ wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.</p>
 </section>
 
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-suppress</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>UnusedParam</p>
-</section>
+                                            </dl>
 
-                                    </dd>
-                        </dl>
-
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - -deprecated">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_updateMedia">
         rex_mediapool_updateMedia()
         <a href="namespaces/default.html#function_rex_mediapool_updateMedia" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">86</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.86"  class="phpdocumentor-element-found-in__source" data-line="86" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.84" class="phpdocumentor-element-found-in__source" data-line="84" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Holt ein upgeloadetes File und legt es in den Medienpool
@@ -491,7 +470,8 @@ wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_mediapool_updateMedia#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -503,34 +483,26 @@ wird eventuell angepasst, weiterhin werden die Fileinformationen übergeben.</p>
 </section>
 
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-suppress</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>UnusedParam</p>
-</section>
+                                            </dl>
 
-                                    </dd>
-                        </dl>
-
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - -deprecated">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_syncFile">
         rex_mediapool_syncFile()
         <a href="namespaces/default.html#function_rex_mediapool_syncFile" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.122"  class="phpdocumentor-element-found-in__source" data-line="122" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.119" class="phpdocumentor-element-found-in__source" data-line="119" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Synchronisiert die Datei $physical_filename des Mediafolders in den
@@ -538,7 +510,7 @@ Medienpool.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">rex_mediapool_syncFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$physicalFilename</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$categoryId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filetype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userlogin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_syncFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$physicalFilename</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$categoryId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$title</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filesize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filetype</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$userlogin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -566,21 +538,21 @@ Medienpool.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$filesize</span>
-                : <span class="phpdocumentor-signature__argument__return-type">null|int</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$filetype</span>
-                : <span class="phpdocumentor-signature__argument__return-type">null|string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$userlogin</span>
-                : <span class="phpdocumentor-signature__argument__return-type">null|string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -590,7 +562,8 @@ Medienpool.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_mediapool_syncFile#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -602,40 +575,32 @@ Medienpool.</p>
 </section>
 
                                     </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-suppress</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>UnusedParam</p>
-</section>
+                                            </dl>
 
-                                    </dd>
-                        </dl>
-
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - -deprecated">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_deleteMedia">
         rex_mediapool_deleteMedia()
         <a href="namespaces/default.html#function_rex_mediapool_deleteMedia" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">150</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.150"  class="phpdocumentor-element-found-in__source" data-line="150" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.146" class="phpdocumentor-element-found-in__source" data-line="146" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">rex_mediapool_deleteMedia</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_deleteMedia</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{ok: bool, msg: string}</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -652,19 +617,11 @@ Medienpool.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_mediapool_deleteMedia#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-return</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>array{ok: bool, msg: string}</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">deprecated</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
@@ -673,25 +630,26 @@ Medienpool.</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">array{ok: bool, msg: string}</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - -deprecated">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_mediaIsInUse">
         rex_mediapool_mediaIsInUse()
         <a href="namespaces/default.html#function_rex_mediapool_mediaIsInUse" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">166</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.166"  class="phpdocumentor-element-found-in__source" data-line="166" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.162" class="phpdocumentor-element-found-in__source" data-line="162" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
     
@@ -714,7 +672,8 @@ Medienpool.</p>
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_mediapool_mediaIsInUse#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -726,25 +685,26 @@ Medienpool.</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool|string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool|string</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_Mediaform">
         rex_mediapool_Mediaform()
         <a href="namespaces/default.html#function_rex_mediapool_Mediaform" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.176"  class="phpdocumentor-element-found-in__source" data-line="176" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.172" class="phpdocumentor-element-found-in__source" data-line="172" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Ausgabe des Medienpool Formulars.</p>
@@ -761,69 +721,65 @@ Medienpool.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$buttonTitle</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$rexFileCategory</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$fileChooser</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$closeForm</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_Uploadform">
         rex_mediapool_Uploadform()
         <a href="namespaces/default.html#function_rex_mediapool_Uploadform" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">314</span>
+    <span class="phpdocumentor-element-found-in__line">311</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.314"  class="phpdocumentor-element-found-in__source" data-line="314" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.311" class="phpdocumentor-element-found-in__source" data-line="311" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Ausgabe des Medienpool Upload-Formulars.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">rex_mediapool_Uploadform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_Uploadform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -833,37 +789,37 @@ Medienpool.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_Syncform">
         rex_mediapool_Syncform()
         <a href="namespaces/default.html#function_rex_mediapool_Syncform" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">322</span>
+    <span class="phpdocumentor-element-found-in__line">320</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.322"  class="phpdocumentor-element-found-in__source" data-line="322" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.320" class="phpdocumentor-element-found-in__source" data-line="320" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Ausgabe des Medienpool Sync-Formulars.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">rex_mediapool_Syncform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_Syncform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rexFileCategory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -873,30 +829,30 @@ Medienpool.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - -deprecated">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_isAllowedMediaType">
         rex_mediapool_isAllowedMediaType()
         <a href="namespaces/default.html#function_rex_mediapool_isAllowedMediaType" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">335</span>
+    <span class="phpdocumentor-element-found-in__line">333</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.335"  class="phpdocumentor-element-found-in__source" data-line="335" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.333" class="phpdocumentor-element-found-in__source" data-line="333" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">check if mediatpye(extension) is allowed for upload.</p>
@@ -920,15 +876,15 @@ Medienpool.</p>
                 : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_mediapool_isAllowedMediaType#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -940,32 +896,33 @@ Medienpool.</p>
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - -deprecated">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_isAllowedMimeType">
         rex_mediapool_isAllowedMimeType()
         <a href="namespaces/default.html#function_rex_mediapool_isAllowedMimeType" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">350</span>
+    <span class="phpdocumentor-element-found-in__line">348</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.350"  class="phpdocumentor-element-found-in__source" data-line="350" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.348" class="phpdocumentor-element-found-in__source" data-line="348" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Checks file against optional property `allowed_mime_types`.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">rex_mediapool_isAllowedMimeType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">null|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">rex_mediapool_isAllowedMimeType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$path</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filename</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -981,7 +938,7 @@ Medienpool.</p>
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$filename</span>
-                : <span class="phpdocumentor-signature__argument__return-type">null|string</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Optional filename, will be used for extracting the file extension.
@@ -994,7 +951,8 @@ If not given, the extension is extracted from <code class="prettyprint">$path</c
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_mediapool_isAllowedMimeType#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1006,25 +964,26 @@ If not given, the extension is extracted from <code class="prettyprint">$path</c
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - -deprecated">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_getMediaTypeWhitelist">
         rex_mediapool_getMediaTypeWhitelist()
         <a href="namespaces/default.html#function_rex_mediapool_getMediaTypeWhitelist" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">363</span>
+    <span class="phpdocumentor-element-found-in__line">361</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.363"  class="phpdocumentor-element-found-in__source" data-line="363" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.361" class="phpdocumentor-element-found-in__source" data-line="361" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Get allowed mediatype extensions given via media widget &quot;types&quot; param.</p>
@@ -1050,7 +1009,8 @@ If not given, the extension is extracted from <code class="prettyprint">$path</c
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_mediapool_getMediaTypeWhitelist#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1062,27 +1022,30 @@ If not given, the extension is extracted from <code class="prettyprint">$path</c
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>allowed extensions</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>allowed extensions</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - -deprecated">
     <h4 class="phpdocumentor-element__name" id="function_rex_mediapool_getMediaTypeBlacklist">
         rex_mediapool_getMediaTypeBlacklist()
         <a href="namespaces/default.html#function_rex_mediapool_getMediaTypeBlacklist" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php"><a href="files/redaxo-main-redaxo-src-addons-mediapool-functions-function-rex-mediapool.html"><abbr title="redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php">function_rex_mediapool.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">374</span>
+    <span class="phpdocumentor-element-found-in__line">372</span>
 
-            <a href="packages/redaxo-mediapool.html#source-view.374"  class="phpdocumentor-element-found-in__source" data-line="374" data-modal="source-view"></a>
+            <a href="packages/redaxo-mediapool.html#source-view.372" class="phpdocumentor-element-found-in__source" data-line="372" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/mediapool/functions/function_rex_mediapool.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Get global blocked mediatype extensions.</p>
@@ -1096,7 +1059,8 @@ If not given, the extension is extracted from <code class="prettyprint">$path</c
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_mediapool_getMediaTypeBlacklist#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1108,20 +1072,153 @@ If not given, the extension is extracted from <code class="prettyprint">$path</c
 </section>
 
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>blocked mediatype extensions</p>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>blocked mediatype extensions</p>
 </section>
 
-    
+            </section>
+
 </article>
             </section>
 
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
+
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET', src, true);
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+                            Prism.highlightElement(code);
+                            return;
+                        }
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
+                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
+                    }
+                    modal.classList.add("phpdocumentor-modal__open");
+
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
+                    });
+                });
+            });
+        })();
+    </script>
+
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                                        <li><a href="packages/redaxo-mediapool.html#toc-classes">Classes</a></li>
+                                                                                                                            <li><a href="packages/redaxo-mediapool.html#toc-functions">Functions</a></li>
+                                    </ul>
+            </li>
+
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Functions</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_deleteMedia">rex_mediapool_deleteMedia()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_filename">rex_mediapool_filename()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_getMediaTypeBlacklist">rex_mediapool_getMediaTypeBlacklist()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_getMediaTypeWhitelist">rex_mediapool_getMediaTypeWhitelist()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_isAllowedMediaType">rex_mediapool_isAllowedMediaType()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_isAllowedMimeType">rex_mediapool_isAllowedMimeType()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_Mediaform">rex_mediapool_Mediaform()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_mediaIsInUse">rex_mediapool_mediaIsInUse()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_saveMedia">rex_mediapool_saveMedia()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_syncFile">rex_mediapool_syncFile()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_Syncform">rex_mediapool_Syncform()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_updateMedia">rex_mediapool_updateMedia()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_mediapool_Uploadform">rex_mediapool_Uploadform()</a></li>
+                                            </ul>
+                </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1132,7 +1229,6 @@ If not given, the extension is extracted from <code class="prettyprint">$path</c
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="packages/redaxo-mediapool.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

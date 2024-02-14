@@ -6,7 +6,7 @@
 class rex_media_category_service
 {
     /**
-     * @param string                  $name   The name of the new category
+     * @param string $name The name of the new category
      * @param rex_media_category|null $parent The category in which the new category should be created, or null for a top/root level category
      *
      * @return string A success message
@@ -20,7 +20,7 @@ class rex_media_category_service
         $path = '|';
         if ($parent) {
             $parentId = $parent->getId();
-            $path = $parent->getPath() . $parent->getId().'|';
+            $path = $parent->getPath() . $parent->getId() . '|';
         }
 
         $db->setTable(rex::getTablePrefix() . 'media_category');
@@ -95,8 +95,8 @@ class rex_media_category_service
     }
 
     /**
-     * @param int   $categoryId The id of the category to edit
-     * @param array $data       The category data
+     * @param int $categoryId The id of the category to edit
+     * @param array $data The category data
      *
      * @return string A success message
      */

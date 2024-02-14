@@ -1,6 +1,7 @@
 <?php
 
 use ScssPhp\ScssPhp\Compiler;
+use ScssPhp\ScssPhp\Formatter;
 use ScssPhp\ScssPhp\Formatter\Compressed;
 
 /**
@@ -8,42 +9,61 @@ use ScssPhp\ScssPhp\Formatter\Compressed;
  */
 class rex_scss_compiler
 {
+    /** @var string */
     protected $root_dir;
+    /** @var string|list<string> */
     protected $scss_file;
+    /** @var string */
     protected $css_file;
-    protected $formatter;
+    /** @var class-string<Formatter> */
+    protected $formatter = Compressed::class;
 
     public function __construct()
     {
         $this->root_dir = rex_path::addon('be_style');
         $this->scss_file = rex_path::addon('be_style', 'assets') . 'styles.scss';
         $this->css_file = rex_path::addon('be_style', 'assets') . 'styles.css';
-        $this->formatter = Compressed::class;
     }
 
+    /**
+     * @param string $value
+     * @return void
+     */
     public function setRootDir($value)
     {
         $this->root_dir = $value;
     }
 
+    /**
+     * @param string|list<string> $value
+     * @return void
+     */
     public function setScssFile($value)
     {
         $this->scss_file = $value;
     }
 
+    /**
+     * @param string $value
+     * @return void
+     */
     public function setCssFile($value)
     {
         $this->css_file = $value;
     }
 
     /**
-     * @param string $value scss_formatter (default) or scss_formatter_nested or scss_formatter_compressed
+     * @param class-string<Formatter> $value scss_formatter (default) or scss_formatter_nested or scss_formatter_compressed
+     * @return void
      */
     public function setFormatter($value)
     {
         $this->formatter = $value;
     }
 
+    /**
+     * @return void
+     */
     public function compile()
     {
         // go on even if user "stops" the script by closing the browser, closing the terminal etc.
@@ -72,9 +92,9 @@ class rex_scss_compiler
             return $path;
         });
         // set the path to your to-be-imported mixins. please note: custom paths are coming up on future releases!
-        //$scss_compiler->setImportPaths($scss_folder);
+        // $scss_compiler->setImportPaths($scss_folder);
 
-        // set css formatting (normal, nested or minimized), @see http://leafo.net/scssphp/docs/#output_formatting
+        // set css formatting (normal, nested or minimized), @see https://leafo.net/scssphp/docs/#output_formatting
         /** @psalm-suppress DeprecatedMethod */
         $scssCompiler->setFormatter($this->formatter); /** @phpstan-ignore-line */
 
@@ -100,7 +120,7 @@ class rex_scss_compiler
         } catch (Exception $e) {
             // here we could put the exception message, but who cares ...
             echo $e->getMessage();
-            exit();
+            exit(1);
         }
     }
 }

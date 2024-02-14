@@ -7,23 +7,17 @@
  */
 class rex_install_packages
 {
-    /**
-     * @var array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, created: string, updated: string, files: array<int, array{version: string, description: string, path: string, checksum: string, created: string, updated: string}>}>|null
-     */
+    /** @var array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, counter: int, created: string, updated: string, files: array<int, array{version: string, description: string, path: string, checksum: string, counter: int, created: string, updated: string}>}>|null */
     private static $updatePackages;
-    /**
-     * @var array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, created: string, updated: string, files: array<int, array{version: string, description: string, path: string, checksum: string, created: string, updated: string}>}>|null
-     */
+    /** @var array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, counter: int, created: string, updated: string, files: array<int, array{version: string, description: string, path: string, checksum: string, counter: int, created: string, updated: string}>}>|null */
     private static $addPackages;
-    /**
-     * @var array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, created: string, updated: string, status: bool, files: array<int, array{version: string, description: string, path: string, checksum: string, created: string, updated: string, redaxo_versions: list<string>, status: bool}>}>|null
-     */
+    /** @var array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, counter: int, created: string, updated: string, status: bool, files: array<int, array{version: string, description: string, path: string, checksum: string, counter: int, created: string, updated: string, redaxo_versions: list<string>, status: bool}>}>|null */
     private static $myPackages;
 
     /**
      * @throws rex_functional_exception
      *
-     * @return array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, created: string, updated: string, files: array<int, array{version: string, description: string, path: string, checksum: string, created: string, updated: string}>}>
+     * @return array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, counter: int, created: string, updated: string, files: array<int, array{version: string, description: string, path: string, checksum: string, counter: int, created: string, updated: string}>}>
      */
     public static function getUpdatePackages()
     {
@@ -46,6 +40,7 @@ class rex_install_packages
     /**
      * @param string $package
      * @param int $fileId
+     * @return void
      */
     public static function updatedPackage($package, $fileId)
     {
@@ -61,6 +56,7 @@ class rex_install_packages
     /**
      * @param string $package
      * @param string $version
+     * @return void
      */
     private static function unsetOlderVersions($package, $version)
     {
@@ -80,7 +76,7 @@ class rex_install_packages
      *
      * @throws rex_functional_exception
      *
-     * @return array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, created: string, updated: string, files: array<int, array{version: string, description: string, path: string, checksum: string, created: string, updated: string}>}>
+     * @return array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, counter: int, created: string, updated: string, files: array<int, array{version: string, description: string, path: string, checksum: string, counter: int, created: string, updated: string}>}>
      */
     public static function getAddPackages()
     {
@@ -92,7 +88,10 @@ class rex_install_packages
         return self::$addPackages;
     }
 
-    public static function addedPackage($package)
+    /**
+     * @return void
+     */
+    public static function deleteCacheMyPackages()
     {
         self::$myPackages = null;
     }
@@ -102,7 +101,7 @@ class rex_install_packages
      *
      * @throws rex_functional_exception
      *
-     * @return array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, created: string, updated: string, status: bool, files: array<int, array{version: string, description: string, path: string, checksum: string, created: string, updated: string, redaxo_versions: list<string>, status: bool}>}>
+     * @return array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, counter: int, created: string, updated: string, status: bool, files: array<int, array{version: string, description: string, path: string, checksum: string, counter: int, created: string, updated: string, redaxo_versions: list<string>, status: bool}>}>
      */
     public static function getMyPackages()
     {
@@ -110,7 +109,7 @@ class rex_install_packages
             return self::$myPackages;
         }
 
-        /** @var array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, created: string, updated: string, status: bool, files: array<int, array{version: string, description: string, path: string, checksum: string, created: string, updated: string, redaxo_versions: list<string>, status: bool}>}> $myPackages */
+        /** @var array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, counter: int, created: string, updated: string, status: bool, files: array<int, array{version: string, description: string, path: string, checksum: string, counter: int, created: string, updated: string, redaxo_versions: list<string>, status: bool}>}> $myPackages */
         $myPackages = self::getPackages('?only_my=1');
         self::$myPackages = $myPackages;
         foreach (self::$myPackages as $key => $_) {
@@ -136,7 +135,7 @@ class rex_install_packages
      *
      * @throws rex_functional_exception
      *
-     * @return array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, created: string, updated: string, status?: bool, files: array<int, array{version: string, description: string, path: string, checksum: string, created: string, updated: string, redaxo_versions?: list<string>, status?: bool}>}>
+     * @return array<string, array{name: string, author: string, shortdescription: string, description: string, website: string, counter: int, created: string, updated: string, status?: bool, files: array<int, array{version: string, description: string, path: string, checksum: string, counter: int, created: string, updated: string, redaxo_versions?: list<string>, status?: bool}>}>
      *
      * @psalm-suppress MixedReturnTypeCoercion
      */
@@ -147,6 +146,7 @@ class rex_install_packages
 
     /**
      * Deletes all locally cached packages.
+     * @return void
      */
     public static function deleteCache()
     {

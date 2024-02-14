@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -109,10 +110,6 @@
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="packages/redaxo5.html" class="">redaxo5</a>
-</h4>
-
                         </section>
             
     <section class="phpdocumentor-sidebar__category">
@@ -128,8 +125,9 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo-core.html">core</a></li>
     </ul>
@@ -150,12 +148,17 @@
     
     </h2>
 
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">10</span>
 
-            <a href="classes/rex-socket-response.html#source-view.10"  class="phpdocumentor-element-found-in__source" data-line="10" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.10" class="phpdocumentor-element-found-in__source" data-line="10" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
             <p class="phpdocumentor-summary">Class for rex_socket responses.</p>
@@ -164,7 +167,8 @@
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/rex-socket-response.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -176,25 +180,42 @@
 </section>
 
                                     </dd>
-                        </dl>
-
-
-
+                                            </dl>
 
 
 
 <h3 id="toc">
     Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/rex-socket-response.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+
+
+
+
+
+
+
+
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/rex-socket-response.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-socket-response.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>Constructor.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-socket-response.html#method_decompressContent">decompressContent()</a>
+    <span>
+                                &nbsp;: $this    </span>
+</dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-socket-response.html#method_getBody">getBody()</a>
@@ -209,6 +230,13 @@
                                 &nbsp;: false|string    </span>
 </dt>
 <dd>Returns up to `$length` bytes from the body, or `false` if the end is reached.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/rex-socket-response.html#method_getContentEncodings">getContentEncodings()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, string&gt;    </span>
+</dt>
+<dd>Returns an array with all applied content encodings.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-socket-response.html#method_getHeader">getHeader()</a>
@@ -287,7 +315,14 @@
 </dt>
 <dd>Writes the body to the given resource.</dd>
 
-        </dl>
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/rex-socket-response.html#method_isGzipOrDeflateEncoded">isGzipOrDeflateEncoded()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+    </dl>
+
 
 
 
@@ -299,6 +334,7 @@
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/rex-socket-response.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article
         class="phpdocumentor-element
@@ -309,21 +345,23 @@
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
         <a href="classes/rex-socket-response.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 
-            <a href="classes/rex-socket-response.html#source-view.38"  class="phpdocumentor-element-found-in__source" data-line="38" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.36" class="phpdocumentor-element-found-in__source" data-line="36" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
-        <p class="phpdocumentor-summary">Constructor.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$stream</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -341,7 +379,8 @@
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/rex-socket-response.html#method___construct#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -352,13 +391,55 @@
                                                             
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_decompressContent">
+        decompressContent()
+        <a href="classes/rex-socket-response.html#method_decompressContent" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+
+            <a href="classes/rex-socket-response.html#source-view.58" class="phpdocumentor-element-found-in__source" data-line="58" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">decompressContent</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$decodeContent</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$decodeContent</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">$this</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -369,13 +450,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getBody">
         getBody()
         <a href="classes/rex-socket-response.html#method_getBody" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">230</span>
 
-            <a href="classes/rex-socket-response.html#source-view.207"  class="phpdocumentor-element-found-in__source" data-line="207" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.230" class="phpdocumentor-element-found-in__source" data-line="230" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the entire body.</p>
@@ -384,15 +466,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getBody</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -403,13 +487,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getBufferedBody">
         getBufferedBody()
         <a href="classes/rex-socket-response.html#method_getBufferedBody" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">177</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 
-            <a href="classes/rex-socket-response.html#source-view.177"  class="phpdocumentor-element-found-in__source" data-line="177" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.202" class="phpdocumentor-element-found-in__source" data-line="202" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns up to `$length` bytes from the body, or `false` if the end is reached.</p>
@@ -418,6 +503,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getBufferedBody</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$length</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">1024</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">false|string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -434,11 +521,48 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">false|string</span>
-            &mdash;
-        
+        <span class="phpdocumentor-signature__response_type">false|string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getContentEncodings">
+        getContentEncodings()
+        <a href="classes/rex-socket-response.html#method_getContentEncodings" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">182</span>
+
+            <a href="classes/rex-socket-response.html#source-view.182" class="phpdocumentor-element-found-in__source" data-line="182" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
+    </aside>
+
+        <p class="phpdocumentor-summary">Returns an array with all applied content encodings.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getContentEncodings</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
     
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -449,13 +573,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getHeader">
         getHeader()
         <a href="classes/rex-socket-response.html#method_getHeader" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 
-            <a href="classes/rex-socket-response.html#source-view.155"  class="phpdocumentor-element-found-in__source" data-line="155" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.162" class="phpdocumentor-element-found-in__source" data-line="162" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the header for the given key, or the entire header if no key is given.</p>
@@ -464,6 +589,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getHeader</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string|null</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -489,11 +616,11 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string|null</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string|null</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -504,13 +631,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getStatusCode">
         getStatusCode()
         <a href="classes/rex-socket-response.html#method_getStatusCode" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 
-            <a href="classes/rex-socket-response.html#source-view.62"  class="phpdocumentor-element-found-in__source" data-line="62" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.69" class="phpdocumentor-element-found-in__source" data-line="69" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the HTTP status code, e.g. 200.</p>
@@ -519,15 +647,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getStatusCode</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -538,13 +668,14 @@
     <h4 class="phpdocumentor-element__name" id="method_getStatusMessage">
         getStatusMessage()
         <a href="classes/rex-socket-response.html#method_getStatusMessage" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">79</span>
 
-            <a href="classes/rex-socket-response.html#source-view.72"  class="phpdocumentor-element-found-in__source" data-line="72" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.79" class="phpdocumentor-element-found-in__source" data-line="79" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the HTTP status message, e.g. &quot;OK&quot;.</p>
@@ -553,15 +684,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">getStatusMessage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -572,13 +705,14 @@
     <h4 class="phpdocumentor-element__name" id="method_isClientError">
         isClientError()
         <a href="classes/rex-socket-response.html#method_isClientError" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">122</span>
+    <span class="phpdocumentor-element-found-in__line">129</span>
 
-            <a href="classes/rex-socket-response.html#source-view.122"  class="phpdocumentor-element-found-in__source" data-line="122" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.129" class="phpdocumentor-element-found-in__source" data-line="129" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns wether the status class is &quot;Client Error&quot;.</p>
@@ -587,15 +721,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isClientError</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -606,13 +742,14 @@
     <h4 class="phpdocumentor-element__name" id="method_isInformational">
         isInformational()
         <a href="classes/rex-socket-response.html#method_isInformational" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">92</span>
+    <span class="phpdocumentor-element-found-in__line">99</span>
 
-            <a href="classes/rex-socket-response.html#source-view.92"  class="phpdocumentor-element-found-in__source" data-line="92" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.99" class="phpdocumentor-element-found-in__source" data-line="99" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns wether the status class is &quot;Informational&quot;.</p>
@@ -621,15 +758,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isInformational</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -640,13 +779,14 @@
     <h4 class="phpdocumentor-element__name" id="method_isInvalid">
         isInvalid()
         <a href="classes/rex-socket-response.html#method_isInvalid" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">142</span>
+    <span class="phpdocumentor-element-found-in__line">149</span>
 
-            <a href="classes/rex-socket-response.html#source-view.142"  class="phpdocumentor-element-found-in__source" data-line="142" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.149" class="phpdocumentor-element-found-in__source" data-line="149" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns wether the status is invalid.</p>
@@ -655,15 +795,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isInvalid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -674,13 +816,14 @@
     <h4 class="phpdocumentor-element__name" id="method_isOk">
         isOk()
         <a href="classes/rex-socket-response.html#method_isOk" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">89</span>
 
-            <a href="classes/rex-socket-response.html#source-view.82"  class="phpdocumentor-element-found-in__source" data-line="82" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.89" class="phpdocumentor-element-found-in__source" data-line="89" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns wether the status is &quot;200 OK&quot;.</p>
@@ -689,15 +832,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isOk</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -708,13 +853,14 @@
     <h4 class="phpdocumentor-element__name" id="method_isRedirection">
         isRedirection()
         <a href="classes/rex-socket-response.html#method_isRedirection" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">112</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 
-            <a href="classes/rex-socket-response.html#source-view.112"  class="phpdocumentor-element-found-in__source" data-line="112" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.119" class="phpdocumentor-element-found-in__source" data-line="119" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns wether the status class is &quot;Redirection&quot;.</p>
@@ -723,15 +869,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isRedirection</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -742,13 +890,14 @@
     <h4 class="phpdocumentor-element__name" id="method_isServerError">
         isServerError()
         <a href="classes/rex-socket-response.html#method_isServerError" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">132</span>
+    <span class="phpdocumentor-element-found-in__line">139</span>
 
-            <a href="classes/rex-socket-response.html#source-view.132"  class="phpdocumentor-element-found-in__source" data-line="132" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.139" class="phpdocumentor-element-found-in__source" data-line="139" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns wether the status class is &quot;Server Error&quot;.</p>
@@ -757,15 +906,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isServerError</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -776,13 +927,14 @@
     <h4 class="phpdocumentor-element__name" id="method_isSuccessful">
         isSuccessful()
         <a href="classes/rex-socket-response.html#method_isSuccessful" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 
-            <a href="classes/rex-socket-response.html#source-view.102"  class="phpdocumentor-element-found-in__source" data-line="102" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.109" class="phpdocumentor-element-found-in__source" data-line="109" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns wether the status class is &quot;Success&quot;.</p>
@@ -791,15 +943,17 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">isSuccessful</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
                     <article
         class="phpdocumentor-element
@@ -810,13 +964,14 @@
     <h4 class="phpdocumentor-element__name" id="method_writeBodyTo">
         writeBodyTo()
         <a href="classes/rex-socket-response.html#method_writeBodyTo" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">226</span>
+    <span class="phpdocumentor-element-found-in__line">288</span>
 
-            <a href="classes/rex-socket-response.html#source-view.226"  class="phpdocumentor-element-found-in__source" data-line="226" data-modal="source-view"></a>
+            <a href="classes/rex-socket-response.html#source-view.288" class="phpdocumentor-element-found-in__source" data-line="288" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Writes the body to the given resource.</p>
@@ -825,6 +980,8 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">writeBodyTo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|resource&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resource</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
+    <div class="phpdocumentor-label-line">
+        </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
@@ -841,13 +998,51 @@
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p><code class="prettyprint">true</code> on success, <code class="prettyprint">false</code> on failure</p>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p><code class="prettyprint">true</code> on success, <code class="prettyprint">false</code> on failure</p>
 </section>
 
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_isGzipOrDeflateEncoded">
+        isGzipOrDeflateEncoded()
+        <a href="classes/rex-socket-response.html#method_isGzipOrDeflateEncoded" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-socket-socket-response.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php">socket_response.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">242</span>
+
+            <a href="classes/rex-socket-response.html#source-view.242" class="phpdocumentor-element-found-in__source" data-line="242" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt"></a>
+    </aside>
+
     
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">isGzipOrDeflateEncoded</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
 </article>
             </section>
 
@@ -855,75 +1050,138 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-        <pre style="max-height: 500px; overflow-y: scroll" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/redaxo-main/redaxo/src/core/lib/util/socket/socket_response.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
-        <button data-exit-button class="phpdocumentor-modal__close">X</button>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
 </div>
 
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                <li><a href="classes/rex-socket-response.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+            
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li><a href="classes/rex-socket-response.html#method___construct">__construct()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_decompressContent">decompressContent()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_getBody">getBody()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_getBufferedBody">getBufferedBody()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_getContentEncodings">getContentEncodings()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_getHeader">getHeader()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_getStatusCode">getStatusCode()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_getStatusMessage">getStatusMessage()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_isClientError">isClientError()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_isInformational">isInformational()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_isInvalid">isInvalid()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_isOk">isOk()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_isRedirection">isRedirection()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_isServerError">isServerError()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_isSuccessful">isSuccessful()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_writeBodyTo">writeBodyTo()</a></li>
+                                            <li><a href="classes/rex-socket-response.html#method_isGzipOrDeflateEncoded">isGzipOrDeflateEncoded()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -934,7 +1192,6 @@
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="classes/rex-socket-response.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

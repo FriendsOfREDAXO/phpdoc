@@ -42,31 +42,35 @@ class rex_setup_importer
      */
     public static function loadExistingImport($importName)
     {
+        if ('' == $importName || '/' === $importName) {
+            return '<p>' . rex_i18n::msg('setup_408') . '</p>';
+        }
+
         // ----- vorhandenen Export importieren
         $errMsg = '';
         $importName = rex_path::basename($importName);
 
-        if ('' == $importName) {
-            $errMsg .= '<p>' . rex_i18n::msg('setup_508') . '</p>';
-        } else {
-            $importSql = rex_backup::getDir() . '/' . $importName . '.sql';
-            $importArchiv = rex_backup::getDir() . '/' . $importName . '.tar.gz';
+        $importSql = rex_backup::getDir() . '/' . $importName . '.sql';
+        $importSql .= is_file($importSql) ? '' : '.gz';
+        $importArchiv = rex_backup::getDir() . '/' . $importName . '.tar.gz';
 
-            // Nur hier zuerst die Addons installieren
-            // Da sonst Daten aus dem eingespielten Export
-            // Überschrieben würden
-            // Da für das Installieren der Addons die rex_config benötigt wird,
-            // mit overrideExisting() eine saubere, komplette Basis schaffen
-            $errMsg .= self::overrideExisting();
+        // Nur hier zuerst die Addons installieren
+        // Da sonst Daten aus dem eingespielten Export
+        // Überschrieben würden
+        // Da für das Installieren der Addons die rex_config benötigt wird,
+        // mit overrideExisting() eine saubere, komplette Basis schaffen
+        $errMsg .= self::overrideExisting();
 
-            if ('' == $errMsg) {
-                $errMsg .= self::import($importSql, $importArchiv);
-            }
+        if ('' == $errMsg) {
+            $errMsg .= self::import($importSql, $importArchiv);
         }
 
         return $errMsg;
     }
 
+    /**
+     * @return string
+     */
     public static function databaseAlreadyExists()
     {
         // ----- db schon vorhanden, nichts tun
@@ -133,48 +137,41 @@ class rex_setup_importer
         $existingTables = rex_sql::factory()->getTables(rex::getTablePrefix());
 
         foreach (array_diff(self::getRequiredTables(), $existingTables) as $missingTable) {
-            $errMsg .= rex_i18n::msg('setup_502', $missingTable) . '<br />';
+            $errMsg .= rex_i18n::msg('setup_402', $missingTable) . '<br />';
         }
         return $errMsg;
     }
 
     public static function supportsUtf8mb4(): bool
     {
-        static $utf8mb4MinVersions = [
-            rex_sql::MYSQL => '5.7.7',
-            rex_sql::MARIADB => '10.2.0',
-        ];
-
         $sql = rex_sql::factory();
 
-        return version_compare($sql->getDbVersion(), $utf8mb4MinVersions[$sql->getDbType()], '>=');
+        return version_compare($sql->getDbVersion(), match ($sql->getDbType()) {
+            rex_sql::MYSQL => '5.7.7',
+            rex_sql::MARIADB => '10.2.0',
+        }, '>=');
     }
 
     /**
-     * @return string[]
-     *
-     * @psalm-return list<string>
+     * @return list<string>
      */
     private static function getRequiredTables()
     {
         return [
             rex::getTablePrefix() . 'clang',
+            rex::getTablePrefix() . 'user_session',
+            rex::getTablePrefix() . 'user_passkey',
             rex::getTablePrefix() . 'user',
             rex::getTablePrefix() . 'config',
         ];
     }
 
-    /**
-     * @param string $importSql
-     *
-     * @return string
-     */
-    private static function import($importSql, $importArchive = null)
+    private static function import(string $importSql, ?string $importArchive = null): string
     {
         $errMsg = '';
 
         if (!is_dir(rex_path::addon('backup'))) {
-            $errMsg .= rex_i18n::msg('setup_510') . '<br />';
+            $errMsg .= rex_i18n::msg('setup_410') . '<br />';
         } else {
             if (is_file($importSql)) {
                 rex_i18n::addDirectory(rex_path::addon('backup', 'lang/'));
@@ -193,7 +190,7 @@ class rex_setup_importer
                     }
                 }
             } else {
-                $errMsg .= rex_i18n::msg('setup_509') . '<br />';
+                $errMsg .= rex_i18n::msg('setup_409') . '<br />';
             }
         }
 
@@ -205,10 +202,7 @@ class rex_setup_importer
 
     // -------------------------- System AddOns prüfen
 
-    /**
-     * @return string
-     */
-    private static function installAddons($uninstallBefore = false, $installDump = true)
+    private static function installAddons(bool $uninstallBefore = false, bool $installDump = true): string
     {
         $addonErr = '';
         rex_package_manager::synchronizeWithFileSystem();
@@ -248,7 +242,7 @@ class rex_setup_importer
         if ('' != $addonErr) {
             $addonErr = '<ul class="rex-ul1">
             <li>
-            <h3 class="rex-hl3">' . rex_i18n::msg('setup_513') . '</h3>
+            <h3 class="rex-hl3">' . rex_i18n::msg('setup_413') . '</h3>
             <ul>' . $addonErr . '</ul>
             </li>
             </ul>';
@@ -261,10 +255,7 @@ class rex_setup_importer
         return $addonErr;
     }
 
-    /**
-     * @return string
-     */
-    private static function reinstallPackages()
+    private static function reinstallPackages(): string
     {
         $error = '';
         rex_addon::initialize();
@@ -286,7 +277,7 @@ class rex_setup_importer
         if ($error) {
             $error = '<ul class="rex-ul1">
             <li>
-            <h3 class="rex-hl3">' . rex_i18n::msg('setup_513') . '</h3>
+            <h3 class="rex-hl3">' . rex_i18n::msg('setup_413') . '</h3>
             <ul>' . $error . '</ul>
             </li>
             </ul>';

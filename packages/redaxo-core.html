@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,7 +53,7 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
@@ -109,10 +110,6 @@
             </li>
             </ul>
 
-                                    <h4 class="phpdocumentor-sidebar__root-namespace">
-    <a href="packages/redaxo5.html" class="">redaxo5</a>
-</h4>
-
                         </section>
             
     <section class="phpdocumentor-sidebar__category">
@@ -128,19 +125,27 @@
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="packages/redaxo.html">redaxo</a></li>
     </ul>
 
     <article class="phpdocumentor-element -package">
         <h2 class="phpdocumentor-content__title">core</h2>
 
-        <h3 id="packages">
-    Packages
-    <a href="#packages" class="headerlink"><i class="fas fa-link"></i></a>
+        
+<h3 id="toc">
+    Table of Contents
+    <a href="packages/redaxo-core.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
 </h3>
 
+<h4 id="packages">
+    Packages
+    <a href="packages/redaxo-core.html#packages" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -package"><a href="packages/redaxo-core-backend.html"><abbr title="\redaxo\core\backend">backend</abbr></a></dt>
             <dt class="phpdocumentor-table-of-contents__entry -package"><a href="packages/redaxo-core-form.html"><abbr title="\redaxo\core\form">form</abbr></a></dt>
@@ -150,156 +155,43 @@
     </dl>
 
 
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="packages/redaxo-core.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
 
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/rex-url-provider-interface.html"><abbr title="\rex_url_provider_interface">rex_url_provider_interface</abbr></a></dt><dd>Generic interface for classes which provide urls.</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/rex-context-provider-interface.html"><abbr title="\rex_context_provider_interface">rex_context_provider_interface</abbr></a></dt><dd>Generic interface for classes which provide a complete rex-context.</dd>    </dl>
+
+    <h4 id="toc-classes">
+        Classes
+        <a href="packages/redaxo-core.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-api-function.html"><abbr title="\rex_api_function">rex_api_function</abbr></a></dt><dd>This is a base class for all functions which a component may provide for public use.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-api-result.html"><abbr title="\rex_api_result">rex_api_result</abbr></a></dt><dd>Class representing the result of a api function call.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-api-exception.html"><abbr title="\rex_api_exception">rex_api_exception</abbr></a></dt><dd>Exception-Type to indicate exceptions in an api function.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-autoload.html"><abbr title="\rex_autoload">rex_autoload</abbr></a></dt><dd>REDAXO Autoloader.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-clang.html"><abbr title="\rex_clang">rex_clang</abbr></a></dt><dd>Clang class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-clang-perm.html"><abbr title="\rex_clang_perm">rex_clang_perm</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-clang-service.html"><abbr title="\rex_clang_service">rex_clang_service</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-config.html"><abbr title="\rex_config">rex_config</abbr></a></dt><dd>Class for handling configurations.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-config-db.html"><abbr title="\rex_config_db">rex_config_db</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-console-application.html"><abbr title="\rex_console_application">rex_console_application</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-console-command.html"><abbr title="\rex_console_command">rex_console_command</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-context.html"><abbr title="\rex_context">rex_context</abbr></a></dt><dd>A generic implementiation of rex_context_provider.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-csrf-token.html"><abbr title="\rex_csrf_token">rex_csrf_token</abbr></a></dt><dd>Class for generating and validating csrf tokens.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-error-handler.html"><abbr title="\rex_error_handler">rex_error_handler</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-exception.html"><abbr title="\rex_exception">rex_exception</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-sql-exception.html"><abbr title="\rex_sql_exception">rex_sql_exception</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-sql-could-not-connect-exception.html"><abbr title="\rex_sql_could_not_connect_exception">rex_sql_could_not_connect_exception</abbr></a></dt><dd>Exception class when redaxo is unable to connect to the database.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-functional-exception.html"><abbr title="\rex_functional_exception">rex_functional_exception</abbr></a></dt><dd>Exception class for user-friendly error messages.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-http-exception.html"><abbr title="\rex_http_exception">rex_http_exception</abbr></a></dt><dd>Exception class for http-status code handling.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-yaml-parse-exception.html"><abbr title="\rex_yaml_parse_exception">rex_yaml_parse_exception</abbr></a></dt><dd>Exception class for yaml parse errors.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-extension-point.html"><abbr title="\rex_extension_point">rex_extension_point</abbr></a></dt><dd>Extension Point Class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-fragment.html"><abbr title="\rex_fragment">rex_fragment</abbr></a></dt><dd>Methods declared here are available to be called from within a fragment-file, even if not public:.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-list.html"><abbr title="\rex_list">rex_list</abbr></a></dt><dd>Klasse zum erstellen von Listen.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-request.html"><abbr title="\rex_request">rex_request</abbr></a></dt><dd>Class for getting the superglobals.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-response.html"><abbr title="\rex_response">rex_response</abbr></a></dt><dd>HTTP1.1 Client Cache Features.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex.html"><abbr title="\rex">rex</abbr></a></dt><dd>REX base class for core properties etc.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-select.html"><abbr title="\rex_select">rex_select</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-system-report.html"><abbr title="\rex_system_report">rex_system_report</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-system-setting.html"><abbr title="\rex_system_setting">rex_system_setting</abbr></a></dt><dd>This class can be used to add settings to the system settings page.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-dir.html"><abbr title="\rex_dir">rex_dir</abbr></a></dt><dd>Class for handling directories.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-file.html"><abbr title="\rex_file">rex_file</abbr></a></dt><dd>Class for handling files.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-finder.html"><abbr title="\rex_finder">rex_finder</abbr></a></dt><dd>Finder.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-formatter.html"><abbr title="\rex_formatter">rex_formatter</abbr></a></dt><dd>String formatter class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-i18n.html"><abbr title="\rex_i18n">rex_i18n</abbr></a></dt><dd>Class for internationalization.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-log-file.html"><abbr title="\rex_log_file">rex_log_file</abbr></a></dt><dd>Log file class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-log-entry.html"><abbr title="\rex_log_entry">rex_log_entry</abbr></a></dt><dd>Log entry class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-logger.html"><abbr title="\rex_logger">rex_logger</abbr></a></dt><dd>Simple Logger class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-pager.html"><abbr title="\rex_pager">rex_pager</abbr></a></dt><dd>The rex_pager-class implements all the logic
+which is necessary to implement some sort of pagination.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-path.html"><abbr title="\rex_path">rex_path</abbr></a></dt><dd>Utility class to generate absolute paths.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-path-default-provider.html"><abbr title="\rex_path_default_provider">rex_path_default_provider</abbr></a></dt><dd>Utility class to generate absolute paths.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-socket.html"><abbr title="\rex_socket">rex_socket</abbr></a></dt><dd>Class for sockets.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-socket-exception.html"><abbr title="\rex_socket_exception">rex_socket_exception</abbr></a></dt><dd>Socket exception.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-socket-proxy.html"><abbr title="\rex_socket_proxy">rex_socket_proxy</abbr></a></dt><dd>Class for sockets over a proxy.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-socket-response.html"><abbr title="\rex_socket_response">rex_socket_response</abbr></a></dt><dd>Class for rex_socket responses.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-sortable-iterator.html"><abbr title="\rex_sortable_iterator">rex_sortable_iterator</abbr></a></dt><dd>Sortable iterator.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-stream.html"><abbr title="\rex_stream">rex_stream</abbr></a></dt><dd>Stream wrapper to include variables like files (php code will be evaluated).</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-string.html"><abbr title="\rex_string">rex_string</abbr></a></dt><dd>String utility class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-timer.html"><abbr title="\rex_timer">rex_timer</abbr></a></dt><dd>Class to stop the script time.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-type.html"><abbr title="\rex_type">rex_type</abbr></a></dt><dd>Class for var casting.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-url.html"><abbr title="\rex_url">rex_url</abbr></a></dt><dd>Utility class to generate relative URLs.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-validation-rule.html"><abbr title="\rex_validation_rule">rex_validation_rule</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-validator.html"><abbr title="\rex_validator">rex_validator</abbr></a></dt><dd>Validator class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-version.html"><abbr title="\rex_version">rex_version</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-clang.html"><abbr title="\rex_var_clang">rex_var_clang</abbr></a></dt><dd>REX_CLANG[id=x field=xzy].</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-config.html"><abbr title="\rex_var_config">rex_var_config</abbr></a></dt><dd>REX_CONFIG[key=xzy].</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-property.html"><abbr title="\rex_var_property">rex_var_property</abbr></a></dt><dd>REX_PROPERTY[key=xzy].</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-dumper.html"><abbr title="\rex_var_dumper">rex_var_dumper</abbr></a></dt>    </dl>
+
+    <h4 id="toc-traits">
+        Traits
+        <a href="packages/redaxo-core.html#toc-traits" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/rex-instance-list-pool-trait.html"><abbr title="\rex_instance_list_pool_trait">rex_instance_list_pool_trait</abbr></a></dt><dd>Instance List Pool Trait.</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/rex-instance-pool-trait.html"><abbr title="\rex_instance_pool_trait">rex_instance_pool_trait</abbr></a></dt><dd>Instance Pool Trait.</dd>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/rex-singleton-trait.html"><abbr title="\rex_singleton_trait">rex_singleton_trait</abbr></a></dt><dd>Trait for singletons.</dd>    </dl>
+
+
+
+
+
+
+<h4 id="toc-functions">
+    Functions
+    <a href="packages/redaxo-core.html#toc-functions" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
 <dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/rex-url-provider-interface.html"><abbr title="\rex_url_provider_interface">rex_url_provider_interface</abbr></a></dt>
-        <dd>Generic interface for classes which provide urls.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/rex-context-provider-interface.html"><abbr title="\rex_context_provider_interface">rex_context_provider_interface</abbr></a></dt>
-        <dd>Generic interface for classes which provide a complete rex-context.</dd>
-    
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-api-function.html"><abbr title="\rex_api_function">rex_api_function</abbr></a></dt>
-        <dd>This is a base class for all functions which a component may provide for public use.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-api-result.html"><abbr title="\rex_api_result">rex_api_result</abbr></a></dt>
-        <dd>Class representing the result of a api function call.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-api-exception.html"><abbr title="\rex_api_exception">rex_api_exception</abbr></a></dt>
-        <dd>Exception-Type to indicate exceptions in an api function.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-autoload.html"><abbr title="\rex_autoload">rex_autoload</abbr></a></dt>
-        <dd>REDAXO Autoloader.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-clang.html"><abbr title="\rex_clang">rex_clang</abbr></a></dt>
-        <dd>Clang class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-clang-perm.html"><abbr title="\rex_clang_perm">rex_clang_perm</abbr></a></dt>
-        <dd>Abstract class for complex permissions.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-clang-service.html"><abbr title="\rex_clang_service">rex_clang_service</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-config.html"><abbr title="\rex_config">rex_config</abbr></a></dt>
-        <dd>Class for handling configurations.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-config-db.html"><abbr title="\rex_config_db">rex_config_db</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-console-application.html"><abbr title="\rex_console_application">rex_console_application</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-console-command.html"><abbr title="\rex_console_command">rex_console_command</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-context.html"><abbr title="\rex_context">rex_context</abbr></a></dt>
-        <dd>A generic implementiation of rex_context_provider.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-csrf-token.html"><abbr title="\rex_csrf_token">rex_csrf_token</abbr></a></dt>
-        <dd>Class for generating and validating csrf tokens.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-error-handler.html"><abbr title="\rex_error_handler">rex_error_handler</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-exception.html"><abbr title="\rex_exception">rex_exception</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-sql-exception.html"><abbr title="\rex_sql_exception">rex_sql_exception</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-sql-could-not-connect-exception.html"><abbr title="\rex_sql_could_not_connect_exception">rex_sql_could_not_connect_exception</abbr></a></dt>
-        <dd>Exception class when redaxo is unable to connect to the database.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-functional-exception.html"><abbr title="\rex_functional_exception">rex_functional_exception</abbr></a></dt>
-        <dd>Exception class for user-friendly error messages.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-http-exception.html"><abbr title="\rex_http_exception">rex_http_exception</abbr></a></dt>
-        <dd>Exception class for http-status code handling.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-yaml-parse-exception.html"><abbr title="\rex_yaml_parse_exception">rex_yaml_parse_exception</abbr></a></dt>
-        <dd>Exception class for yaml parse errors.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-extension.html"><abbr title="\rex_extension">rex_extension</abbr></a></dt>
-        <dd>Klasse die Einsprungpunkte zur Erweiterung der Kernfunktionalitaetet bietet.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-extension-point.html"><abbr title="\rex_extension_point">rex_extension_point</abbr></a></dt>
-        <dd>Extension Point Class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-fragment.html"><abbr title="\rex_fragment">rex_fragment</abbr></a></dt>
-        <dd>Methods declared here are available to be called from within a fragment-file, even if not public:.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-list.html"><abbr title="\rex_list">rex_list</abbr></a></dt>
-        <dd>Klasse zum erstellen von Listen.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-request.html"><abbr title="\rex_request">rex_request</abbr></a></dt>
-        <dd>Class for getting the superglobals.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-response.html"><abbr title="\rex_response">rex_response</abbr></a></dt>
-        <dd>HTTP1.1 Client Cache Features.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex.html"><abbr title="\rex">rex</abbr></a></dt>
-        <dd>REX base class for core properties etc.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-select.html"><abbr title="\rex_select">rex_select</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-system-report.html"><abbr title="\rex_system_report">rex_system_report</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-system-setting.html"><abbr title="\rex_system_setting">rex_system_setting</abbr></a></dt>
-        <dd>This class can be used to add settings to the system settings page.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-dir.html"><abbr title="\rex_dir">rex_dir</abbr></a></dt>
-        <dd>Class for handling directories.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-editor.html"><abbr title="\rex_editor">rex_editor</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-file.html"><abbr title="\rex_file">rex_file</abbr></a></dt>
-        <dd>Class for handling files.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-finder.html"><abbr title="\rex_finder">rex_finder</abbr></a></dt>
-        <dd>Finder.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-formatter.html"><abbr title="\rex_formatter">rex_formatter</abbr></a></dt>
-        <dd>String formatter class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-i18n.html"><abbr title="\rex_i18n">rex_i18n</abbr></a></dt>
-        <dd>Class for internationalization.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-log-file.html"><abbr title="\rex_log_file">rex_log_file</abbr></a></dt>
-        <dd>Log file class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-log-entry.html"><abbr title="\rex_log_entry">rex_log_entry</abbr></a></dt>
-        <dd>Log entry class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-logger.html"><abbr title="\rex_logger">rex_logger</abbr></a></dt>
-        <dd>Simple Logger class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-markdown.html"><abbr title="\rex_markdown">rex_markdown</abbr></a></dt>
-        <dd>Markdown parser.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-pager.html"><abbr title="\rex_pager">rex_pager</abbr></a></dt>
-        <dd>The rex_pager-class implements all the logic
-which is necessary to implement some sort of pagination.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-path.html"><abbr title="\rex_path">rex_path</abbr></a></dt>
-        <dd>Utility class to generate absolute paths.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-path-default-provider.html"><abbr title="\rex_path_default_provider">rex_path_default_provider</abbr></a></dt>
-        <dd>Utility class to generate absolute paths.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-socket.html"><abbr title="\rex_socket">rex_socket</abbr></a></dt>
-        <dd>Class for sockets.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-socket-exception.html"><abbr title="\rex_socket_exception">rex_socket_exception</abbr></a></dt>
-        <dd>Socket exception.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-socket-proxy.html"><abbr title="\rex_socket_proxy">rex_socket_proxy</abbr></a></dt>
-        <dd>Class for sockets over a proxy.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-socket-response.html"><abbr title="\rex_socket_response">rex_socket_response</abbr></a></dt>
-        <dd>Class for rex_socket responses.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-sortable-iterator.html"><abbr title="\rex_sortable_iterator">rex_sortable_iterator</abbr></a></dt>
-        <dd>Sortable iterator.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-stream.html"><abbr title="\rex_stream">rex_stream</abbr></a></dt>
-        <dd>Stream wrapper to include variables like files (php code will be evaluated).</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-string.html"><abbr title="\rex_string">rex_string</abbr></a></dt>
-        <dd>String utility class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-type.html"><abbr title="\rex_type">rex_type</abbr></a></dt>
-        <dd>Class for var casting.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-url.html"><abbr title="\rex_url">rex_url</abbr></a></dt>
-        <dd>Utility class to generate relative URLs.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-validation-rule.html"><abbr title="\rex_validation_rule">rex_validation_rule</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-validator.html"><abbr title="\rex_validator">rex_validator</abbr></a></dt>
-        <dd>Validator class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-version.html"><abbr title="\rex_version">rex_version</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-clang.html"><abbr title="\rex_var_clang">rex_var_clang</abbr></a></dt>
-        <dd>REX_CLANG[id=x field=xzy].</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-config.html"><abbr title="\rex_var_config">rex_var_config</abbr></a></dt>
-        <dd>REX_CONFIG[key=xzy].</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-property.html"><abbr title="\rex_var_property">rex_var_property</abbr></a></dt>
-        <dd>REX_PROPERTY[key=xzy].</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-var-dumper.html"><abbr title="\rex_var_dumper">rex_var_dumper</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/rex-view.html"><abbr title="\rex_view">rex_view</abbr></a></dt>
-        <dd></dd>
-    
-            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/rex-instance-list-pool-trait.html"><abbr title="\rex_instance_list_pool_trait">rex_instance_list_pool_trait</abbr></a></dt>
-        <dd>Instance List Pool Trait.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/rex-instance-pool-trait.html"><abbr title="\rex_instance_pool_trait">rex_instance_pool_trait</abbr></a></dt>
-        <dd>Instance Pool Trait.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/rex-singleton-trait.html"><abbr title="\rex_singleton_trait">rex_singleton_trait</abbr></a></dt>
-        <dd>Trait for singletons.</dd>
-    
-    </dl>
-
-
-<h3 id="toc">
-    Table of Contents
-    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
-</h3>
-
-<dl class="phpdocumentor-table-of-contents">
-                            <dt class="phpdocumentor-table-of-contents__entry -function -">
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_escape">rex_escape()</a>
     <span>
                                 &nbsp;: mixed    </span>
@@ -344,14 +236,14 @@ which is necessary to implement some sort of pagination.</dd>
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_set_session">rex_set_session()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Sets a session variable.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_rex_unset_session">rex_unset_session()</a>
     <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd>Deletes a session variable.</dd>
 
@@ -395,7 +287,6 @@ which is necessary to implement some sort of pagination.</dd>
     <span>
                                 &nbsp;: int    </span>
 </dt>
-<dd></dd>
 
     </dl>
 
@@ -405,25 +296,27 @@ which is necessary to implement some sort of pagination.</dd>
         <h3 class="phpdocumentor-elements__header" id="functions">
             Functions
             <a href="packages/redaxo-core.html#functions" class="headerlink"><i class="fas fa-link"></i></a>
+
         </h3>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_escape">
         rex_escape()
         <a href="namespaces/default.html#function_rex_escape" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_escape.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-escape.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_escape.php">function_rex_escape.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">31</span>
 
-            <a href="packages/redaxo-core.html#source-view.33"  class="phpdocumentor-element-found-in__source" data-line="33" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.31" class="phpdocumentor-element-found-in__source" data-line="31" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_escape.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Escapes a variable to be used while rendering html.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">rex_escape</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$strategy</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;html&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_escape</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\T">T</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$strategy</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;html&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"><p>This function is adapted from code coming from Twig.
 (c) Fabien Potencier
@@ -434,7 +327,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\T">T</abbr></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>The value to escape</p>
@@ -461,11 +354,12 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_escape#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-template</span>
+                    <span class="phpdocumentor-tag__name">template</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
@@ -478,25 +372,7 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>T $value</p>
-</section>
-
-                                    </dd>
-                            <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-param</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
                                                  <section class="phpdocumentor-description"><p>'html'|'html_simplified'|'html_attr'|'js'|'css'|'url' $strategy</p>
-</section>
-
-                                    </dd>
-                                                <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-return</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"><p>(T is Stringable ? string : T)</p>
 </section>
 
                                     </dd>
@@ -507,6 +383,15 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                                                 <span class="phpdocumentor-tag-link"><abbr title="\InvalidArgumentException">InvalidArgumentException</abbr></span>
                                                             
                                              
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-return</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>(T is Stringable ? string : T)</p>
+</section>
+
                                     </dd>
                                                 <dt class="phpdocumentor-tag-list__entry">
                     <span class="phpdocumentor-tag__name">psalm-taint-escape</span>
@@ -526,25 +411,29 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 </section>
 
                                     </dd>
-                        </dl>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-pure</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_get">
         rex_get()
         <a href="namespaces/default.html#function_rex_get" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-globals.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php">function_rex_globals.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">24</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 
-            <a href="packages/redaxo-core.html#source-view.24"  class="phpdocumentor-element-found-in__source" data-line="24" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.22" class="phpdocumentor-element-found-in__source" data-line="22" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_globals.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the variable $varname of $_GET and casts the value.</p>
@@ -588,7 +477,8 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_get#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -608,25 +498,22 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_post">
         rex_post()
         <a href="namespaces/default.html#function_rex_post" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-globals.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php">function_rex_globals.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 
-            <a href="packages/redaxo-core.html#source-view.44"  class="phpdocumentor-element-found-in__source" data-line="44" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.42" class="phpdocumentor-element-found-in__source" data-line="42" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_globals.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the variable $varname of $_POST and casts the value.</p>
@@ -670,7 +557,8 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_post#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -690,25 +578,22 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_request">
         rex_request()
         <a href="namespaces/default.html#function_rex_request" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-globals.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php">function_rex_globals.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">64</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 
-            <a href="packages/redaxo-core.html#source-view.64"  class="phpdocumentor-element-found-in__source" data-line="64" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.62" class="phpdocumentor-element-found-in__source" data-line="62" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_globals.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the variable $varname of $_REQUEST and casts the value.</p>
@@ -752,7 +637,8 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_request#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -772,25 +658,22 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_server">
         rex_server()
         <a href="namespaces/default.html#function_rex_server" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-globals.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php">function_rex_globals.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">80</span>
 
-            <a href="packages/redaxo-core.html#source-view.82"  class="phpdocumentor-element-found-in__source" data-line="82" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.80" class="phpdocumentor-element-found-in__source" data-line="80" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_globals.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the variable $varname of $_SERVER and casts the value.</p>
@@ -834,7 +717,8 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_server#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -845,25 +729,22 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_session">
         rex_session()
         <a href="namespaces/default.html#function_rex_session" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-globals.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php">function_rex_globals.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
-            <a href="packages/redaxo-core.html#source-view.102"  class="phpdocumentor-element-found-in__source" data-line="102" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.100" class="phpdocumentor-element-found-in__source" data-line="100" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_globals.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the variable $varname of $_SESSION and casts the value.</p>
@@ -907,7 +788,8 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_session#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -926,32 +808,29 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_set_session">
         rex_set_session()
         <a href="namespaces/default.html#function_rex_set_session" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-globals.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php">function_rex_globals.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">119</span>
+    <span class="phpdocumentor-element-found-in__line">118</span>
 
-            <a href="packages/redaxo-core.html#source-view.119"  class="phpdocumentor-element-found-in__source" data-line="119" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.118" class="phpdocumentor-element-found-in__source" data-line="118" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_globals.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Sets a session variable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">rex_set_session</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_set_session</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -979,7 +858,8 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_set_session#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -998,32 +878,29 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_unset_session">
         rex_unset_session()
         <a href="namespaces/default.html#function_rex_unset_session" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-globals.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php">function_rex_globals.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">135</span>
 
-            <a href="packages/redaxo-core.html#source-view.135"  class="phpdocumentor-element-found-in__source" data-line="135" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.135" class="phpdocumentor-element-found-in__source" data-line="135" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_globals.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Deletes a session variable.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                    <span class="phpdocumentor-signature__name">rex_unset_session</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">rex_unset_session</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$varname</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -1042,7 +919,8 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_unset_session#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1061,25 +939,22 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_cookie">
         rex_cookie()
         <a href="namespaces/default.html#function_rex_cookie" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-globals.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php">function_rex_globals.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">155</span>
 
-            <a href="packages/redaxo-core.html#source-view.155"  class="phpdocumentor-element-found-in__source" data-line="155" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.155" class="phpdocumentor-element-found-in__source" data-line="155" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_globals.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the variable $varname of $_COOKIE and casts the value.</p>
@@ -1123,7 +998,8 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_cookie#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1143,25 +1019,22 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_files">
         rex_files()
         <a href="namespaces/default.html#function_rex_files" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-globals.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php">function_rex_globals.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">173</span>
 
-            <a href="packages/redaxo-core.html#source-view.173"  class="phpdocumentor-element-found-in__source" data-line="173" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.173" class="phpdocumentor-element-found-in__source" data-line="173" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_globals.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the variable $varname of $_FILES and casts the value.</p>
@@ -1205,7 +1078,8 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_files#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1216,25 +1090,22 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_env">
         rex_env()
         <a href="namespaces/default.html#function_rex_env" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-globals.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php">function_rex_globals.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">191</span>
 
-            <a href="packages/redaxo-core.html#source-view.191"  class="phpdocumentor-element-found-in__source" data-line="191" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.191" class="phpdocumentor-element-found-in__source" data-line="191" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_globals.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the variable $varname of $_ENV and casts the value.</p>
@@ -1278,7 +1149,8 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_env#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1289,25 +1161,22 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">mixed</span>
-            &mdash;
-        
     
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_request_method">
         rex_request_method()
         <a href="namespaces/default.html#function_rex_request_method" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-globals.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_globals.php">function_rex_globals.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">205</span>
 
-            <a href="packages/redaxo-core.html#source-view.205"  class="phpdocumentor-element-found-in__source" data-line="205" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.205" class="phpdocumentor-element-found-in__source" data-line="205" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_globals.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the HTTP method of the current request.</p>
@@ -1321,7 +1190,8 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="namespaces/default.html#function_rex_request_method#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h5>
     <dl class="phpdocumentor-tag-list">
                                     <dt class="phpdocumentor-tag-list__entry">
@@ -1332,27 +1202,30 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
                                         
                                              
                                     </dd>
-                        </dl>
+                                            </dl>
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>HTTP method in lowercase (head,get,post,put,delete)</p>
+        <span class="phpdocumentor-signature__response_type">string</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>HTTP method in lowercase (head,get,post,put,delete)</p>
 </section>
 
-    
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_delete_cache">
         rex_delete_cache()
         <a href="namespaces/default.html#function_rex_delete_cache" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_other.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-other.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_other.php">function_rex_other.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">16</span>
+    <span class="phpdocumentor-element-found-in__line">14</span>
 
-            <a href="packages/redaxo-core.html#source-view.16"  class="phpdocumentor-element-found-in__source" data-line="16" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.14" class="phpdocumentor-element-found-in__source" data-line="14" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_other.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Deletes the cache.</p>
@@ -1365,23 +1238,24 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
     
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
 </article>
                     <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_rex_ini_get">
         rex_ini_get()
         <a href="namespaces/default.html#function_rex_ini_get" class="headerlink"><i class="fas fa-link"></i></a>
+
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/functions/function_rex_other.php"><a href="files/redaxo-main-redaxo-src-core-functions-function-rex-other.html"><abbr title="redaxo-main/redaxo/src/core/functions/function_rex_other.php">function_rex_other.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">44</span>
 
-            <a href="packages/redaxo-core.html#source-view.46"  class="phpdocumentor-element-found-in__source" data-line="46" data-modal="source-view"></a>
+            <a href="packages/redaxo-core.html#source-view.44" class="phpdocumentor-element-found-in__source" data-line="44" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/functions/function_rex_other.php.txt"></a>
     </aside>
 
     
@@ -1403,16 +1277,150 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
 
     
 
+            <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">int</span>
-            &mdash;
-        
-    
+        <span class="phpdocumentor-signature__response_type">int</span>
+            </section>
+
 </article>
             </section>
 
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
+
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET', src, true);
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+                            Prism.highlightElement(code);
+                            return;
+                        }
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
+                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
+                    }
+                    modal.classList.add("phpdocumentor-modal__open");
+
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
+                    });
+                });
+            });
+        })();
+    </script>
+
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                    <li><a href="packages/redaxo-core.html#toc-interfaces">Interfaces</a></li>
+                                                                <li><a href="packages/redaxo-core.html#toc-classes">Classes</a></li>
+                                                                <li><a href="packages/redaxo-core.html#toc-traits">Traits</a></li>
+                                                                                                        <li><a href="packages/redaxo-core.html#toc-functions">Functions</a></li>
+                                    </ul>
+            </li>
+
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Functions</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="namespaces/default.html#function_rex_cookie">rex_cookie()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_delete_cache">rex_delete_cache()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_env">rex_env()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_escape">rex_escape()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_files">rex_files()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_get">rex_get()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_ini_get">rex_ini_get()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_post">rex_post()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_request">rex_request()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_request_method">rex_request_method()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_server">rex_server()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_session">rex_session()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_set_session">rex_set_session()</a></li>
+                                                    <li><a href="namespaces/default.html#function_rex_unset_session">rex_unset_session()</a></li>
+                                            </ul>
+                </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -1423,7 +1431,6 @@ https://github.com/twigphp/Twig/blob/5f20d4a362078e8a066f7dcc146e8005186d9663/sr
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="packages/redaxo-core.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

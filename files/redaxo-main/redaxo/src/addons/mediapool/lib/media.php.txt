@@ -11,42 +11,42 @@ class rex_media
     use rex_instance_list_pool_trait;
     use rex_instance_pool_trait;
 
-    // id
-    protected $id = '';
-    // categoryid
-    protected $category_id = '';
+    /** @var int */
+    protected $id;
+    /** @var int */
+    protected $category_id;
 
-    // filename
+    /** @var string */
     protected $name = '';
-    // originalname
+    /** @var string */
     protected $originalname = '';
-    // filetype
+    /** @var string */
     protected $type = '';
-    // filesize
-    protected $size = '';
+    /** @var int */
+    protected $size;
 
-    // filewidth
-    protected $width = '';
-    // fileheight
-    protected $height = '';
+    /** @var int|null */
+    protected $width;
+    /** @var int|null */
+    protected $height;
 
-    // filetitle
+    /** @var string */
     protected $title = '';
 
-    // updatedate
-    protected $updatedate = '';
-    // createdate
-    protected $createdate = '';
+    /** @var int */
+    protected $updatedate;
+    /** @var int */
+    protected $createdate;
 
-    // updateuser
+    /** @var string */
     protected $updateuser = '';
-    // createuser
+    /** @var string */
     protected $createuser = '';
 
     /**
      * @param string $name
      *
-     * @return null|static
+     * @return static|null
      */
     public static function get($name)
     {
@@ -78,7 +78,11 @@ class rex_media
                         $varName = $key;
                     }
 
-                    $media->$varName = $value;
+                    $media->$varName = match ($varName) {
+                        'id', 'category_id', 'size', 'createdate', 'updatedate' => (int) $value,
+                        'width', 'height' => null === $value ? $value : (int) $value,
+                        default => $value,
+                    };
                 }
 
                 return $media;
@@ -90,7 +94,7 @@ class rex_media
 
     /**
      * @throws rex_sql_exception
-     * @return null|static
+     * @return static|null
      */
     public static function forId(int $mediaId): ?self
     {
@@ -109,7 +113,7 @@ class rex_media
     public static function getRootMedia()
     {
         /** @var callable(string):static */
-        $getInstance = [static::class, 'get'];
+        $getInstance = static::get(...);
 
         return static::getInstanceList('root_media', $getInstance, static function () {
             $listPath = rex_path::addonCache('mediapool', '0.mlist');
@@ -182,7 +186,7 @@ class rex_media
     }
 
     /**
-     * @return int
+     * @return int|null
      */
     public function getWidth()
     {
@@ -190,7 +194,7 @@ class rex_media
     }
 
     /**
-     * @return int
+     * @return int|null
      */
     public function getHeight()
     {
@@ -324,6 +328,9 @@ class rex_media
     }
 
     // allowed filetypes
+    /**
+     * @return list<string>
+     */
     public static function getDocTypes()
     {
         return rex_addon::get('mediapool')->getProperty('allowed_doctypes');
@@ -338,6 +345,9 @@ class rex_media
     }
 
     // allowed image upload types
+    /**
+     * @return list<string>
+     */
     public static function getImageTypes()
     {
         return rex_addon::get('mediapool')->getProperty('image_extensions');
@@ -359,6 +369,9 @@ class rex_media
         return isset($this->$value) || isset($this->{'med_' . $value});
     }
 
+    /**
+     * @return string|int|null
+     */
     public function getValue($value)
     {
         // damit alte rex_article felder wie copyright, description
@@ -369,6 +382,8 @@ class rex_media
         if (isset($this->{'med_' . $value})) {
             return $this->getValue('med_' . $value);
         }
+
+        return null;
     }
 
     /**
