@@ -10716,6 +10716,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-log-file.html#method___construct"
         },                {
+            "fqsen": "\\rex_log_file\u003A\u003Afactory\u0028\u0029",
+            "name": "factory",
+            "summary": "",
+            "url": "classes/rex-log-file.html#method_factory"
+        },                {
             "fqsen": "\\rex_log_file\u003A\u003Aadd\u0028\u0029",
             "name": "add",
             "summary": "Adds\u0020a\u0020log\u0020entry.",
