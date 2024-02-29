@@ -217,7 +217,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/rex-list.html#property_sql">$sql</a>
     <span>
-                        &nbsp;: <a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a>            </span>
+                        &nbsp;: <abbr title="\rex_sql">rex_sql</abbr>            </span>
 </dt>
 
     </dl>
@@ -323,7 +323,7 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-list.html#method_getColumnLayout">getColumnLayout()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+                                &nbsp;: array{: string, : string}    </span>
 </dt>
 <dd>Gibt das Layout einer Spalte zurück.</dd>
 
@@ -757,7 +757,7 @@ Gibt den Namen es Formulars zurück.</dd>
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/rex-sql.html"><abbr title="\rex_sql">rex_sql</abbr></a></span>
+        <span class="phpdocumentor-signature__type"><abbr title="\rex_sql">rex_sql</abbr></span>
     <span class="phpdocumentor-signature__name">$sql</span>
     </code>
 
@@ -788,9 +788,9 @@ Gibt den Namen es Formulars zurück.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">420</span>
+    <span class="phpdocumentor-element-found-in__line">423</span>
 
-            <a href="classes/rex-list.html#source-view.420" class="phpdocumentor-element-found-in__source" data-line="420" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.423" class="phpdocumentor-element-found-in__source" data-line="423" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Methode, um eine Spalte einzufügen.</p>
@@ -909,15 +909,15 @@ Gibt den Namen es Formulars zurück.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">368</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
-            <a href="classes/rex-list.html#source-view.368" class="phpdocumentor-element-found-in__source" data-line="368" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.371" class="phpdocumentor-element-found-in__source" data-line="371" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addLinkAttribute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attrName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attrValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">addLinkAttribute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attrName</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attrValue</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -926,21 +926,21 @@ Gibt den Namen es Formulars zurück.</dd>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$columnName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$attrName</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$attrValue</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|int</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1063,9 +1063,9 @@ Gibt den Namen es Formulars zurück.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">794</span>
+    <span class="phpdocumentor-element-found-in__line">797</span>
 
-            <a href="classes/rex-list.html#source-view.794" class="phpdocumentor-element-found-in__source" data-line="794" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.797" class="phpdocumentor-element-found-in__source" data-line="797" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Fügt der zuletzte eingefügten TableColumnGroup eine weitere Spalte hinzu.</p>
@@ -1124,9 +1124,9 @@ Gibt den Namen es Formulars zurück.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">762</span>
+    <span class="phpdocumentor-element-found-in__line">765</span>
 
-            <a href="classes/rex-list.html#source-view.762" class="phpdocumentor-element-found-in__source" data-line="762" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.765" class="phpdocumentor-element-found-in__source" data-line="765" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Methode um eine Colgroup einzufügen.</p>
@@ -1276,9 +1276,9 @@ Gibt den Namen es Formulars zurück.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1123</span>
+    <span class="phpdocumentor-element-found-in__line">1126</span>
 
-            <a href="classes/rex-list.html#source-view.1123" class="phpdocumentor-element-found-in__source" data-line="1123" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1126" class="phpdocumentor-element-found-in__source" data-line="1126" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Formatiert einen übergebenen String anhand der rexFormatter Klasse.</p>
@@ -1350,9 +1350,9 @@ Gibt den Namen es Formulars zurück.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1209</span>
+    <span class="phpdocumentor-element-found-in__line">1212</span>
 
-            <a href="classes/rex-list.html#source-view.1209" class="phpdocumentor-element-found-in__source" data-line="1209" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1212" class="phpdocumentor-element-found-in__source" data-line="1212" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Erstellt den Tabellen Quellcode.</p>
@@ -1387,9 +1387,9 @@ Gibt den Namen es Formulars zurück.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1199</span>
+    <span class="phpdocumentor-element-found-in__line">1202</span>
 
-            <a href="classes/rex-list.html#source-view.1199" class="phpdocumentor-element-found-in__source" data-line="1199" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1202" class="phpdocumentor-element-found-in__source" data-line="1202" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -1470,9 +1470,9 @@ Gibt den Namen es Formulars zurück.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">586</span>
+    <span class="phpdocumentor-element-found-in__line">589</span>
 
-            <a href="classes/rex-list.html#source-view.586" class="phpdocumentor-element-found-in__source" data-line="586" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.589" class="phpdocumentor-element-found-in__source" data-line="589" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt das Format für eine Spalte zurück.</p>
@@ -1544,9 +1544,9 @@ Gibt den Namen es Formulars zurück.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">557</span>
+    <span class="phpdocumentor-element-found-in__line">560</span>
 
-            <a href="classes/rex-list.html#source-view.557" class="phpdocumentor-element-found-in__source" data-line="557" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.560" class="phpdocumentor-element-found-in__source" data-line="560" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt das Label der Spalte zurück, falls gesetzt.</p>
@@ -1630,16 +1630,16 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">462</span>
+    <span class="phpdocumentor-element-found-in__line">465</span>
 
-            <a href="classes/rex-list.html#source-view.462" class="phpdocumentor-element-found-in__source" data-line="462" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.465" class="phpdocumentor-element-found-in__source" data-line="465" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt das Layout einer Spalte zurück.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getColumnLayout</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">getColumnLayout</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$columnName</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{: string, : string}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1661,7 +1661,7 @@ wird der Spaltenname zurückgegeben</p>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+        <span class="phpdocumentor-signature__response_type">array{: string, : string}</span>
             </section>
 
 </article>
@@ -1679,9 +1679,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">475</span>
+    <span class="phpdocumentor-element-found-in__line">478</span>
 
-            <a href="classes/rex-list.html#source-view.475" class="phpdocumentor-element-found-in__source" data-line="475" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.478" class="phpdocumentor-element-found-in__source" data-line="478" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt die Layouts aller Spalten zurück.</p>
@@ -1716,9 +1716,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1179</span>
+    <span class="phpdocumentor-element-found-in__line">1182</span>
 
-            <a href="classes/rex-list.html#source-view.1179" class="phpdocumentor-element-found-in__source" data-line="1179" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1182" class="phpdocumentor-element-found-in__source" data-line="1182" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -1776,9 +1776,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">488</span>
+    <span class="phpdocumentor-element-found-in__line">491</span>
 
-            <a href="classes/rex-list.html#source-view.488" class="phpdocumentor-element-found-in__source" data-line="488" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.491" class="phpdocumentor-element-found-in__source" data-line="491" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt den Namen einer Spalte zurück.</p>
@@ -1834,9 +1834,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">498</span>
+    <span class="phpdocumentor-element-found-in__line">501</span>
 
-            <a href="classes/rex-list.html#source-view.498" class="phpdocumentor-element-found-in__source" data-line="498" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.501" class="phpdocumentor-element-found-in__source" data-line="501" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt alle Namen der Spalten als Array zurück.</p>
@@ -1871,9 +1871,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">627</span>
+    <span class="phpdocumentor-element-found-in__line">630</span>
 
-            <a href="classes/rex-list.html#source-view.627" class="phpdocumentor-element-found-in__source" data-line="627" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.630" class="phpdocumentor-element-found-in__source" data-line="630" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt den Wert einer Option für eine Spalte zurück.</p>
@@ -1938,9 +1938,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">667</span>
+    <span class="phpdocumentor-element-found-in__line">670</span>
 
-            <a href="classes/rex-list.html#source-view.667" class="phpdocumentor-element-found-in__source" data-line="667" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.670" class="phpdocumentor-element-found-in__source" data-line="670" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt die Parameter für eine Spalte zurück.</p>
@@ -1987,9 +1987,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">724</span>
+    <span class="phpdocumentor-element-found-in__line">727</span>
 
-            <a href="classes/rex-list.html#source-view.724" class="phpdocumentor-element-found-in__source" data-line="724" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.727" class="phpdocumentor-element-found-in__source" data-line="727" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt die Position einer Spalte zurück.</p>
@@ -2057,9 +2057,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1044</span>
+    <span class="phpdocumentor-element-found-in__line">1047</span>
 
-            <a href="classes/rex-list.html#source-view.1044" class="phpdocumentor-element-found-in__source" data-line="1044" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1047" class="phpdocumentor-element-found-in__source" data-line="1047" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt den Footer der Liste zurück.</p>
@@ -2130,9 +2130,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1060</span>
+    <span class="phpdocumentor-element-found-in__line">1063</span>
 
-            <a href="classes/rex-list.html#source-view.1060" class="phpdocumentor-element-found-in__source" data-line="1060" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1063" class="phpdocumentor-element-found-in__source" data-line="1063" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt den Header der Liste zurück.</p>
@@ -2167,9 +2167,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">376</span>
+    <span class="phpdocumentor-element-found-in__line">379</span>
 
-            <a href="classes/rex-list.html#source-view.376" class="phpdocumentor-element-found-in__source" data-line="376" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.379" class="phpdocumentor-element-found-in__source" data-line="379" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -2330,9 +2330,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">970</span>
+    <span class="phpdocumentor-element-found-in__line">973</span>
 
-            <a href="classes/rex-list.html#source-view.970" class="phpdocumentor-element-found-in__source" data-line="970" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.973" class="phpdocumentor-element-found-in__source" data-line="973" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns the pager for this list.</p>
@@ -2403,9 +2403,9 @@ wird der Spaltenname zurückgegeben</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">866</span>
+    <span class="phpdocumentor-element-found-in__line">869</span>
 
-            <a href="classes/rex-list.html#source-view.866" class="phpdocumentor-element-found-in__source" data-line="866" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.869" class="phpdocumentor-element-found-in__source" data-line="869" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt eine Url zurück, die die Parameter $params enthält
@@ -2478,9 +2478,9 @@ Dieser Url werden die Standard rexList Variablen zugefügt.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">404</span>
+    <span class="phpdocumentor-element-found-in__line">407</span>
 
-            <a href="classes/rex-list.html#source-view.404" class="phpdocumentor-element-found-in__source" data-line="404" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.407" class="phpdocumentor-element-found-in__source" data-line="407" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Methode, um die Zeilen-Attribute (&lt;tr&gt;) abzufragen.</p>
@@ -2520,9 +2520,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">947</span>
+    <span class="phpdocumentor-element-found-in__line">950</span>
 
-            <a href="classes/rex-list.html#source-view.947" class="phpdocumentor-element-found-in__source" data-line="947" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.950" class="phpdocumentor-element-found-in__source" data-line="950" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt die Anzahl der Zeilen zurück, welche vom ursprüngliche SQL Statement betroffen werden.</p>
@@ -2557,9 +2557,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">982</span>
+    <span class="phpdocumentor-element-found-in__line">985</span>
 
-            <a href="classes/rex-list.html#source-view.982" class="phpdocumentor-element-found-in__source" data-line="982" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.985" class="phpdocumentor-element-found-in__source" data-line="985" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt zurück, nach welcher Spalte sortiert werden soll.</p>
@@ -2604,9 +2604,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1000</span>
+    <span class="phpdocumentor-element-found-in__line">1003</span>
 
-            <a href="classes/rex-list.html#source-view.1000" class="phpdocumentor-element-found-in__source" data-line="1000" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1003" class="phpdocumentor-element-found-in__source" data-line="1003" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt zurück, in welcher Art und Weise sortiert werden soll (ASC/DESC).</p>
@@ -2712,9 +2712,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">782</span>
+    <span class="phpdocumentor-element-found-in__line">785</span>
 
-            <a href="classes/rex-list.html#source-view.782" class="phpdocumentor-element-found-in__source" data-line="782" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.785" class="phpdocumentor-element-found-in__source" data-line="785" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -2748,9 +2748,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">825</span>
+    <span class="phpdocumentor-element-found-in__line">828</span>
 
-            <a href="classes/rex-list.html#source-view.825" class="phpdocumentor-element-found-in__source" data-line="825" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.828" class="phpdocumentor-element-found-in__source" data-line="828" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Returns a Url which contains the given parameters.</p>
@@ -2810,9 +2810,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1191</span>
+    <span class="phpdocumentor-element-found-in__line">1194</span>
 
-            <a href="classes/rex-list.html#source-view.1191" class="phpdocumentor-element-found-in__source" data-line="1191" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1194" class="phpdocumentor-element-found-in__source" data-line="1194" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -2893,9 +2893,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">643</span>
+    <span class="phpdocumentor-element-found-in__line">646</span>
 
-            <a href="classes/rex-list.html#source-view.643" class="phpdocumentor-element-found-in__source" data-line="643" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.646" class="phpdocumentor-element-found-in__source" data-line="646" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt zurück, ob für eine Spalte eine Option gesetzt wurde.</p>
@@ -2951,9 +2951,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">682</span>
+    <span class="phpdocumentor-element-found-in__line">685</span>
 
-            <a href="classes/rex-list.html#source-view.682" class="phpdocumentor-element-found-in__source" data-line="682" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.685" class="phpdocumentor-element-found-in__source" data-line="685" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt zurück, ob Parameter für eine Spalte existieren.</p>
@@ -3032,9 +3032,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1108</span>
+    <span class="phpdocumentor-element-found-in__line">1111</span>
 
-            <a href="classes/rex-list.html#source-view.1108" class="phpdocumentor-element-found-in__source" data-line="1108" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1111" class="phpdocumentor-element-found-in__source" data-line="1111" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -3078,9 +3078,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">438</span>
+    <span class="phpdocumentor-element-found-in__line">441</span>
 
-            <a href="classes/rex-list.html#source-view.438" class="phpdocumentor-element-found-in__source" data-line="438" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.441" class="phpdocumentor-element-found-in__source" data-line="441" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Entfernt eine Spalte aus der Anzeige.</p>
@@ -3123,9 +3123,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1070</span>
+    <span class="phpdocumentor-element-found-in__line">1073</span>
 
-            <a href="classes/rex-list.html#source-view.1070" class="phpdocumentor-element-found-in__source" data-line="1070" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1073" class="phpdocumentor-element-found-in__source" data-line="1073" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -3176,9 +3176,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1084</span>
+    <span class="phpdocumentor-element-found-in__line">1087</span>
 
-            <a href="classes/rex-list.html#source-view.1084" class="phpdocumentor-element-found-in__source" data-line="1084" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1087" class="phpdocumentor-element-found-in__source" data-line="1087" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Ersetzt alle Variablen im Format ###&amp;lt;Spaltenname&amp;gt;###.</p>
@@ -3285,9 +3285,9 @@ Gibt den Namen es Formulars zurück.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">571</span>
+    <span class="phpdocumentor-element-found-in__line">574</span>
 
-            <a href="classes/rex-list.html#source-view.571" class="phpdocumentor-element-found-in__source" data-line="571" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.574" class="phpdocumentor-element-found-in__source" data-line="574" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt ein Format für die Spalte.</p>
@@ -3357,9 +3357,9 @@ Gibt den Namen es Formulars zurück.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">540</span>
+    <span class="phpdocumentor-element-found-in__line">543</span>
 
-            <a href="classes/rex-list.html#source-view.540" class="phpdocumentor-element-found-in__source" data-line="540" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.543" class="phpdocumentor-element-found-in__source" data-line="543" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt ein Label für eine Spalte.</p>
@@ -3411,9 +3411,9 @@ Gibt den Namen es Formulars zurück.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">450</span>
+    <span class="phpdocumentor-element-found-in__line">453</span>
 
-            <a href="classes/rex-list.html#source-view.450" class="phpdocumentor-element-found-in__source" data-line="450" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.453" class="phpdocumentor-element-found-in__source" data-line="453" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Methode, um das Layout einer Spalte zu setzen.</p>
@@ -3465,9 +3465,9 @@ Gibt den Namen es Formulars zurück.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">613</span>
+    <span class="phpdocumentor-element-found-in__line">616</span>
 
-            <a href="classes/rex-list.html#source-view.613" class="phpdocumentor-element-found-in__source" data-line="613" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.616" class="phpdocumentor-element-found-in__source" data-line="616" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Setzt eine Option für eine Spalte
@@ -3529,9 +3529,9 @@ Gibt den Namen es Formulars zurück.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">655</span>
+    <span class="phpdocumentor-element-found-in__line">658</span>
 
-            <a href="classes/rex-list.html#source-view.655" class="phpdocumentor-element-found-in__source" data-line="655" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.658" class="phpdocumentor-element-found-in__source" data-line="658" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Verlinkt eine Spalte mit den übergebenen Parametern.</p>
@@ -3583,9 +3583,9 @@ Gibt den Namen es Formulars zurück.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">696</span>
+    <span class="phpdocumentor-element-found-in__line">699</span>
 
-            <a href="classes/rex-list.html#source-view.696" class="phpdocumentor-element-found-in__source" data-line="696" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.699" class="phpdocumentor-element-found-in__source" data-line="699" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Verschiebt eine Spalte an eine andere Position in der Spaltenliste.</p>
@@ -3646,9 +3646,9 @@ Gibt den Namen es Formulars zurück.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">598</span>
+    <span class="phpdocumentor-element-found-in__line">601</span>
 
-            <a href="classes/rex-list.html#source-view.598" class="phpdocumentor-element-found-in__source" data-line="598" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.601" class="phpdocumentor-element-found-in__source" data-line="601" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Markiert eine Spalte als sortierbar.</p>
@@ -3742,9 +3742,9 @@ Gibt den Namen es Formulars zurück.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">389</span>
+    <span class="phpdocumentor-element-found-in__line">392</span>
 
-            <a href="classes/rex-list.html#source-view.389" class="phpdocumentor-element-found-in__source" data-line="389" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.392" class="phpdocumentor-element-found-in__source" data-line="392" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Methode, um der Zeile (&lt;tr&gt;) Attribute hinzuzufügen.</p>
@@ -3788,9 +3788,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1341</span>
+    <span class="phpdocumentor-element-found-in__line">1344</span>
 
-            <a href="classes/rex-list.html#source-view.1341" class="phpdocumentor-element-found-in__source" data-line="1341" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1344" class="phpdocumentor-element-found-in__source" data-line="1344" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -3902,9 +3902,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1165</span>
+    <span class="phpdocumentor-element-found-in__line">1168</span>
 
-            <a href="classes/rex-list.html#source-view.1165" class="phpdocumentor-element-found-in__source" data-line="1165" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1168" class="phpdocumentor-element-found-in__source" data-line="1168" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -3948,9 +3948,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1143</span>
+    <span class="phpdocumentor-element-found-in__line">1146</span>
 
-            <a href="classes/rex-list.html#source-view.1143" class="phpdocumentor-element-found-in__source" data-line="1143" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1146" class="phpdocumentor-element-found-in__source" data-line="1146" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -3984,9 +3984,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">523</span>
+    <span class="phpdocumentor-element-found-in__line">526</span>
 
-            <a href="classes/rex-list.html#source-view.523" class="phpdocumentor-element-found-in__source" data-line="523" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.526" class="phpdocumentor-element-found-in__source" data-line="526" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -4037,9 +4037,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">506</span>
+    <span class="phpdocumentor-element-found-in__line">509</span>
 
-            <a href="classes/rex-list.html#source-view.506" class="phpdocumentor-element-found-in__source" data-line="506" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.509" class="phpdocumentor-element-found-in__source" data-line="509" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -4073,9 +4073,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1027</span>
+    <span class="phpdocumentor-element-found-in__line">1030</span>
 
-            <a href="classes/rex-list.html#source-view.1027" class="phpdocumentor-element-found-in__source" data-line="1027" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.1030" class="phpdocumentor-element-found-in__source" data-line="1030" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Gibt die Navigation der Liste zurück.</p>
@@ -4110,9 +4110,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">952</span>
+    <span class="phpdocumentor-element-found-in__line">955</span>
 
-            <a href="classes/rex-list.html#source-view.952" class="phpdocumentor-element-found-in__source" data-line="952" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.955" class="phpdocumentor-element-found-in__source" data-line="955" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
     
@@ -4178,9 +4178,9 @@ oder eine Callback-Funktion</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/list.php"><a href="files/redaxo-main-redaxo-src-core-lib-list.html"><abbr title="redaxo-main/redaxo/src/core/lib/list.php">list.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">903</span>
+    <span class="phpdocumentor-element-found-in__line">906</span>
 
-            <a href="classes/rex-list.html#source-view.903" class="phpdocumentor-element-found-in__source" data-line="903" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
+            <a href="classes/rex-list.html#source-view.906" class="phpdocumentor-element-found-in__source" data-line="906" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/list.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Prepariert das SQL Statement vorm anzeigen der Liste.</p>
