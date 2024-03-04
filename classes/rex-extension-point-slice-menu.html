@@ -274,31 +274,31 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-extension-point-slice-menu.html#method_getMenuDeleteAction">getMenuDeleteAction()</a>
     <span>
-                                &nbsp;: array{label?: string, url?: string, attributes?: array{class: string[], title: string, data-confirm: string}}    </span>
+                                &nbsp;: array{label?: string, url?: string, attributes?: array{class: list<string>, title: string, data-confirm: string}}    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-extension-point-slice-menu.html#method_getMenuEditAction">getMenuEditAction()</a>
     <span>
-                                &nbsp;: array{label?: string, url?: string, attributes?: array{class: string[], title: string}}    </span>
+                                &nbsp;: array{label?: string, url?: string, attributes?: array{class: list<string>, title: string}}    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-extension-point-slice-menu.html#method_getMenuMovedownAction">getMenuMovedownAction()</a>
     <span>
-                                &nbsp;: array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}    </span>
+                                &nbsp;: array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-extension-point-slice-menu.html#method_getMenuMoveupAction">getMenuMoveupAction()</a>
     <span>
-                                &nbsp;: array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}    </span>
+                                &nbsp;: array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-extension-point-slice-menu.html#method_getMenuStatusAction">getMenuStatusAction()</a>
     <span>
-                                &nbsp;: array{label?: string, url?: string, attributes?: array{class: string[]}}    </span>
+                                &nbsp;: array{label?: string, url?: string, attributes?: array{class: list<string>}}    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
@@ -491,7 +491,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[], title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuEditAction</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[], title: string, data-confirm: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuDeleteAction</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[]}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuStatusAction</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuMoveupAction</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuMovedownAction</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/rex-context.html"><abbr title="\rex_context">rex_context</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fragment</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$articleId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clang</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ctype</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$moduleId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sliceId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hasPerm</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuEditAction</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string, data-confirm: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuDeleteAction</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuStatusAction</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuMoveupAction</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuMovedownAction</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/rex-context.html"><abbr title="\rex_context">rex_context</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$context</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$fragment</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$articleId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clang</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ctype</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$moduleId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$sliceId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$hasPerm</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -500,35 +500,35 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$menuEditAction</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[], title: string}}</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string}}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$menuDeleteAction</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[], title: string, data-confirm: string}}</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string, data-confirm: string}}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$menuStatusAction</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[]}}</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>}}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$menuMoveupAction</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$menuMovedownAction</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -875,7 +875,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMenuDeleteAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: string[], title: string, data-confirm: string}}</span></code>
+                    <span class="phpdocumentor-signature__name">getMenuDeleteAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string, data-confirm: string}}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -885,7 +885,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: string[], title: string, data-confirm: string}}</span>
+        <span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string, data-confirm: string}}</span>
             </section>
 
 </article>
@@ -911,7 +911,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMenuEditAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: string[], title: string}}</span></code>
+                    <span class="phpdocumentor-signature__name">getMenuEditAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string}}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -921,7 +921,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: string[], title: string}}</span>
+        <span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string}}</span>
             </section>
 
 </article>
@@ -947,7 +947,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMenuMovedownAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}</span></code>
+                    <span class="phpdocumentor-signature__name">getMenuMovedownAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -957,7 +957,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}</span>
+        <span class="phpdocumentor-signature__response_type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}</span>
             </section>
 
 </article>
@@ -983,7 +983,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMenuMoveupAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}</span></code>
+                    <span class="phpdocumentor-signature__name">getMenuMoveupAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -993,7 +993,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}</span>
+        <span class="phpdocumentor-signature__response_type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}</span>
             </section>
 
 </article>
@@ -1019,7 +1019,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getMenuStatusAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: string[]}}</span></code>
+                    <span class="phpdocumentor-signature__name">getMenuStatusAction</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: list<string>}}</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1029,7 +1029,7 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: string[]}}</span>
+        <span class="phpdocumentor-signature__response_type">array{label?: string, url?: string, attributes?: array{class: list<string>}}</span>
             </section>
 
 </article>
@@ -1493,7 +1493,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setMenuDeleteAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[], title: string, data-confirm: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuDeleteAction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setMenuDeleteAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string, data-confirm: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuDeleteAction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1502,7 +1502,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$menuDeleteAction</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[], title: string, data-confirm: string}}</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string, data-confirm: string}}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1535,7 +1535,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setMenuEditAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[], title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuEditAction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setMenuEditAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuEditAction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1544,7 +1544,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$menuEditAction</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[], title: string}}</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>, title: string}}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1577,7 +1577,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setMenuMovedownAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuMovedownAction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setMenuMovedownAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuMovedownAction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1586,7 +1586,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$menuMovedownAction</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1619,7 +1619,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setMenuMoveupAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuMoveupAction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setMenuMoveupAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuMoveupAction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1628,7 +1628,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$menuMoveupAction</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: string[], title: string}}</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array{hidden_label?: string, url?: string, icon?: string, attributes?: array{class: list<string>, title: string}}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -1661,7 +1661,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">setMenuStatusAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[]}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuStatusAction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setMenuStatusAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>}}&nbsp;</span><span class="phpdocumentor-signature__argument__name">$menuStatusAction</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1670,7 +1670,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$menuStatusAction</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: string[]}}</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array{label?: string, url?: string, attributes?: array{class: list<string>}}</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
