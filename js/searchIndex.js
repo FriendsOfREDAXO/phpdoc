@@ -5816,6 +5816,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-form-element.html#method_hasAttribute"
         },                {
+            "fqsen": "\\rex_form_element\u003A\u003AdisableSpellcheckAndAutoCorrect\u0028\u0029",
+            "name": "disableSpellcheckAndAutoCorrect",
+            "summary": "",
+            "url": "classes/rex-form-element.html#method_disableSpellcheckAndAutoCorrect"
+        },                {
             "fqsen": "\\rex_form_element\u003A\u003AisReadOnly\u0028\u0029",
             "name": "isReadOnly",
             "summary": "",
