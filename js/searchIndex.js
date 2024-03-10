@@ -5471,6 +5471,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/rex-http-exception.html#method_getHttpCode"
         },                {
+            "fqsen": "\\rex_http_exception\u003A\u003AisClientError\u0028\u0029",
+            "name": "isClientError",
+            "summary": "",
+            "url": "classes/rex-http-exception.html#method_isClientError"
+        },                {
             "fqsen": "\\rex_yaml_parse_exception",
             "name": "rex_yaml_parse_exception",
             "summary": "Exception\u0020class\u0020for\u0020yaml\u0020parse\u0020errors.",
