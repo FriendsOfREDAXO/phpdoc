@@ -138,7 +138,7 @@
     rex_api_content_copy
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/rex-api-function.html"><abbr title="\rex_api_function">rex_api_function</abbr></a>
+        extends <abbr title="\rex_api_function">rex_api_function</abbr>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -166,8 +166,7 @@
             <a href="classes/rex-api-content-copy.html#source-view.5" class="phpdocumentor-element-found-in__source" data-line="5" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/structure/plugins/content/lib/api_functions/api_content_copy.php.txt"></a>
     </aside>
 
-            <p class="phpdocumentor-summary">This is a base class for all functions which a component may provide for public use.</p>
-
+        
 
 
 
@@ -185,48 +184,8 @@
 
 
 
-<h4 id="toc-constants">
-    Constants
-    <a href="classes/rex-api-content-copy.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
-
-</h4>
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/rex-api-function.html#constant_REQ_CALL_PARAM">REQ_CALL_PARAM</a>
-    <span>
-        &nbsp;= &#039;rex-api-call&#039;                            </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
-    <a href="classes/rex-api-function.html#constant_REQ_RESULT_PARAM">REQ_RESULT_PARAM</a>
-    <span>
-        &nbsp;= &#039;rex-api-result&#039;                            </span>
-</dt>
-
-    </dl>
 
 
-<h4 id="toc-properties">
-    Properties
-    <a href="classes/rex-api-content-copy.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-</h4>
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/rex-api-function.html#property_published">$published</a>
-    <span>
-                        &nbsp;: bool            </span>
-</dt>
-<dd>Flag, indicating if this api function may be called from the frontend. False by default.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/rex-api-function.html#property_result">$result</a>
-    <span>
-                        &nbsp;: <a href="classes/rex-api-result.html"><abbr title="\rex_api_result">rex_api_result</abbr></a>|null            </span>
-</dt>
-<dd>The result of the function call.</dd>
-
-    </dl>
 
 <h4 id="toc-methods">
     Methods
@@ -237,68 +196,14 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/rex-api-content-copy.html#method_execute">execute()</a>
     <span>
-                                &nbsp;: <a href="classes/rex-api-result.html"><abbr title="\rex_api_result">rex_api_result</abbr></a>    </span>
-</dt>
-<dd>This method have to be overriden by a subclass and does all logic which the api function represents.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/rex-api-function.html#method_factory">factory()</a>
-    <span>
-                                &nbsp;: self|null    </span>
-</dt>
-<dd>Returns the api function instance which is bound to the current request, or null if no api function was bound.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/rex-api-function.html#method_getHiddenFields">getHiddenFields()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Returns the hidden fields for `rex-api-call` and `_csrf_token`.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/rex-api-function.html#method_getMessage">getMessage()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/rex-api-function.html#method_getResult">getResult()</a>
-    <span>
-                                &nbsp;: <a href="classes/rex-api-result.html"><abbr title="\rex_api_result">rex_api_result</abbr></a>|null    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/rex-api-function.html#method_getUrlParams">getUrlParams()</a>
-    <span>
-                                &nbsp;: array&lt;string, string&gt;    </span>
-</dt>
-<dd>Returns an array containing the `rex-api-call` and `_csrf_token` params.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/rex-api-function.html#method_handleCall">handleCall()</a>
-    <span>
-                                &nbsp;: void    </span>
-</dt>
-<dd>checks whether an api function is bound to the current requests. If so, so the api function will be executed.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/rex-api-function.html#method_hasMessage">hasMessage()</a>
-    <span>
-                                &nbsp;: bool    </span>
-</dt>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/rex-api-function.html#method___construct">__construct()</a>
-    <span>
-                                &nbsp;: mixed    </span>
+                                &nbsp;: <abbr title="\rex_api_result">rex_api_result</abbr>    </span>
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/rex-api-content-copy.html#method_requiresCsrfProtection">requiresCsrfProtection()</a>
     <span>
-                                &nbsp;: bool    </span>
+                                &nbsp;: mixed    </span>
 </dt>
-<dd>Csrf validation is disabled by default for backwards compatiblity reasons. This default will change in a future version.</dd>
 
     </dl>
 
@@ -306,150 +211,8 @@
 
 
         
-    <section class="phpdocumentor-constants">
-        <h3 class="phpdocumentor-elements__header" id="constants">
-            Constants
-            <a href="classes/rex-api-content-copy.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h3>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_REQ_CALL_PARAM">
-        REQ_CALL_PARAM
-        <a href="classes/rex-api-function.html#constant_REQ_CALL_PARAM" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">28</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.28" class="phpdocumentor-element-found-in__source" data-line="28" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">REQ_CALL_PARAM</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;rex-api-call&#039;</span>
-</code>
-
-
-    
-    
-    
-
-</article>
-                    <article class="phpdocumentor-element -constant -public ">
-    <h4 class="phpdocumentor-element__name" id="constant_REQ_RESULT_PARAM">
-        REQ_RESULT_PARAM
-        <a href="classes/rex-api-function.html#constant_REQ_RESULT_PARAM" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">29</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.29" class="phpdocumentor-element-found-in__source" data-line="29" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-    
-    <code class="phpdocumentor-signature phpdocumentor-code ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-        <span class="phpdocumentor-signature__type">mixed</span>
-    <span class="phpdocumentor-signature__name">REQ_RESULT_PARAM</span>
-    = <span class="phpdocumentor-signature__default-value">&#039;rex-api-result&#039;</span>
-</code>
-
-
-    
-    
-    
-
-</article>
-            </section>
 
         
-    <section class="phpdocumentor-properties">
-        <h3 class="phpdocumentor-elements__header" id="properties">
-            Properties
-            <a href="classes/rex-api-content-copy.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
-
-        </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_published">
-        $published
-        <a href="classes/rex-api-function.html#property_published" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">36</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.36" class="phpdocumentor-element-found-in__source" data-line="36" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-        <p class="phpdocumentor-summary">Flag, indicating if this api function may be called from the frontend. False by default.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$published</span>
-     = <span class="phpdocumentor-signature__default-value">\false</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_result">
-        $result
-        <a href="classes/rex-api-function.html#property_result" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">43</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.43" class="phpdocumentor-element-found-in__source" data-line="43" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-        <p class="phpdocumentor-summary">The result of the function call.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/rex-api-result.html"><abbr title="\rex_api_result">rex_api_result</abbr></a>|null</span>
-    <span class="phpdocumentor-signature__name">$result</span>
-    </code>
-
-    
-    
-    
-
-</article>
-            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
@@ -476,11 +239,10 @@
             <a href="classes/rex-api-content-copy.html#source-view.12" class="phpdocumentor-element-found-in__source" data-line="12" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/structure/plugins/content/lib/api_functions/api_content_copy.php.txt"></a>
     </aside>
 
-        <p class="phpdocumentor-summary">This method have to be overriden by a subclass and does all logic which the api function represents.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">execute</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/rex-api-result.html"><abbr title="\rex_api_result">rex_api_result</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">execute</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\rex_api_result">rex_api_result</abbr></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -497,7 +259,7 @@
                     <span class="phpdocumentor-tag__name">throws</span>
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/rex-api-exception.html"><abbr title="\rex_api_exception">rex_api_exception</abbr></a></span>
+                                                                <span class="phpdocumentor-tag-link"><abbr title="\rex_api_exception">rex_api_exception</abbr></span>
                                                             
                                              
                                     </dd>
@@ -505,322 +267,9 @@
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/rex-api-result.html"><abbr title="\rex_api_result">rex_api_result</abbr></a></span>
+        <span class="phpdocumentor-signature__response_type"><abbr title="\rex_api_result">rex_api_result</abbr></span>
             </section>
 
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_factory">
-        factory()
-        <a href="classes/rex-api-function.html#method_factory" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">76</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.76" class="phpdocumentor-element-found-in__source" data-line="76" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-        <p class="phpdocumentor-summary">Returns the api function instance which is bound to the current request, or null if no api function was bound.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">factory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self|null</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/rex-api-function.html#method_factory#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><a href="classes/rex-exception.html"><abbr title="\rex_exception">rex_exception</abbr></a></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">self|null</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getHiddenFields">
-        getHiddenFields()
-        <a href="classes/rex-api-function.html#method_getHiddenFields" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">129</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.129" class="phpdocumentor-element-found-in__source" data-line="129" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-        <p class="phpdocumentor-summary">Returns the hidden fields for `rex-api-call` and `_csrf_token`.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getHiddenFields</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-        <section class="phpdocumentor-description"><p>The method must be called on sub classes.</p>
-</section>
-
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getMessage">
-        getMessage()
-        <a href="classes/rex-api-function.html#method_getMessage" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">225</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.225" class="phpdocumentor-element-found-in__source" data-line="225" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getMessage</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formatted</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$formatted</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getResult">
-        getResult()
-        <a href="classes/rex-api-function.html#method_getResult" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">246</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.246" class="phpdocumentor-element-found-in__source" data-line="246" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getResult</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/rex-api-result.html"><abbr title="\rex_api_result">rex_api_result</abbr></a>|null</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/rex-api-result.html"><abbr title="\rex_api_result">rex_api_result</abbr></a>|null</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_getUrlParams">
-        getUrlParams()
-        <a href="classes/rex-api-function.html#method_getUrlParams" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">108</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.108" class="phpdocumentor-element-found-in__source" data-line="108" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-        <p class="phpdocumentor-summary">Returns an array containing the `rex-api-call` and `_csrf_token` params.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getUrlParams</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-        <section class="phpdocumentor-description"><p>The method must be called on sub classes.</p>
-</section>
-
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_handleCall">
-        handleCall()
-        <a href="classes/rex-api-function.html#method_handleCall" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">149</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.149" class="phpdocumentor-element-found-in__source" data-line="149" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-        <p class="phpdocumentor-summary">checks whether an api function is bound to the current requests. If so, so the api function will be executed.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">handleCall</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_hasMessage">
-        hasMessage()
-        <a href="classes/rex-api-function.html#method_hasMessage" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">209</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.209" class="phpdocumentor-element-found-in__source" data-line="209" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">hasMessage</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method___construct">
-        __construct()
-        <a href="classes/rex-api-function.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/api_function.php"><a href="files/redaxo-main-redaxo-src-core-lib-api-function.html"><abbr title="redaxo-main/redaxo/src/core/lib/api_function.php">api_function.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">52</span>
-
-            <a href="classes/rex-api-content-copy.html#source-view.52" class="phpdocumentor-element-found-in__source" data-line="52" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/api_function.php.txt"></a>
-    </aside>
-
-    
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-    
 </article>
                     <article
         class="phpdocumentor-element
@@ -841,25 +290,18 @@
             <a href="classes/rex-api-content-copy.html#source-view.35" class="phpdocumentor-element-found-in__source" data-line="35" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/addons/structure/plugins/content/lib/api_functions/api_content_copy.php.txt"></a>
     </aside>
 
-        <p class="phpdocumentor-summary">Csrf validation is disabled by default for backwards compatiblity reasons. This default will change in a future version.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                    <span class="phpdocumentor-signature__name">requiresCsrfProtection</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">requiresCsrfProtection</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-        <section class="phpdocumentor-description"><p>Prepare all your api functions to work with csrf token by using your-api-class::getUrlParams()/getHiddenFields(), otherwise they will stop work.</p>
-</section>
-
+    
     
     
 
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool</span>
-            </section>
-
+    
 </article>
             </section>
 
@@ -966,39 +408,15 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                        <li><a href="classes/rex-api-content-copy.html#toc-constants">Constants</a></li>
-                                                            <li><a href="classes/rex-api-content-copy.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/rex-api-content-copy.html#toc-methods">Methods</a></li>
+                                                                                <li><a href="classes/rex-api-content-copy.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
-                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
-                <li>
-                    <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/rex-api-function.html#constant_REQ_CALL_PARAM">REQ_CALL_PARAM</a></li>
-                                                    <li><a href="classes/rex-api-function.html#constant_REQ_RESULT_PARAM">REQ_RESULT_PARAM</a></li>
-                                            </ul>
-                </li>
             
-                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
-                <li>
-                    <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/rex-api-function.html#property_published">$published<a href="classes/rex-api-content-copy.html"></li>
-                                                    <li><a href="classes/rex-api-function.html#property_result">$result<a href="classes/rex-api-content-copy.html"></li>
-                                            </ul>
-                </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
                                             <li><a href="classes/rex-api-content-copy.html#method_execute">execute()</a></li>
-                                            <li><a href="classes/rex-api-function.html#method_factory">factory()</a></li>
-                                            <li><a href="classes/rex-api-function.html#method_getHiddenFields">getHiddenFields()</a></li>
-                                            <li><a href="classes/rex-api-function.html#method_getMessage">getMessage()</a></li>
-                                            <li><a href="classes/rex-api-function.html#method_getResult">getResult()</a></li>
-                                            <li><a href="classes/rex-api-function.html#method_getUrlParams">getUrlParams()</a></li>
-                                            <li><a href="classes/rex-api-function.html#method_handleCall">handleCall()</a></li>
-                                            <li><a href="classes/rex-api-function.html#method_hasMessage">hasMessage()</a></li>
-                                            <li><a href="classes/rex-api-function.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/rex-api-content-copy.html#method_requiresCsrfProtection">requiresCsrfProtection()</a></li>
                                     </ul>
             </li>

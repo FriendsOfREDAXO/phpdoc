@@ -2193,17 +2193,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_api_article_move",
             "name": "rex_api_article_move",
-            "summary": "This\u0020is\u0020a\u0020base\u0020class\u0020for\u0020all\u0020functions\u0020which\u0020a\u0020component\u0020may\u0020provide\u0020for\u0020public\u0020use.",
+            "summary": "",
             "url": "classes/rex-api-article-move.html"
         },                {
             "fqsen": "\\rex_api_article_move\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
-            "summary": "This\u0020method\u0020have\u0020to\u0020be\u0020overriden\u0020by\u0020a\u0020subclass\u0020and\u0020does\u0020all\u0020logic\u0020which\u0020the\u0020api\u0020function\u0020represents.",
+            "summary": "",
             "url": "classes/rex-api-article-move.html#method_execute"
         },                {
             "fqsen": "\\rex_api_article_move\u003A\u003ArequiresCsrfProtection\u0028\u0029",
             "name": "requiresCsrfProtection",
-            "summary": "Csrf\u0020validation\u0020is\u0020disabled\u0020by\u0020default\u0020for\u0020backwards\u0020compatiblity\u0020reasons.\u0020This\u0020default\u0020will\u0020change\u0020in\u0020a\u0020future\u0020version.",
+            "summary": "",
             "url": "classes/rex-api-article-move.html#method_requiresCsrfProtection"
         },                {
             "fqsen": "\\rex_article",
@@ -3073,17 +3073,17 @@ Search.appendIndex(
         },                {
             "fqsen": "\\rex_api_content_copy",
             "name": "rex_api_content_copy",
-            "summary": "This\u0020is\u0020a\u0020base\u0020class\u0020for\u0020all\u0020functions\u0020which\u0020a\u0020component\u0020may\u0020provide\u0020for\u0020public\u0020use.",
+            "summary": "",
             "url": "classes/rex-api-content-copy.html"
         },                {
             "fqsen": "\\rex_api_content_copy\u003A\u003Aexecute\u0028\u0029",
             "name": "execute",
-            "summary": "This\u0020method\u0020have\u0020to\u0020be\u0020overriden\u0020by\u0020a\u0020subclass\u0020and\u0020does\u0020all\u0020logic\u0020which\u0020the\u0020api\u0020function\u0020represents.",
+            "summary": "",
             "url": "classes/rex-api-content-copy.html#method_execute"
         },                {
             "fqsen": "\\rex_api_content_copy\u003A\u003ArequiresCsrfProtection\u0028\u0029",
             "name": "requiresCsrfProtection",
-            "summary": "Csrf\u0020validation\u0020is\u0020disabled\u0020by\u0020default\u0020for\u0020backwards\u0020compatiblity\u0020reasons.\u0020This\u0020default\u0020will\u0020change\u0020in\u0020a\u0020future\u0020version.",
+            "summary": "",
             "url": "classes/rex-api-content-copy.html#method_requiresCsrfProtection"
         },                {
             "fqsen": "\\rex_module",
@@ -4285,131 +4285,6 @@ Search.appendIndex(
             "name": "rex_ini_get",
             "summary": "",
             "url": "namespaces/default.html#function_rex_ini_get"
-        },                {
-            "fqsen": "\\rex_api_function",
-            "name": "rex_api_function",
-            "summary": "This\u0020is\u0020a\u0020base\u0020class\u0020for\u0020all\u0020functions\u0020which\u0020a\u0020component\u0020may\u0020provide\u0020for\u0020public\u0020use.",
-            "url": "classes/rex-api-function.html"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/rex-api-function.html#method___construct"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003Aexecute\u0028\u0029",
-            "name": "execute",
-            "summary": "This\u0020method\u0020have\u0020to\u0020be\u0020overriden\u0020by\u0020a\u0020subclass\u0020and\u0020does\u0020all\u0020logic\u0020which\u0020the\u0020api\u0020function\u0020represents.",
-            "url": "classes/rex-api-function.html#method_execute"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003Afactory\u0028\u0029",
-            "name": "factory",
-            "summary": "Returns\u0020the\u0020api\u0020function\u0020instance\u0020which\u0020is\u0020bound\u0020to\u0020the\u0020current\u0020request,\u0020or\u0020null\u0020if\u0020no\u0020api\u0020function\u0020was\u0020bound.",
-            "url": "classes/rex-api-function.html#method_factory"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003AgetUrlParams\u0028\u0029",
-            "name": "getUrlParams",
-            "summary": "Returns\u0020an\u0020array\u0020containing\u0020the\u0020\u0060rex\u002Dapi\u002Dcall\u0060\u0020and\u0020\u0060_csrf_token\u0060\u0020params.",
-            "url": "classes/rex-api-function.html#method_getUrlParams"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003AgetHiddenFields\u0028\u0029",
-            "name": "getHiddenFields",
-            "summary": "Returns\u0020the\u0020hidden\u0020fields\u0020for\u0020\u0060rex\u002Dapi\u002Dcall\u0060\u0020and\u0020\u0060_csrf_token\u0060.",
-            "url": "classes/rex-api-function.html#method_getHiddenFields"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003AhandleCall\u0028\u0029",
-            "name": "handleCall",
-            "summary": "checks\u0020whether\u0020an\u0020api\u0020function\u0020is\u0020bound\u0020to\u0020the\u0020current\u0020requests.\u0020If\u0020so,\u0020so\u0020the\u0020api\u0020function\u0020will\u0020be\u0020executed.",
-            "url": "classes/rex-api-function.html#method_handleCall"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003AhasMessage\u0028\u0029",
-            "name": "hasMessage",
-            "summary": "",
-            "url": "classes/rex-api-function.html#method_hasMessage"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003AgetMessage\u0028\u0029",
-            "name": "getMessage",
-            "summary": "",
-            "url": "classes/rex-api-function.html#method_getMessage"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003AgetResult\u0028\u0029",
-            "name": "getResult",
-            "summary": "",
-            "url": "classes/rex-api-function.html#method_getResult"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003ArequiresCsrfProtection\u0028\u0029",
-            "name": "requiresCsrfProtection",
-            "summary": "Csrf\u0020validation\u0020is\u0020disabled\u0020by\u0020default\u0020for\u0020backwards\u0020compatiblity\u0020reasons.\u0020This\u0020default\u0020will\u0020change\u0020in\u0020a\u0020future\u0020version.",
-            "url": "classes/rex-api-function.html#method_requiresCsrfProtection"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003AREQ_CALL_PARAM",
-            "name": "REQ_CALL_PARAM",
-            "summary": "",
-            "url": "classes/rex-api-function.html#constant_REQ_CALL_PARAM"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003AREQ_RESULT_PARAM",
-            "name": "REQ_RESULT_PARAM",
-            "summary": "",
-            "url": "classes/rex-api-function.html#constant_REQ_RESULT_PARAM"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003A\u0024published",
-            "name": "published",
-            "summary": "Flag,\u0020indicating\u0020if\u0020this\u0020api\u0020function\u0020may\u0020be\u0020called\u0020from\u0020the\u0020frontend.\u0020False\u0020by\u0020default.",
-            "url": "classes/rex-api-function.html#property_published"
-        },                {
-            "fqsen": "\\rex_api_function\u003A\u003A\u0024result",
-            "name": "result",
-            "summary": "The\u0020result\u0020of\u0020the\u0020function\u0020call.",
-            "url": "classes/rex-api-function.html#property_result"
-        },                {
-            "fqsen": "\\rex_api_result",
-            "name": "rex_api_result",
-            "summary": "Class\u0020representing\u0020the\u0020result\u0020of\u0020a\u0020api\u0020function\u0020call.",
-            "url": "classes/rex-api-result.html"
-        },                {
-            "fqsen": "\\rex_api_result\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/rex-api-result.html#method___construct"
-        },                {
-            "fqsen": "\\rex_api_result\u003A\u003AsetRequiresReboot\u0028\u0029",
-            "name": "setRequiresReboot",
-            "summary": "",
-            "url": "classes/rex-api-result.html#method_setRequiresReboot"
-        },                {
-            "fqsen": "\\rex_api_result\u003A\u003ArequiresReboot\u0028\u0029",
-            "name": "requiresReboot",
-            "summary": "",
-            "url": "classes/rex-api-result.html#method_requiresReboot"
-        },                {
-            "fqsen": "\\rex_api_result\u003A\u003AgetFormattedMessage\u0028\u0029",
-            "name": "getFormattedMessage",
-            "summary": "",
-            "url": "classes/rex-api-result.html#method_getFormattedMessage"
-        },                {
-            "fqsen": "\\rex_api_result\u003A\u003AgetMessage\u0028\u0029",
-            "name": "getMessage",
-            "summary": "Returns\u0020end\u002Duser\u0020friendly\u0020statusmessage.",
-            "url": "classes/rex-api-result.html#method_getMessage"
-        },                {
-            "fqsen": "\\rex_api_result\u003A\u003AisSuccessfull\u0028\u0029",
-            "name": "isSuccessfull",
-            "summary": "Returns\u0020whether\u0020the\u0020api\u0020function\u0020was\u0020executed\u0020successfully.",
-            "url": "classes/rex-api-result.html#method_isSuccessfull"
-        },                {
-            "fqsen": "\\rex_api_result\u003A\u003AtoJSON\u0028\u0029",
-            "name": "toJSON",
-            "summary": "",
-            "url": "classes/rex-api-result.html#method_toJSON"
-        },                {
-            "fqsen": "\\rex_api_result\u003A\u003AfromJSON\u0028\u0029",
-            "name": "fromJSON",
-            "summary": "",
-            "url": "classes/rex-api-result.html#method_fromJSON"
-        },                {
-            "fqsen": "\\rex_api_exception",
-            "name": "rex_api_exception",
-            "summary": "Exception\u002DType\u0020to\u0020indicate\u0020exceptions\u0020in\u0020an\u0020api\u0020function.",
-            "url": "classes/rex-api-exception.html"
         },                {
             "fqsen": "\\rex_autoload",
             "name": "rex_autoload",
