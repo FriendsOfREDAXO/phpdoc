@@ -295,9 +295,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/type.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-type.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/type.php">type.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">231</span>
+    <span class="phpdocumentor-element-found-in__line">263</span>
 
-            <a href="classes/rex-type.html#source-view.231" class="phpdocumentor-element-found-in__source" data-line="231" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
+            <a href="classes/rex-type.html#source-view.263" class="phpdocumentor-element-found-in__source" data-line="263" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
     </aside>
 
     
@@ -364,9 +364,9 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/type.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-type.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/type.php">type.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">192</span>
 
-            <a href="classes/rex-type.html#source-view.160" class="phpdocumentor-element-found-in__source" data-line="160" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
+            <a href="classes/rex-type.html#source-view.192" class="phpdocumentor-element-found-in__source" data-line="192" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
     </aside>
 
     
@@ -433,16 +433,16 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/type.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-type.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/type.php">type.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
-            <a href="classes/rex-type.html#source-view.42" class="phpdocumentor-element-found-in__source" data-line="42" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
+            <a href="classes/rex-type.html#source-view.43" class="phpdocumentor-element-found-in__source" data-line="43" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
     </aside>
 
         <p class="phpdocumentor-summary">Casts the variable $var to $vartype.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">cast</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|callable(mixed): mixed|array&lt;int, array{0: string, 1: string|callable|list, 2?: mixed}&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">cast</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$var</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|callable(mixed): mixed|array&lt;int, int|string|<abbr title="\BackedEnum">BackedEnum</abbr>|null&gt;|array&lt;int, array{0: string, 1: string|callable|list, 2?: mixed}&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vartype</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -459,11 +459,12 @@
 <li>'array[<type>]', e.g. 'array[int]'</li>
 <li>'' (don't cast)</li>
 <li>a callable</li>
-<li>array(
-array(<key>, <vartype>, <default>),
-array(<key>, <vartype>, <default>),
+<li>['foo', 'bar', 'baz'] (cast to ony of the given values)</li>
+<li>[
+[<key>, <vartype>, <default>],
+[<key>, <vartype>, <default>],
 ...
-)</li>
+]</li>
 </ul>
 </section>
 
@@ -480,7 +481,7 @@ array(<key>, <vartype>, <default>),
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$vartype</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|callable(mixed): mixed|array&lt;int, array{0: string, 1: string|callable|list, 2?: mixed}&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|callable(mixed): mixed|array&lt;int, int|string|<abbr title="\BackedEnum">BackedEnum</abbr>|null&gt;|array&lt;int, array{0: string, 1: string|callable|list, 2?: mixed}&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Variable type</p>
@@ -537,9 +538,9 @@ array(<key>, <vartype>, <default>),
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/type.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-type.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/type.php">type.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">248</span>
+    <span class="phpdocumentor-element-found-in__line">280</span>
 
-            <a href="classes/rex-type.html#source-view.248" class="phpdocumentor-element-found-in__source" data-line="248" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
+            <a href="classes/rex-type.html#source-view.280" class="phpdocumentor-element-found-in__source" data-line="280" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
     </aside>
 
     
@@ -622,9 +623,9 @@ array(<key>, <vartype>, <default>),
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/type.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-type.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/type.php">type.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">207</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 
-            <a href="classes/rex-type.html#source-view.207" class="phpdocumentor-element-found-in__source" data-line="207" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
+            <a href="classes/rex-type.html#source-view.239" class="phpdocumentor-element-found-in__source" data-line="239" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
     </aside>
 
     
@@ -691,9 +692,9 @@ array(<key>, <vartype>, <default>),
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/type.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-type.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/type.php">type.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">147</span>
+    <span class="phpdocumentor-element-found-in__line">179</span>
 
-            <a href="classes/rex-type.html#source-view.147" class="phpdocumentor-element-found-in__source" data-line="147" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
+            <a href="classes/rex-type.html#source-view.179" class="phpdocumentor-element-found-in__source" data-line="179" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
     </aside>
 
     
@@ -769,9 +770,9 @@ array(<key>, <vartype>, <default>),
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/type.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-type.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/type.php">type.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">173</span>
+    <span class="phpdocumentor-element-found-in__line">205</span>
 
-            <a href="classes/rex-type.html#source-view.173" class="phpdocumentor-element-found-in__source" data-line="173" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
+            <a href="classes/rex-type.html#source-view.205" class="phpdocumentor-element-found-in__source" data-line="205" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
     </aside>
 
     
@@ -838,9 +839,9 @@ array(<key>, <vartype>, <default>),
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/type.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-type.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/type.php">type.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">253</span>
 
-            <a href="classes/rex-type.html#source-view.221" class="phpdocumentor-element-found-in__source" data-line="221" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
+            <a href="classes/rex-type.html#source-view.253" class="phpdocumentor-element-found-in__source" data-line="253" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
     </aside>
 
     
@@ -907,9 +908,9 @@ array(<key>, <vartype>, <default>),
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/type.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-type.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/type.php">type.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">197</span>
+    <span class="phpdocumentor-element-found-in__line">229</span>
 
-            <a href="classes/rex-type.html#source-view.197" class="phpdocumentor-element-found-in__source" data-line="197" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
+            <a href="classes/rex-type.html#source-view.229" class="phpdocumentor-element-found-in__source" data-line="229" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
     </aside>
 
     
@@ -976,9 +977,9 @@ array(<key>, <vartype>, <default>),
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="redaxo-main/redaxo/src/core/lib/util/type.php"><a href="files/redaxo-main-redaxo-src-core-lib-util-type.html"><abbr title="redaxo-main/redaxo/src/core/lib/util/type.php">type.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">215</span>
 
-            <a href="classes/rex-type.html#source-view.183" class="phpdocumentor-element-found-in__source" data-line="183" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
+            <a href="classes/rex-type.html#source-view.215" class="phpdocumentor-element-found-in__source" data-line="215" data-modal="source-view" data-src="files/redaxo-main/redaxo/src/core/lib/util/type.php.txt"></a>
     </aside>
 
     
