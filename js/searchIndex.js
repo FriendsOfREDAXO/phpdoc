@@ -8271,6 +8271,11 @@ Search.appendIndex(
             "summary": "Loads\u0020the\u0020properties\u0020of\u0020package.yml.",
             "url": "classes/rex-package.html#method_loadProperties"
         },                {
+            "fqsen": "\\rex_package\u003A\u003AgetLicense\u0028\u0029",
+            "name": "getLicense",
+            "summary": "",
+            "url": "classes/rex-package.html#method_getLicense"
+        },                {
             "fqsen": "\\rex_package\u003A\u003AclearCache\u0028\u0029",
             "name": "clearCache",
             "summary": "Clears\u0020the\u0020cache\u0020of\u0020the\u0020package.",
