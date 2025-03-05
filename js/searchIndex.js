@@ -1821,6 +1821,16 @@ Search.appendIndex(
             "summary": "Get\u0020global\u0020blocked\u0020mediatype\u0020extensions.",
             "url": "classes/rex-mediapool.html#method_getBlockedExtensions"
         },                {
+            "fqsen": "\\rex_mediapool\u003A\u003AgetAllowedMimeTypes\u0028\u0029",
+            "name": "getAllowedMimeTypes",
+            "summary": "Get\u0020global\u0020list\u0020of\u0020allowed\u0020mime\u0020types.",
+            "url": "classes/rex-mediapool.html#method_getAllowedMimeTypes"
+        },                {
+            "fqsen": "\\rex_mediapool\u003A\u003AsetAllowedMimeTypes\u0028\u0029",
+            "name": "setAllowedMimeTypes",
+            "summary": "Set\u0020global\u0020list\u0020of\u0020allowed\u0020mime\u0020types.",
+            "url": "classes/rex-mediapool.html#method_setAllowedMimeTypes"
+        },                {
             "fqsen": "\\rex_media_perm",
             "name": "rex_media_perm",
             "summary": "",
